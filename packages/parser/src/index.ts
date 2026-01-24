@@ -280,7 +280,7 @@ const __dirname = path.dirname(__filename);
       .object({
         nonresidents_degree_seeking_first_time_first_year: z
           .number()
-          .describe("Degree-Seeking First-Time First-Year Nonresidents"),
+          .describe("B2: Degree-Seeking First-Time First-Year Nonresidents"),
         nonresidents_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Nonresidents"),
@@ -289,7 +289,7 @@ const __dirname = path.dirname(__filename);
           .describe("B2: Total Undergraduates (both degree & non-degree-seeking) Nonresidents"),
         hispanic_latino_degree_seeking_first_time_first_year: z
           .number()
-          .describe("Degree-Seeking First-Time First-Year Hispanic/Latino"),
+          .describe("B2: Degree-Seeking First-Time First-Year Hispanic/Latino"),
         hispanic_latino_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Hispanic/Latino"),
@@ -298,7 +298,7 @@ const __dirname = path.dirname(__filename);
           .describe("B2: Total Undergraduates (both degree & non-degree-seeking) Hispanic/Latino"),
         black_african_american_degree_seeking_first_time_first_year: z
           .number()
-          .describe("Degree-Seeking First-Time First-Year Black or African American, non-Hispanic"),
+          .describe("B2: Degree-Seeking First-Time First-Year Black or African American, non-Hispanic"),
         black_african_american_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe(
@@ -311,7 +311,7 @@ const __dirname = path.dirname(__filename);
           ),
         white_degree_seeking_first_time_first_year: z
           .number()
-          .describe("Degree-Seeking First-Time First-Year White, non-Hispanic"),
+          .describe("B2: Degree-Seeking First-Time First-Year White, non-Hispanic"),
         white_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) White, non-Hispanic"),
@@ -320,7 +320,7 @@ const __dirname = path.dirname(__filename);
           .describe("B2: Total Undergraduates (both degree & non-degree-seeking) White, non-Hispanic"),
         american_indian_alaska_native_degree_seeking_first_time_first_year: z
           .number()
-          .describe("Degree-Seeking First-Time First-Year American Indian or Alaska Native, non-Hispanic"),
+          .describe("B2: Degree-Seeking First-Time First-Year American Indian or Alaska Native, non-Hispanic"),
         american_indian_alaska_native_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe(
@@ -333,7 +333,7 @@ const __dirname = path.dirname(__filename);
           ),
         asian_degree_seeking_first_time_first_year: z
           .number()
-          .describe("Degree-Seeking First-Time First-Year Asian, non-Hispanic"),
+          .describe("B2: Degree-Seeking First-Time First-Year Asian, non-Hispanic"),
         asian_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Asian, non-Hispanic"),
@@ -342,7 +342,7 @@ const __dirname = path.dirname(__filename);
           .describe("B2: Total Undergraduates (both degree & non-degree-seeking) Asian, non-Hispanic"),
         native_hawaiian_pacific_islander_degree_seeking_first_time_first_year: z
           .number()
-          .describe("Degree-Seeking First-Time First-Year Native Hawaiian or other Pacific Islander, non-Hispanic"),
+          .describe("B2: Degree-Seeking First-Time First-Year Native Hawaiian or other Pacific Islander, non-Hispanic"),
         native_hawaiian_pacific_islander_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe(
@@ -355,7 +355,7 @@ const __dirname = path.dirname(__filename);
           ),
         two_or_more_races_degree_seeking_first_time_first_year: z
           .number()
-          .describe("Degree-Seeking First-Time First-Year Two or more races, non-Hispanic"),
+          .describe("B2: Degree-Seeking First-Time First-Year Two or more races, non-Hispanic"),
         two_or_more_races_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe(
@@ -366,14 +366,16 @@ const __dirname = path.dirname(__filename);
           .describe("B2: Total Undergraduates (both degree & non-degree-seeking) Two or more races, non-Hispanic"),
         race_ethnicity_unknown_degree_seeking_first_time_first_year: z
           .number()
-          .describe("Degree-Seeking First-Time First-Year Race and/or ethnicity unknown"),
+          .describe("B2: Degree-Seeking First-Time First-Year Race and/or ethnicity unknown"),
         race_ethnicity_unknown_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Race and/or ethnicity unknown"),
         race_ethnicity_unknown_total_undergraduates_both_degree_and_non_degree_seeking: z
           .number()
           .describe("B2: Total Undergraduates (both degree & non-degree-seeking) Race and/or ethnicity unknown"),
-        total_degree_seeking_first_time_first_year: z.number().describe("Degree-Seeking First-Time First-Year TOTAL"),
+        total_degree_seeking_first_time_first_year: z
+          .number()
+          .describe("B2: Degree-Seeking First-Time First-Year TOTAL"),
         total_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) TOTAL"),
@@ -382,6 +384,21 @@ const __dirname = path.dirname(__filename);
           .describe("B2: Total Undergraduates (both degree & non-degree-seeking) TOTAL"),
       })
       .describe("B2: Enrollment by Racial/Ethnic Category"),
+    number_of_degrees_awarded: z
+      .object({
+        certificate_diploma: z.number().describe("B3: Certificate/diploma"),
+        associate_degrees: z.number().describe("B3: Associate degrees"),
+        bachelors_degrees: z.number().describe("B3: Bachelor's degrees"),
+        postbachelors_certificates: z.number().describe("B3: Postbachelor's certificates"),
+        masters_degrees: z.number().describe("B3: Master's degrees"),
+        postmasters_certificates: z.number().describe("B3: Post-Master's certificates"),
+        doctoral_degrees_research_scholarship: z.number().describe("B3: Doctoral degrees — research/scholarship"),
+        doctoral_degrees_professional_practice: z.number().describe("B3: Doctoral degrees — professional practice"),
+        doctoral_degrees_other: z.number().describe("B3: Doctoral degrees — other"),
+        start_date: z.string().describe("B3: Start date, e.g. July 1, 2023"),
+        end_date: z.string().describe("B3: End date, e.g. June 30, 2024"),
+      })
+      .describe("B3: Number of degrees awarded by your institution from [start_date] to [end_date]."),
   });
 
   const response = await ai.models.generateContent({
