@@ -3,7 +3,8 @@ import { env } from "./config/env.js";
 import fs from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
-import z from "zod";
+import z from "zod/v3";
+import { zodToJsonSchema } from "zod-to-json-schema";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -12,27 +13,6 @@ const __dirname = path.dirname(__filename);
   const ai = new GoogleGenAI({
     apiKey: env.GEMINI_API_KEY,
   });
-
-  //   const groundingTool = {
-  //     googleSearch: {},
-  //   };
-  //   const config = {
-  //     tools: [groundingTool],
-  //   };
-
-  //   const response = await ai.models.generateContent({
-  //     model: "gemini-3-flash-preview",
-  //     contents: "Find the direct download link for the 2024-2025 Stanford CDS",
-  //     //   "Find the direct link for the 2024-2025 Stanford CDS. Your response should only contain the direct link, nothing else. Do not explain. Do not include any other text in your response. If you cannot find the direct link, return 'NOT_FOUND' and nothing else. The link may be a PDF file or a Google Drive link.",
-  //     //   "Find the direct link for the 2024-2025 Stanford CDS. If you cannot find the direct link, return 'NOT_FOUND' and nothing else. The link may be a PDF file or a Google Drive link.",
-  //     //   "Find the link to where Stanford Common Data Sets are available for download. Your response should only contain the link to this landing page, nothing else. Do not explain. Do not include any other text in your response. If you cannot find the link, return 'NOT_FOUND' and nothing else.",
-  //     config,
-  //   });
-
-  //   console.log(response.usageMetadata);
-  //   console.log(response.text);
-
-  //   return;
 
   const filename = "stanford_cds_2024_2025.pdf";
 
@@ -97,7 +77,7 @@ const __dirname = path.dirname(__filename);
     config: {
       mediaResolution: MediaResolution.MEDIA_RESOLUTION_HIGH,
       responseMimeType: "application/json",
-      responseJsonSchema: responseSchema,
+      responseJsonSchema: zodToJsonSchema(responseSchema),
       cachedContent: cache.name,
     },
   });
@@ -106,7 +86,9 @@ const __dirname = path.dirname(__filename);
     throw new Error("No response text");
   }
 
-  const responseJson = responseSchema.parse(JSON.parse(response.text));
+  const rawResponse = JSON.parse(response.text);
+  console.log(rawResponse);
+  const responseJson = responseSchema.parse(rawResponse);
 
   // Input cost: $0.50 per million tokens
   // Output cost: $3.00 per million tokens
