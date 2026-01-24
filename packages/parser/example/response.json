@@ -1,0 +1,18 @@
+{
+  "source_of_institutional_control": "private",
+  "undergraduate_institution_classification": "coed",
+  "academic_year_calendar": "quarter",
+  "degrees_offered": [
+    "bachelors",
+    "postbachelors_certificate",
+    "masters",
+    "doctoral_degree_research_scholarship",
+    "doctoral_degree_professional_practice"
+  ],
+  "undergraduate_students_full_time": {
+    "degree_seeking_first_time_first_year_men": 835,
+    "degree_seeking_first_time_first_year_women": 858,
+    "degree_seeking_first_time_first_year_another_gender": 0,
+    "degree_seeking_first_time_first_year_unknown": 0
+  }
+}

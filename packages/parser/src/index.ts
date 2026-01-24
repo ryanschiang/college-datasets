@@ -107,6 +107,76 @@ const __dirname = path.dirname(__filename);
           .describe(
             "B1: Degree-seeking, first-time first-year students Unknown",
           ),
+        other_first_year_degree_seeking_men: z
+          .number()
+          .describe("B1: Other first-year, degree-seeking Men"),
+        other_first_year_degree_seeking_women: z
+          .number()
+          .describe("B1: Other first-year, degree-seeking Women"),
+        other_first_year_degree_seeking_another_gender: z
+          .number()
+          .describe("B1: Other first-year, degree-seeking Another Gender"),
+        other_first_year_degree_seeking_unknown: z
+          .number()
+          .describe("B1: Other first-year, degree-seeking Unknown"),
+        all_other_degree_seeking_men: z
+          .number()
+          .describe("B1: All other degree-seeking Men"),
+        all_other_degree_seeking_women: z
+          .number()
+          .describe("B1: All other degree-seeking Women"),
+        all_other_degree_seeking_another_gender: z
+          .number()
+          .describe("B1: All other degree-seeking Another Gender"),
+        all_other_degree_seeking_unknown: z
+          .number()
+          .describe("B1: All other degree-seeking Unknown"),
+        total_degree_seeking_men: z
+          .number()
+          .describe("B1: Total degree-seeking Men"),
+        total_degree_seeking_women: z
+          .number()
+          .describe("B1: Total degree-seeking Women"),
+        total_degree_seeking_another_gender: z
+          .number()
+          .describe("B1: Total degree-seeking Another Gender"),
+        total_degree_seeking_unknown: z
+          .number()
+          .describe("B1: Total degree-seeking Unknown"),
+        all_other_undergraduates_enrolled_in_credit_courses_men: z
+          .number()
+          .describe(
+            "B1: All other undergraduates enrolled in credit courses Men",
+          ),
+        all_other_undergraduates_enrolled_in_credit_courses_women: z
+          .number()
+          .describe(
+            "B1: All other undergraduates enrolled in credit courses Women",
+          ),
+        all_other_undergraduates_enrolled_in_credit_courses_another_gender: z
+          .number()
+          .describe(
+            "B1: All other undergraduates enrolled in credit courses Another Gender",
+          ),
+        all_other_undergraduates_enrolled_in_credit_courses_unknown: z
+          .number()
+          .describe(
+            "B1: All other undergraduates enrolled in credit courses Unknown",
+          ),
+        total_undergraduate_full_time_students_men: z
+          .number()
+          .describe("B1: Total undergraduate Full-Time Students Men"),
+        total_undergraduate_full_time_students_women: z
+          .number()
+          .describe("B1: Total undergraduate Full-Time Students Women"),
+        total_undergraduate_full_time_students_another_gender: z
+          .number()
+          .describe(
+            "B1: Total undergraduate Full-Time Students Another Gender",
+          ),
+        total_undergraduate_full_time_students_unknown: z
+          .number()
+          .describe("B1: Total undergraduate Full-Time Students Unknown"),
       })
       .describe("B1: Undergraduate Students: Full-Time"),
   });
@@ -114,15 +184,15 @@ const __dirname = path.dirname(__filename);
   const response = await ai.models.generateContent({
     model: "gemini-3-flash-preview",
     contents: [
-      //   {
-      //     role: "user",
-      //     parts: [
-      //       {
-      //         // text: "Section B1: What is the total number of Degree-seeking, first-time first-year students that are Men?",
-      //         text: "Section A1: What is the source of institutional control?",
-      //       },
-      //     ],
-      //   },
+      {
+        role: "user",
+        parts: [
+          {
+            // text: "Section B1: What is the total number of Degree-seeking, first-time first-year students that are Men?",
+            text: "Section A1: What is the source of institutional control?",
+          },
+        ],
+      },
     ],
     config: {
       mediaResolution: MediaResolution.MEDIA_RESOLUTION_HIGH,
