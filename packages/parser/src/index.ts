@@ -179,6 +179,112 @@ const __dirname = path.dirname(__filename);
           .describe("B1: Total undergraduate Full-Time Students Unknown"),
       })
       .describe("B1: Undergraduate Students: Full-Time"),
+    undergraduate_students_part_time: z
+      .object({
+        degree_seeking_first_time_first_year_men: z
+          .number()
+          .describe("B1: Degree-seeking, first-time first-year students Men"),
+        degree_seeking_first_time_first_year_women: z
+          .number()
+          .describe("B1: Degree-seeking, first-time first-year students Women"),
+        degree_seeking_first_time_first_year_another_gender: z
+          .number()
+          .describe(
+            "B1: Degree-seeking, first-time first-year students Another Gender",
+          ),
+        degree_seeking_first_time_first_year_unknown: z
+          .number()
+          .describe(
+            "B1: Degree-seeking, first-time first-year students Unknown",
+          ),
+        other_first_year_degree_seeking_men: z
+          .number()
+          .describe("B1: Other first-year, degree-seeking Men"),
+        other_first_year_degree_seeking_women: z
+          .number()
+          .describe("B1: Other first-year, degree-seeking Women"),
+        other_first_year_degree_seeking_another_gender: z
+          .number()
+          .describe("B1: Other first-year, degree-seeking Another Gender"),
+        other_first_year_degree_seeking_unknown: z
+          .number()
+          .describe("B1: Other first-year, degree-seeking Unknown"),
+        all_other_degree_seeking_men: z
+          .number()
+          .describe("B1: All other degree-seeking Men"),
+        all_other_degree_seeking_women: z
+          .number()
+          .describe("B1: All other degree-seeking Women"),
+        all_other_degree_seeking_another_gender: z
+          .number()
+          .describe("B1: All other degree-seeking Another Gender"),
+        all_other_degree_seeking_unknown: z
+          .number()
+          .describe("B1: All other degree-seeking Unknown"),
+        total_degree_seeking_men: z
+          .number()
+          .describe("B1: Total degree-seeking Men"),
+        total_degree_seeking_women: z
+          .number()
+          .describe("B1: Total degree-seeking Women"),
+        total_degree_seeking_another_gender: z
+          .number()
+          .describe("B1: Total degree-seeking Another Gender"),
+        total_degree_seeking_unknown: z
+          .number()
+          .describe("B1: Total degree-seeking Unknown"),
+        all_other_undergraduates_enrolled_in_credit_courses_men: z
+          .number()
+          .describe(
+            "B1: All other undergraduates enrolled in credit courses Men",
+          ),
+        all_other_undergraduates_enrolled_in_credit_courses_women: z
+          .number()
+          .describe(
+            "B1: All other undergraduates enrolled in credit courses Women",
+          ),
+        all_other_undergraduates_enrolled_in_credit_courses_another_gender: z
+          .number()
+          .describe(
+            "B1: All other undergraduates enrolled in credit courses Another Gender",
+          ),
+        all_other_undergraduates_enrolled_in_credit_courses_unknown: z
+          .number()
+          .describe(
+            "B1: All other undergraduates enrolled in credit courses Unknown",
+          ),
+        total_undergraduate_part_time_students_men: z
+          .number()
+          .describe("B1: Total undergraduate Part-Time Students Men"),
+        total_undergraduate_part_time_students_women: z
+          .number()
+          .describe("B1: Total undergraduate Part-Time Students Women"),
+        total_undergraduate_part_time_students_another_gender: z
+          .number()
+          .describe(
+            "B1: Total undergraduate Part-Time Students Another Gender",
+          ),
+        total_undergraduate_part_time_students_unknown: z
+          .number()
+          .describe("B1: Total undergraduate Part-Time Students Unknown"),
+      })
+      .describe("B1: Undergraduate Students: Part-Time"),
+    undergraduate_students_all: z
+      .object({
+        total_undergraduate_students_men: z
+          .number()
+          .describe("B1: Total undergraduate Students Men"),
+        total_undergraduate_students_women: z
+          .number()
+          .describe("B1: Total undergraduate Students Women"),
+        total_undergraduate_students_another_gender: z
+          .number()
+          .describe("B1: Total undergraduate Students Another Gender"),
+        total_undergraduate_students_unknown: z
+          .number()
+          .describe("B1: Total undergraduate Students Unknown"),
+      })
+      .describe("B1: Undergraduate Students: All"),
   });
 
   const response = await ai.models.generateContent({
@@ -215,12 +321,6 @@ const __dirname = path.dirname(__filename);
     JSON.stringify(responseJson, null, 2),
   );
 
-  // Input cost: $0.50 per million tokens
-  // Output cost: $3.00 per million tokens
-  // Context caching: $0.05 (text / image / video)
-
-  //   This is the sum of prompt_token_count, candidates_token_count, tool_use_prompt_token_count, and thoughts_token_count.
-
   if (!response.usageMetadata) {
     throw new Error("No usage metadata");
   }
@@ -234,9 +334,30 @@ const __dirname = path.dirname(__filename);
     toolUsePromptTokenCount,
   } = response.usageMetadata;
 
-  console.log(responseJson);
-  console.log(response.text);
-  console.log(response.usageMetadata?.totalTokenCount);
-  console.log(response.usageMetadata?.promptTokenCount);
-  console.log(response.usageMetadata);
+  // Input cost: $0.50 per million tokens
+  // Output cost: $3.00 per million tokens
+  // Context caching: $0.05 (text / image / video)
+  // Context caching $1.00 / 1,000,000 tokens per hour (storage price)
+
+  // Calculate how much of the prompt was not cached (new/uncached tokens)
+  const newPromptTokenCount =
+    (promptTokenCount ?? 0) - (cachedContentTokenCount ?? 0);
+
+  // Charged at prompt rate
+  const promptCost = ((newPromptTokenCount ?? 0) / 1_000_000) * 0.5;
+  // Charged at output rate
+  const candidatesCost = ((candidatesTokenCount ?? 0) / 1_000_000) * 3.0;
+  // Charged at output rate
+  const thoughtsCost = ((thoughtsTokenCount ?? 0) / 1_000_000) * 3.0;
+  // Charged at context caching rate (discounted)
+  const cachedCost = ((cachedContentTokenCount ?? 0) / 1_000_000) * 0.05;
+
+  // Total cost
+  const totalCost = promptCost + candidatesCost + thoughtsCost + cachedCost;
+
+  console.log(`Prompt cost: $${promptCost.toFixed(6)}`);
+  console.log(`Candidates cost: $${candidatesCost.toFixed(6)}`);
+  console.log(`Thoughts cost: $${thoughtsCost.toFixed(6)}`);
+  console.log(`Cached cost: $${cachedCost.toFixed(6)}`);
+  console.log(`Total cost: $${totalCost.toFixed(6)}`);
 })();
