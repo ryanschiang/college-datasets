@@ -339,18 +339,25 @@ const __dirname = path.dirname(__filename);
   // Context caching: $0.05 (text / image / video)
   // Context caching $1.00 / 1,000,000 tokens per hour (storage price)
 
+  const RATES = {
+    INPUT: 0.5,
+    OUTPUT: 3.0,
+    CACHE: 0.05,
+  };
+
   // Calculate how much of the prompt was not cached (new/uncached tokens)
   const newPromptTokenCount =
     (promptTokenCount ?? 0) - (cachedContentTokenCount ?? 0);
 
   // Charged at prompt rate
-  const promptCost = ((newPromptTokenCount ?? 0) / 1_000_000) * 0.5;
+  const promptCost = ((newPromptTokenCount ?? 0) / 1_000_000) * RATES.INPUT;
   // Charged at output rate
-  const candidatesCost = ((candidatesTokenCount ?? 0) / 1_000_000) * 3.0;
+  const candidatesCost =
+    ((candidatesTokenCount ?? 0) / 1_000_000) * RATES.OUTPUT;
   // Charged at output rate
-  const thoughtsCost = ((thoughtsTokenCount ?? 0) / 1_000_000) * 3.0;
+  const thoughtsCost = ((thoughtsTokenCount ?? 0) / 1_000_000) * RATES.OUTPUT;
   // Charged at context caching rate (discounted)
-  const cachedCost = ((cachedContentTokenCount ?? 0) / 1_000_000) * 0.05;
+  const cachedCost = ((cachedContentTokenCount ?? 0) / 1_000_000) * RATES.CACHE;
 
   // Total cost
   const totalCost = promptCost + candidatesCost + thoughtsCost + cachedCost;
