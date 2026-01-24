@@ -52,15 +52,13 @@ const __dirname = path.dirname(__filename);
   });
 
   const responseSchema = z.object({
-    source_of_institutional_control: z
-      .enum(["public", "private", "proprietary"])
-      .describe("A2: Source of institutional control"),
-    undergraduate_institution_classification: z
-      .enum(["coed", "mens", "womens"])
-      .describe("A3: Classify your undergraduate institution"),
-    academic_year_calendar: z
-      .enum(["semester", "quarter", "trimester", "4-1-4", "continuous", "differs_by_program", "other"])
-      .describe("A4: Academic year calendar"),
+    // A2
+    source_of_institutional_control: z.enum(["public", "private", "proprietary"]).describe("A2: Source of institutional control"),
+    // A3
+    undergraduate_institution_classification: z.enum(["coed", "mens", "womens"]).describe("A3: Classify your undergraduate institution"),
+    // A4
+    academic_year_calendar: z.enum(["semester", "quarter", "trimester", "4-1-4", "continuous", "differs_by_program", "other"]).describe("A4: Academic year calendar"),
+    // A5
     degrees_offered: z
       .array(
         z.enum([
@@ -79,25 +77,16 @@ const __dirname = path.dirname(__filename);
         ]),
       )
       .describe("A5: Degrees offered by your institution"),
+    // B1
     undergraduate_students_full_time: z
       .object({
-        degree_seeking_first_time_first_year_men: z
-          .number()
-          .describe("B1: Degree-seeking, first-time first-year students Men"),
-        degree_seeking_first_time_first_year_women: z
-          .number()
-          .describe("B1: Degree-seeking, first-time first-year students Women"),
-        degree_seeking_first_time_first_year_another_gender: z
-          .number()
-          .describe("B1: Degree-seeking, first-time first-year students Another Gender"),
-        degree_seeking_first_time_first_year_unknown: z
-          .number()
-          .describe("B1: Degree-seeking, first-time first-year students Unknown"),
+        degree_seeking_first_time_first_year_men: z.number().describe("B1: Degree-seeking, first-time first-year students Men"),
+        degree_seeking_first_time_first_year_women: z.number().describe("B1: Degree-seeking, first-time first-year students Women"),
+        degree_seeking_first_time_first_year_another_gender: z.number().describe("B1: Degree-seeking, first-time first-year students Another Gender"),
+        degree_seeking_first_time_first_year_unknown: z.number().describe("B1: Degree-seeking, first-time first-year students Unknown"),
         other_first_year_degree_seeking_men: z.number().describe("B1: Other first-year, degree-seeking Men"),
         other_first_year_degree_seeking_women: z.number().describe("B1: Other first-year, degree-seeking Women"),
-        other_first_year_degree_seeking_another_gender: z
-          .number()
-          .describe("B1: Other first-year, degree-seeking Another Gender"),
+        other_first_year_degree_seeking_another_gender: z.number().describe("B1: Other first-year, degree-seeking Another Gender"),
         other_first_year_degree_seeking_unknown: z.number().describe("B1: Other first-year, degree-seeking Unknown"),
         all_other_degree_seeking_men: z.number().describe("B1: All other degree-seeking Men"),
         all_other_degree_seeking_women: z.number().describe("B1: All other degree-seeking Women"),
@@ -107,51 +96,25 @@ const __dirname = path.dirname(__filename);
         total_degree_seeking_women: z.number().describe("B1: Total degree-seeking Women"),
         total_degree_seeking_another_gender: z.number().describe("B1: Total degree-seeking Another Gender"),
         total_degree_seeking_unknown: z.number().describe("B1: Total degree-seeking Unknown"),
-        all_other_undergraduates_enrolled_in_credit_courses_men: z
-          .number()
-          .describe("B1: All other undergraduates enrolled in credit courses Men"),
-        all_other_undergraduates_enrolled_in_credit_courses_women: z
-          .number()
-          .describe("B1: All other undergraduates enrolled in credit courses Women"),
-        all_other_undergraduates_enrolled_in_credit_courses_another_gender: z
-          .number()
-          .describe("B1: All other undergraduates enrolled in credit courses Another Gender"),
-        all_other_undergraduates_enrolled_in_credit_courses_unknown: z
-          .number()
-          .describe("B1: All other undergraduates enrolled in credit courses Unknown"),
-        total_undergraduate_full_time_students_men: z
-          .number()
-          .describe("B1: Total undergraduate Full-Time Students Men"),
-        total_undergraduate_full_time_students_women: z
-          .number()
-          .describe("B1: Total undergraduate Full-Time Students Women"),
-        total_undergraduate_full_time_students_another_gender: z
-          .number()
-          .describe("B1: Total undergraduate Full-Time Students Another Gender"),
-        total_undergraduate_full_time_students_unknown: z
-          .number()
-          .describe("B1: Total undergraduate Full-Time Students Unknown"),
+        all_other_undergraduates_enrolled_in_credit_courses_men: z.number().describe("B1: All other undergraduates enrolled in credit courses Men"),
+        all_other_undergraduates_enrolled_in_credit_courses_women: z.number().describe("B1: All other undergraduates enrolled in credit courses Women"),
+        all_other_undergraduates_enrolled_in_credit_courses_another_gender: z.number().describe("B1: All other undergraduates enrolled in credit courses Another Gender"),
+        all_other_undergraduates_enrolled_in_credit_courses_unknown: z.number().describe("B1: All other undergraduates enrolled in credit courses Unknown"),
+        total_undergraduate_full_time_students_men: z.number().describe("B1: Total undergraduate Full-Time Students Men"),
+        total_undergraduate_full_time_students_women: z.number().describe("B1: Total undergraduate Full-Time Students Women"),
+        total_undergraduate_full_time_students_another_gender: z.number().describe("B1: Total undergraduate Full-Time Students Another Gender"),
+        total_undergraduate_full_time_students_unknown: z.number().describe("B1: Total undergraduate Full-Time Students Unknown"),
       })
       .describe("B1: Undergraduate Students: Full-Time"),
     undergraduate_students_part_time: z
       .object({
-        degree_seeking_first_time_first_year_men: z
-          .number()
-          .describe("B1: Degree-seeking, first-time first-year students Men"),
-        degree_seeking_first_time_first_year_women: z
-          .number()
-          .describe("B1: Degree-seeking, first-time first-year students Women"),
-        degree_seeking_first_time_first_year_another_gender: z
-          .number()
-          .describe("B1: Degree-seeking, first-time first-year students Another Gender"),
-        degree_seeking_first_time_first_year_unknown: z
-          .number()
-          .describe("B1: Degree-seeking, first-time first-year students Unknown"),
+        degree_seeking_first_time_first_year_men: z.number().describe("B1: Degree-seeking, first-time first-year students Men"),
+        degree_seeking_first_time_first_year_women: z.number().describe("B1: Degree-seeking, first-time first-year students Women"),
+        degree_seeking_first_time_first_year_another_gender: z.number().describe("B1: Degree-seeking, first-time first-year students Another Gender"),
+        degree_seeking_first_time_first_year_unknown: z.number().describe("B1: Degree-seeking, first-time first-year students Unknown"),
         other_first_year_degree_seeking_men: z.number().describe("B1: Other first-year, degree-seeking Men"),
         other_first_year_degree_seeking_women: z.number().describe("B1: Other first-year, degree-seeking Women"),
-        other_first_year_degree_seeking_another_gender: z
-          .number()
-          .describe("B1: Other first-year, degree-seeking Another Gender"),
+        other_first_year_degree_seeking_another_gender: z.number().describe("B1: Other first-year, degree-seeking Another Gender"),
         other_first_year_degree_seeking_unknown: z.number().describe("B1: Other first-year, degree-seeking Unknown"),
         all_other_degree_seeking_men: z.number().describe("B1: All other degree-seeking Men"),
         all_other_degree_seeking_women: z.number().describe("B1: All other degree-seeking Women"),
@@ -161,39 +124,21 @@ const __dirname = path.dirname(__filename);
         total_degree_seeking_women: z.number().describe("B1: Total degree-seeking Women"),
         total_degree_seeking_another_gender: z.number().describe("B1: Total degree-seeking Another Gender"),
         total_degree_seeking_unknown: z.number().describe("B1: Total degree-seeking Unknown"),
-        all_other_undergraduates_enrolled_in_credit_courses_men: z
-          .number()
-          .describe("B1: All other undergraduates enrolled in credit courses Men"),
-        all_other_undergraduates_enrolled_in_credit_courses_women: z
-          .number()
-          .describe("B1: All other undergraduates enrolled in credit courses Women"),
-        all_other_undergraduates_enrolled_in_credit_courses_another_gender: z
-          .number()
-          .describe("B1: All other undergraduates enrolled in credit courses Another Gender"),
-        all_other_undergraduates_enrolled_in_credit_courses_unknown: z
-          .number()
-          .describe("B1: All other undergraduates enrolled in credit courses Unknown"),
-        total_undergraduate_part_time_students_men: z
-          .number()
-          .describe("B1: Total undergraduate Part-Time Students Men"),
-        total_undergraduate_part_time_students_women: z
-          .number()
-          .describe("B1: Total undergraduate Part-Time Students Women"),
-        total_undergraduate_part_time_students_another_gender: z
-          .number()
-          .describe("B1: Total undergraduate Part-Time Students Another Gender"),
-        total_undergraduate_part_time_students_unknown: z
-          .number()
-          .describe("B1: Total undergraduate Part-Time Students Unknown"),
+        all_other_undergraduates_enrolled_in_credit_courses_men: z.number().describe("B1: All other undergraduates enrolled in credit courses Men"),
+        all_other_undergraduates_enrolled_in_credit_courses_women: z.number().describe("B1: All other undergraduates enrolled in credit courses Women"),
+        all_other_undergraduates_enrolled_in_credit_courses_another_gender: z.number().describe("B1: All other undergraduates enrolled in credit courses Another Gender"),
+        all_other_undergraduates_enrolled_in_credit_courses_unknown: z.number().describe("B1: All other undergraduates enrolled in credit courses Unknown"),
+        total_undergraduate_part_time_students_men: z.number().describe("B1: Total undergraduate Part-Time Students Men"),
+        total_undergraduate_part_time_students_women: z.number().describe("B1: Total undergraduate Part-Time Students Women"),
+        total_undergraduate_part_time_students_another_gender: z.number().describe("B1: Total undergraduate Part-Time Students Another Gender"),
+        total_undergraduate_part_time_students_unknown: z.number().describe("B1: Total undergraduate Part-Time Students Unknown"),
       })
       .describe("B1: Undergraduate Students: Part-Time"),
     undergraduate_students_all: z
       .object({
         total_undergraduate_students_men: z.number().describe("B1: Total undergraduate Students Men"),
         total_undergraduate_students_women: z.number().describe("B1: Total undergraduate Students Women"),
-        total_undergraduate_students_another_gender: z
-          .number()
-          .describe("B1: Total undergraduate Students Another Gender"),
+        total_undergraduate_students_another_gender: z.number().describe("B1: Total undergraduate Students Another Gender"),
         total_undergraduate_students_unknown: z.number().describe("B1: Total undergraduate Students Unknown"),
       })
       .describe("B1: Undergraduate Students: All"),
@@ -207,23 +152,13 @@ const __dirname = path.dirname(__filename);
         all_other_degree_seeking_women: z.number().describe("B1: All other degree-seeking Women"),
         all_other_degree_seeking_another_gender: z.number().describe("B1: All other degree-seeking Another Gender"),
         all_other_degree_seeking_unknown: z.number().describe("B1: All other degree-seeking Unknown"),
-        all_other_graduates_enrolled_in_credit_courses_men: z
-          .number()
-          .describe("B1: All other graduates enrolled in credit courses Men"),
-        all_other_graduates_enrolled_in_credit_courses_women: z
-          .number()
-          .describe("B1: All other graduates enrolled in credit courses Women"),
-        all_other_graduates_enrolled_in_credit_courses_another_gender: z
-          .number()
-          .describe("B1: All other graduates enrolled in credit courses Another Gender"),
-        all_other_graduates_enrolled_in_credit_courses_unknown: z
-          .number()
-          .describe("B1: All other graduates enrolled in credit courses Unknown"),
+        all_other_graduates_enrolled_in_credit_courses_men: z.number().describe("B1: All other graduates enrolled in credit courses Men"),
+        all_other_graduates_enrolled_in_credit_courses_women: z.number().describe("B1: All other graduates enrolled in credit courses Women"),
+        all_other_graduates_enrolled_in_credit_courses_another_gender: z.number().describe("B1: All other graduates enrolled in credit courses Another Gender"),
+        all_other_graduates_enrolled_in_credit_courses_unknown: z.number().describe("B1: All other graduates enrolled in credit courses Unknown"),
         total_graduate_full_time_students_men: z.number().describe("B1: Total graduate Full-Time Students Men"),
         total_graduate_full_time_students_women: z.number().describe("B1: Total graduate Full-Time Students Women"),
-        total_graduate_full_time_students_another_gender: z
-          .number()
-          .describe("B1: Total graduate Full-Time Students Another Gender"),
+        total_graduate_full_time_students_another_gender: z.number().describe("B1: Total graduate Full-Time Students Another Gender"),
         total_graduate_full_time_students_unknown: z.number().describe("B1: Total graduate Full-Time Students Unknown"),
       })
       .describe("B1: Graduate Students: Full-Time"),
@@ -237,23 +172,13 @@ const __dirname = path.dirname(__filename);
         all_other_degree_seeking_women: z.number().describe("B1: All other degree-seeking Women"),
         all_other_degree_seeking_another_gender: z.number().describe("B1: All other degree-seeking Another Gender"),
         all_other_degree_seeking_unknown: z.number().describe("B1: All other degree-seeking Unknown"),
-        all_other_graduates_enrolled_in_credit_courses_men: z
-          .number()
-          .describe("B1: All other graduates enrolled in credit courses Men"),
-        all_other_graduates_enrolled_in_credit_courses_women: z
-          .number()
-          .describe("B1: All other graduates enrolled in credit courses Women"),
-        all_other_graduates_enrolled_in_credit_courses_another_gender: z
-          .number()
-          .describe("B1: All other graduates enrolled in credit courses Another Gender"),
-        all_other_graduates_enrolled_in_credit_courses_unknown: z
-          .number()
-          .describe("B1: All other graduates enrolled in credit courses Unknown"),
+        all_other_graduates_enrolled_in_credit_courses_men: z.number().describe("B1: All other graduates enrolled in credit courses Men"),
+        all_other_graduates_enrolled_in_credit_courses_women: z.number().describe("B1: All other graduates enrolled in credit courses Women"),
+        all_other_graduates_enrolled_in_credit_courses_another_gender: z.number().describe("B1: All other graduates enrolled in credit courses Another Gender"),
+        all_other_graduates_enrolled_in_credit_courses_unknown: z.number().describe("B1: All other graduates enrolled in credit courses Unknown"),
         total_graduate_part_time_students_men: z.number().describe("B1: Total graduate Part-Time Students Men"),
         total_graduate_part_time_students_women: z.number().describe("B1: Total graduate Part-Time Students Women"),
-        total_graduate_part_time_students_another_gender: z
-          .number()
-          .describe("B1: Total graduate Part-Time Students Another Gender"),
+        total_graduate_part_time_students_another_gender: z.number().describe("B1: Total graduate Part-Time Students Another Gender"),
         total_graduate_part_time_students_unknown: z.number().describe("B1: Total graduate Part-Time Students Unknown"),
       })
       .describe("B1: Graduate Students: Part-Time"),
@@ -276,114 +201,74 @@ const __dirname = path.dirname(__filename);
     total_all_undergraduates: z.number().describe("B1: Total all undergraduates"),
     total_all_graduate: z.number().describe("B1: Total all graduate"),
     grand_total_all_students: z.number().describe("B1: GRAND TOTAL ALL STUDENTS"),
+    // B2
     enrollment_by_racial_ethnic_category: z
       .object({
-        nonresidents_degree_seeking_first_time_first_year: z
-          .number()
-          .describe("B2: Degree-Seeking First-Time First-Year Nonresidents"),
+        nonresidents_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year Nonresidents"),
         nonresidents_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Nonresidents"),
-        nonresidents_total_undergraduates_both_degree_and_non_degree_seeking: z
-          .number()
-          .describe("B2: Total Undergraduates (both degree & non-degree-seeking) Nonresidents"),
-        hispanic_latino_degree_seeking_first_time_first_year: z
-          .number()
-          .describe("B2: Degree-Seeking First-Time First-Year Hispanic/Latino"),
+        nonresidents_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) Nonresidents"),
+        hispanic_latino_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year Hispanic/Latino"),
         hispanic_latino_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Hispanic/Latino"),
-        hispanic_latino_total_undergraduates_both_degree_and_non_degree_seeking: z
-          .number()
-          .describe("B2: Total Undergraduates (both degree & non-degree-seeking) Hispanic/Latino"),
-        black_african_american_degree_seeking_first_time_first_year: z
-          .number()
-          .describe("B2: Degree-Seeking First-Time First-Year Black or African American, non-Hispanic"),
+        hispanic_latino_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) Hispanic/Latino"),
+        black_african_american_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year Black or African American, non-Hispanic"),
         black_african_american_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
-          .describe(
-            "B2: Degree-Seeking Undergraduates (include first-time first-year) Black or African American, non-Hispanic",
-          ),
+          .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Black or African American, non-Hispanic"),
         black_african_american_total_undergraduates_both_degree_and_non_degree_seeking: z
           .number()
-          .describe(
-            "B2: Total Undergraduates (both degree & non-degree-seeking) Black or African American, non-Hispanic",
-          ),
-        white_degree_seeking_first_time_first_year: z
-          .number()
-          .describe("B2: Degree-Seeking First-Time First-Year White, non-Hispanic"),
+          .describe("B2: Total Undergraduates (both degree & non-degree-seeking) Black or African American, non-Hispanic"),
+        white_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year White, non-Hispanic"),
         white_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) White, non-Hispanic"),
-        white_total_undergraduates_both_degree_and_non_degree_seeking: z
-          .number()
-          .describe("B2: Total Undergraduates (both degree & non-degree-seeking) White, non-Hispanic"),
+        white_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) White, non-Hispanic"),
         american_indian_alaska_native_degree_seeking_first_time_first_year: z
           .number()
           .describe("B2: Degree-Seeking First-Time First-Year American Indian or Alaska Native, non-Hispanic"),
         american_indian_alaska_native_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
-          .describe(
-            "B2: Degree-Seeking Undergraduates (include first-time first-year) American Indian or Alaska Native, non-Hispanic",
-          ),
+          .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) American Indian or Alaska Native, non-Hispanic"),
         american_indian_alaska_native_total_undergraduates_both_degree_and_non_degree_seeking: z
           .number()
-          .describe(
-            "B2: Total Undergraduates (both degree & non-degree-seeking) American Indian or Alaska Native, non-Hispanic",
-          ),
-        asian_degree_seeking_first_time_first_year: z
-          .number()
-          .describe("B2: Degree-Seeking First-Time First-Year Asian, non-Hispanic"),
+          .describe("B2: Total Undergraduates (both degree & non-degree-seeking) American Indian or Alaska Native, non-Hispanic"),
+        asian_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year Asian, non-Hispanic"),
         asian_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Asian, non-Hispanic"),
-        asian_total_undergraduates_both_degree_and_non_degree_seeking: z
-          .number()
-          .describe("B2: Total Undergraduates (both degree & non-degree-seeking) Asian, non-Hispanic"),
+        asian_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) Asian, non-Hispanic"),
         native_hawaiian_pacific_islander_degree_seeking_first_time_first_year: z
           .number()
           .describe("B2: Degree-Seeking First-Time First-Year Native Hawaiian or other Pacific Islander, non-Hispanic"),
         native_hawaiian_pacific_islander_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
-          .describe(
-            "B2: Degree-Seeking Undergraduates (include first-time first-year) Native Hawaiian or other Pacific Islander, non-Hispanic",
-          ),
+          .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Native Hawaiian or other Pacific Islander, non-Hispanic"),
         native_hawaiian_pacific_islander_total_undergraduates_both_degree_and_non_degree_seeking: z
           .number()
-          .describe(
-            "B2: Total Undergraduates (both degree & non-degree-seeking) Native Hawaiian or other Pacific Islander, non-Hispanic",
-          ),
-        two_or_more_races_degree_seeking_first_time_first_year: z
-          .number()
-          .describe("B2: Degree-Seeking First-Time First-Year Two or more races, non-Hispanic"),
+          .describe("B2: Total Undergraduates (both degree & non-degree-seeking) Native Hawaiian or other Pacific Islander, non-Hispanic"),
+        two_or_more_races_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year Two or more races, non-Hispanic"),
         two_or_more_races_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
-          .describe(
-            "B2: Degree-Seeking Undergraduates (include first-time first-year) Two or more races, non-Hispanic",
-          ),
+          .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Two or more races, non-Hispanic"),
         two_or_more_races_total_undergraduates_both_degree_and_non_degree_seeking: z
           .number()
           .describe("B2: Total Undergraduates (both degree & non-degree-seeking) Two or more races, non-Hispanic"),
-        race_ethnicity_unknown_degree_seeking_first_time_first_year: z
-          .number()
-          .describe("B2: Degree-Seeking First-Time First-Year Race and/or ethnicity unknown"),
+        race_ethnicity_unknown_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year Race and/or ethnicity unknown"),
         race_ethnicity_unknown_degree_seeking_undergraduates_includes_first_time_first_year: z
           .number()
           .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Race and/or ethnicity unknown"),
         race_ethnicity_unknown_total_undergraduates_both_degree_and_non_degree_seeking: z
           .number()
           .describe("B2: Total Undergraduates (both degree & non-degree-seeking) Race and/or ethnicity unknown"),
-        total_degree_seeking_first_time_first_year: z
-          .number()
-          .describe("B2: Degree-Seeking First-Time First-Year TOTAL"),
-        total_degree_seeking_undergraduates_includes_first_time_first_year: z
-          .number()
-          .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) TOTAL"),
-        total_total_undergraduates_both_degree_and_non_degree_seeking: z
-          .number()
-          .describe("B2: Total Undergraduates (both degree & non-degree-seeking) TOTAL"),
+        total_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year TOTAL"),
+        total_degree_seeking_undergraduates_includes_first_time_first_year: z.number().describe("B2: Degree-Seeking Undergraduates (include first-time first-year) TOTAL"),
+        total_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) TOTAL"),
       })
       .describe("B2: Enrollment by Racial/Ethnic Category"),
+    // B3
     number_of_degrees_awarded: z
       .object({
         certificate_diploma: z.number().describe("B3: Certificate/diploma"),
@@ -399,6 +284,24 @@ const __dirname = path.dirname(__filename);
         end_date: z.string().describe("B3: End date, e.g. June 30, 2024"),
       })
       .describe("B3: Number of degrees awarded by your institution from [start_date] to [end_date]."),
+    // C1
+    first_time_first_year_student_applicants: z
+      .object({
+        total_first_time_first_year_men_who_applied: z.number().describe("C1: Total first-time, first-year men who applied"),
+        total_first_time_first_year_women_who_applied: z.number().describe("C1: Total first-time, first-year women who applied"),
+        total_first_time_first_year_another_gender_who_applied: z.number().describe("C1: Total first-time, first-year another gender who applied"),
+        total_first_time_first_year_unknown_gender_who_applied: z.number().describe("C1: Total first-time, first-year unknown gender who applied"),
+      })
+      .describe("C1: First-Time, First-Year Student Applicants"),
+    first_time_first_year_student_admits: z
+      .object({
+        total_first_time_first_year_men_who_were_admitted: z.number().describe("C1: Total first-time, first-year men who were admitted"),
+        total_first_time_first_year_women_who_were_admitted: z.number().describe("C1: Total first-time, first-year women who were admitted"),
+        total_first_time_first_year_another_gender_who_were_admitted: z.number().describe("C1: Total first-time, first-year another gender who were admitted"),
+        total_first_time_first_year_unknown_gender_who_were_admitted: z.number().describe("C1: Total first-time, first-year unknown gender who were admitted"),
+      })
+      .describe("C1: First-Time, First-Year Student Admits"),
+    first_time_first_year_student_enrollees_by_status: z.object({}),
   });
 
   const response = await ai.models.generateContent({
@@ -436,14 +339,7 @@ const __dirname = path.dirname(__filename);
     throw new Error("No usage metadata");
   }
 
-  const {
-    promptTokenCount,
-    candidatesTokenCount,
-    cachedContentTokenCount,
-    totalTokenCount,
-    thoughtsTokenCount,
-    toolUsePromptTokenCount,
-  } = response.usageMetadata;
+  const { promptTokenCount, candidatesTokenCount, cachedContentTokenCount, totalTokenCount, thoughtsTokenCount, toolUsePromptTokenCount } = response.usageMetadata;
 
   // Input cost: $0.50 per million tokens
   // Output cost: $3.00 per million tokens
