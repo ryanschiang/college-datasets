@@ -5,51 +5,52 @@ import path from "path";
 import { fileURLToPath } from "url";
 import z from "zod/v3";
 import { zodToJsonSchema } from "zod-to-json-schema";
+import { splitSchema } from "./utils/split-schema.ts";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 (async () => {
-  const ai = new GoogleGenAI({
-    apiKey: env.GEMINI_API_KEY,
-  });
+  //   const ai = new GoogleGenAI({
+  //     apiKey: env.GEMINI_API_KEY,
+  //   });
 
-  const filename = "stanford_cds_2024_2025.pdf";
+  //   const filename = "stanford_cds_2024_2025.pdf";
 
-  const fileData = await fs.readFile(path.join(__dirname, "..", "example", filename));
-  const fileBlob = new Blob([fileData], { type: "application/pdf" });
+  //   const fileData = await fs.readFile(path.join(__dirname, "..", "example", filename));
+  //   const fileBlob = new Blob([fileData], { type: "application/pdf" });
 
-  const file = await ai.files.upload({
-    file: fileBlob,
-    config: {
-      mimeType: "application/pdf",
-    },
-  });
-  console.log(file.uri);
+  //   const file = await ai.files.upload({
+  //     file: fileBlob,
+  //     config: {
+  //       mimeType: "application/pdf",
+  //     },
+  //   });
+  //   console.log(file.uri);
 
-  const systemInstruction = `You are a helpful assistant that parses the Common Data Set (CDS) of a university. You are given a PDF file of the CDS and a question. You need to parse the CDS and answer the question. Only return the answer, no other text. Do not explain. Do not include any other text in your response. If you cannot find the answer, return 'NOT_FOUND' and nothing else.`;
+  //   const systemInstruction = `You are a helpful assistant that parses the Common Data Set (CDS) of a university. You are given a PDF file of the CDS and a question. You need to parse the CDS and answer the question. Only return the answer, no other text. Do not explain. Do not include any other text in your response. If you cannot find the answer, return 'NOT_FOUND' and nothing else.`;
 
-  const cache = await ai.caches.create({
-    model: "gemini-3-flash-preview",
-    config: {
-      displayName: filename,
-      ttl: "300s",
-      systemInstruction,
-      contents: [
-        {
-          role: "user",
-          parts: [
-            {
-              fileData: {
-                fileUri: file.uri,
-                mimeType: file.mimeType,
-              },
-            },
-          ],
-        },
-      ],
-    },
-  });
+  //   const cache = await ai.caches.create({
+  //     model: "gemini-3-flash-preview",
+  //     config: {
+  //       displayName: filename,
+  //       ttl: "300s",
+  //       systemInstruction,
+  //       contents: [
+  //         {
+  //           role: "user",
+  //           parts: [
+  //             {
+  //               fileData: {
+  //                 fileUri: file.uri,
+  //                 mimeType: file.mimeType,
+  //               },
+  //             },
+  //           ],
+  //         },
+  //       ],
+  //     },
+  //   });
 
   const responseSchema = z.object({
     // A2
@@ -389,74 +390,118 @@ const __dirname = path.dirname(__filename);
         other_recommended: z.number().optional().describe("C5: Visual/Performing Arts: Other (specify) Recommended"),
       })
       .describe("C5: Distribution of high school units required and/or recommended"),
+    // C6
+    open_admission_policy: z
+      .object({
+        open_admission_policy_as_described_above_for_all_students: z.boolean().optional().describe("C6: Open admission policy as described above for all students"),
+        selective_admission_for_out_of_state_students: z.boolean().optional().describe("C6: selective admission for out-of-state students"),
+        selective_admission_to_some_programs: z.boolean().optional().describe("C6: selective admission to some programs"),
+        other: z.boolean().optional().describe("C6: other (explain)"),
+      })
+      .describe(
+        "C6: Do you have an open admission policy, under which virtually all secondary school graduates or students with GED equivalency diplomas are admitted without regard to academic record, test scores, or other qualifications?",
+      ),
+    // C7
+    relative_importance_of_academic_non_academic_factors: z
+      .object({
+        rigor_of_secondary_school_record: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Rigor of secondary school record"),
+        class_rank: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Class rank"),
+        academic_gpa: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Academic GPA"),
+        standardized_test_scores: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Standardized test scores"),
+        application_essay: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Application Essay"),
+        recommendations: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Recommendation(s)"),
+        interview: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Interview"),
+        extracurricular_activities: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Extracurricular activities"),
+        talent_ability: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Talent/ability"),
+        character_personal_qualities: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Character/personal qualities"),
+        first_generation: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: First generation"),
+        alumni_relation: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Alumni/ae relation"),
+        geographical_residence: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Geographical residence"),
+        state_residency: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: State residency"),
+        religious_affiliation_commitment: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Religious affiliation/commitment"),
+        volunteer_work: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Volunteer work"),
+        work_experience: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Work experience"),
+        level_of_applicants_interest: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Level of applicant's interest"),
+      })
+      .describe(
+        "C7: Relative importance of academic and nonacademic factors in your first-time, first-year, degree-seeking general (not including programs with specific criteria) admissions decisions",
+      ),
   });
 
-  const response = await ai.models.generateContent({
-    model: "gemini-3-flash-preview",
-    contents: [
-      {
-        role: "user",
-        parts: [
-          {
-            // text: "Section B1: What is the total number of Degree-seeking, first-time first-year students that are Men?",
-            text: "Section A1: What is the source of institutional control?",
-          },
-        ],
-      },
-    ],
-    config: {
-      mediaResolution: MediaResolution.MEDIA_RESOLUTION_HIGH,
-      responseMimeType: "application/json",
-      responseJsonSchema: zodToJsonSchema(responseSchema),
-      cachedContent: cache.name,
-    },
-  });
+  //   responseSchema.shape.academic_year_calendar;
 
-  if (!response.text) {
-    throw new Error("No response text");
-  }
+  // Split schema to a reasonable size
+  const splitSchemaResult = splitSchema(responseSchema, 100);
+  console.log(Object.keys(splitSchemaResult[1]?.shape));
 
-  const rawResponse = JSON.parse(response.text);
-  console.log(rawResponse);
-  const responseJson = responseSchema.parse(rawResponse);
+  return;
 
-  await fs.writeFile(path.join(__dirname, "..", "example", "response.json"), JSON.stringify(responseJson, null, 2));
+  //   const response = await ai.models.generateContent({
+  //     model: "gemini-3-flash-preview",
+  //     contents: [
+  //       {
+  //         role: "user",
+  //         parts: [
+  //           {
+  //             // text: "Section B1: What is the total number of Degree-seeking, first-time first-year students that are Men?",
+  //             text: "Section A1: What is the source of institutional control?",
+  //           },
+  //         ],
+  //       },
+  //     ],
+  //     config: {
+  //       mediaResolution: MediaResolution.MEDIA_RESOLUTION_HIGH,
+  //       responseMimeType: "application/json",
+  //       responseJsonSchema: zodToJsonSchema(responseSchema),
+  //       cachedContent: cache.name,
+  //     },
+  //   });
 
-  if (!response.usageMetadata) {
-    throw new Error("No usage metadata");
-  }
+  //   if (!response.text) {
+  //     throw new Error("No response text");
+  //   }
 
-  const { promptTokenCount, candidatesTokenCount, cachedContentTokenCount, totalTokenCount, thoughtsTokenCount, toolUsePromptTokenCount } = response.usageMetadata;
+  //   const rawResponse = JSON.parse(response.text);
+  //   console.log(rawResponse);
+  //   const responseJson = responseSchema.parse(rawResponse);
 
-  // Input cost: $0.50 per million tokens
-  // Output cost: $3.00 per million tokens
-  // Context caching: $0.05 (text / image / video)
-  // Context caching $1.00 / 1,000,000 tokens per hour (storage price)
+  //   await fs.writeFile(path.join(__dirname, "..", "example", "response.json"), JSON.stringify(responseJson, null, 2));
 
-  const RATES = {
-    INPUT: 0.5,
-    OUTPUT: 3.0,
-    CACHE: 0.05,
-  };
+  //   if (!response.usageMetadata) {
+  //     throw new Error("No usage metadata");
+  //   }
 
-  // Calculate how much of the prompt was not cached (new/uncached tokens)
-  const newPromptTokenCount = (promptTokenCount ?? 0) - (cachedContentTokenCount ?? 0);
+  //   const { promptTokenCount, candidatesTokenCount, cachedContentTokenCount, totalTokenCount, thoughtsTokenCount, toolUsePromptTokenCount } = response.usageMetadata;
 
-  // Charged at prompt rate
-  const promptCost = ((newPromptTokenCount ?? 0) / 1_000_000) * RATES.INPUT;
-  // Charged at output rate
-  const candidatesCost = ((candidatesTokenCount ?? 0) / 1_000_000) * RATES.OUTPUT;
-  // Charged at output rate
-  const thoughtsCost = ((thoughtsTokenCount ?? 0) / 1_000_000) * RATES.OUTPUT;
-  // Charged at context caching rate (discounted)
-  const cachedCost = ((cachedContentTokenCount ?? 0) / 1_000_000) * RATES.CACHE;
+  //   // Input cost: $0.50 per million tokens
+  //   // Output cost: $3.00 per million tokens
+  //   // Context caching: $0.05 (text / image / video)
+  //   // Context caching $1.00 / 1,000,000 tokens per hour (storage price)
 
-  // Total cost
-  const totalCost = promptCost + candidatesCost + thoughtsCost + cachedCost;
+  //   const RATES = {
+  //     INPUT: 0.5,
+  //     OUTPUT: 3.0,
+  //     CACHE: 0.05,
+  //   };
 
-  console.log(`Prompt cost: $${promptCost.toFixed(6)}`);
-  console.log(`Candidates cost: $${candidatesCost.toFixed(6)}`);
-  console.log(`Thoughts cost: $${thoughtsCost.toFixed(6)}`);
-  console.log(`Cached cost: $${cachedCost.toFixed(6)}`);
-  console.log(`Total cost: $${totalCost.toFixed(6)}`);
+  //   // Calculate how much of the prompt was not cached (new/uncached tokens)
+  //   const newPromptTokenCount = (promptTokenCount ?? 0) - (cachedContentTokenCount ?? 0);
+
+  //   // Charged at prompt rate
+  //   const promptCost = ((newPromptTokenCount ?? 0) / 1_000_000) * RATES.INPUT;
+  //   // Charged at output rate
+  //   const candidatesCost = ((candidatesTokenCount ?? 0) / 1_000_000) * RATES.OUTPUT;
+  //   // Charged at output rate
+  //   const thoughtsCost = ((thoughtsTokenCount ?? 0) / 1_000_000) * RATES.OUTPUT;
+  //   // Charged at context caching rate (discounted)
+  //   const cachedCost = ((cachedContentTokenCount ?? 0) / 1_000_000) * RATES.CACHE;
+
+  //   // Total cost
+  //   const totalCost = promptCost + candidatesCost + thoughtsCost + cachedCost;
+
+  //   console.log(`Prompt cost: $${promptCost.toFixed(6)}`);
+  //   console.log(`Candidates cost: $${candidatesCost.toFixed(6)}`);
+  //   console.log(`Thoughts cost: $${thoughtsCost.toFixed(6)}`);
+  //   console.log(`Cached cost: $${cachedCost.toFixed(6)}`);
+  //   console.log(`Total cost: $${totalCost.toFixed(6)}`);
 })();
