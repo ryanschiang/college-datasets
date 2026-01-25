@@ -301,7 +301,94 @@ const __dirname = path.dirname(__filename);
         total_first_time_first_year_unknown_gender_who_were_admitted: z.number().describe("C1: Total first-time, first-year unknown gender who were admitted"),
       })
       .describe("C1: First-Time, First-Year Student Admits"),
-    first_time_first_year_student_enrollees_by_status: z.object({}),
+    first_time_first_year_student_enrollees_by_status: z
+      .object({
+        total_full_time_first_time_first_year_men_who_enrolled: z.number().describe("Total full-time, first-time, first-year men who enrolled"),
+        total_part_time_first_time_first_year_men_who_enrolled: z.number().describe("Total part-time, first-time, first-year men who enrolled"),
+        total_full_time_first_time_first_year_women_who_enrolled: z.number().describe("Total full-time, first-time, first-year women who enrolled"),
+        total_part_time_first_time_first_year_women_who_enrolled: z.number().describe("Total part-time, first-time, first-year women who enrolled"),
+        total_full_time_first_time_first_year_another_gender_who_enrolled: z.number().describe("Total full-time, first-time, first-year another gender who enrolled"),
+        total_part_time_first_time_first_year_another_gender_who_enrolled: z.number().describe("Total part-time, first-time, first-year another gender who enrolled"),
+        total_full_time_first_time_first_year_unknown_gender_who_enrolled: z.number().describe("Total full-time, first-time, first-year unknown gender who enrolled"),
+        total_part_time_first_time_first_year_unknown_gender_who_enrolled: z.number().describe("Total part-time, first-time, first-year unknown gender who enrolled"),
+      })
+      .describe("C1: First-Time, First-Year Student Enrollees by Status"),
+    residency_breakdowns_for_total_applicants_admits_and_enrollees: z
+      .object({
+        total_total_first_time_first_year_who_applied: z.number().optional().describe("C1: Total Total first-time, first-year who applied"),
+        in_state_total_first_time_first_year_who_applied: z.number().optional().describe("C1: In-State Total first-time, first-year who applied"),
+        out_of_state_total_first_time_first_year_who_applied: z.number().optional().describe("C1: Out-of-State Total first-time, first-year who applied"),
+        international_total_first_time_first_year_who_applied: z.number().optional().describe("C1: International Total first-time, first-year who applied"),
+        unknown_total_first_time_first_year_who_applied: z.number().optional().describe("C1: Unknown Total first-time, first-year who applied"),
+        total_total_first_time_first_year_who_were_admitted: z.number().optional().describe("C1: Total Total first-time, first-year who were admitted"),
+        in_state_total_first_time_first_year_who_were_admitted: z.number().optional().describe("C1: In-State Total first-time, first-year who were admitted"),
+        out_of_state_total_first_time_first_year_who_were_admitted: z.number().optional().describe("C1: Out-of-State Total first-time, first-year who were admitted"),
+        international_total_first_time_first_year_who_were_admitted: z.number().optional().describe("C1: International Total first-time, first-year who were admitted"),
+        unknown_total_first_time_first_year_who_were_admitted: z.number().optional().describe("C1: Unknown Total first-time, first-year who were admitted"),
+        total_total_first_time_first_year_who_enrolled: z.number().optional().describe("C1: Total Total first-time, first-year who enrolled"),
+        in_state_total_first_time_first_year_who_enrolled: z.number().optional().describe("C1: In-State Total first-time, first-year who enrolled"),
+        out_of_state_total_first_time_first_year_who_enrolled: z.number().optional().describe("C1: Out-of-State Total first-time, first-year who enrolled"),
+        international_total_first_time_first_year_who_enrolled: z.number().optional().describe("C1: International Total first-time, first-year who enrolled"),
+        unknown_total_first_time_first_year_who_enrolled: z.number().optional().describe("C1: Unknown Total first-time, first-year who enrolled"),
+      })
+      .describe("C1: If available, please provide residency breakdowns for total applicants, admits, and enrolled students"),
+    // C2
+    first_time_first_year_waitlisted_students: z
+      .object({
+        has_waitlist_policy: z.boolean().optional().describe("C2: Do you have a policy of placing students on a waiting list?"),
+        number_of_qualified_applicants_offered_a_place_on_waiting_list: z.number().optional().describe("C2: Number of qualified applicants offered a place on waiting list"),
+        number_accepting_a_place_on_the_waiting_list: z.number().optional().describe("C2: Number accepting a place on the waiting list"),
+        number_of_waitlisted_students_admitted: z.number().optional().describe("C2: Number of wait-listed students admitted"),
+        waitlist_is_ranked: z.boolean().optional().describe("C2: Is your waiting list ranked?"),
+        waitlist_rank_released_to_students: z.boolean().optional().describe("C2: If yes, do you release that information to students?"),
+        waitlist_rank_released_to_school_counselors: z.boolean().optional().describe("C2: Do you release that information to school counselors?"),
+      })
+      .describe("C2: First-time, first-year waitlisted students"),
+    // C3
+    high_school_completion_requirement: z
+      .object({
+        high_school_diploma_required_and_ged_is_accepted: z.boolean().optional().describe("C3: High school diploma is required and GED is accepted"),
+        high_school_diploma_required_and_ged_is_not_accepted: z.boolean().optional().describe("C3: High school diploma is required and GED is not accepted"),
+        high_school_diploma_or_equivalent_is_not_required: z.boolean().optional().describe("C3: High school diploma or equivalent is not required"),
+      })
+      .describe("C3: High school completion requirement"),
+    // C4
+    require_or_recommend_general_college_preparatory_program: z
+      .object({
+        require: z.boolean().optional().describe("C4: Require"),
+        recommend: z.boolean().optional().describe("C4: Recommend"),
+        neither_require_nor_recommend: z.boolean().optional().describe("C4: Neither require nor recommend"),
+      })
+      .describe("C4: Does your institution require or recommend a general college-preparatory program for degree-seeking students?"),
+    // C5
+    distribution_of_high_school_units_required_and_or_recommended: z
+      .object({
+        total_academic_units_required: z.number().optional().describe("C5: Total academic units: Units Required"),
+        total_academic_units_recommended: z.number().optional().describe("C5: Total academic units: Units Recommended"),
+        english_required: z.number().optional().describe("C5: English: Units Required"),
+        english_recommended: z.number().optional().describe("C5: English: Units Recommended"),
+        mathematics_required: z.number().optional().describe("C5: Mathematics: Units Required"),
+        mathematics_recommended: z.number().optional().describe("C5: Mathematics: Units Recommended"),
+        science_required: z.number().optional().describe("C5: Science: Units Required"),
+        science_recommended: z.number().optional().describe("C5: Science: Units Recommended"),
+        science_lab_required: z.number().optional().describe("C5: Science, Of these, units that must be lab: Units Required"),
+        science_lab_recommended: z.number().optional().describe("C5: Science, Of these, units that must be lab: Units Recommended"),
+        foreign_language_required: z.number().optional().describe("C5: Foreign language: Units Required"),
+        foreign_language_recommended: z.number().optional().describe("C5: Foreign language: Units Recommended"),
+        social_studies_required: z.number().optional().describe("C5: Social studies: Units Required"),
+        social_studies_recommended: z.number().optional().describe("C5: Social studies: Units Recommended"),
+        history_required: z.number().optional().describe("C5: History: Units Required"),
+        history_recommended: z.number().optional().describe("C5: History: Units Recommended"),
+        academic_electives_required: z.number().optional().describe("C5: Academic electives: Units Required"),
+        academic_electives_recommended: z.number().optional().describe("C5: Academic electives: Units Recommended"),
+        computer_science_required: z.number().optional().describe("C5: Computer Science: Units Required"),
+        computer_science_recommended: z.number().optional().describe("C5: Computer Science: Units Recommended"),
+        visual_performing_arts_required: z.number().optional().describe("C5: Visual/Performing Arts: Units Required"),
+        visual_performing_arts_recommended: z.number().optional().describe("C5: Visual/Performing Arts: Units Recommended"),
+        other_required: z.number().optional().describe("C5: Visual/Performing Arts: Other (specify) Required"),
+        other_recommended: z.number().optional().describe("C5: Visual/Performing Arts: Other (specify) Recommended"),
+      })
+      .describe("C5: Distribution of high school units required and/or recommended"),
   });
 
   const response = await ai.models.generateContent({
