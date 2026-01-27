@@ -14,6 +14,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const uploadFile = async (ai: GoogleGenAI, filename: string, mimeType: string): Promise<File> => {
+  logger.info(`Uploading file ${filename} with mime type ${mimeType}`);
   const fileData = await fs.readFile(path.join(__dirname, "..", "example", filename));
   const fileBlob = new Blob([fileData], { type: mimeType });
   const file = await ai.files.upload({
@@ -22,6 +23,7 @@ const uploadFile = async (ai: GoogleGenAI, filename: string, mimeType: string): 
       mimeType,
     },
   });
+  logger.info(`File uploaded successfully: ${file.name} | ${file.uri}`);
   return file;
 };
 
@@ -39,6 +41,8 @@ const listFiles = async (ai: GoogleGenAI): Promise<Pager<File>> => {
 
   const filename = "stanford_cds_2024_2025.pdf";
 
+  const file = await uploadFile(ai, filename, "application/pdf");
+
   const systemInstruction = `You are a helpful assistant that parses the Common Data Set (CDS) of a university. You are given a PDF file of the CDS and a question. You need to parse the CDS and answer the question. Only return the answer, no other text. Do not explain. Do not include any other text in your response. If you cannot find the answer, return 'NOT_FOUND' and nothing else.`;
 
   const cache = await ai.caches.create({
@@ -53,10 +57,10 @@ const listFiles = async (ai: GoogleGenAI): Promise<Pager<File>> => {
           parts: [
             {
               fileData: {
-                // fileUri: file.uri,
-                // mimeType: file.mimeType,
-                fileUri: "https://generativelanguage.googleapis.com/v1beta/files/jde7ehasks7j",
-                mimeType: "application/pdf",
+                fileUri: file.uri,
+                mimeType: file.mimeType,
+                // fileUri: "https://generativelanguage.googleapis.com/v1beta/files/jde7ehasks7j",
+                // mimeType: "application/pdf",
               },
             },
           ],
@@ -149,24 +153,26 @@ const listFiles = async (ai: GoogleGenAI): Promise<Pager<File>> => {
       continue;
     }
 
-    const { promptTokenCount, candidatesTokenCount, cachedContentTokenCount, thoughtsTokenCount } = response.usageMetadata;
+    const { promptTokenCount = 0, candidatesTokenCount = 0, cachedContentTokenCount = 0, thoughtsTokenCount = 0 } = response.usageMetadata;
 
     // Calculate how much of the prompt was not cached (new/uncached tokens)
-    const newPromptTokenCount = (promptTokenCount ?? 0) - (cachedContentTokenCount ?? 0);
+    const newPromptTokenCount = promptTokenCount - cachedContentTokenCount;
 
     // Charged at prompt rate
-    const promptCost = ((newPromptTokenCount ?? 0) / 1_000_000) * RATES.INPUT;
+    const promptCost = (newPromptTokenCount / 1_000_000) * RATES.INPUT;
     // Charged at output rate
-    const candidatesCost = ((candidatesTokenCount ?? 0) / 1_000_000) * RATES.OUTPUT;
+    const candidatesCost = (candidatesTokenCount / 1_000_000) * RATES.OUTPUT;
     // Charged at output rate
-    const thoughtsCost = ((thoughtsTokenCount ?? 0) / 1_000_000) * RATES.OUTPUT;
+    const thoughtsCost = (thoughtsTokenCount / 1_000_000) * RATES.OUTPUT;
     // Charged at context caching rate (discounted)
-    const cachedCost = ((cachedContentTokenCount ?? 0) / 1_000_000) * RATES.CACHE;
+    const cachedCost = (cachedContentTokenCount / 1_000_000) * RATES.CACHE;
 
     // Total cost
+    const totalTokens = newPromptTokenCount + candidatesTokenCount + thoughtsTokenCount + cachedContentTokenCount;
     const totalCost = promptCost + candidatesCost + thoughtsCost + cachedCost;
 
-    logger.info(`Chunk ${index + 1} - Prompt: $${promptCost.toFixed(6)}, Candidates: $${candidatesCost.toFixed(6)}, Thoughts: $${thoughtsCost.toFixed(6)}, Cached: $${cachedCost.toFixed(6)}, Total: $${totalCost.toFixed(6)}`);
+    logger.info(`Chunk ${index + 1} Tokens - Prompt: $${newPromptTokenCount}, Candidates: $${candidatesTokenCount}, Thoughts: $${thoughtsTokenCount}, Cached: $${cachedContentTokenCount}, Total: $${totalTokens}`);
+    logger.info(`Chunk ${index + 1} Cost - Prompt: $${promptCost.toFixed(6)}, Candidates: $${candidatesCost.toFixed(6)}, Thoughts: $${thoughtsCost.toFixed(6)}, Cached: $${cachedCost.toFixed(6)}, Total: $${totalCost.toFixed(6)}`);
 
     finalCost += totalCost;
   }
