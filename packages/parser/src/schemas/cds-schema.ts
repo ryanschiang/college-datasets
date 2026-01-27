@@ -738,4 +738,35 @@ export const cdsSchema = z.object({
     })
     .describe("E3: Areas in which all or most students are required to complete some course work prior to graduation:"),
   // F1
+  student_life: z
+    .object({
+      percent_ftfy_out_of_state_students: z
+        .number()
+        .min(0)
+        .max(100)
+        .optional()
+        .describe("F1: Percent who are from out of state (exclude international/nonresidents from the numerator and denominator), First-time, first-year students, from 0% to 100%"),
+      percent_undergraduates_out_of_state_students: z
+        .number()
+        .min(0)
+        .max(100)
+        .optional()
+        .describe("F1: Percent who are from out of state (exclude international/nonresidents from the numerator and denominator), Undergraduate students, from 0% to 100%"),
+      percent_ftfy_men_fraternities: z.number().min(0).max(100).optional().describe("F1: Percent of men who join fraternities, First-time, first-year students, from 0% to 100%"),
+      percent_undergraduates_men_fraternities: z.number().min(0).max(100).optional().describe("F1: Percent of men who join fraternities, Undergraduate students, from 0% to 100%"),
+      percent_ftfy_women_sororities: z.number().min(0).max(100).optional().describe("F1: Percent of women who join sororities, First-time, first-year students, from 0% to 100%"),
+      percent_undergraduates_women_sororities: z.number().min(0).max(100).optional().describe("F1: Percent of women who join sororities, Undergraduate students, from 0% to 100%"),
+      percent_ftfy_college_owned_housing: z.number().min(0).max(100).optional().describe("F1: Percent who live in college-owned, -operated, or -affiliated housing, First-time, first-year students, from 0% to 100%"),
+      percent_undergraduates_college_owned_housing: z.number().min(0).max(100).optional().describe("F1: Percent who live in college-owned, -operated, or -affiliated housing, Undergraduate students, from 0% to 100%"),
+      percent_ftfy_live_off_campus: z.number().min(0).max(100).optional().describe("F1: Percent who live off campus or commute, First-time, first-year students, from 0% to 100%"),
+      percent_undergraduates_live_off_campus: z.number().min(0).max(100).optional().describe("F1: Percent who live off campus or commute, Undergraduate students, from 0% to 100%"),
+      percent_ftfy_age_25_or_older: z.number().min(0).max(100).optional().describe("F1: Percent of students age 25 and older, First-time, first-year students, from 0% to 100%"),
+      percent_undergraduates_age_25_or_older: z.number().min(0).max(100).optional().describe("F1: Percent of students age 25 and older, Undergraduate students, from 0% to 100%"),
+      average_age_of_full_time_ftfy_students: z.number().optional().describe("F1: Average age of full-time students, First-time, first-year students"),
+      average_age_of_full_time_undergraduates_students: z.number().optional().describe("F1: Average age of full-time students, Undergraduate students"),
+      average_age_of_all_ftfy_students: z.number().optional().describe("F1: Average age of all students (full- and part-time), First-time, first-year students"),
+      average_age_of_all_undergraduates_students: z.number().optional().describe("F1: Average age of all students (full- and part-time), Undergraduate students"),
+    })
+    .describe("F1: Percentages of first-time, first-year degree-seeking students and degree-seeking undergraduates enrolled in Fall who fit the following categories"),
+  // F2
 });
