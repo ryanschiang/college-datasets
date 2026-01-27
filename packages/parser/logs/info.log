@@ -1,0 +1,40 @@
+2026-01-25 20:54:19 [32minfo[39m: Splitting schema into 4 chunks 
+2026-01-25 20:54:19 [32minfo[39m: Chunk 1 of 4 
+2026-01-25 20:55:03 [32minfo[39m: Prompt cost: $0.010847 
+2026-01-25 20:55:03 [32minfo[39m: Candidates cost: $0.005715 
+2026-01-25 20:55:03 [32minfo[39m: Thoughts cost: $0.014331 
+2026-01-25 20:55:03 [32minfo[39m: Cached cost: $0.001124 
+2026-01-25 20:55:03 [32minfo[39m: Total cost: $0.032017 
+2026-01-25 20:55:03 [32minfo[39m: Chunk 2 of 4 
+2026-01-25 20:55:29 [32minfo[39m: Splitting schema into 9 chunks 
+2026-01-25 20:55:29 [32minfo[39m: Chunk 1 of 9 
+2026-01-25 20:55:47 [32minfo[39m: Prompt cost: $0.010847 
+2026-01-25 20:55:47 [32minfo[39m: Candidates cost: $0.001785 
+2026-01-25 20:55:47 [32minfo[39m: Thoughts cost: $0.006978 
+2026-01-25 20:55:47 [32minfo[39m: Cached cost: $0.001124 
+2026-01-25 20:55:47 [32minfo[39m: Total cost: $0.020734 
+2026-01-25 20:55:47 [32minfo[39m: Chunk 2 of 9 
+2026-01-25 20:57:34 [32minfo[39m: Prompt cost: $0.010847 
+2026-01-25 20:57:34 [32minfo[39m: Candidates cost: $0.002715 
+2026-01-25 20:57:34 [32minfo[39m: Thoughts cost: $0.047553 
+2026-01-25 20:57:34 [32minfo[39m: Cached cost: $0.001124 
+2026-01-25 20:57:34 [32minfo[39m: Total cost: $0.062239 
+2026-01-25 20:57:34 [32minfo[39m: Chunk 3 of 9 
+2026-01-25 20:59:26 [32minfo[39m: Prompt cost: $0.010847 
+2026-01-25 20:59:26 [32minfo[39m: Candidates cost: $0.001233 
+2026-01-25 20:59:26 [32minfo[39m: Thoughts cost: $0.053013 
+2026-01-25 20:59:26 [32minfo[39m: Cached cost: $0.001124 
+2026-01-25 20:59:26 [32minfo[39m: Total cost: $0.066217 
+2026-01-25 20:59:26 [32minfo[39m: Chunk 4 of 9 
+2026-01-25 21:00:26 [32minfo[39m: Prompt cost: $0.010847 
+2026-01-25 21:00:26 [32minfo[39m: Candidates cost: $0.003576 
+2026-01-25 21:00:26 [32minfo[39m: Thoughts cost: $0.025335 
+2026-01-25 21:00:26 [32minfo[39m: Cached cost: $0.001124 
+2026-01-25 21:00:26 [32minfo[39m: Total cost: $0.040882 
+2026-01-25 21:00:26 [32minfo[39m: Chunk 5 of 9 
+2026-01-25 21:02:18 [32minfo[39m: Prompt cost: $0.010847 
+2026-01-25 21:02:18 [32minfo[39m: Candidates cost: $0.002646 
+2026-01-25 21:02:18 [32minfo[39m: Thoughts cost: $0.051525 
+2026-01-25 21:02:18 [32minfo[39m: Cached cost: $0.001124 
+2026-01-25 21:02:18 [32minfo[39m: Total cost: $0.066142 
+2026-01-25 21:02:18 [32minfo[39m: Chunk 6 of 9 

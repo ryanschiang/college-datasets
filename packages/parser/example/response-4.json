@@ -1,0 +1,53 @@
+{
+  "enrollment_by_racial_ethnic_category": {
+    "nonresidents_degree_seeking_first_time_first_year": 242,
+    "nonresidents_degree_seeking_undergraduates_includes_first_time_first_year": 965,
+    "nonresidents_total_undergraduates_both_degree_and_non_degree_seeking": 965,
+    "hispanic_latino_degree_seeking_first_time_first_year": 248,
+    "hispanic_latino_degree_seeking_undergraduates_includes_first_time_first_year": 1289,
+    "hispanic_latino_total_undergraduates_both_degree_and_non_degree_seeking": 1501,
+    "black_african_american_degree_seeking_first_time_first_year": 76,
+    "black_african_american_degree_seeking_undergraduates_includes_first_time_first_year": 560,
+    "black_african_american_total_undergraduates_both_degree_and_non_degree_seeking": 644,
+    "white_degree_seeking_first_time_first_year": 408,
+    "white_degree_seeking_undergraduates_includes_first_time_first_year": 1737,
+    "white_total_undergraduates_both_degree_and_non_degree_seeking": 1754,
+    "american_indian_alaska_native_degree_seeking_first_time_first_year": 12,
+    "american_indian_alaska_native_degree_seeking_undergraduates_includes_first_time_first_year": 60,
+    "american_indian_alaska_native_total_undergraduates_both_degree_and_non_degree_seeking": 62,
+    "asian_degree_seeking_first_time_first_year": 559,
+    "asian_degree_seeking_undergraduates_includes_first_time_first_year": 2170,
+    "asian_total_undergraduates_both_degree_and_non_degree_seeking": 2199,
+    "native_hawaiian_pacific_islander_degree_seeking_first_time_first_year": 2,
+    "native_hawaiian_pacific_islander_degree_seeking_undergraduates_includes_first_time_first_year": 14,
+    "native_hawaiian_pacific_islander_total_undergraduates_both_degree_and_non_degree_seeking": 16,
+    "two_or_more_races_degree_seeking_first_time_first_year": 141,
+    "two_or_more_races_degree_seeking_undergraduates_includes_first_time_first_year": 724,
+    "two_or_more_races_total_undergraduates_both_degree_and_non_degree_seeking": 724,
+    "race_ethnicity_unknown_degree_seeking_first_time_first_year": 5,
+    "race_ethnicity_unknown_degree_seeking_undergraduates_includes_first_time_first_year": 35,
+    "race_ethnicity_unknown_total_undergraduates_both_degree_and_non_degree_seeking": 39,
+    "total_degree_seeking_first_time_first_year": 1693,
+    "total_degree_seeking_undergraduates_includes_first_time_first_year": 7554,
+    "total_total_undergraduates_both_degree_and_non_degree_seeking": 7904
+  },
+  "number_of_degrees_awarded": {
+    "certificate_diploma": 0,
+    "associate_degrees": 0,
+    "bachelors_degrees": 1828,
+    "postbachelors_certificates": 0,
+    "masters_degrees": 2634,
+    "postmasters_certificates": 0,
+    "doctoral_degrees_research_scholarship": 739,
+    "doctoral_degrees_professional_practice": 275,
+    "doctoral_degrees_other": 0,
+    "start_date": "July 1, 2023",
+    "end_date": "June 30, 2024"
+  },
+  "first_time_first_year_student_applicants": {
+    "total_first_time_first_year_men_who_applied": 29602,
+    "total_first_time_first_year_women_who_applied": 27724,
+    "total_first_time_first_year_another_gender_who_applied": 0,
+    "total_first_time_first_year_unknown_gender_who_applied": 0
+  }
+}

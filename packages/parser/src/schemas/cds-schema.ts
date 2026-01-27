@@ -1,0 +1,741 @@
+import z from "zod/v3";
+
+export const cdsSchema = z.object({
+  // A2
+  source_of_institutional_control: z.enum(["public", "private", "proprietary"]).describe("A2: Source of institutional control"),
+  // A3
+  undergraduate_institution_classification: z.enum(["coed", "mens", "womens"]).describe("A3: Classify your undergraduate institution"),
+  // A4
+  academic_year_calendar: z.enum(["semester", "quarter", "trimester", "4-1-4", "continuous", "differs_by_program", "other"]).describe("A4: Academic year calendar"),
+  // A5
+  degrees_offered: z
+    .array(
+      z.enum([
+        "certificate",
+        "diploma",
+        "associate",
+        "transfer_associate",
+        "terminal_associate",
+        "bachelors",
+        "postbachelors_certificate",
+        "masters",
+        "postmasters_certificate",
+        "doctoral_degree_research_scholarship",
+        "doctoral_degree_professional_practice",
+        "doctoral_degree_other",
+      ]),
+    )
+    .describe("A5: Degrees offered by your institution"),
+  // B1
+  undergraduate_students_full_time: z
+    .object({
+      degree_seeking_first_time_first_year_men: z.number().describe("B1: Degree-seeking, first-time first-year students Men"),
+      degree_seeking_first_time_first_year_women: z.number().describe("B1: Degree-seeking, first-time first-year students Women"),
+      degree_seeking_first_time_first_year_another_gender: z.number().describe("B1: Degree-seeking, first-time first-year students Another Gender"),
+      degree_seeking_first_time_first_year_unknown: z.number().describe("B1: Degree-seeking, first-time first-year students Unknown"),
+      other_first_year_degree_seeking_men: z.number().describe("B1: Other first-year, degree-seeking Men"),
+      other_first_year_degree_seeking_women: z.number().describe("B1: Other first-year, degree-seeking Women"),
+      other_first_year_degree_seeking_another_gender: z.number().describe("B1: Other first-year, degree-seeking Another Gender"),
+      other_first_year_degree_seeking_unknown: z.number().describe("B1: Other first-year, degree-seeking Unknown"),
+      all_other_degree_seeking_men: z.number().describe("B1: All other degree-seeking Men"),
+      all_other_degree_seeking_women: z.number().describe("B1: All other degree-seeking Women"),
+      all_other_degree_seeking_another_gender: z.number().describe("B1: All other degree-seeking Another Gender"),
+      all_other_degree_seeking_unknown: z.number().describe("B1: All other degree-seeking Unknown"),
+      total_degree_seeking_men: z.number().describe("B1: Total degree-seeking Men"),
+      total_degree_seeking_women: z.number().describe("B1: Total degree-seeking Women"),
+      total_degree_seeking_another_gender: z.number().describe("B1: Total degree-seeking Another Gender"),
+      total_degree_seeking_unknown: z.number().describe("B1: Total degree-seeking Unknown"),
+      all_other_undergraduates_enrolled_in_credit_courses_men: z.number().describe("B1: All other undergraduates enrolled in credit courses Men"),
+      all_other_undergraduates_enrolled_in_credit_courses_women: z.number().describe("B1: All other undergraduates enrolled in credit courses Women"),
+      all_other_undergraduates_enrolled_in_credit_courses_another_gender: z.number().describe("B1: All other undergraduates enrolled in credit courses Another Gender"),
+      all_other_undergraduates_enrolled_in_credit_courses_unknown: z.number().describe("B1: All other undergraduates enrolled in credit courses Unknown"),
+      total_undergraduate_full_time_students_men: z.number().describe("B1: Total undergraduate Full-Time Students Men"),
+      total_undergraduate_full_time_students_women: z.number().describe("B1: Total undergraduate Full-Time Students Women"),
+      total_undergraduate_full_time_students_another_gender: z.number().describe("B1: Total undergraduate Full-Time Students Another Gender"),
+      total_undergraduate_full_time_students_unknown: z.number().describe("B1: Total undergraduate Full-Time Students Unknown"),
+    })
+    .describe("B1: Undergraduate Students: Full-Time"),
+  undergraduate_students_part_time: z
+    .object({
+      degree_seeking_first_time_first_year_men: z.number().describe("B1: Degree-seeking, first-time first-year students Men"),
+      degree_seeking_first_time_first_year_women: z.number().describe("B1: Degree-seeking, first-time first-year students Women"),
+      degree_seeking_first_time_first_year_another_gender: z.number().describe("B1: Degree-seeking, first-time first-year students Another Gender"),
+      degree_seeking_first_time_first_year_unknown: z.number().describe("B1: Degree-seeking, first-time first-year students Unknown"),
+      other_first_year_degree_seeking_men: z.number().describe("B1: Other first-year, degree-seeking Men"),
+      other_first_year_degree_seeking_women: z.number().describe("B1: Other first-year, degree-seeking Women"),
+      other_first_year_degree_seeking_another_gender: z.number().describe("B1: Other first-year, degree-seeking Another Gender"),
+      other_first_year_degree_seeking_unknown: z.number().describe("B1: Other first-year, degree-seeking Unknown"),
+      all_other_degree_seeking_men: z.number().describe("B1: All other degree-seeking Men"),
+      all_other_degree_seeking_women: z.number().describe("B1: All other degree-seeking Women"),
+      all_other_degree_seeking_another_gender: z.number().describe("B1: All other degree-seeking Another Gender"),
+      all_other_degree_seeking_unknown: z.number().describe("B1: All other degree-seeking Unknown"),
+      total_degree_seeking_men: z.number().describe("B1: Total degree-seeking Men"),
+      total_degree_seeking_women: z.number().describe("B1: Total degree-seeking Women"),
+      total_degree_seeking_another_gender: z.number().describe("B1: Total degree-seeking Another Gender"),
+      total_degree_seeking_unknown: z.number().describe("B1: Total degree-seeking Unknown"),
+      all_other_undergraduates_enrolled_in_credit_courses_men: z.number().describe("B1: All other undergraduates enrolled in credit courses Men"),
+      all_other_undergraduates_enrolled_in_credit_courses_women: z.number().describe("B1: All other undergraduates enrolled in credit courses Women"),
+      all_other_undergraduates_enrolled_in_credit_courses_another_gender: z.number().describe("B1: All other undergraduates enrolled in credit courses Another Gender"),
+      all_other_undergraduates_enrolled_in_credit_courses_unknown: z.number().describe("B1: All other undergraduates enrolled in credit courses Unknown"),
+      total_undergraduate_part_time_students_men: z.number().describe("B1: Total undergraduate Part-Time Students Men"),
+      total_undergraduate_part_time_students_women: z.number().describe("B1: Total undergraduate Part-Time Students Women"),
+      total_undergraduate_part_time_students_another_gender: z.number().describe("B1: Total undergraduate Part-Time Students Another Gender"),
+      total_undergraduate_part_time_students_unknown: z.number().describe("B1: Total undergraduate Part-Time Students Unknown"),
+    })
+    .describe("B1: Undergraduate Students: Part-Time"),
+  undergraduate_students_all: z
+    .object({
+      total_undergraduate_students_men: z.number().describe("B1: Total undergraduate Students Men"),
+      total_undergraduate_students_women: z.number().describe("B1: Total undergraduate Students Women"),
+      total_undergraduate_students_another_gender: z.number().describe("B1: Total undergraduate Students Another Gender"),
+      total_undergraduate_students_unknown: z.number().describe("B1: Total undergraduate Students Unknown"),
+    })
+    .describe("B1: Undergraduate Students: All"),
+  graduate_students_full_time: z
+    .object({
+      degree_seeking_first_time_men: z.number().describe("B1: Degree-seeking, first-time Men"),
+      degree_seeking_first_time_women: z.number().describe("B1: Degree-seeking, first-time Women"),
+      degree_seeking_first_time_another_gender: z.number().describe("B1: Degree-seeking, first-time Another Gender"),
+      degree_seeking_first_time_unknown: z.number().describe("B1: Degree-seeking, first-time Unknown"),
+      all_other_degree_seeking_men: z.number().describe("B1: All other degree-seeking Men"),
+      all_other_degree_seeking_women: z.number().describe("B1: All other degree-seeking Women"),
+      all_other_degree_seeking_another_gender: z.number().describe("B1: All other degree-seeking Another Gender"),
+      all_other_degree_seeking_unknown: z.number().describe("B1: All other degree-seeking Unknown"),
+      all_other_graduates_enrolled_in_credit_courses_men: z.number().describe("B1: All other graduates enrolled in credit courses Men"),
+      all_other_graduates_enrolled_in_credit_courses_women: z.number().describe("B1: All other graduates enrolled in credit courses Women"),
+      all_other_graduates_enrolled_in_credit_courses_another_gender: z.number().describe("B1: All other graduates enrolled in credit courses Another Gender"),
+      all_other_graduates_enrolled_in_credit_courses_unknown: z.number().describe("B1: All other graduates enrolled in credit courses Unknown"),
+      total_graduate_full_time_students_men: z.number().describe("B1: Total graduate Full-Time Students Men"),
+      total_graduate_full_time_students_women: z.number().describe("B1: Total graduate Full-Time Students Women"),
+      total_graduate_full_time_students_another_gender: z.number().describe("B1: Total graduate Full-Time Students Another Gender"),
+      total_graduate_full_time_students_unknown: z.number().describe("B1: Total graduate Full-Time Students Unknown"),
+    })
+    .describe("B1: Graduate Students: Full-Time"),
+  graduate_students_part_time: z
+    .object({
+      degree_seeking_first_time_men: z.number().describe("B1: Degree-seeking, first-time Men"),
+      degree_seeking_first_time_women: z.number().describe("B1: Degree-seeking, first-time Women"),
+      degree_seeking_first_time_another_gender: z.number().describe("B1: Degree-seeking, first-time Another Gender"),
+      degree_seeking_first_time_unknown: z.number().describe("B1: Degree-seeking, first-time Unknown"),
+      all_other_degree_seeking_men: z.number().describe("B1: All other degree-seeking Men"),
+      all_other_degree_seeking_women: z.number().describe("B1: All other degree-seeking Women"),
+      all_other_degree_seeking_another_gender: z.number().describe("B1: All other degree-seeking Another Gender"),
+      all_other_degree_seeking_unknown: z.number().describe("B1: All other degree-seeking Unknown"),
+      all_other_graduates_enrolled_in_credit_courses_men: z.number().describe("B1: All other graduates enrolled in credit courses Men"),
+      all_other_graduates_enrolled_in_credit_courses_women: z.number().describe("B1: All other graduates enrolled in credit courses Women"),
+      all_other_graduates_enrolled_in_credit_courses_another_gender: z.number().describe("B1: All other graduates enrolled in credit courses Another Gender"),
+      all_other_graduates_enrolled_in_credit_courses_unknown: z.number().describe("B1: All other graduates enrolled in credit courses Unknown"),
+      total_graduate_part_time_students_men: z.number().describe("B1: Total graduate Part-Time Students Men"),
+      total_graduate_part_time_students_women: z.number().describe("B1: Total graduate Part-Time Students Women"),
+      total_graduate_part_time_students_another_gender: z.number().describe("B1: Total graduate Part-Time Students Another Gender"),
+      total_graduate_part_time_students_unknown: z.number().describe("B1: Total graduate Part-Time Students Unknown"),
+    })
+    .describe("B1: Graduate Students: Part-Time"),
+  graduate_students_all: z
+    .object({
+      total_graduate_students_men: z.number().describe("B1: Total Graduate Students Men"),
+      total_graduate_students_women: z.number().describe("B1: Total Graduate Students Women"),
+      total_graduate_students_another_gender: z.number().describe("B1: Total Graduate Students Another Gender"),
+      total_graduate_students_unknown: z.number().describe("B1: Total Graduate Students Unknown"),
+    })
+    .describe("B1: Graduate Students: All"),
+  all_students_total: z
+    .object({
+      total_all_students_men: z.number().describe("B1: Total all students Men"),
+      total_all_students_women: z.number().describe("B1: Total all students Women"),
+      total_all_students_another_gender: z.number().describe("B1: Total all students Another Gender"),
+      total_all_students_unknown: z.number().describe("B1: Total all students Unknown"),
+    })
+    .describe("B1: All Students: Total"),
+  total_all_undergraduates: z.number().describe("B1: Total all undergraduates"),
+  total_all_graduate: z.number().describe("B1: Total all graduate"),
+  grand_total_all_students: z.number().describe("B1: GRAND TOTAL ALL STUDENTS"),
+  // B2
+  enrollment_by_racial_ethnic_category: z
+    .object({
+      nonresidents_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year Nonresidents"),
+      nonresidents_degree_seeking_undergraduates_includes_first_time_first_year: z.number().describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Nonresidents"),
+      nonresidents_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) Nonresidents"),
+      hispanic_latino_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year Hispanic/Latino"),
+      hispanic_latino_degree_seeking_undergraduates_includes_first_time_first_year: z.number().describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Hispanic/Latino"),
+      hispanic_latino_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) Hispanic/Latino"),
+      black_african_american_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year Black or African American, non-Hispanic"),
+      black_african_american_degree_seeking_undergraduates_includes_first_time_first_year: z.number().describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Black or African American, non-Hispanic"),
+      black_african_american_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) Black or African American, non-Hispanic"),
+      white_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year White, non-Hispanic"),
+      white_degree_seeking_undergraduates_includes_first_time_first_year: z.number().describe("B2: Degree-Seeking Undergraduates (include first-time first-year) White, non-Hispanic"),
+      white_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) White, non-Hispanic"),
+      american_indian_alaska_native_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year American Indian or Alaska Native, non-Hispanic"),
+      american_indian_alaska_native_degree_seeking_undergraduates_includes_first_time_first_year: z.number().describe("B2: Degree-Seeking Undergraduates (include first-time first-year) American Indian or Alaska Native, non-Hispanic"),
+      american_indian_alaska_native_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) American Indian or Alaska Native, non-Hispanic"),
+      asian_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year Asian, non-Hispanic"),
+      asian_degree_seeking_undergraduates_includes_first_time_first_year: z.number().describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Asian, non-Hispanic"),
+      asian_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) Asian, non-Hispanic"),
+      native_hawaiian_pacific_islander_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year Native Hawaiian or other Pacific Islander, non-Hispanic"),
+      native_hawaiian_pacific_islander_degree_seeking_undergraduates_includes_first_time_first_year: z
+        .number()
+        .describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Native Hawaiian or other Pacific Islander, non-Hispanic"),
+      native_hawaiian_pacific_islander_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) Native Hawaiian or other Pacific Islander, non-Hispanic"),
+      two_or_more_races_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year Two or more races, non-Hispanic"),
+      two_or_more_races_degree_seeking_undergraduates_includes_first_time_first_year: z.number().describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Two or more races, non-Hispanic"),
+      two_or_more_races_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) Two or more races, non-Hispanic"),
+      race_ethnicity_unknown_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year Race and/or ethnicity unknown"),
+      race_ethnicity_unknown_degree_seeking_undergraduates_includes_first_time_first_year: z.number().describe("B2: Degree-Seeking Undergraduates (include first-time first-year) Race and/or ethnicity unknown"),
+      race_ethnicity_unknown_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) Race and/or ethnicity unknown"),
+      total_degree_seeking_first_time_first_year: z.number().describe("B2: Degree-Seeking First-Time First-Year TOTAL"),
+      total_degree_seeking_undergraduates_includes_first_time_first_year: z.number().describe("B2: Degree-Seeking Undergraduates (include first-time first-year) TOTAL"),
+      total_total_undergraduates_both_degree_and_non_degree_seeking: z.number().describe("B2: Total Undergraduates (both degree & non-degree-seeking) TOTAL"),
+    })
+    .describe("B2: Enrollment by Racial/Ethnic Category"),
+  // B3
+  number_of_degrees_awarded: z
+    .object({
+      certificate_diploma: z.number().describe("B3: Certificate/diploma"),
+      associate_degrees: z.number().describe("B3: Associate degrees"),
+      bachelors_degrees: z.number().describe("B3: Bachelor's degrees"),
+      postbachelors_certificates: z.number().describe("B3: Postbachelor's certificates"),
+      masters_degrees: z.number().describe("B3: Master's degrees"),
+      postmasters_certificates: z.number().describe("B3: Post-Master's certificates"),
+      doctoral_degrees_research_scholarship: z.number().describe("B3: Doctoral degrees — research/scholarship"),
+      doctoral_degrees_professional_practice: z.number().describe("B3: Doctoral degrees — professional practice"),
+      doctoral_degrees_other: z.number().describe("B3: Doctoral degrees — other"),
+      start_date: z.string().describe("B3: Start date, e.g. July 1, 2023"),
+      end_date: z.string().describe("B3: End date, e.g. June 30, 2024"),
+    })
+    .describe("B3: Number of degrees awarded by your institution from [start_date] to [end_date]."),
+  // C1
+  first_time_first_year_student_applicants: z
+    .object({
+      total_first_time_first_year_men_who_applied: z.number().describe("C1: Total first-time, first-year men who applied"),
+      total_first_time_first_year_women_who_applied: z.number().describe("C1: Total first-time, first-year women who applied"),
+      total_first_time_first_year_another_gender_who_applied: z.number().describe("C1: Total first-time, first-year another gender who applied"),
+      total_first_time_first_year_unknown_gender_who_applied: z.number().describe("C1: Total first-time, first-year unknown gender who applied"),
+    })
+    .describe("C1: First-Time, First-Year Student Applicants"),
+  first_time_first_year_student_admits: z
+    .object({
+      total_first_time_first_year_men_who_were_admitted: z.number().describe("C1: Total first-time, first-year men who were admitted"),
+      total_first_time_first_year_women_who_were_admitted: z.number().describe("C1: Total first-time, first-year women who were admitted"),
+      total_first_time_first_year_another_gender_who_were_admitted: z.number().describe("C1: Total first-time, first-year another gender who were admitted"),
+      total_first_time_first_year_unknown_gender_who_were_admitted: z.number().describe("C1: Total first-time, first-year unknown gender who were admitted"),
+    })
+    .describe("C1: First-Time, First-Year Student Admits"),
+  first_time_first_year_student_enrollees_by_status: z
+    .object({
+      total_full_time_first_time_first_year_men_who_enrolled: z.number().describe("Total full-time, first-time, first-year men who enrolled"),
+      total_part_time_first_time_first_year_men_who_enrolled: z.number().describe("Total part-time, first-time, first-year men who enrolled"),
+      total_full_time_first_time_first_year_women_who_enrolled: z.number().describe("Total full-time, first-time, first-year women who enrolled"),
+      total_part_time_first_time_first_year_women_who_enrolled: z.number().describe("Total part-time, first-time, first-year women who enrolled"),
+      total_full_time_first_time_first_year_another_gender_who_enrolled: z.number().describe("Total full-time, first-time, first-year another gender who enrolled"),
+      total_part_time_first_time_first_year_another_gender_who_enrolled: z.number().describe("Total part-time, first-time, first-year another gender who enrolled"),
+      total_full_time_first_time_first_year_unknown_gender_who_enrolled: z.number().describe("Total full-time, first-time, first-year unknown gender who enrolled"),
+      total_part_time_first_time_first_year_unknown_gender_who_enrolled: z.number().describe("Total part-time, first-time, first-year unknown gender who enrolled"),
+    })
+    .describe("C1: First-Time, First-Year Student Enrollees by Status"),
+  residency_breakdowns_for_total_applicants_admits_and_enrollees: z
+    .object({
+      total_total_first_time_first_year_who_applied: z.number().optional().describe("C1: Total Total first-time, first-year who applied"),
+      in_state_total_first_time_first_year_who_applied: z.number().optional().describe("C1: In-State Total first-time, first-year who applied"),
+      out_of_state_total_first_time_first_year_who_applied: z.number().optional().describe("C1: Out-of-State Total first-time, first-year who applied"),
+      international_total_first_time_first_year_who_applied: z.number().optional().describe("C1: International Total first-time, first-year who applied"),
+      unknown_total_first_time_first_year_who_applied: z.number().optional().describe("C1: Unknown Total first-time, first-year who applied"),
+      total_total_first_time_first_year_who_were_admitted: z.number().optional().describe("C1: Total Total first-time, first-year who were admitted"),
+      in_state_total_first_time_first_year_who_were_admitted: z.number().optional().describe("C1: In-State Total first-time, first-year who were admitted"),
+      out_of_state_total_first_time_first_year_who_were_admitted: z.number().optional().describe("C1: Out-of-State Total first-time, first-year who were admitted"),
+      international_total_first_time_first_year_who_were_admitted: z.number().optional().describe("C1: International Total first-time, first-year who were admitted"),
+      unknown_total_first_time_first_year_who_were_admitted: z.number().optional().describe("C1: Unknown Total first-time, first-year who were admitted"),
+      total_total_first_time_first_year_who_enrolled: z.number().optional().describe("C1: Total Total first-time, first-year who enrolled"),
+      in_state_total_first_time_first_year_who_enrolled: z.number().optional().describe("C1: In-State Total first-time, first-year who enrolled"),
+      out_of_state_total_first_time_first_year_who_enrolled: z.number().optional().describe("C1: Out-of-State Total first-time, first-year who enrolled"),
+      international_total_first_time_first_year_who_enrolled: z.number().optional().describe("C1: International Total first-time, first-year who enrolled"),
+      unknown_total_first_time_first_year_who_enrolled: z.number().optional().describe("C1: Unknown Total first-time, first-year who enrolled"),
+    })
+    .describe("C1: If available, please provide residency breakdowns for total applicants, admits, and enrolled students"),
+  // C2
+  first_time_first_year_waitlisted_students: z
+    .object({
+      has_waitlist_policy: z.boolean().optional().describe("C2: Do you have a policy of placing students on a waiting list?"),
+      number_of_qualified_applicants_offered_a_place_on_waiting_list: z.number().optional().describe("C2: Number of qualified applicants offered a place on waiting list"),
+      number_accepting_a_place_on_the_waiting_list: z.number().optional().describe("C2: Number accepting a place on the waiting list"),
+      number_of_waitlisted_students_admitted: z.number().optional().describe("C2: Number of wait-listed students admitted"),
+      waitlist_is_ranked: z.boolean().optional().describe("C2: Is your waiting list ranked?"),
+      waitlist_rank_released_to_students: z.boolean().optional().describe("C2: If yes, do you release that information to students?"),
+      waitlist_rank_released_to_school_counselors: z.boolean().optional().describe("C2: Do you release that information to school counselors?"),
+    })
+    .describe("C2: First-time, first-year waitlisted students"),
+  // C3
+  high_school_completion_requirement: z
+    .object({
+      high_school_diploma_required_and_ged_is_accepted: z.boolean().optional().describe("C3: High school diploma is required and GED is accepted"),
+      high_school_diploma_required_and_ged_is_not_accepted: z.boolean().optional().describe("C3: High school diploma is required and GED is not accepted"),
+      high_school_diploma_or_equivalent_is_not_required: z.boolean().optional().describe("C3: High school diploma or equivalent is not required"),
+    })
+    .describe("C3: High school completion requirement"),
+  // C4
+  require_or_recommend_general_college_preparatory_program: z
+    .object({
+      require: z.boolean().optional().describe("C4: Require"),
+      recommend: z.boolean().optional().describe("C4: Recommend"),
+      neither_require_nor_recommend: z.boolean().optional().describe("C4: Neither require nor recommend"),
+    })
+    .describe("C4: Does your institution require or recommend a general college-preparatory program for degree-seeking students?"),
+  // C5
+  distribution_of_high_school_units_required_and_or_recommended: z
+    .object({
+      total_academic_units_required: z.number().optional().describe("C5: Total academic units: Units Required"),
+      total_academic_units_recommended: z.number().optional().describe("C5: Total academic units: Units Recommended"),
+      english_required: z.number().optional().describe("C5: English: Units Required"),
+      english_recommended: z.number().optional().describe("C5: English: Units Recommended"),
+      mathematics_required: z.number().optional().describe("C5: Mathematics: Units Required"),
+      mathematics_recommended: z.number().optional().describe("C5: Mathematics: Units Recommended"),
+      science_required: z.number().optional().describe("C5: Science: Units Required"),
+      science_recommended: z.number().optional().describe("C5: Science: Units Recommended"),
+      science_lab_required: z.number().optional().describe("C5: Science, Of these, units that must be lab: Units Required"),
+      science_lab_recommended: z.number().optional().describe("C5: Science, Of these, units that must be lab: Units Recommended"),
+      foreign_language_required: z.number().optional().describe("C5: Foreign language: Units Required"),
+      foreign_language_recommended: z.number().optional().describe("C5: Foreign language: Units Recommended"),
+      social_studies_required: z.number().optional().describe("C5: Social studies: Units Required"),
+      social_studies_recommended: z.number().optional().describe("C5: Social studies: Units Recommended"),
+      history_required: z.number().optional().describe("C5: History: Units Required"),
+      history_recommended: z.number().optional().describe("C5: History: Units Recommended"),
+      academic_electives_required: z.number().optional().describe("C5: Academic electives: Units Required"),
+      academic_electives_recommended: z.number().optional().describe("C5: Academic electives: Units Recommended"),
+      computer_science_required: z.number().optional().describe("C5: Computer Science: Units Required"),
+      computer_science_recommended: z.number().optional().describe("C5: Computer Science: Units Recommended"),
+      visual_performing_arts_required: z.number().optional().describe("C5: Visual/Performing Arts: Units Required"),
+      visual_performing_arts_recommended: z.number().optional().describe("C5: Visual/Performing Arts: Units Recommended"),
+      other_required: z.number().optional().describe("C5: Visual/Performing Arts: Other (specify) Required"),
+      other_recommended: z.number().optional().describe("C5: Visual/Performing Arts: Other (specify) Recommended"),
+    })
+    .describe("C5: Distribution of high school units required and/or recommended"),
+  // C6
+  open_admission_policy: z
+    .object({
+      open_admission_policy_as_described_above_for_all_students: z.boolean().optional().describe("C6: Open admission policy as described above for all students"),
+      selective_admission_for_out_of_state_students: z.boolean().optional().describe("C6: selective admission for out-of-state students"),
+      selective_admission_to_some_programs: z.boolean().optional().describe("C6: selective admission to some programs"),
+      other: z.boolean().optional().describe("C6: other (explain)"),
+    })
+    .describe("C6: Do you have an open admission policy, under which virtually all secondary school graduates or students with GED equivalency diplomas are admitted without regard to academic record, test scores, or other qualifications?"),
+  // C7
+  relative_importance_of_academic_non_academic_factors: z
+    .object({
+      rigor_of_secondary_school_record: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Rigor of secondary school record"),
+      class_rank: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Class rank"),
+      academic_gpa: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Academic GPA"),
+      standardized_test_scores: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Standardized test scores"),
+      application_essay: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Application Essay"),
+      recommendations: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Recommendation(s)"),
+      interview: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Interview"),
+      extracurricular_activities: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Extracurricular activities"),
+      talent_ability: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Talent/ability"),
+      character_personal_qualities: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Character/personal qualities"),
+      first_generation: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: First generation"),
+      alumni_relation: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Alumni/ae relation"),
+      geographical_residence: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Geographical residence"),
+      state_residency: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: State residency"),
+      religious_affiliation_commitment: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Religious affiliation/commitment"),
+      volunteer_work: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Volunteer work"),
+      work_experience: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Work experience"),
+      level_of_applicants_interest: z.enum(["very_important", "important", "considered", "not_considered"]).optional().describe("C7: Level of applicant's interest"),
+    })
+    .describe("C7: Relative importance of academic and nonacademic factors in your first-time, first-year, degree-seeking general (not including programs with specific criteria) admissions decisions"),
+  // C8
+  sat_and_act_policies: z
+    .object({
+      use_sat_act_in_admission_decisions: z.boolean().optional().describe("C8: Does your institution make use of SAT or ACT scores in admission decisions for first-time, first-year, degree-seeking applicants?"),
+      sat_or_act_policy: z.enum(["required_to_be_considered", "required_for_some", "recommended", "not_required_but_considered", "not_considered"]).optional().describe("C8A: SAT or ACT"),
+      act_policy: z.enum(["required_to_be_considered", "required_for_some", "recommended", "not_required_but_considered", "not_considered"]).optional().describe("C8A: ACT Only"),
+      sat_policy: z.enum(["required_to_be_considered", "required_for_some", "recommended", "not_required_but_considered", "not_considered"]).optional().describe("C8A: SAT Only"),
+      uses_test_scores_for_academic_advising: z.boolean().optional().describe("C8D: In addition, does your institution use applicants' test scores for academic advising?"),
+      latest_date_for_sat_or_act_scores: z.string().optional().describe("C8E: Latest date by which SAT or ACT scores must be received for fall-term admission"),
+      clarification_for_test_policy: z.string().optional().describe("C8F: If necessary, use this space to clarify your test policies"),
+      tests_used_for_placement: z.array(z.enum(["sat", "act", "ap", "clep", "institutional_exam", "state_exam"])).describe("C8G: Please indicate which tests your institution uses for placement (e.g., state tests)"),
+    })
+    .describe("C8: SAT and ACT policies"),
+  // C9
+  sat_act_first_time_first_year: z
+    .object({
+      percent_submitting_sat_scores: z.number().describe("C9: Percent Submitting SAT Scores, from 0% to 100%"),
+      number_submitting_sat_scores: z.number().describe("C9: Number Submitting SAT Scores"),
+      percent_submitting_act_scores: z.number().describe("C9: Submitting ACT Scores, from 0% to 100%"),
+      number_submitting_act_scores: z.number().describe("C9: Number Submitting ACT Scores"),
+    })
+    .describe("C9: Percent and number of first-time, first-year students enrolled who submitted national standardized (SAT/ACT) test scores"),
+  sat_act_score_percentiles: z
+    .object({
+      sat_composite_25th_percentile: z.number().optional().describe("C9: SAT Composite 25th Percentile"),
+      sat_composite_50th_percentile: z.number().optional().describe("C9: SAT Composite 50th Percentile"),
+      sat_composite_75th_percentile: z.number().optional().describe("C9: SAT Composite 75th Percentile"),
+      sat_ebrw_25th_percentile: z.number().optional().describe("C9: SAT Evidence-Based Reading and Writing 25th Percentile"),
+      sat_ebrw_50th_percentile: z.number().optional().describe("C9: SAT Evidence-Based Reading and Writing 50th Percentile"),
+      sat_ebrw_75th_percentile: z.number().optional().describe("C9: SAT Evidence-Based Reading and Writing 75th Percentile"),
+      sat_math_25th_percentile: z.number().optional().describe("C9: SAT Math 25th Percentile"),
+      sat_math_50th_percentile: z.number().optional().describe("C9: SAT Math 50th Percentile"),
+      sat_math_75th_percentile: z.number().optional().describe("C9: SAT Math 75th Percentile"),
+      act_composite_25th_percentile: z.number().optional().describe("C9: ACT Composite 25th Percentile"),
+      act_composite_50th_percentile: z.number().optional().describe("C9: ACT Composite 50th Percentile"),
+      act_composite_75th_percentile: z.number().optional().describe("C9: ACT Composite 75th Percentile"),
+      act_math_25th_percentile: z.number().optional().describe("C9: ACT Math 25th Percentile"),
+      act_math_50th_percentile: z.number().optional().describe("C9: ACT Math 50th Percentile"),
+      act_math_75th_percentile: z.number().optional().describe("C9: ACT Math 75th Percentile"),
+      act_english_25th_percentile: z.number().optional().describe("C9: ACT English 25th Percentile"),
+      act_english_50th_percentile: z.number().optional().describe("C9: ACT English 50th Percentile"),
+      act_english_75th_percentile: z.number().optional().describe("C9: ACT English 75th Percentile"),
+      act_writing_25th_percentile: z.number().optional().describe("C9: ACT Writing 25th Percentile"),
+      act_writing_50th_percentile: z.number().optional().describe("C9: ACT Writing 50th Percentile"),
+      act_writing_75th_percentile: z.number().optional().describe("C9: ACT Writing 75th Percentile"),
+      act_science_25th_percentile: z.number().optional().describe("C9: ACT Science 25th Percentile"),
+      act_science_50th_percentile: z.number().optional().describe("C9: ACT Science 50th Percentile"),
+      act_science_75th_percentile: z.number().optional().describe("C9: ACT Science 75th Percentile"),
+      act_reading_25th_percentile: z.number().optional().describe("C9: ACT Reading 25th Percentile"),
+      act_reading_50th_percentile: z.number().optional().describe("C9: ACT Reading 50th Percentile"),
+      act_reading_75th_percentile: z.number().optional().describe("C9: ACT Reading 75th Percentile"),
+    })
+    .describe("C9: For each assessment below, report the score that represents the 25th and 75th percentile score"),
+  sat_score_percentages: z
+    .object({
+      sat_ebrw_percent_score_700_to_800: z.number().min(0).max(100).optional().describe("C9: Score Range 700-800, SAT Evidence-Based Reading and Writing, from 0% to 100%"),
+      sat_ebrw_percent_score_600_to_699: z.number().min(0).max(100).optional().describe("C9: Score Range 600-699, SAT Evidence-Based Reading and Writing, from 0% to 100%"),
+      sat_ebrw_percent_score_500_to_599: z.number().min(0).max(100).optional().describe("C9: Score Range 500-599, SAT Evidence-Based Reading and Writing, from 0% to 100%"),
+      sat_ebrw_percent_score_400_to_499: z.number().min(0).max(100).optional().describe("C9: Score Range 400-499, SAT Evidence-Based Reading and Writing, from 0% to 100%"),
+      sat_ebrw_percent_score_300_to_399: z.number().min(0).max(100).optional().describe("C9: Score Range 300-399, SAT Evidence-Based Reading and Writing, from 0% to 100%"),
+      sat_ebrw_percent_score_200_to_299: z.number().min(0).max(100).optional().describe("C9: Score Range 200-299, SAT Evidence-Based Reading and Writing, from 0% to 100%"),
+      sat_math_percent_score_700_to_800: z.number().min(0).max(100).optional().describe("C9: Score Range 700-800, SAT Math, from 0% to 100%"),
+      sat_math_percent_score_600_to_699: z.number().min(0).max(100).optional().describe("C9: Score Range 600-699, SAT Math, from 0% to 100%"),
+      sat_math_percent_score_500_to_599: z.number().min(0).max(100).optional().describe("C9: Score Range 500-599, SAT Math, from 0% to 100%"),
+      sat_math_percent_score_400_to_499: z.number().min(0).max(100).optional().describe("C9: Score Range 400-499, SAT Math, from 0% to 100%"),
+      sat_math_percent_score_300_to_399: z.number().min(0).max(100).optional().describe("C9: Score Range 300-399, SAT Math, from 0% to 100%"),
+      sat_math_percent_score_200_to_299: z.number().min(0).max(100).optional().describe("C9: Score Range 200-299, SAT Math, from 0% to 100%"),
+      sat_composite_percent_score_1400_to_1600: z.number().min(0).max(100).optional().describe("C9: Score Range 1400-1600, SAT Composite, from 0% to 100%"),
+      sat_composite_percent_score_1200_to_1399: z.number().min(0).max(100).optional().describe("C9: Score Range 1200-1399, SAT Composite, from 0% to 100%"),
+      sat_composite_percent_score_1000_to_1199: z.number().min(0).max(100).optional().describe("C9: Score Range 1000-1199, SAT Composite, from 0% to 100%"),
+      sat_composite_percent_score_800_to_999: z.number().min(0).max(100).optional().describe("C9: Score Range 800-999, SAT Composite, from 0% to 100%"),
+      sat_composite_percent_score_600_to_799: z.number().min(0).max(100).optional().describe("C9: Score Range 600-799, SAT Composite, from 0% to 100%"),
+      sat_composite_percent_score_400_to_599: z.number().min(0).max(100).optional().describe("C9: Score Range 400-599, SAT Composite, from 0% to 100%"),
+    })
+    .describe("C9: Percent of first-time, first-year students with scores in each range"),
+  act_score_percentages: z
+    .object({
+      act_composite_percent_score_30_to_36: z.number().min(0).max(100).optional().describe("C9: Score Range 30-36, ACT Composite, from 0% to 100%"),
+      act_composite_percent_score_24_to_39: z.number().min(0).max(100).optional().describe("C9: Score Range 24-39, ACT Composite, from 0% to 100%"),
+      act_composite_percent_score_18_to_23: z.number().min(0).max(100).optional().describe("C9: Score Range 18-23, ACT Composite, from 0% to 100%"),
+      act_composite_percent_score_12_to_17: z.number().min(0).max(100).optional().describe("C9: Score Range 12-17, ACT Composite, from 0% to 100%"),
+      act_composite_percent_score_6_to_11: z.number().min(0).max(100).optional().describe("C9: Score Range 6-11, ACT Composite, from 0% to 100%"),
+      act_composite_percent_score_below_6: z.number().min(0).max(100).optional().describe("C9: Score Below 6, ACT Composite, from 0% to 100%"),
+      act_english_percent_score_30_to_36: z.number().min(0).max(100).optional().describe("C9: Score Range 30-36, ACT English, from 0% to 100%"),
+      act_english_percent_score_24_to_39: z.number().min(0).max(100).optional().describe("C9: Score Range 24-39, ACT English, from 0% to 100%"),
+      act_english_percent_score_18_to_23: z.number().min(0).max(100).optional().describe("C9: Score Range 18-23, ACT English, from 0% to 100%"),
+      act_english_percent_score_12_to_17: z.number().min(0).max(100).optional().describe("C9: Score Range 12-17, ACT English, from 0% to 100%"),
+      act_english_percent_score_6_to_11: z.number().min(0).max(100).optional().describe("C9: Score Range 6-11, ACT English, from 0% to 100%"),
+      act_english_percent_score_below_6: z.number().min(0).max(100).optional().describe("C9: Score Below 6, ACT English, from 0% to 100%"),
+      act_math_percent_score_30_to_36: z.number().min(0).max(100).optional().describe("C9: Score Range 30-36, ACT Math, from 0% to 100%"),
+      act_math_percent_score_24_to_39: z.number().min(0).max(100).optional().describe("C9: Score Range 24-39, ACT Math, from 0% to 100%"),
+      act_math_percent_score_18_to_23: z.number().min(0).max(100).optional().describe("C9: Score Range 18-23, ACT Math, from 0% to 100%"),
+      act_math_percent_score_12_to_17: z.number().min(0).max(100).optional().describe("C9: Score Range 12-17, ACT Math, from 0% to 100%"),
+      act_math_percent_score_6_to_11: z.number().min(0).max(100).optional().describe("C9: Score Range 6-11, ACT Math, from 0% to 100%"),
+      act_math_percent_score_below_6: z.number().min(0).max(100).optional().describe("C9: Score Below 6, ACT Math, from 0% to 100%"),
+      act_reading_percent_score_30_to_36: z.number().min(0).max(100).optional().describe("C9: Score Range 30-36, ACT Reading, from 0% to 100%"),
+      act_reading_percent_score_24_to_39: z.number().min(0).max(100).optional().describe("C9: Score Range 24-39, ACT Reading, from 0% to 100%"),
+      act_reading_percent_score_18_to_23: z.number().min(0).max(100).optional().describe("C9: Score Range 18-23, ACT Reading, from 0% to 100%"),
+      act_reading_percent_score_12_to_17: z.number().min(0).max(100).optional().describe("C9: Score Range 12-17, ACT Reading, from 0% to 100%"),
+      act_reading_percent_score_6_to_11: z.number().min(0).max(100).optional().describe("C9: Score Range 6-11, ACT Reading, from 0% to 100%"),
+      act_reading_percent_score_below_6: z.number().min(0).max(100).optional().describe("C9: Score Below 6, ACT Reading, from 0% to 100%"),
+      act_science_percent_score_30_to_36: z.number().min(0).max(100).optional().describe("C9: Score Range 30-36, ACT Science, from 0% to 100%"),
+      act_science_percent_score_24_to_39: z.number().min(0).max(100).optional().describe("C9: Score Range 24-39, ACT Science, from 0% to 100%"),
+      act_science_percent_score_18_to_23: z.number().min(0).max(100).optional().describe("C9: Score Range 18-23, ACT Science, from 0% to 100%"),
+      act_science_percent_score_12_to_17: z.number().min(0).max(100).optional().describe("C9: Score Range 12-17, ACT Science, from 0% to 100%"),
+      act_science_percent_score_6_to_11: z.number().min(0).max(100).optional().describe("C9: Score Range 6-11, ACT Science, from 0% to 100%"),
+      act_science_percent_score_below_6: z.number().min(0).max(100).optional().describe("C9: Score Below 6, ACT Science, from 0% to 100%"),
+    })
+    .describe("C9: Percent of first-time, first-year students with scores in each range"),
+  // C10
+  high_school_class_rank: z
+    .object({
+      percent_in_top_tenth: z.number().min(0).max(100).optional().describe("C10: Percent in top tenth of high school graduating class, from 0% to 100%"),
+      percent_in_top_quarter: z.number().min(0).max(100).optional().describe("C10: Percent in top quarter of high school graduating class, from 0% to 100%"),
+      percent_in_top_half: z.number().min(0).max(100).optional().describe("C10: Percent in top half of high school graduating class, from 0% to 100%"),
+      percent_in_bottom_half: z.number().min(0).max(100).optional().describe("C10: Percent in bottom half of high school graduating class, from 0% to 100%"),
+      percent_in_bottom_quarter: z.number().min(0).max(100).optional().describe("C10: Percent in bottom quarter of high school graduating class, from 0% to 100%"),
+      percent_who_submitted_class_rank: z.number().min(0).max(100).optional().describe("C10: Percent of total first-time, first-year students who submitted high school class rank"),
+    })
+    .describe("C10: Percent of all degree-seeking, first-time, first-year students who had high school class rank within each of the following ranges:"),
+  // C11
+  high_school_gpa_percentages: z
+    .object({
+      percent_who_submitted_with_gpa_of_4_0: z.number().optional().describe("C11: Percent (Students who submitted scores) who had GPA of 4.0, from 0% to 100%"),
+      percent_who_submitted_with_gpa_between_3_75_and_3_99: z.number().min(0).max(100).optional().describe("C11: Percent (Students who submitted scores) who had GPA between 3.75 and 3.99, from 0% to 100%"),
+      percent_who_submitted_with_gpa_between_3_50_and_3_74: z.number().min(0).max(100).optional().describe("C11: Percent (Students who submitted scores) who had GPA between 3.50 and 3.74, from 0% to 100%"),
+      percent_who_submitted_with_gpa_between_3_25_and_3_49: z.number().min(0).max(100).optional().describe("C11: Percent (Students who submitted scores) who had GPA between 3.25 and 3.49, from 0% to 100%"),
+      percent_who_submitted_with_gpa_between_3_00_and_3_24: z.number().min(0).max(100).optional().describe("C11: Percent (Students who submitted scores) who had GPA between 3.00 and 3.24, from 0% to 100%"),
+      percent_who_submitted_with_gpa_between_2_50_and_2_99: z.number().min(0).max(100).optional().describe("C11: Percent (Students who submitted scores) who had GPA between 2.50 and 2.99, from 0% to 100%"),
+      percent_who_submitted_with_gpa_between_2_0_and_2_49: z.number().min(0).max(100).optional().describe("C11: Percent (Students who submitted scores) who had GPA between 2.0 and 2.49, from 0% to 100%"),
+      percent_who_submitted_with_gpa_between_1_0_and_1_99: z.number().min(0).max(100).optional().describe("C11: Percent (Students who submitted scores) who had GPA between 1.0 and 1.99, from 0% to 100%"),
+      percent_who_submitted_with_gpa_between_below_1_0: z.number().min(0).max(100).optional().describe("C11: Percent (Students who submitted scores) who had GPA below 1.0, from 0% to 100%"),
+      percent_who_did_not_submit_with_gpa_of_4_0: z.number().min(0).max(100).optional().describe("C11: Percent (Students who did not submit scores) who had GPA of 4.0, from 0% to 100%"),
+      percent_who_did_not_submit_with_gpa_between_3_75_and_3_99: z.number().min(0).max(100).optional().describe("C11: Percent (Students who did not submit scores) who had GPA between 3.75 and 3.99, from 0% to 100%"),
+      percent_who_did_not_submit_with_gpa_between_3_50_and_3_74: z.number().min(0).max(100).optional().describe("C11: Percent (Students who did not submit scores) who had GPA between 3.50 and 3.74, from 0% to 100%"),
+      percent_who_did_not_submit_with_gpa_between_3_25_and_3_49: z.number().min(0).max(100).optional().describe("C11: Percent (Students who did not submit scores) who had GPA between 3.25 and 3.49, from 0% to 100%"),
+      percent_who_did_not_submit_with_gpa_between_3_00_and_3_24: z.number().min(0).max(100).optional().describe("C11: Percent (Students who did not submit scores) who had GPA between 3.00 and 3.24, from 0% to 100%"),
+      percent_who_did_not_submit_with_gpa_between_2_50_and_2_99: z.number().min(0).max(100).optional().describe("C11: Percent (Students who did not submit scores) who had GPA between 2.50 and 2.99, from 0% to 100%"),
+      percent_who_did_not_submit_with_gpa_between_2_0_and_2_49: z.number().min(0).max(100).optional().describe("C11: Percent (Students who did not submit scores) who had GPA between 2.0 and 2.49, from 0% to 100%"),
+      percent_who_did_not_submit_with_gpa_between_1_0_and_1_99: z.number().min(0).max(100).optional().describe("C11: Percent (Students who did not submit scores) who had GPA between 1.0 and 1.99, from 0% to 100%"),
+      percent_who_did_not_submit_with_gpa_between_below_1_0: z.number().optional().describe("C11: Percent (Students who did not submit scores) who had GPA below 1.0, from 0% to 100%"),
+      percent_all_with_gpa_of_4_0: z.number().min(0).max(100).optional().describe("C11: Percent (All enrolled students) who had GPA of 4.0, from 0% to 100%"),
+      percent_all_with_gpa_between_3_75_and_3_99: z.number().min(0).max(100).optional().describe("C11: Percent (All enrolled students) who had GPA between 3.75 and 3.99, from 0% to 100%"),
+      percent_all_with_gpa_between_3_50_and_3_74: z.number().min(0).max(100).optional().describe("C11: Percent (All enrolled students) who had GPA between 3.50 and 3.74, from 0% to 100%"),
+      percent_all_with_gpa_between_3_25_and_3_49: z.number().min(0).max(100).optional().describe("C11: Percent (All enrolled students) who had GPA between 3.25 and 3.49, from 0% to 100%"),
+      percent_all_with_gpa_between_3_00_and_3_24: z.number().min(0).max(100).optional().describe("C11: Percent (All enrolled students) who had GPA between 3.00 and 3.24, from 0% to 100%"),
+      percent_all_with_gpa_between_2_50_and_2_99: z.number().min(0).max(100).optional().describe("C11: Percent (All enrolled students) who had GPA between 2.50 and 2.99, from 0% to 100%"),
+      percent_all_with_gpa_between_2_0_and_2_49: z.number().min(0).max(100).optional().describe("C11: Percent (All enrolled students) who had GPA between 2.0 and 2.49, from 0% to 100%"),
+      percent_all_with_gpa_between_1_0_and_1_99: z.number().min(0).max(100).optional().describe("C11: Percent (All enrolled students) who had GPA between 1.0 and 1.99, from 0% to 100%"),
+      percent_all_with_gpa_between_below_1_0: z.number().min(0).max(100).optional().describe("C11: Percent (All enrolled students) who had GPA below 1.0, from 0% to 100%"),
+    })
+    .describe("C11: Percentage of all enrolled, degree-seeking, first-time, first-year students who had high school grade-point averages within each of the following ranges (using 4.0 scale)"),
+  // C12
+  average_high_school_gpa: z.number().min(0).max(4).optional().describe("C12: Average high school GPA of all degree-seeking, first-time, first-year students who submitted GPA"),
+  percent_who_submitted_gpa: z.number().min(0).max(100).optional().describe("C12: Percent of total first-time, first-year students who submitted high school GPA, from 0% to 100%"),
+  // C13
+  application_fee: z
+    .object({
+      has_application_fee: z.boolean().optional().describe("C13: Does your institution have an application fee?"),
+      amount_of_application_fee: z.number().min(0).optional().describe("C13: Amount of application fee in dollars"),
+      can_be_waived: z.boolean().optional().describe("C13: Can it be waived for applicants with financial need?"),
+    })
+    .describe("C13: Application Fee"),
+  // C14
+  application_closing_date: z
+    .object({
+      has_application_closing_date: z.boolean().optional().describe("C14: Does your institution have an application closing date?"),
+      application_closing_date_fall: z.string().optional().describe("C14: Application closing date (fall)"),
+      priority_date: z.string().optional().describe("C14: Priority Date"),
+    })
+    .describe("C14: Application closing date"),
+  // C15
+  has_non_fall_application_term: z.boolean().optional().describe("C15: Are first-time, first-year students accepted for terms other than the fall?"),
+  // C16
+  notification_of_admission_decision: z
+    .object({
+      is_on_a_rolling_basis: z.boolean().optional().describe("C16: On a rolling basis"),
+      rolling_basis_start_date: z.string().optional().describe("C16: On a rolling basis beginning (date)"),
+      by_date: z.string().optional().describe("C16: By (date)"),
+      other: z.string().optional().describe("C16: Other:"),
+    })
+    .describe("C16: Notification to applicants of admission decision"),
+  // C17
+  reply_policy_for_admitted_applicants: z
+    .object({
+      must_reply_by_date: z.string().optional().describe("C17: Must reply by (date)"),
+      no_set_date: z.boolean().optional().describe("C17: No set date"),
+      reply_by_may_1_or_within_weeks: z.number().optional().describe("C17: Must reply by May 1st or within (number) weeks if notified thereafter"),
+      other: z.string().optional().describe("C17: Other:"),
+      deadline_for_housing_deposit: z.string().optional().describe("C17: Deadline for housing deposit (MMDD)"),
+      amount_of_housing_deposit: z.number().optional().describe("C17: Amount of housing deposit in dollars"),
+      housing_deposit_refundable: z.enum(["yes_in_full", "yes_in_part", "no"]).optional().describe("C17: Refundable if student does not enroll?"),
+    })
+    .describe("C17: Reply policy for admitted applicants"),
+  // C18
+  deferred_admission_policy: z
+    .object({
+      allows_deferred_admission: z.boolean().optional().describe("C18: Does your institution allow students to postpone enrollment after admission?"),
+      max_period_of_postponement: z.string().optional().describe("C18: If yes, maximum period of postponement (e.g. 1 year)"),
+    })
+    .describe("C18: Deferred admission"),
+  // C19
+  allows_early_admission_of_high_school_students: z
+    .boolean()
+    .optional()
+    .describe("C19: Does your institution allow high school students to enroll as full-time, first-time, first-year students one year or more before high school graduation?"),
+  // C21
+  early_decision_policy: z
+    .object({
+      has_early_decision_plan: z
+        .boolean()
+        .optional()
+        .describe(
+          "C21: Does your institution offer an early decision plan (an admission plan that permits students to apply and be notified of admission decision well in advance of the regular notification date and that asks students to commit to attending if accepted) for first-time, first-year applicants for fall enrollment?",
+        ),
+      first_or_only_early_decision_plan_closing_date: z.string().optional().describe("C21: First or only early decision plan closing date"),
+      first_or_only_early_decision_plan_notification_date: z.string().optional().describe("C21: First or only early decision plan notification date"),
+      other_early_decision_plan_closing_date: z.string().optional().describe("C21: Other early decision plan closing date"),
+      other_early_decision_plan_notification_date: z.string().optional().describe("C21: Other early decision plan notification date"),
+      number_of_early_decision_applicants: z.number().optional().describe("C21: Number of early decision applicants received by your institution"),
+      number_of_applicants_admitted_under_early_decision_plan: z.number().optional().describe("C21: Number of applicants admitted under early decision plan"),
+      significant_details_about_early_decision_plan: z.string().optional().describe("C21: Please provide significant details about your early decision plan"),
+    })
+    .describe("C21: Early Decision"),
+  // C22
+  early_action_policy: z
+    .object({
+      has_early_action_plan: z
+        .boolean()
+        .optional()
+        .describe("C22: Do you have a nonbinding early action plan whereby students are notified of an admission decision well in advance of the regular notification date but do not have to commit to attending your college?"),
+      early_action_closing_date: z.string().optional().describe("C22: Early action closing date"),
+      early_action_notification_date: z.string().optional().describe("C22: Early action notification date"),
+      is_restrictive_early_action: z.boolean().optional().describe("C22: Is your early action plan a 'restrictive' plan under which you limit students from applying to other early plans?"),
+    })
+    .describe("C22: Early action"),
+  // D1
+  enrolls_transfer_students: z.boolean().optional().describe("D1: Does your institution enroll transfer students? (If no, please skip to Section E)"),
+  allows_transfer_credit: z.boolean().optional().describe("D1: If yes, may transfer students earn advanced standing credit by transferring credits earned from course work completed at other colleges/universities?"),
+  // D2
+  transfer_admission_stats: z
+    .object({
+      male_applicants: z.number().optional().describe("D2: Male, Applicants"),
+      female_applicants: z.number().optional().describe("D2: Female, Applicants"),
+      another_gender_applicants: z.number().optional().describe("D2: Another Gender, Applicants"),
+      unknown_gender_applicants: z.number().optional().describe("D2: Unknown Gender, Applicants"),
+      male_admitted: z.number().optional().describe("D2: Male, Admitted Applicants"),
+      female_admitted: z.number().optional().describe("D2: Female, Admitted Applicants"),
+      another_gender_admitted: z.number().optional().describe("D2: Another Gender, Admitted Applicants"),
+      unknown_gender_admitted: z.number().optional().describe("D2: Unknown Gender, Admitted Applicants"),
+      male_enrolled: z.number().optional().describe("D2: Male, Enrolled Applicants"),
+      female_enrolled: z.number().optional().describe("D2: Female, Enrolled Applicants"),
+      another_gender_enrolled: z.number().optional().describe("D2: Another Gender, Enrolled Applicants"),
+      unknown_gender_enrolled: z.number().optional().describe("D2: Unknown Gender, Enrolled Applicants"),
+    })
+    .describe("D2: Provide the number of students who applied, were admitted, and enrolled as degree-seeking transfer students in Fall 2025."),
+  // D3
+  transfer_terms: z.array(z.enum(["fall", "winter", "spring", "summer"])).describe("D3: Indicate terms for which transfers may enroll"),
+  // D4
+  has_minimum_transfer_credit_requirements: z.boolean().optional().describe("D4: Must a transfer applicant have a minimum number of credits completed or else must apply as an entering first-year student?"),
+  minimum_credits_and_unit_of_measure: z.string().optional().describe("D4: If yes, what is the minimum number of credits and the unit of measure?"),
+  // D5
+  transfer_application_requirements: z
+    .object({
+      high_school_transcript: z.enum(["required_of_all", "recommended_of_all", "recommended_of_some", "required_of_some", "not_required"]).optional().describe("D5: High school transcript"),
+      college_transcripts: z.enum(["required_of_all", "recommended_of_all", "recommended_of_some", "required_of_some", "not_required"]).optional().describe("D5: College transcript(s)"),
+      essay_or_personal_statement: z.enum(["required_of_all", "recommended_of_all", "recommended_of_some", "required_of_some", "not_required"]).optional().describe("D5: Essay or personal statement"),
+      interview: z.enum(["required_of_all", "recommended_of_all", "recommended_of_some", "required_of_some", "not_required"]).optional().describe("D5: Interview"),
+      standardized_test_scores: z.enum(["required_of_all", "recommended_of_all", "recommended_of_some", "required_of_some", "not_required"]).optional().describe("D5: Standardized test scores"),
+      statement_of_good_standing: z.enum(["required_of_all", "recommended_of_all", "recommended_of_some", "required_of_some", "not_required"]).optional().describe("D5: Statement of good standing from prior institution(s)"),
+    })
+    .describe("D5: Indicate all items required of transfer students to apply for admission"),
+  // D6
+  minimum_high_school_gpa_for_transfer_admission: z.number().optional().describe("D6: If a minimum high school grade point average is required of transfer applicants, specify (on a 4.0 scale)"),
+  // D7
+  minimum_college_gpa_for_transfer_admission: z.number().optional().describe("D7: If a minimum college grade point average is required of transfer applicants, specify (on a 4.0 scale)"),
+  // D8
+  other_transfer_requirements: z.string().optional().describe("D8: List any other requirements specific to transfer applicants"),
+  // D9
+  transfer_application_dates: z
+    .object({
+      fall_priority_date: z.string().optional().describe("D9: Fall, Priority Date"),
+      fall_closing_date: z.string().optional().describe("D9: Fall, Closing Date"),
+      fall_notification_date: z.string().optional().describe("D9: Fall, Notification Date"),
+      fall_reply_date: z.string().optional().describe("D9: Fall, Reply Date"),
+      fall_rolling_admission_date: z.string().optional().describe("D9: Fall, Rolling Admission"),
+      winter_priority_date: z.string().optional().describe("D9: Winter, Priority Date"),
+      winter_closing_date: z.string().optional().describe("D9: Winter, Closing Date"),
+      winter_notification_date: z.string().optional().describe("D9: Winter, Notification Date"),
+      winter_reply_date: z.string().optional().describe("D9: Winter, Reply Date"),
+      winter_rolling_admission_date: z.string().optional().describe("D9: Winter, Rolling Admission"),
+      spring_priority_date: z.string().optional().describe("D9: Spring, Priority Date"),
+      spring_closing_date: z.string().optional().describe("D9: Spring, Closing Date"),
+      spring_notification_date: z.string().optional().describe("D9: Spring, Notification Date"),
+      spring_reply_date: z.string().optional().describe("D9: Spring, Reply Date"),
+      spring_rolling_admission_date: z.string().optional().describe("D9: Spring, Rolling Admission"),
+      summer_priority_date: z.string().optional().describe("D9: Summer, Priority Date"),
+      summer_closing_date: z.string().optional().describe("D9: Summer, Closing Date"),
+      summer_notification_date: z.string().optional().describe("D9: Summer, Notification Date"),
+      summer_reply_date: z.string().optional().describe("D9: Summer, Reply Date"),
+      summer_rolling_admission_date: z.string().optional().describe("D9: Summer, Rolling Admission"),
+    })
+    .describe("D9: List application priority, closing, notification, and candidate reply dates for transfer students"),
+  // D10
+  open_admission_applies_to_transfer_students: z.boolean().optional().describe("D10: Does an open admission policy, if reported, apply to transfer students?"),
+  // D11
+  additional_transfer_admission_requirements: z.string().optional().describe("D11: Describe additional requirements for transfer admission, if applicable"),
+  // D12
+  lowest_grade_that_may_be_transferred_for_credit: z.string().optional().describe("D12: Report the lowest grade earned for any course that may be transferred for credit"),
+  // D13
+  max_credits_or_courses_that_may_be_transferred_from_two_year_institutions: z
+    .object({
+      number: z.number().optional().describe("D13: Number"),
+      unit_type: z.string().optional().describe("D13: Unit Type (e.g. Credits)"),
+    })
+    .describe("D13: Maximum number of credits or courses that may be transferred from a two-year institution"),
+  // D14
+  max_credits_or_courses_that_may_be_transferred_from_four_year_institutions: z
+    .object({
+      number: z.number().optional().describe("D14: Number"),
+      unit_type: z.string().optional().describe("D14: Unit Type (e.g. Credits)"),
+    })
+    .describe("D14: Maximum number of credits or courses that may be transferred from a four-year institution"),
+  // D15
+  min_credits_transfers_must_complete_at_your_institution_for_associate_degree: z.number().optional().describe("D15: Minimum number of credits that transfers must complete at your institution to earn an associate degree"),
+  // D16
+  min_credits_transfers_must_complete_at_your_institution_for_bachelors_degree: z.number().optional().describe("D15: Minimum number of credits that transfers must complete at your institution to earn a bachelor's degree"),
+  // D17
+  other_transfer_credit_policies: z.string().optional().describe("D17: Describe other transfer credit policies"),
+  // D18
+  military_transfer_credit_policies: z
+    .object({
+      accepts_american_council_on_education: z.boolean().optional().describe("D18: American Council on Education (ACE)"),
+      accepts_college_level_examination_program: z.boolean().optional().describe("D18: College Level Examination Program (CLEP)"),
+      accepts_dantes_subject_standardized_tests: z.boolean().optional().describe("D18: DANTES Subject Standardized Tests (DSST)"),
+    })
+    .describe("D18: Military Service Transfer Credit Policies"),
+  // D19
+  max_credits_or_courses_that_may_be_transferred_from_american_council_on_education: z
+    .object({
+      number: z.number().optional().describe("D19: Number"),
+      unit_type: z.string().optional().describe("D19: Unit Type (e.g. Credits)"),
+    })
+    .describe("D19: Maximum number of credits or courses that may be transferred based on military education evaluated by the American Council on Education (ACE)"),
+  // D20
+  max_credits_or_courses_that_may_be_transferred_from_clep_or_dsst: z
+    .object({
+      number: z.number().optional().describe("D19: Number"),
+      unit_type: z.string().optional().describe("D19: Unit Type (e.g. Credits)"),
+    })
+    .describe("D19: Maximum number of credits or courses that may be transferred based on Department of Defense supported prior learning assessments (College Level Examination Program (CLEP) or DANTES Subject Standardized Tests (DSST))"),
+  // D21
+  military_veteran_transfer_policies_are_published_online: z.boolean().optional().describe("D21: Are the military/veteran credit transfer policies published on your website?"),
+  // D22
+  military_veteran_transfer_policies_url: z.string().optional().describe("D22: If yes, please provide the URL where the policy can be located:"),
+  other_military_veteran_transfer_policies: z.string().optional().describe("D22: Describe other military/veteran transfer credit policies unique to your institution:"),
+  // E1
+  special_study_options: z
+    .object({
+      has_accelerated_program: z.boolean().optional().describe("E1: Accelerated program"),
+      has_comprehensive_transition_and_postsecondary_program_for_students_with_intellectual_disabilities: z.boolean().optional().describe("E1: Comprehensive transition and postsecondary program for students with intellectual disabilities"),
+      has_cross_registration: z.boolean().optional().describe("E1: Cross registration"),
+      has_distance_learning: z.boolean().optional().describe("E1: Distance learning"),
+      has_double_major: z.boolean().optional().describe("E1: Double major"),
+      has_english_as_second_language: z.boolean().optional().describe("E1: English as a Second Language (ESL)"),
+      has_exchange_student_program_domestic: z.boolean().optional().describe("E1: Exchange student program (domestic)"),
+      has_external_degree_program: z.boolean().optional().describe("E1: External degree program"),
+      has_honors_program: z.boolean().optional().describe("E1: Honors program"),
+      has_independent_study: z.boolean().optional().describe("E1: Independent study"),
+      has_internships: z.boolean().optional().describe("E1: Internships"),
+      has_liberal_arts_career_combination: z.boolean().optional().describe("E1: Liberal arts/career combination"),
+      has_student_designed_major: z.boolean().optional().describe("E1: Student-designed major"),
+      has_study_abroad: z.boolean().optional().describe("E1: Study abroad"),
+      has_teacher_certification_program: z.boolean().optional().describe("E1: Teacher certification program"),
+      has_undergraduate_research: z.boolean().optional().describe("E1: Undergraduate research"),
+      has_weekend_college: z.boolean().optional().describe("E1: Weekend college"),
+      other: z.string().optional().describe("E1: Other (specify):"),
+    })
+    .describe("E1: Special study options"),
+  // E3
+  graduation_requirements: z
+    .object({
+      requires_arts_fine_arts: z.boolean().optional().describe("E3: Arts/fine arts"),
+      requires_computer_literacy: z.boolean().optional().describe("E3: Computer literacy"),
+      requires_english: z.boolean().optional().describe("E3: English (including composition)"),
+      requires_foreign_language: z.boolean().optional().describe("E3: Foreign language"),
+      requires_history: z.boolean().optional().describe("E3: History"),
+      requires_physical_education: z.boolean().optional().describe("E3: Physical education"),
+      requires_humanities: z.boolean().optional().describe("E3: Humanities"),
+      requires_intensive_writing: z.boolean().optional().describe("E3: Intensive writing"),
+      requires_mathematics: z.boolean().optional().describe("E3: Mathematics"),
+      requires_philosophy: z.boolean().optional().describe("E3: Philosophy"),
+      requires_sciences: z.boolean().optional().describe("E3: Sciences (biological or physical)"),
+      requires_social_science: z.boolean().optional().describe("E3: Social science"),
+      other: z.string().optional().describe("E3: Other (describe):"),
+    })
+    .describe("E3: Areas in which all or most students are required to complete some course work prior to graduation:"),
+  // F1
+});

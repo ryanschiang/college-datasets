@@ -5,7 +5,7 @@ import z from "zod/v3";
  * where each has no more than maxFields fields (including nested fields).
  * Nested objects are never split and are always kept intact.
  */
-export const splitSchema = (schema: z.ZodObject<any>, maxFields: number = 100): z.ZodObject<any>[] => {
+export const splitSchema = (schema: z.AnyZodObject, maxFields: number = 100): z.AnyZodObject[] => {
   const fields = Object.keys(schema.shape);
 
   const result: z.ZodObject<any>[] = [];
