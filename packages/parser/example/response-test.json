@@ -1,0 +1,102 @@
+{
+  "number_of_enrolled_students_awarded_aid": {
+    "col_headings": [
+      "First-time Full-time First-year Students",
+      "Full-time Undergrad (Incl. First-Year)",
+      "Less Than Full-time Undergrad"
+    ],
+    "rows": [
+      {
+        "row_name": "Number of degree-seeking undergraduate students (CDS Item B1 if reporting on Fall 2024 cohort)",
+        "cells": [
+          1699,
+          7841
+        ]
+      },
+      {
+        "row_name": "Number of students in line a who applied for need-based financial aid",
+        "cells": [
+          1107,
+          4470
+        ]
+      },
+      {
+        "row_name": "Number of students in line b who were determined to have financial need",
+        "cells": [
+          843,
+          3928
+        ]
+      },
+      {
+        "row_name": "Number of students in line c who were awarded any financial aid",
+        "cells": [
+          843,
+          3928
+        ]
+      },
+      {
+        "row_name": "Number of students in line d who were awarded any need-based scholarship or grant aid",
+        "cells": [
+          833,
+          3885
+        ]
+      },
+      {
+        "row_name": "Number of students in line d who were awarded any need-based self-help aid",
+        "cells": [
+          540,
+          2898
+        ]
+      },
+      {
+        "row_name": "Number of students in line d who were awarded any non-need-based scholarship or grant aid",
+        "cells": [
+          5,
+          80
+        ]
+      },
+      {
+        "row_name": "Number of students in line d whose need was fully met (exclude PLUS loans, unsubsidized loans, and private alternative loans)",
+        "cells": [
+          808,
+          3405
+        ]
+      },
+      {
+        "row_name": "On average, the percentage of need that was met of students who were awarded any need-based aid. Exclude any aid that was awarded in excess of need as well as any resources that were awarded to replace EFC (PLUS loans, unsubsidized loans, and private alternative loans)",
+        "cells": [
+          100,
+          100
+        ]
+      },
+      {
+        "row_name": "The average financial aid package of those in line d. Exclude any resources that were awarded to replace EFC (PLUS loans, unsubsidized loans, and private alternative loans)",
+        "cells": [
+          74244,
+          72172
+        ]
+      },
+      {
+        "row_name": "Average need-based scholarship and grant award of those in line e",
+        "cells": [
+          70114,
+          68013
+        ]
+      },
+      {
+        "row_name": "Average need-based self-help award (excluding PLUS loans, unsubsidized loans, and private alternative loans) of those in line f",
+        "cells": [
+          2827,
+          3096
+        ]
+      },
+      {
+        "row_name": "Average need-based loan (excluding PLUS loans, unsubsidized loans, and private alternative loans) of those in line f who were awarded a need-based loan",
+        "cells": [
+          3243,
+          4205
+        ]
+      }
+    ]
+  }
+}

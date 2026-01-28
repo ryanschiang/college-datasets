@@ -35,6 +35,7 @@ const listFiles = async (ai: GoogleGenAI): Promise<Pager<File>> => {
 };
 
 (async () => {
+  const MODEL = "gemini-3-flash-preview" as const;
   const ai = new GoogleGenAI({
     apiKey: env.GEMINI_API_KEY,
   });
@@ -86,7 +87,7 @@ const listFiles = async (ai: GoogleGenAI): Promise<Pager<File>> => {
 
     return ai.models
       .generateContent({
-        model: "gemini-3-flash-preview",
+        model: MODEL,
         contents: [
           {
             role: "user",

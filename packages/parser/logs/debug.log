@@ -44,3 +44,9 @@
 2026-01-27 14:46:17 [32minfo[39m: Processing chunk 1 of 1 
 2026-01-27 14:46:17 [32minfo[39m: Chunk 1 - Prompt: $0.010847, Candidates: $0.002442, Thoughts: $0.032424, Cached: $0.001124, Total: $0.046837 
 2026-01-27 14:46:17 [32minfo[39m: Total cost: $0.046837 
+2026-01-27 15:05:18 [32minfo[39m: Uploading file stanford_cds_2024_2025.pdf with mime type application/pdf 
+2026-01-27 15:05:20 [32minfo[39m: File uploaded successfully: files/kee2ntuhwr1h | https://generativelanguage.googleapis.com/v1beta/files/kee2ntuhwr1h 
+2026-01-27 15:12:34 [32minfo[39m: Sending request to generate content 
+2026-01-27 15:13:20 [32minfo[39m: Saving response to file 
+2026-01-27 15:16:39 [32minfo[39m: Sending request to generate content 
+2026-01-27 15:17:42 [32minfo[39m: Saving response to file 

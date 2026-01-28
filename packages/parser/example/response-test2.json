@@ -1,0 +1,238 @@
+{
+  "key_names": [
+    {
+      "name": "ftfy_degree_seeking_undergraduates",
+      "type": "number",
+      "units": "unitless",
+      "description": "First-time Full-time First-year Students | Number of degree-seeking undergraduate students"
+    },
+    {
+      "name": "ftfy_aid_applicants",
+      "type": "number",
+      "units": "unitless",
+      "description": "First-time Full-time First-year Students | Number of students in row a who were aid applicants"
+    },
+    {
+      "name": "ftfy_determined_to_have_financial_need",
+      "type": "number",
+      "units": "unitless",
+      "description": "First-time Full-time First-year Students | Number of students in row b who were determined to have financial need"
+    },
+    {
+      "name": "ftfy_awarded_any_financial_aid",
+      "type": "number",
+      "units": "unitless",
+      "description": "First-time Full-time First-year Students | Number of students in row c who were awarded any financial aid"
+    },
+    {
+      "name": "ftfy_awarded_need_based_self_help_aid",
+      "type": "number",
+      "units": "unitless",
+      "description": "First-time Full-time First-year Students | Number of students in row d who were awarded any need-based self-help aid"
+    },
+    {
+      "name": "ftfy_awarded_non_need_based_scholarship_grant_aid",
+      "type": "number",
+      "units": "unitless",
+      "description": "First-time Full-time First-year Students | Number of students in row d who were awarded any non-need-based scholarship or grant aid"
+    },
+    {
+      "name": "ftfy_need_fully_met",
+      "type": "number",
+      "units": "unitless",
+      "description": "First-time Full-time First-year Students | Number of students in row d whose need was fully met"
+    },
+    {
+      "name": "ftfy_avg_percentage_of_need_met",
+      "type": "number",
+      "units": "percentage",
+      "description": "First-time Full-time First-year Students | On average, the percentage of need that was met"
+    },
+    {
+      "name": "ftfy_avg_financial_aid_package",
+      "type": "number",
+      "units": "dollars",
+      "description": "First-time Full-time First-year Students | The average financial aid package"
+    },
+    {
+      "name": "ftfy_avg_need_based_scholarship_grant_award",
+      "type": "number",
+      "units": "dollars",
+      "description": "First-time Full-time First-year Students | Average need-based scholarship and grant award"
+    },
+    {
+      "name": "ftfy_avg_need_based_self_help_award",
+      "type": "number",
+      "units": "dollars",
+      "description": "First-time Full-time First-year Students | Average need-based self-help award"
+    },
+    {
+      "name": "ftfy_avg_need_based_loan",
+      "type": "number",
+      "units": "dollars",
+      "description": "First-time Full-time First-year Students | Average need-based loan"
+    },
+    {
+      "name": "ftfy_no_need_awarded_institutional_aid",
+      "type": "number",
+      "units": "unitless",
+      "description": "First-time Full-time First-year Students | Number of students in row a who had no financial need and who were awarded institutional non-need-based scholarship or grant aid"
+    },
+    {
+      "name": "ft_undergrad_degree_seeking_undergraduates",
+      "type": "number",
+      "units": "unitless",
+      "description": "Full-time Undergrad (Incl. First-Year) | Number of degree-seeking undergraduate students"
+    },
+    {
+      "name": "ft_undergrad_aid_applicants",
+      "type": "number",
+      "units": "unitless",
+      "description": "Full-time Undergrad (Incl. First-Year) | Number of students in row a who were aid applicants"
+    },
+    {
+      "name": "ft_undergrad_determined_to_have_financial_need",
+      "type": "number",
+      "units": "unitless",
+      "description": "Full-time Undergrad (Incl. First-Year) | Number of students in row b who were determined to have financial need"
+    },
+    {
+      "name": "ft_undergrad_awarded_any_financial_aid",
+      "type": "number",
+      "units": "unitless",
+      "description": "Full-time Undergrad (Incl. First-Year) | Number of students in row c who were awarded any financial aid"
+    },
+    {
+      "name": "ft_undergrad_awarded_need_based_self_help_aid",
+      "type": "number",
+      "units": "unitless",
+      "description": "Full-time Undergrad (Incl. First-Year) | Number of students in row d who were awarded any need-based self-help aid"
+    },
+    {
+      "name": "ft_undergrad_awarded_non_need_based_scholarship_grant_aid",
+      "type": "number",
+      "units": "unitless",
+      "description": "Full-time Undergrad (Incl. First-Year) | Number of students in row d who were awarded any non-need-based scholarship or grant aid"
+    },
+    {
+      "name": "ft_undergrad_need_fully_met",
+      "type": "number",
+      "units": "unitless",
+      "description": "Full-time Undergrad (Incl. First-Year) | Number of students in row d whose need was fully met"
+    },
+    {
+      "name": "ft_undergrad_avg_percentage_of_need_met",
+      "type": "number",
+      "units": "percentage",
+      "description": "Full-time Undergrad (Incl. First-Year) | On average, the percentage of need that was met"
+    },
+    {
+      "name": "ft_undergrad_avg_financial_aid_package",
+      "type": "number",
+      "units": "dollars",
+      "description": "Full-time Undergrad (Incl. First-Year) | The average financial aid package"
+    },
+    {
+      "name": "ft_undergrad_avg_need_based_scholarship_grant_award",
+      "type": "number",
+      "units": "dollars",
+      "description": "Full-time Undergrad (Incl. First-Year) | Average need-based scholarship and grant award"
+    },
+    {
+      "name": "ft_undergrad_avg_need_based_self_help_award",
+      "type": "number",
+      "units": "dollars",
+      "description": "Full-time Undergrad (Incl. First-Year) | Average need-based self-help award"
+    },
+    {
+      "name": "ft_undergrad_avg_need_based_loan",
+      "type": "number",
+      "units": "dollars",
+      "description": "Full-time Undergrad (Incl. First-Year) | Average need-based loan"
+    },
+    {
+      "name": "ft_undergrad_no_need_awarded_institutional_aid",
+      "type": "number",
+      "units": "unitless",
+      "description": "Full-time Undergrad (Incl. First-Year) | Number of students in row a who had no financial need and who were awarded institutional non-need-based scholarship or grant aid"
+    },
+    {
+      "name": "ltft_undergrad_degree_seeking_undergraduates",
+      "type": "number",
+      "units": "unitless",
+      "description": "Less Than Full-time Undergrad | Number of degree-seeking undergraduate students"
+    },
+    {
+      "name": "ltft_undergrad_aid_applicants",
+      "type": "number",
+      "units": "unitless",
+      "description": "Less Than Full-time Undergrad | Number of students in row a who were aid applicants"
+    },
+    {
+      "name": "ltft_undergrad_determined_to_have_financial_need",
+      "type": "number",
+      "units": "unitless",
+      "description": "Less Than Full-time Undergrad | Number of students in row b who were determined to have financial need"
+    },
+    {
+      "name": "ltft_undergrad_awarded_any_financial_aid",
+      "type": "number",
+      "units": "unitless",
+      "description": "Less Than Full-time Undergrad | Number of students in row c who were awarded any financial aid"
+    },
+    {
+      "name": "ltft_undergrad_awarded_need_based_self_help_aid",
+      "type": "number",
+      "units": "unitless",
+      "description": "Less Than Full-time Undergrad | Number of students in row d who were awarded any need-based self-help aid"
+    },
+    {
+      "name": "ltft_undergrad_awarded_non_need_based_scholarship_grant_aid",
+      "type": "number",
+      "units": "unitless",
+      "description": "Less Than Full-time Undergrad | Number of students in row d who were awarded any non-need-based scholarship or grant aid"
+    },
+    {
+      "name": "ltft_undergrad_need_fully_met",
+      "type": "number",
+      "units": "unitless",
+      "description": "Less Than Full-time Undergrad | Number of students in row d whose need was fully met"
+    },
+    {
+      "name": "ltft_undergrad_avg_percentage_of_need_met",
+      "type": "number",
+      "units": "percentage",
+      "description": "Less Than Full-time Undergrad | On average, the percentage of need that was met"
+    },
+    {
+      "name": "ltft_undergrad_avg_financial_aid_package",
+      "type": "number",
+      "units": "dollars",
+      "description": "Less Than Full-time Undergrad | The average financial aid package"
+    },
+    {
+      "name": "ltft_undergrad_avg_need_based_scholarship_grant_award",
+      "type": "number",
+      "units": "dollars",
+      "description": "Less Than Full-time Undergrad | Average need-based scholarship and grant award"
+    },
+    {
+      "name": "ltft_undergrad_avg_need_based_self_help_award",
+      "type": "number",
+      "units": "dollars",
+      "description": "Less Than Full-time Undergrad | Average need-based self-help award"
+    },
+    {
+      "name": "ltft_undergrad_avg_need_based_loan",
+      "type": "number",
+      "units": "dollars",
+      "description": "Less Than Full-time Undergrad | Average need-based loan"
+    },
+    {
+      "name": "ltft_undergrad_no_need_awarded_institutional_aid",
+      "type": "number",
+      "units": "unitless",
+      "description": "Less Than Full-time Undergrad | Number of students in row a who had no financial need and who were awarded institutional non-need-based scholarship or grant aid"
+    }
+  ]
+}
