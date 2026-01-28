@@ -1,16 +1,28 @@
 import z from "zod/v3";
 
 export const cdsSchema = z.object({
-  // Test
-  // number_of_enrolled_students_awarded_aid: z.object({
-  //   col_headings: z.array(z.string()),
-  //   rows: z.array(
-  //     z.object({
-  //       row_name: z.string(),
-  //       cells: z.array(z.number()),
-  //     }),
-  //   ),
-  // }),
+  // A0
+  cds_corresponding_web_page: z.string().optional().describe("A0: If yes, please provide the URL of the corresponding Web page"),
+
+  // A1
+  address_information: z
+    .object({
+      // TODO:
+      name_of_college_university: z.string().optional().describe("A1: Name of College/University"),
+      mailing_address: z.string().optional().describe("A1: Mailing Address"),
+      mailing_address_city_state_zip_country: z.string().optional().describe("A1: Mailing Address | City/State/Zip/Country"),
+      street_address: z.string().optional().describe("A1: Street Address (if different)"),
+      street_address_city_state_zip_country: z.string().optional().describe("A1: Street Address (if different) | City/State/Zip/Country"),
+      main_phone_number: z.string().optional().describe("A1: Main Phone Number"),
+      www_home_page_address: z.string().optional().describe("A1: WWW Home Page Address"),
+      admissions_phone_number: z.string().optional().describe("A1: Admissions Phone Number"),
+      admissions_toll_free_phone_number: z.string().optional().describe("A1: Admissions Toll-Free Phone Number"),
+      admissions_office_mailing_address: z.string().optional().describe("A1: Admissions Office Mailing Address"),
+      admissions_office_mailing_address_city_state_zip_country: z.string().optional().describe("A1: Admissions Office Mailing Address | City/State/Zip/Country"),
+      admissions_email_address: z.string().optional().describe("A1: Admissions E-mail Address"),
+      url_for_online_application: z.string().optional().describe("A1: If there is a separate URL for your school's online application, please specify:"),
+    })
+    .describe("A1: Address Information"),
 
   // A2
   source_of_institutional_control: z.enum(["public", "private", "proprietary"]).describe("A2: Source of institutional control"),
@@ -37,6 +49,8 @@ export const cdsSchema = z.object({
       ]),
     )
     .describe("A5: Degrees offered by your institution"),
+  // A6
+  diversity_equity_inclusion_url: z.string().optional().describe("A6: If you have a diversity, equity, and inclusion office or department, please provide the URL of the corresponding Web page"),
   // B1
   undergraduate_students_full_time: z
     .object({
@@ -214,6 +228,108 @@ export const cdsSchema = z.object({
       end_date: z.string().describe("B3: End date, e.g. June 30, 2024"),
     })
     .describe("B3: Number of degrees awarded by your institution from [start_date] to [end_date]."),
+  // B4
+  graduation_rates: z
+    .object({
+      initial_cohort_recipients_federal_pell_grant: z.number().optional().describe("B4: Initial [year] cohort of first-time, full-time bachelor's (or equivalent) degree-seeking undergraduate students | Recipients of a Federal Pell Grant"),
+      initial_cohort_recipients_stafford_loan: z
+        .number()
+        .optional()
+        .describe("B4: Initial [year] cohort of first-time, full-time bachelor's (or equivalent) degree-seeking undergraduate students | Recipients of a Subsidized Stafford Loan who did not receive a Pell Grant"),
+      initial_cohort_recipients_not_receiving_any_federal_loans: z
+        .number()
+        .optional()
+        .describe("B4: Initial [year] cohort of first-time, full-time bachelor's (or equivalent) degree-seeking undergraduate students | Students who did not receive either a Pell Grant or a subsidized Stafford Loan"),
+      initial_cohort_recipients_total: z
+        .number()
+        .optional()
+        .describe("B4: Initial [year] cohort of first-time, full-time bachelor's (or equivalent) degree-seeking undergraduate students | Students who did not receive either a Pell Grant or a subsidized Stafford Loan"),
+      allowable_exclusions_federal_pell_grant: z
+        .number()
+        .optional()
+        .describe(
+          "B4: Of the initial [year] cohort, how many did not persist and did not graduate for the following reasons: Deceased, Permanently Disabled, Armed Forces, Foreign Aid Service of the Federal Government, Official church missions (Report Total Allowable Exclusions) | Recipients of a Federal Pell Grant",
+        ),
+      allowable_exclusions_stafford_loan: z
+        .number()
+        .optional()
+        .describe(
+          "B4: Of the initial [year] cohort, how many did not persist and did not graduate for the following reasons: Deceased, Permanently Disabled, Armed Forces, Foreign Aid Service of the Federal Government, Official church missions (Report Total Allowable Exclusions) | Recipients of a Subsidized Stafford Loan who did not receive a Pell Grant",
+        ),
+      allowable_exclusions_not_receiving_any_federal_loans: z
+        .number()
+        .optional()
+        .describe(
+          "B4: Of the initial [year] cohort, how many did not persist and did not graduate for the following reasons: Deceased, Permanently Disabled, Armed Forces, Foreign Aid Service of the Federal Government, Official church missions (Report Total Allowable Exclusions) | Students who did not receive either a Pell Grant or a subsidized Stafford Loan",
+        ),
+      allowable_exclusions_total: z
+        .number()
+        .optional()
+        .describe(
+          "B4: Of the initial [year] cohort, how many did not persist and did not graduate for the following reasons: Deceased, Permanently Disabled, Armed Forces, Foreign Aid Service of the Federal Government, Official church missions (Report Total Allowable Exclusions) | Total",
+        ),
+      final_cohort_after_exclusions_federal_pell_grant: z.number().optional().describe("B4: Final [year] cohort, after adjusting for allowable exclusions | Recipients of a Federal Pell Grant"),
+      final_cohort_after_exclusions_stafford_loan: z.number().optional().describe("B4: Final [year] cohort, after adjusting for allowable exclusions | Recipients of a Subsidized Stafford Loan who did not receive a Pell Grant"),
+      final_cohort_after_exclusions_not_receiving_any_federal_loans: z
+        .number()
+        .optional()
+        .describe("B4: Final [year] cohort, after adjusting for allowable exclusions | Students who did not receive either a Pell Grant or a subsidized Stafford Loan"),
+      final_cohort_after_exclusions_total: z.number().optional().describe("B4: Final [year] cohort, after adjusting for allowable exclusions | Total"),
+      completed_in_four_years_or_less_federal_pell_grant: z.number().optional().describe("B4: Of the initial [year] cohort, how many completed the program in four years or less | Recipients of a Federal Pell Grant"),
+      completed_in_four_years_or_less_stafford_loan: z
+        .number()
+        .optional()
+        .describe("B4: Of the initial [year] cohort, how many completed the program in four years or less | Recipients of a Subsidized Stafford Loan who did not receive a Pell Grant"),
+      completed_in_four_years_or_less_not_receiving_any_federal_loans: z
+        .number()
+        .optional()
+        .describe("B4: Of the initial [year] cohort, how many completed the program in four years or less | Students who did not receive either a Pell Grant or a subsidized Stafford Loan"),
+      completed_in_four_years_or_less_total: z.number().optional().describe("B4: Of the initial [year] cohort, how many completed the program in four years or less | Total"),
+      completed_in_five_years_federal_pell_grant: z.number().optional().describe("B4: Of the initial [year] cohort, how many completed the program in more than four years but in five years or less | Recipients of a Federal Pell Grant"),
+      completed_in_five_years_stafford_loan: z
+        .number()
+        .optional()
+        .describe("B4: Of the initial [year] cohort, how many completed the program in more than four years but in five years or less | Recipients of a Subsidized Stafford Loan who did not receive a Pell Grant"),
+      completed_in_five_years_not_receiving_any_federal_loans: z
+        .number()
+        .optional()
+        .describe("B4: Of the initial [year] cohort, how many completed the program in more than four years but in five years or less | Students who did not receive either a Pell Grant or a subsidized Stafford Loan"),
+      completed_in_five_years_total: z.number().optional().describe("B4: Of the initial [year] cohort, how many completed the program in more than four years but in five years or less | Total"),
+      completed_in_six_years_federal_pell_grant: z.number().optional().describe("B4: Of the initial [year] cohort, how many completed the program in more than five years but in six years or less | Recipients of a Federal Pell Grant"),
+      completed_in_six_years_stafford_loan: z
+        .number()
+        .optional()
+        .describe("B4: Of the initial [year] cohort, how many completed the program in more than five years but in six years or less | Recipients of a Subsidized Stafford Loan who did not receive a Pell Grant"),
+      completed_in_six_years_not_receiving_any_federal_loans: z
+        .number()
+        .optional()
+        .describe("B4: Of the initial [year] cohort, how many completed the program in more than five years but in six years or less | Students who did not receive either a Pell Grant or a subsidized Stafford Loan"),
+      completed_in_six_years_total: z.number().optional().describe("B4: Of the initial [year] cohort, how many completed the program in more than five years but in six years or less | Total"),
+      total_graduating_within_six_years_federal_pell_grant: z.number().optional().describe("B4: Total graduating within six years (sum of lines D, E, and F) | Recipients of a Federal Pell Grant"),
+      total_graduating_within_six_years_stafford_loan: z.number().optional().describe("B4: Total graduating within six years (sum of lines D, E, and F) | Recipients of a Subsidized Stafford Loan who did not receive a Pell Grant"),
+      total_graduating_within_six_years_not_receiving_any_federal_loans: z
+        .number()
+        .optional()
+        .describe("B4: Total graduating within six years (sum of lines D, E, and F) | Students who did not receive either a Pell Grant or a subsidized Stafford Loan"),
+      total_graduating_within_six_years_total: z.number().optional().describe("B4: Total graduating within six years (sum of lines D, E, and F) | Total"),
+      six_year_graduation_rate_federal_pell_grant: z.number().min(0).max(100).optional().describe("B4: Six-year graduation rate for [year] cohort (G divided by C) | Recipients of a Federal Pell Grant | as percent from 0% to 100%"),
+      six_year_graduation_rate_stafford_loan: z
+        .number()
+        .min(0)
+        .max(100)
+        .optional()
+        .describe("B4: Six-year graduation rate for [year] cohort (G divided by C) | Recipients of a Subsidized Stafford Loan who did not receive a Pell Grant | as percent from 0% to 100%"),
+      six_year_graduation_rate_not_receiving_any_federal_loans: z
+        .number()
+        .min(0)
+        .max(100)
+        .optional()
+        .describe("B4: Six-year graduation rate for [year] cohort (G divided by C) | Students who did not receive either a Pell Grant or a subsidized Stafford Loan | as percent from 0% to 100%"),
+      six_year_graduation_rate_total: z.number().min(0).max(100).optional().describe("B4: Six-year graduation rate for [year] cohort (G divided by C) | Total | as percent from 0% to 100%"),
+    })
+    .describe("B4: Graduation Rates | For Bachelor's or Equivalent Programs"),
+  // B22
+  retainment_rate: z.number().min(0).max(100).optional().describe("B22: Calculate the percentage of the Fall 2024 entering cohort who remained enrolled on the official census date."),
   // C1
   first_time_first_year_student_applicants: z
     .object({
@@ -1082,6 +1198,42 @@ export const cdsSchema = z.object({
   has_institutional_need_based_scholarship_or_grant_aid_for_nonresidents: z.boolean().optional().describe("H6: Institutional need-based scholarship or grant aid is available"),
   has_institutional_non_need_based_scholarship_or_grant_aid_for_nonresidents: z.boolean().optional().describe("H6: Institutional non-need-based scholarship or grant aid is available"),
   has_no_institutional_scholarship_or_grant_aid_for_nonresidents: z.boolean().optional().describe("H6: Institutional scholarship or grant aid is not available"),
+  // I1
+  instructional_faculty: z
+    .object({
+      total_number_of_instructional_faculty_full_time: z.number().optional().describe("I1: Row A: Total number of instructional faculty | Full-Time"),
+      total_number_of_instructional_faculty_part_time: z.number().optional().describe("I1: Row A: Total number of instructional faculty | Part-Time"),
+      total_number_of_instructional_faculty_total: z.number().optional().describe("I1: Row A: Total number of instructional faculty | Total"),
+      members_of_minority_groups_full_time: z.number().optional().describe("I1: Row B: Total number who are members of minority groups | Full-Time"),
+      members_of_minority_groups_part_time: z.number().optional().describe("I1: Row B: Total number who are members of minority groups | Part-Time"),
+      members_of_minority_groups_total: z.number().optional().describe("I1: Row B: Total number who are members of minority groups | Total"),
+      females_full_time: z.number().optional().describe("I1: Row C: Total number who are females | Full-Time"),
+      females_part_time: z.number().optional().describe("I1: Row C: Total number who are females | Part-Time"),
+      females_total: z.number().optional().describe("I1: Row C: Total number who are females | Total"),
+      males_full_time: z.number().optional().describe("I1: Row D: Total number who are males | Full-Time"),
+      males_part_time: z.number().optional().describe("I1: Row D: Total number who are males | Part-Time"),
+      males_total: z.number().optional().describe("I1: Row D: Total number who are males | Total"),
+      nonresidents_international_full_time: z.number().optional().describe("I1: Row E: Total number who are nonresidents (international) | Full-Time"),
+      nonresidents_international_part_time: z.number().optional().describe("I1: Row E: Total number who are nonresidents (international) | Part-Time"),
+      nonresidents_international_total: z.number().optional().describe("I1: Row E: Total number who are nonresidents (international) | Total"),
+      doctorate_or_terminal_degree_full_time: z.number().optional().describe("I1: Row F: Total number with doctorate, or other terminal degree | Full-Time"),
+      doctorate_or_terminal_degree_part_time: z.number().optional().describe("I1: Row F: Total number with doctorate, or other terminal degree | Part-Time"),
+      doctorate_or_terminal_degree_total: z.number().optional().describe("I1: Row F: Total number with doctorate, or other terminal degree | Total"),
+      masters_not_terminal_full_time: z.number().optional().describe("I1: Row G: Total number whose highest degree is a master's but not a terminal master's | Full-Time"),
+      masters_not_terminal_part_time: z.number().optional().describe("I1: Row G: Total number whose highest degree is a master's but not a terminal master's | Part-Time"),
+      masters_not_terminal_total: z.number().optional().describe("I1: Row G: Total number whose highest degree is a master's but not a terminal master's | Total"),
+      bachelors_full_time: z.number().optional().describe("I1: Row H: Total number whose highest degree is a bachelor's | Full-Time"),
+      bachelors_part_time: z.number().optional().describe("I1: Row H: Total number whose highest degree is a bachelor's | Part-Time"),
+      bachelors_total: z.number().optional().describe("I1: Row H: Total number whose highest degree is a bachelor's | Total"),
+      unknown_or_other_full_time: z.number().optional().describe("I1: Row I: Total number whose highest degree is unknown or other | Full-Time"),
+      unknown_or_other_part_time: z.number().optional().describe("I1: Row I: Total number whose highest degree is unknown or other | Part-Time"),
+      unknown_or_other_total: z.number().optional().describe("I1: Row I: Total number whose highest degree is unknown or other | Total"),
+      standalone_graduate_professional_programs_full_time: z.number().optional().describe("I1: Row J: Total number in stand-alone graduate/professional programs in which faculty teach virtually only graduate-level students | Full-Time"),
+      standalone_graduate_professional_programs_part_time: z.number().optional().describe("I1: Row J: Total number in stand-alone graduate/professional programs in which faculty teach virtually only graduate-level students | Part-Time"),
+      standalone_graduate_professional_programs_total: z.number().optional().describe("I1: Row J: Total number in stand-alone graduate/professional programs in which faculty teach virtually only graduate-level students | Total"),
+    })
+    .describe("I1: Instructional Faculty"),
+
   // I2
   student_to_faculty_ratio: z
     .object({
