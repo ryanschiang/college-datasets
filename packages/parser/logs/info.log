@@ -50,3 +50,101 @@
 2026-01-27 15:13:20 [32minfo[39m: Saving response to file 
 2026-01-27 15:16:39 [32minfo[39m: Sending request to generate content 
 2026-01-27 15:17:42 [32minfo[39m: Saving response to file 
+2026-01-28 19:50:19 [32minfo[39m: Uploading file stanford_cds_2024_2025.pdf with mime type application/pdf 
+2026-01-28 19:51:00 [32minfo[39m: Uploading file stanford_cds_2024_2025.pdf with mime type application/pdf 
+2026-01-28 19:51:02 [32minfo[39m: File uploaded successfully: files/ygpxaa1h5xqa | https://generativelanguage.googleapis.com/v1beta/files/ygpxaa1h5xqa 
+2026-01-28 19:51:03 [32minfo[39m: Splitting schema into 23 chunks 
+2026-01-28 19:51:03 [32minfo[39m: Sending 23 requests in parallel... 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 1 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 2 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 3 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 4 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 5 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 6 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 7 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 8 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 9 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 10 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 11 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 12 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 13 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 14 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 15 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 16 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 17 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 18 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 19 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 20 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 21 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 22 of 23 
+2026-01-28 19:51:03 [32minfo[39m: Sending request for chunk 23 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 1 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 1 Tokens - Prompt: $21693, Candidates: $701, Thoughts: $6379, Cached: $22484, Total: $51257 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 1 Cost - Prompt: $0.010847, Candidates: $0.002103, Thoughts: $0.019137, Cached: $0.001124, Total: $0.033211 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 2 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 2 Tokens - Prompt: $21693, Candidates: $905, Thoughts: $3671, Cached: $22484, Total: $48753 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 2 Cost - Prompt: $0.010847, Candidates: $0.002715, Thoughts: $0.011013, Cached: $0.001124, Total: $0.025699 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 3 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 3 Tokens - Prompt: $21693, Candidates: $411, Thoughts: $10856, Cached: $22484, Total: $55444 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 3 Cost - Prompt: $0.010847, Candidates: $0.001233, Thoughts: $0.032568, Cached: $0.001124, Total: $0.045772 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 4 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 4 Tokens - Prompt: $21693, Candidates: $1074, Thoughts: $160, Cached: $22484, Total: $45411 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 4 Cost - Prompt: $0.010847, Candidates: $0.003222, Thoughts: $0.000480, Cached: $0.001124, Total: $0.015673 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 5 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 5 Tokens - Prompt: $21693, Candidates: $975, Thoughts: $80, Cached: $22484, Total: $45232 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 5 Cost - Prompt: $0.010847, Candidates: $0.002925, Thoughts: $0.000240, Cached: $0.001124, Total: $0.015136 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 6 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 6 Tokens - Prompt: $21693, Candidates: $941, Thoughts: $6499, Cached: $22484, Total: $51617 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 6 Cost - Prompt: $0.010847, Candidates: $0.002823, Thoughts: $0.019497, Cached: $0.001124, Total: $0.034291 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 7 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 7 Tokens - Prompt: $21693, Candidates: $631, Thoughts: $6016, Cached: $22484, Total: $50824 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 7 Cost - Prompt: $0.010847, Candidates: $0.001893, Thoughts: $0.018048, Cached: $0.001124, Total: $0.031912 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 8 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 8 Tokens - Prompt: $21693, Candidates: $598, Thoughts: $12415, Cached: $22484, Total: $57190 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 8 Cost - Prompt: $0.010847, Candidates: $0.001794, Thoughts: $0.037245, Cached: $0.001124, Total: $0.051010 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 9 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 9 Tokens - Prompt: $21693, Candidates: $1096, Thoughts: $3364, Cached: $22484, Total: $48637 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 9 Cost - Prompt: $0.010847, Candidates: $0.003288, Thoughts: $0.010092, Cached: $0.001124, Total: $0.025351 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 10 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 10 Tokens - Prompt: $21693, Candidates: $837, Thoughts: $2912, Cached: $22484, Total: $47926 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 10 Cost - Prompt: $0.010847, Candidates: $0.002511, Thoughts: $0.008736, Cached: $0.001124, Total: $0.023218 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 11 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 11 Tokens - Prompt: $21693, Candidates: $711, Thoughts: $8460, Cached: $22484, Total: $53348 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 11 Cost - Prompt: $0.010847, Candidates: $0.002133, Thoughts: $0.025380, Cached: $0.001124, Total: $0.039484 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 12 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 12 Tokens - Prompt: $21693, Candidates: $646, Thoughts: $14071, Cached: $22484, Total: $58894 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 12 Cost - Prompt: $0.010847, Candidates: $0.001938, Thoughts: $0.042213, Cached: $0.001124, Total: $0.056122 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 13 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 13 Tokens - Prompt: $21693, Candidates: $576, Thoughts: $7895, Cached: $22484, Total: $52648 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 13 Cost - Prompt: $0.010847, Candidates: $0.001728, Thoughts: $0.023685, Cached: $0.001124, Total: $0.037384 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 14 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 14 Tokens - Prompt: $21693, Candidates: $469, Thoughts: $12532, Cached: $22484, Total: $57178 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 14 Cost - Prompt: $0.010847, Candidates: $0.001407, Thoughts: $0.037596, Cached: $0.001124, Total: $0.050974 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 15 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 15 Tokens - Prompt: $21693, Candidates: $917, Thoughts: $6262, Cached: $22484, Total: $51356 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 15 Cost - Prompt: $0.010847, Candidates: $0.002751, Thoughts: $0.018786, Cached: $0.001124, Total: $0.033508 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 16 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 16 Tokens - Prompt: $21693, Candidates: $541, Thoughts: $10389, Cached: $22484, Total: $55107 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 16 Cost - Prompt: $0.010847, Candidates: $0.001623, Thoughts: $0.031167, Cached: $0.001124, Total: $0.044761 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 17 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 17 Tokens - Prompt: $21693, Candidates: $1151, Thoughts: $9787, Cached: $22484, Total: $55115 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 17 Cost - Prompt: $0.010847, Candidates: $0.003453, Thoughts: $0.029361, Cached: $0.001124, Total: $0.044785 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 18 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 18 Tokens - Prompt: $21693, Candidates: $958, Thoughts: $2796, Cached: $22484, Total: $47931 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 18 Cost - Prompt: $0.010847, Candidates: $0.002874, Thoughts: $0.008388, Cached: $0.001124, Total: $0.023233 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 19 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 19 Tokens - Prompt: $21693, Candidates: $588, Thoughts: $7705, Cached: $22484, Total: $52470 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 19 Cost - Prompt: $0.010847, Candidates: $0.001764, Thoughts: $0.023115, Cached: $0.001124, Total: $0.036850 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 20 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 20 Tokens - Prompt: $21693, Candidates: $532, Thoughts: $5415, Cached: $22484, Total: $50124 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 20 Cost - Prompt: $0.010847, Candidates: $0.001596, Thoughts: $0.016245, Cached: $0.001124, Total: $0.029812 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 21 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 21 Tokens - Prompt: $21693, Candidates: $424, Thoughts: $9700, Cached: $22484, Total: $54301 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 21 Cost - Prompt: $0.010847, Candidates: $0.001272, Thoughts: $0.029100, Cached: $0.001124, Total: $0.042343 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 22 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 22 Tokens - Prompt: $21693, Candidates: $730, Thoughts: $11177, Cached: $22484, Total: $56084 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 22 Cost - Prompt: $0.010847, Candidates: $0.002190, Thoughts: $0.033531, Cached: $0.001124, Total: $0.047692 
+2026-01-28 19:52:43 [32minfo[39m: Processing chunk 23 of 23 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 23 Tokens - Prompt: $21693, Candidates: $214, Thoughts: $6862, Cached: $22484, Total: $51253 
+2026-01-28 19:52:43 [32minfo[39m: Chunk 23 Cost - Prompt: $0.010847, Candidates: $0.000642, Thoughts: $0.020586, Cached: $0.001124, Total: $0.033199 
+2026-01-28 19:52:43 [32minfo[39m: Total cost: $0.821413 

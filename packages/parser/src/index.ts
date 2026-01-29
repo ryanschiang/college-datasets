@@ -13,9 +13,15 @@ import { logger } from "./config/logger.ts";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const uploadFile = async (ai: GoogleGenAI, filename: string, mimeType: string): Promise<File> => {
+const uploadFile = async (
+  ai: GoogleGenAI,
+  filename: string,
+  mimeType: string,
+): Promise<File> => {
   logger.info(`Uploading file ${filename} with mime type ${mimeType}`);
-  const fileData = await fs.readFile(path.join(__dirname, "..", "example", filename));
+  const fileData = await fs.readFile(
+    path.join(__dirname, "..", "example", filename),
+  );
   const fileBlob = new Blob([fileData], { type: mimeType });
   const file = await ai.files.upload({
     file: fileBlob,
@@ -35,6 +41,8 @@ const listFiles = async (ai: GoogleGenAI): Promise<Pager<File>> => {
 };
 
 (async () => {
+  const OUTPUT_NAME = "stanford";
+
   const MODEL = "gemini-3-flash-preview" as const;
   const ai = new GoogleGenAI({
     apiKey: env.GEMINI_API_KEY,
@@ -83,7 +91,9 @@ const listFiles = async (ai: GoogleGenAI): Promise<Pager<File>> => {
       return Promise.resolve(null);
     }
 
-    logger.info(`Sending request for chunk ${index + 1} of ${responseSchemas.length}`);
+    logger.info(
+      `Sending request for chunk ${index + 1} of ${responseSchemas.length}`,
+    );
 
     return ai.models
       .generateContent({
@@ -126,6 +136,7 @@ const listFiles = async (ai: GoogleGenAI): Promise<Pager<File>> => {
   };
 
   const writePromises: Promise<void>[] = [];
+  const combinedResponse: Record<string, unknown> = {};
 
   for (const result of results) {
     if (result.status === "rejected") {
@@ -147,14 +158,34 @@ const listFiles = async (ai: GoogleGenAI): Promise<Pager<File>> => {
 
     const rawResponse = JSON.parse(response.text);
     const responseJson = responseSchema.parse(rawResponse);
-    writePromises.push(fs.writeFile(path.join(__dirname, "..", "example", `response-${index + 1}.json`), JSON.stringify(responseJson, null, 2)));
+
+    // Merge chunk data into combined response
+    Object.assign(combinedResponse, responseJson);
+
+    // Write individual chunk file
+    writePromises.push(
+      fs.writeFile(
+        path.join(
+          __dirname,
+          "..",
+          "output",
+          `${OUTPUT_NAME}-${index + 1}.json`,
+        ),
+        JSON.stringify(responseJson, null, 2),
+      ),
+    );
 
     if (!response.usageMetadata) {
       logger.warn(`No usage metadata for chunk ${index + 1}`);
       continue;
     }
 
-    const { promptTokenCount = 0, candidatesTokenCount = 0, cachedContentTokenCount = 0, thoughtsTokenCount = 0 } = response.usageMetadata;
+    const {
+      promptTokenCount = 0,
+      candidatesTokenCount = 0,
+      cachedContentTokenCount = 0,
+      thoughtsTokenCount = 0,
+    } = response.usageMetadata;
 
     // Calculate how much of the prompt was not cached (new/uncached tokens)
     const newPromptTokenCount = promptTokenCount - cachedContentTokenCount;
@@ -169,17 +200,36 @@ const listFiles = async (ai: GoogleGenAI): Promise<Pager<File>> => {
     const cachedCost = (cachedContentTokenCount / 1_000_000) * RATES.CACHE;
 
     // Total cost
-    const totalTokens = newPromptTokenCount + candidatesTokenCount + thoughtsTokenCount + cachedContentTokenCount;
+    const totalTokens =
+      newPromptTokenCount +
+      candidatesTokenCount +
+      thoughtsTokenCount +
+      cachedContentTokenCount;
     const totalCost = promptCost + candidatesCost + thoughtsCost + cachedCost;
 
-    logger.info(`Chunk ${index + 1} Tokens - Prompt: $${newPromptTokenCount}, Candidates: $${candidatesTokenCount}, Thoughts: $${thoughtsTokenCount}, Cached: $${cachedContentTokenCount}, Total: $${totalTokens}`);
-    logger.info(`Chunk ${index + 1} Cost - Prompt: $${promptCost.toFixed(6)}, Candidates: $${candidatesCost.toFixed(6)}, Thoughts: $${thoughtsCost.toFixed(6)}, Cached: $${cachedCost.toFixed(6)}, Total: $${totalCost.toFixed(6)}`);
+    logger.info(
+      `Chunk ${index + 1} Tokens - Prompt: $${newPromptTokenCount}, Candidates: $${candidatesTokenCount}, Thoughts: $${thoughtsTokenCount}, Cached: $${cachedContentTokenCount}, Total: $${totalTokens}`,
+    );
+    logger.info(
+      `Chunk ${index + 1} Cost - Prompt: $${promptCost.toFixed(6)}, Candidates: $${candidatesCost.toFixed(6)}, Thoughts: $${thoughtsCost.toFixed(6)}, Cached: $${cachedCost.toFixed(6)}, Total: $${totalCost.toFixed(6)}`,
+    );
 
     finalCost += totalCost;
   }
 
+  // Write combined response file
+  writePromises.push(
+    fs.writeFile(
+      path.join(__dirname, "..", "output", `${OUTPUT_NAME}.json`),
+      JSON.stringify(combinedResponse, null, 2),
+    ),
+  );
+
   // Wait for all file writes to complete
   await Promise.all(writePromises);
+  logger.info(
+    `Written combined response to output/response-combined.json with ${Object.keys(combinedResponse).length} keys`,
+  );
 
   logger.info(`Total cost: $${finalCost.toFixed(6)}`);
 })();

@@ -1,0 +1,44 @@
+{
+  "sat_and_act_policies": {
+    "use_sat_act_in_admission_decisions": true,
+    "sat_or_act_policy": "required_to_be_considered",
+    "uses_test_scores_for_academic_advising": false,
+    "latest_date_for_sat_or_act_scores": "1/15",
+    "clarification_for_test_policy": "Beginning with the 2025-2026 application cycle, Stanford will reinstate its standardized testing requirement. ACT or SAT scores will be required for first-year and transfer students submitting applications for the Fall 2026 entry term. For information about holistic admission, please visit admission.stanford.edu/apply/overview/index.html.",
+    "tests_used_for_placement": [
+      "ap"
+    ]
+  },
+  "sat_act_first_time_first_year": {
+    "percent_submitting_sat_scores": 50.3,
+    "number_submitting_sat_scores": 857,
+    "percent_submitting_act_scores": 19,
+    "number_submitting_act_scores": 324
+  },
+  "sat_act_score_percentiles": {
+    "sat_composite_25th_percentile": 1510,
+    "sat_composite_50th_percentile": 1540,
+    "sat_composite_75th_percentile": 1570,
+    "sat_ebrw_25th_percentile": 740,
+    "sat_ebrw_50th_percentile": 760,
+    "sat_ebrw_75th_percentile": 780,
+    "sat_math_25th_percentile": 770,
+    "sat_math_50th_percentile": 790,
+    "sat_math_75th_percentile": 800,
+    "act_composite_25th_percentile": 34,
+    "act_composite_50th_percentile": 35,
+    "act_composite_75th_percentile": 35,
+    "act_math_25th_percentile": 33,
+    "act_math_50th_percentile": 35,
+    "act_math_75th_percentile": 36,
+    "act_english_25th_percentile": 35,
+    "act_english_50th_percentile": 35,
+    "act_english_75th_percentile": 36,
+    "act_science_25th_percentile": 33,
+    "act_science_50th_percentile": 35,
+    "act_science_75th_percentile": 36,
+    "act_reading_25th_percentile": 34,
+    "act_reading_50th_percentile": 36,
+    "act_reading_75th_percentile": 36
+  }
+}
