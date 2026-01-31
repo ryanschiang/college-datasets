@@ -30,15 +30,15 @@ export const getLatestCDSLink = async (key: string, value: string) => {
     );
 
     // Filter for link text that has "CDS" or "Common Data Set"
-    const cdsLinks = allLinks.filter((link) => link.text.includes("CDS") || link.text.includes("Common Data Set"));
+    // const cdsLinks = allLinks.filter((link) => link.text.includes("CDS") || link.text.includes("Common Data Set"));
 
-    if (cdsLinks.length === 0) {
-      logger.warn(`No CDS links found for ${key}`, {
-        allLinks,
-      });
-      await browser.close();
-      return false;
-    }
+    // if (cdsLinks.length === 0) {
+    //   logger.warn(`No CDS links found for ${key}`, {
+    //     allLinks,
+    //   });
+    //   await browser.close();
+    //   return false;
+    // }
 
     // For each link, extract any year-specific text (e.g. "2024-2025", "2024-25", "2024")
     const yearPatterns = [
@@ -47,7 +47,7 @@ export const getLatestCDSLink = async (key: string, value: string) => {
       /(\d{4})/, // 2024
     ];
 
-    const linksWithYears = cdsLinks
+    const linksWithYears = allLinks
       .map((link) => {
         const combinedText = `${link.text} ${link.href}`;
         for (const pattern of yearPatterns) {
@@ -68,12 +68,20 @@ export const getLatestCDSLink = async (key: string, value: string) => {
       return false;
     }
 
+    const cdsLinks = linksWithYears.filter((link) => {
+      if (link.text.includes("CDS") || link.text.includes("Common Data Set")) {
+        return true;
+      } else if (link.href.endsWith(".pdf") || link.href.includes("drive.google.com") || link.href.includes("box.com")) {
+        return true;
+      }
+      return false;
+    });
+
     // Sort to find the latest year-specific link (descending by year)
-    linksWithYears.sort((a, b) => b.year - a.year);
+    cdsLinks.sort((a, b) => b.year - a.year);
 
     // Get the link and validate it with isValidCDSLink
-    // const latestLink = linksWithYears.find((link) => isValidCDSLink(link.href));
-    const latestLink = linksWithYears.find((link) => link);
+    const latestLink = cdsLinks[0];
 
     if (!latestLink) {
       logger.warn(`No valid CDS link found for ${key} (checked ${linksWithYears.length} links)`, {
@@ -101,18 +109,3 @@ export const getLatestCDSLink = async (key: string, value: string) => {
     await browser.close();
   }
 };
-
-// (async () => {
-//   const cdsPagesWithLinks: Record<string, { url: string; year: number; text: string }> = {};
-
-//   const failedKeys: string[] = [];
-
-//   for (const [key, value] of Object.entries(cdsPages)) {
-//   }
-
-//   logger.warn(`Failed to find latest CDS file for ${failedKeys.length} keys`, {
-//     failedKeys,
-//   });
-
-//   fs.writeFileSync("cds-pages-with-links.json", JSON.stringify(cdsPagesWithLinks, null, 2));
-// })();

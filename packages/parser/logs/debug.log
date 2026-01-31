@@ -3186,3 +3186,368 @@
 2026-01-30 17:36:57 [32minfo[39m: Found CDS link for university_of_california_santa_barbara: https://drive.google.com/file/d/1HLeGQ6-vYTKhy3-e_zyfLDhW0jRfkIf3/view?usp=sharing (year: 2024) 
 2026-01-30 17:37:00 [32minfo[39m: Finding latest CDS file for boston_university... 
 2026-01-30 17:37:00 [32minfo[39m: Found CDS link for boston_university: https://www.bu.edu/asir/files/2025/03/cds-2025.pdf (year: 2024) 
+2026-01-30 19:45:37 [32minfo[39m: Finding latest CDS file for stanford_university... 
+2026-01-30 19:45:37 [32minfo[39m: Found CDS link for stanford_university: https://drive.google.com/file/d/12MjIqdzzHiECf6hfRlbU3RmmIy14hl1H/view?usp=sharing (year: 2024) 
+2026-01-30 19:45:40 [32minfo[39m: Finding latest CDS file for harvard_university... 
+2026-01-30 19:45:41 [32minfo[39m: Found CDS link for harvard_university: https://oira.harvard.edu/files/2025/06/HarvardUniversity_CDS_2024-2025.pdf (year: 2024) 
+2026-01-30 19:45:42 [32minfo[39m: Finding latest CDS file for new_york_university... 
+2026-01-30 19:45:42 [33mwarn[39m: No year-specific CDS links found for new_york_university 
+2026-01-30 19:45:58 [32minfo[39m: Finding latest CDS file for massachusetts_institute_of_technology... 
+2026-01-30 19:45:59 [32minfo[39m: Found CDS link for massachusetts_institute_of_technology: https://ir.mit.edu/projects/2024-25-common-data-set/ (year: 2024) 
+2026-01-30 19:46:00 [32minfo[39m: Finding latest CDS file for duke_university... 
+2026-01-30 19:46:01 [32minfo[39m: Found CDS link for duke_university: https://ir.provost.duke.edu/sites/default/files/CDS-2024-25-Final-2.pdf (year: 2024) 
+2026-01-30 19:46:02 [32minfo[39m: Finding latest CDS file for university_of_pennsylvania... 
+2026-01-30 19:46:02 [32minfo[39m: Found CDS link for university_of_pennsylvania: https://upenn.box.com/s/ckv4frz37rzxa4u6bdiv2h4yzykqm4ef (year: 2024) 
+2026-01-30 19:46:04 [32minfo[39m: Finding latest CDS file for cornell_university... 
+2026-01-30 19:46:05 [32minfo[39m: Found CDS link for cornell_university: http://irp.dpb.cornell.edu/wp-content/uploads/2025/07/CDS-2024-2025-v6-print.pdf (year: 2024) 
+2026-01-30 19:46:07 [32minfo[39m: Finding latest CDS file for university_of_california_los_angeles... 
+2026-01-30 19:46:07 [32minfo[39m: Found CDS link for university_of_california_los_angeles: https://apb.ucla.edu/file/d1ab04b3-ee89-4cf2-9124-8dc0471b5e5a (year: 2025) 
+2026-01-30 19:46:09 [32minfo[39m: Finding latest CDS file for vanderbilt_university... 
+2026-01-30 19:46:10 [33mwarn[39m: No valid CDS link found for vanderbilt_university (checked 26 links) {
+  "linksWithYears": [
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS_2024-2025.xlsx",
+      "text": "Download",
+      "year": 2024
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS_2023_2024_for_web_publishing.xlsx",
+      "text": "Download",
+      "year": 2025
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS_2022-2023.xlsx",
+      "text": "Download",
+      "year": 2022
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS_2021-2022.xlsx",
+      "text": "Download",
+      "year": 2021
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS_2020-2021.xlsx",
+      "text": "Download",
+      "year": 2020
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS_2019-2020.xlsx",
+      "text": "Download",
+      "year": 2019
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS_2018-2019.xls",
+      "text": "Download",
+      "year": 2018
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS_2017-2018.xlsx",
+      "text": "Download",
+      "year": 2017
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS_2016-2017.xls",
+      "text": "Download",
+      "year": 2016
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS_2015-2016.xls",
+      "text": "Download",
+      "year": 2015
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS_2014-2015.xlsx",
+      "text": "Download",
+      "year": 2014
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS_2013-2014-BT-Submission-Ver-2.xlsx",
+      "text": "Download",
+      "year": 2013
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS_2012-2013.xlsx",
+      "text": "Download",
+      "year": 2012
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS_2011.xlsx",
+      "text": "Download",
+      "year": 2025
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS2010_2011.xls",
+      "text": "Download",
+      "year": 2025
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS2009_10.xls",
+      "text": "Download",
+      "year": 2025
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS2008_2009-2.xls",
+      "text": "Download",
+      "year": 2025
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS2007_2008.xls",
+      "text": "Download",
+      "year": 2025
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS2006_2007.xls",
+      "text": "Download",
+      "year": 2025
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/CDS2005_2006.xls",
+      "text": "Download",
+      "year": 2025
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/cds_200405.xls",
+      "text": "Download",
+      "year": 2025
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/cds_2003-04.xls",
+      "text": "Download",
+      "year": 2003
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/cds2002.doc",
+      "text": "Download",
+      "year": 2025
+    },
+    {
+      "href": "https://cdn.vanderbilt.edu/vu-wpfsx/wp-content/uploads/sites/70/2025/11/cds2001.doc",
+      "text": "Download",
+      "year": 2025
+    },
+    {
+      "href": "https://goo.gl/maps/TU8FgZp3VKWpSK1H8",
+      "text": "Nashville, Tennessee 37240",
+      "year": 3724
+    },
+    {
+      "href": "tel:+16153227311",
+      "text": "615-322-7311",
+      "year": 7311
+    }
+  ]
+}
+2026-01-30 19:46:23 [32minfo[39m: Finding latest CDS file for yale_university... 
+2026-01-30 19:46:23 [32minfo[39m: Found CDS link for yale_university: https://oir.yale.edu/sites/default/files/yale_cds_2024-25_rmd_20250612.pdf (year: 2024) 
+2026-01-30 19:46:24 [32minfo[39m: Finding latest CDS file for university_of_southern_california... 
+2026-01-30 19:46:25 [32minfo[39m: Found CDS link for university_of_southern_california: https://oir.usc.edu/common-data-set-archive/common-data-set-2024-2025/ (year: 2024) 
+2026-01-30 19:46:26 [32minfo[39m: Finding latest CDS file for northwestern_university... 
+2026-01-30 19:46:26 [32minfo[39m: Found CDS link for northwestern_university: https://www.enrollment.northwestern.edu/data/common-data-set.html# (year: 2024) 
+2026-01-30 19:46:27 [32minfo[39m: Finding latest CDS file for georgia_institute_of_technology... 
+2026-01-30 19:46:28 [32minfo[39m: Found CDS link for georgia_institute_of_technology: https://irp.gatech.edu/files/CDS/CDS_2025-2026_FINAL_23JAN2026.pdf (year: 2025) 
+2026-01-30 19:46:29 [32minfo[39m: Finding latest CDS file for princeton_university... 
+2026-01-30 19:46:29 [33mwarn[39m: No year-specific CDS links found for princeton_university 
+2026-01-30 19:46:44 [32minfo[39m: Finding latest CDS file for boston_college... 
+2026-01-30 19:46:46 [32minfo[39m: Found CDS link for boston_college: https://www.bc.edu/content/dam/bc1/offices/irp/ir/cds/Boston_College_CDS_2024-2025_Final.pdf (year: 2024) 
+2026-01-30 19:46:47 [32minfo[39m: Finding latest CDS file for northeastern_university... 
+2026-01-30 19:46:49 [33mwarn[39m: No valid CDS link found for northeastern_university (checked 18 links) {
+  "linksWithYears": [
+    {
+      "href": "https://nam12.safelinks.protection.outlook.com/?url=https%3A%2F%2Fnces.ed.gov%2Fipeds%2Fuse-the-data%2Fsurvey-components%2F9%2Fgraduation-rates&data=05%7C02%7Cn.lemay%40northeastern.edu%7Ccb477440aef54f48221e08dc4854557a%7Ca8eec281aaa34daeac9b9a398b9215e7%7C0%7C0%7C638464774246429649%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=rbCtkGBpgcwr1NtZCxlNU8tfQON%2BCmFm%2FsLIJU9p6fY%3D&reserved=0",
+      "text": "https://nces.ed.gov/ipeds/use-the-data/survey-components/9/graduation-rates",
+      "year": 4774
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2024-2025-draft/",
+      "text": "2024-2025",
+      "year": 2024
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2023-2024-2/",
+      "text": "2023-2024",
+      "year": 2023
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2022-2023-t/",
+      "text": "2022-2023",
+      "year": 2022
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2021-2022/",
+      "text": "2021-2022",
+      "year": 2021
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2020-2021/",
+      "text": "2020-2021",
+      "year": 2020
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2019-2020/",
+      "text": "2019-2020",
+      "year": 2019
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2018-2019/",
+      "text": "2018-2019",
+      "year": 2018
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2017-2018/",
+      "text": "2017-2018",
+      "year": 2017
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2016-2017/",
+      "text": "2016-2017",
+      "year": 2016
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2015-2016/",
+      "text": "2015-2016",
+      "year": 2015
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2014-2015/",
+      "text": "2014-2015",
+      "year": 2014
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2013-2014/",
+      "text": "2013-2014",
+      "year": 2013
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2012-2013/",
+      "text": "2012-2013",
+      "year": 2012
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2011-2012/",
+      "text": "2011-2012",
+      "year": 2011
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2010-2011/",
+      "text": "2010-2011",
+      "year": 2010
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2009-2010/",
+      "text": "2009-2010",
+      "year": 2009
+    },
+    {
+      "href": "https://uds.northeastern.edu/cds/2008-09/",
+      "text": "2008-2009",
+      "year": 2008
+    }
+  ]
+}
+2026-01-30 19:46:59 [32minfo[39m: Finding latest CDS file for columbia_university... 
+2026-01-30 19:46:59 [33mwarn[39m: No year-specific CDS links found for columbia_university 
+2026-01-30 19:47:17 [32minfo[39m: Finding latest CDS file for university_of_virginia... 
+2026-01-30 19:47:18 [33mwarn[39m: No year-specific CDS links found for university_of_virginia 
+2026-01-30 19:47:30 [32minfo[39m: Finding latest CDS file for brown_university... 
+2026-01-30 19:47:31 [32minfo[39m: Found CDS link for brown_university: https://oir.brown.edu/sites/default/files/2020-04/CDS_2024_2025.pdf (year: 2024) 
+2026-01-30 19:47:32 [32minfo[39m: Finding latest CDS file for georgetown_university... 
+2026-01-30 19:47:34 [32minfo[39m: Found CDS link for georgetown_university: https://georgetown.box.com/s/rp4p2ly4ej2tsikv827pl48psmb68quv (year: 2024) 
+2026-01-30 19:47:36 [32minfo[39m: Finding latest CDS file for purdue_university... 
+2026-01-30 19:47:38 [32minfo[39m: Found CDS link for purdue_university: https://www.purdue.edu/idata/wp-content/uploads/2026/01/CDS_2025-2026.pdf (year: 2025) 
+2026-01-30 19:47:39 [32minfo[39m: Finding latest CDS file for university_of_california_berkeley... 
+2026-01-30 19:47:40 [33mwarn[39m: No valid CDS link found for university_of_california_berkeley (checked 4 links) {
+  "linksWithYears": [
+    {
+      "href": "https://docs.google.com/spreadsheets/d/1gG5Su0YadCRptQeSdJMLzGltVRar4_tb/edit?usp=sharing&ouid=108561847862806983489&rtpof=true&sd=true",
+      "text": "2024-2025(link is external)",
+      "year": 2024
+    },
+    {
+      "href": "https://docs.google.com/spreadsheets/d/1CfCS76GVbnoWUkERd-mMtJT2EsIN2eVq/edit?usp=sharing&ouid=108582348139572462659&rtpof=true&sd=true",
+      "text": "2023-2024(link is external)",
+      "year": 2023
+    },
+    {
+      "href": "https://docs.google.com/spreadsheets/d/1btrSgI8O3fL6GzNv28dvfoylS-cbFJ9I/edit?usp=sharing&ouid=108561847862806983489&rtpof=true&sd=true",
+      "text": "2022-2023(link is external)",
+      "year": 2022
+    },
+    {
+      "href": "https://docs.google.com/spreadsheets/d/1YFq4ZZMuE5VDrfi9BV7NOPUlC25W1XNr/edit?usp=sharing&ouid=108561847862806983489&rtpof=true&sd=true",
+      "text": "2021-2022(link is external)",
+      "year": 2021
+    }
+  ]
+}
+2026-01-30 19:47:53 [32minfo[39m: Finding latest CDS file for university_of_florida... 
+2026-01-30 19:47:55 [32minfo[39m: Found CDS link for university_of_florida:  (year: 2024) 
+2026-01-30 19:47:58 [32minfo[39m: Finding latest CDS file for dartmouth_college... 
+2026-01-30 19:47:59 [32minfo[39m: Found CDS link for dartmouth_college: https://www.dartmouth.edu/oir/pdfs/cds_2024-2025.pdf (year: 2024) 
+2026-01-30 19:48:00 [32minfo[39m: Finding latest CDS file for university_of_texas_at_austin... 
+2026-01-30 19:48:01 [33mwarn[39m: No year-specific CDS links found for university_of_texas_at_austin 
+2026-01-30 19:48:02 [32minfo[39m: Finding latest CDS file for university_of_michigan... 
+2026-01-30 19:48:03 [33mwarn[39m: No year-specific CDS links found for university_of_michigan 
+2026-01-30 19:48:03 [32minfo[39m: Finding latest CDS file for university_of_chicago... 
+2026-01-30 19:48:04 [32minfo[39m: Found CDS link for university_of_chicago: https://data.uchicago.edu/files/2025/08/CDS_2024-2025_to_publish.pdf (year: 2024) 
+2026-01-30 19:48:05 [32minfo[39m: Finding latest CDS file for university_of_notre_dame... 
+2026-01-30 19:48:06 [32minfo[39m: Found CDS link for university_of_notre_dame: https://www3.nd.edu/~instres/CDS/2024-2025/CDS_2024-2025.pdf (year: 2024) 
+2026-01-30 19:48:07 [32minfo[39m: Finding latest CDS file for johns_hopkins_university... 
+2026-01-30 19:48:07 [33mwarn[39m: No year-specific CDS links found for johns_hopkins_university 
+2026-01-30 19:48:08 [32minfo[39m: Finding latest CDS file for university_of_georgia... 
+2026-01-30 19:48:10 [32minfo[39m: Found CDS link for university_of_georgia: http://oir.uga.edu/wp-content/uploads/UGA_CDS_2024-2025.pdf (year: 2024) 
+2026-01-30 19:48:12 [32minfo[39m: Finding latest CDS file for university_of_north_carolina_at_chapel_hill... 
+2026-01-30 19:48:13 [32minfo[39m: Found CDS link for university_of_north_carolina_at_chapel_hill: https://oira.unc.edu/wp-content/uploads/sites/297/2025/08/CDS_UNCCH_2024-25_20250829.pdf (year: 2024) 
+2026-01-30 19:48:14 [32minfo[39m: Finding latest CDS file for university_of_illinois_urbana_champaign... 
+2026-01-30 19:48:14 [32minfo[39m: Found CDS link for university_of_illinois_urbana_champaign: https://www.dmi.illinois.edu/stuenr/stats/statsfa25.pdf (year: 2025) 
+2026-01-30 19:48:14 [32minfo[39m: Finding latest CDS file for washington_university_in_st_louis... 
+2026-01-30 19:48:17 [32minfo[39m: Found CDS link for washington_university_in_st_louis: https://washu.edu/app/uploads/2025/06/2024-2025-WashU-CDS.pdf (year: 2024) 
+2026-01-30 19:48:18 [32minfo[39m: Finding latest CDS file for rice_university... 
+2026-01-30 19:48:19 [32minfo[39m: Found CDS link for rice_university: https://ideas.rice.edu/wp-content/uploads/2025/10/CDS_2024-25_WEBSITE.pdf (year: 2024) 
+2026-01-30 19:48:19 [32minfo[39m: Finding latest CDS file for rutgers_university... 
+2026-01-30 19:48:19 [31merror[39m: Error finding latest CDS file for rutgers_university {
+  "error": {
+    "message": "net::ERR_SSL_PROTOCOL_ERROR at https://oirap.rutgers.edu/ReportingCommonDataSet.html",
+    "stack": "Error: net::ERR_SSL_PROTOCOL_ERROR at https://oirap.rutgers.edu/ReportingCommonDataSet.html\n    at navigate (/Users/ryanchiang/Sites/college-datasets/node_modules/.pnpm/puppeteer-core@24.36.1/node_modules/puppeteer-core/src/cdp/Frame.ts:211:13)\n    at async Function.race (/Users/ryanchiang/Sites/college-datasets/node_modules/.pnpm/puppeteer-core@24.36.1/node_modules/puppeteer-core/src/util/Deferred.ts:49:14)\n    at async CdpFrame.goto (/Users/ryanchiang/Sites/college-datasets/node_modules/.pnpm/puppeteer-core@24.36.1/node_modules/puppeteer-core/src/cdp/Frame.ts:164:17)\n    at async CdpPage.goto (/Users/ryanchiang/Sites/college-datasets/node_modules/.pnpm/puppeteer-core@24.36.1/node_modules/puppeteer-core/src/api/Page.ts:1756:12)\n    at async getLatestCDSLink (/Users/ryanchiang/Sites/college-datasets/packages/parser/src/scrape.ts:19:5)\n    at async main (/Users/ryanchiang/Sites/college-datasets/packages/parser/src/tui.ts:179:17)"
+  }
+}
+2026-01-30 19:48:22 [32minfo[39m: Finding latest CDS file for tufts_university... 
+2026-01-30 19:48:23 [32minfo[39m: Found CDS link for tufts_university: https://provost.tufts.edu/institutionalresearch/wp-content/uploads/sites/5/CDS_2024-2025-1.pdf (year: 2024) 
+2026-01-30 19:48:23 [32minfo[39m: Finding latest CDS file for penn_state_university... 
+2026-01-30 19:48:24 [32minfo[39m: Found CDS link for penn_state_university: https://opair.psu.edu/files/2025/06/CDS_2024_2025_UniversityPark_v2.pdf (year: 2025) 
+2026-01-30 19:48:25 [32minfo[39m: Finding latest CDS file for emory_university... 
+2026-01-30 19:48:27 [32minfo[39m: Found CDS link for emory_university: https://provost.emory.edu/planning-administration/_includes/documents/sections/institutional-data/emory-common-data-set-2024-2025.pdf (year: 2024) 
+2026-01-30 19:48:28 [32minfo[39m: Finding latest CDS file for clemson_university... 
+2026-01-30 19:48:29 [32minfo[39m: Found CDS link for clemson_university: https://open.clemson.edu/cds/17 (year: 2024) 
+2026-01-30 19:48:30 [32minfo[39m: Finding latest CDS file for carnegie_mellon_university... 
+2026-01-30 19:48:32 [32minfo[39m: Found CDS link for carnegie_mellon_university: https://www.cmu.edu/ira/CDS/cds_2526.html (year: 2025) 
+2026-01-30 19:48:32 [32minfo[39m: Finding latest CDS file for william_and_mary_college... 
+2026-01-30 19:48:35 [32minfo[39m: Found CDS link for william_and_mary_college: https://www.wm.edu/offices/it/services/ir/university_data/cds/cds9899.pdf (year: 9899) 
+2026-01-30 19:48:35 [32minfo[39m: Finding latest CDS file for north_carolina_state_university... 
+2026-01-30 19:48:36 [33mwarn[39m: No year-specific CDS links found for north_carolina_state_university 
+2026-01-30 19:48:37 [32minfo[39m: Finding latest CDS file for university_of_washington... 
+2026-01-30 19:48:39 [32minfo[39m: Found CDS link for university_of_washington: https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/162/2025/04/01121035/CDS_2024-2025_Seattle.pdf (year: 2024) 
+2026-01-30 19:48:42 [32minfo[39m: Finding latest CDS file for california_institute_of_technology... 
+2026-01-30 19:48:44 [32minfo[39m: Found CDS link for california_institute_of_technology: https://finance.caltech.edu/documents/29877/TREASURY_ORG_CHART_Rev_121224.pdf (year: 2987) 
+2026-01-30 19:48:45 [32minfo[39m: Finding latest CDS file for florida_state_university... 
+2026-01-30 19:48:46 [33mwarn[39m: No valid CDS link found for florida_state_university (checked 2 links) {
+  "linksWithYears": [
+    {
+      "href": "https://app.powerbi.com/Redirect?action=OpenApp&appId=5d44ead3-c2e3-446b-b513-eea342c7a828&ctid=a36450eb-db06-42a7-8d1b-026719f701e3",
+      "text": "Institutional Research Power BI App",
+      "year": 3645
+    },
+    {
+      "href": "https://www.linkedin.com/edu/school?id=18100",
+      "text": "Connect with Florida State on LinkedIn",
+      "year": 1810
+    }
+  ]
+}
+2026-01-30 19:48:49 [32minfo[39m: Finding latest CDS file for virginia_tech... 
+2026-01-30 19:48:51 [32minfo[39m: Found CDS link for virginia_tech: https://aie.vt.edu/content/dam/aie_vt_edu/common-data-set/24-25/2024-2025-CDS.xlsx (year: 2024) 
+2026-01-30 19:48:52 [32minfo[39m: Finding latest CDS file for tulane_university... 
+2026-01-30 19:48:53 [32minfo[39m: Found CDS link for tulane_university: https://tulane.box.com/s/1dgaxpa2x2ie24zgglrg0puwm1h7xrt5 (year: 2025) 
+2026-01-30 19:48:54 [32minfo[39m: Finding latest CDS file for university_of_california_santa_barbara... 
+2026-01-30 19:48:55 [32minfo[39m: Found CDS link for university_of_california_santa_barbara: https://drive.google.com/file/d/1HLeGQ6-vYTKhy3-e_zyfLDhW0jRfkIf3/view?usp=sharing (year: 2024) 
+2026-01-30 19:48:58 [32minfo[39m: Finding latest CDS file for boston_university... 
+2026-01-30 19:48:59 [32minfo[39m: Found CDS link for boston_university: https://www.bu.edu/asir/files/2025/03/cds-2025-a.pdf (year: 2025) 

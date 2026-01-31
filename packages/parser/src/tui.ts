@@ -31,6 +31,8 @@ const askQuestion = (question: string): Promise<string> => {
       process.stdin.resume();
     }
 
+    let resolved = false;
+
     const rl = readline.createInterface({
       input: process.stdin,
       output: process.stdout,
@@ -38,13 +40,19 @@ const askQuestion = (question: string): Promise<string> => {
     });
 
     rl.question(question, (answer) => {
-      rl.close();
-      resolve(answer.trim());
+      if (!resolved) {
+        resolved = true;
+        rl.close();
+        resolve(answer.trim());
+      }
     });
 
     // Handle close event (e.g., if user presses Ctrl+D)
     rl.on("close", () => {
-      resolve("");
+      if (!resolved) {
+        resolved = true;
+        resolve("");
+      }
     });
   });
 };
