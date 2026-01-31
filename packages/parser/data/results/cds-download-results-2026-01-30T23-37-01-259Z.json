@@ -1,0 +1,274 @@
+{
+  "stanford_university": {
+    "filename": "stanford_cds_2024_2025.pdf",
+    "url": "https://drive.google.com/file/d/12MjIqdzzHiECf6hfRlbU3RmmIy14hl1H/view?usp=sharing",
+    "status": "success",
+    "year": 2024
+  },
+  "harvard_university": {
+    "filename": "harvard_university_HarvardUniversity_CDS_2024-2025.pdf",
+    "url": "https://oira.harvard.edu/files/2025/06/HarvardUniversity_CDS_2024-2025.pdf",
+    "status": "success",
+    "year": 2024
+  },
+  "new_york_university": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "massachusetts_institute_of_technology": {
+    "filename": "massachusetts_institute_of_technology.html",
+    "url": "https://ir.mit.edu/projects/2024-25-common-data-set/",
+    "status": "success",
+    "year": 2024
+  },
+  "duke_university": {
+    "filename": "duke_university_CDS-2024-25-Final-2.pdf",
+    "url": "https://ir.provost.duke.edu/sites/default/files/CDS-2024-25-Final-2.pdf",
+    "status": "success",
+    "year": 2024
+  },
+  "university_of_pennsylvania": {
+    "filename": "university_of_pennsylvania.html",
+    "url": "https://upenn.box.com/s/ckv4frz37rzxa4u6bdiv2h4yzykqm4ef",
+    "status": "success",
+    "year": 2024
+  },
+  "cornell_university": {
+    "filename": "cornell_university_1000420.pdf",
+    "url": "http://irp.cornell.edu/wp-content/uploads/2024/04/1000420.pdf#pagemode=bookmarks",
+    "status": "success",
+    "year": 2008
+  },
+  "university_of_california_los_angeles": {
+    "filename": "university_of_california_los_angeles.pdf",
+    "url": "https://apb.ucla.edu/file/d1ab04b3-ee89-4cf2-9124-8dc0471b5e5a",
+    "status": "success",
+    "year": 2025
+  },
+  "vanderbilt_university": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "yale_university": {
+    "filename": "yale_university_yale_cds_2024-25_rmd_20250612.pdf",
+    "url": "https://oir.yale.edu/sites/default/files/yale_cds_2024-25_rmd_20250612.pdf",
+    "status": "success",
+    "year": 2024
+  },
+  "university_of_southern_california": {
+    "filename": "university_of_southern_california.html",
+    "url": "https://oir.usc.edu/common-data-set-archive/common-data-set-2024-2025/",
+    "status": "success",
+    "year": 2024
+  },
+  "northwestern_university": {
+    "filename": "northwestern_university.html",
+    "url": "https://www.enrollment.northwestern.edu/data/common-data-set.html#",
+    "status": "success",
+    "year": 2024
+  },
+  "georgia_institute_of_technology": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "princeton_university": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "boston_college": {
+    "filename": "boston_college_Boston_College_CDS_2024-2025_Final.pdf",
+    "url": "https://www.bc.edu/content/dam/bc1/offices/irp/ir/cds/Boston_College_CDS_2024-2025_Final.pdf",
+    "status": "success",
+    "year": 2024
+  },
+  "northeastern_university": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "columbia_university": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "university_of_virginia": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "brown_university": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "georgetown_university": {
+    "filename": "georgetown_university.html",
+    "url": "https://georgetown.box.com/s/rp4p2ly4ej2tsikv827pl48psmb68quv",
+    "status": "success",
+    "year": 2024
+  },
+  "purdue_university": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "university_of_california_berkeley": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "university_of_florida": {
+    "filename": null,
+    "url": "",
+    "status": "failed",
+    "year": 2024
+  },
+  "dartmouth_college": {
+    "filename": "dartmouth_college_cds_2024-2025.pdf",
+    "url": "https://www.dartmouth.edu/oir/pdfs/cds_2024-2025.pdf",
+    "status": "success",
+    "year": 2024
+  },
+  "university_of_texas_at_austin": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "university_of_michigan": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "university_of_chicago": {
+    "filename": "university_of_chicago_CDS_2024-2025_to_publish.pdf",
+    "url": "https://data.uchicago.edu/files/2025/08/CDS_2024-2025_to_publish.pdf",
+    "status": "success",
+    "year": 2024
+  },
+  "university_of_notre_dame": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "johns_hopkins_university": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "university_of_georgia": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "university_of_north_carolina_at_chapel_hill": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "university_of_illinois_urbana_champaign": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "washington_university_in_st_louis": {
+    "filename": "washington_university_in_st_louis_2024-2025-WashU-CDS.pdf",
+    "url": "https://washu.edu/app/uploads/2025/06/2024-2025-WashU-CDS.pdf",
+    "status": "success",
+    "year": 2024
+  },
+  "rice_university": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "rutgers_university": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "tufts_university": {
+    "filename": "tufts_university_CDS_2024-2025-1.pdf",
+    "url": "https://provost.tufts.edu/institutionalresearch/wp-content/uploads/sites/5/CDS_2024-2025-1.pdf",
+    "status": "success",
+    "year": 2024
+  },
+  "penn_state_university": {
+    "filename": "penn_state_university_CDS_2024_2025_UniversityPark_v2.pdf",
+    "url": "https://opair.psu.edu/files/2025/06/CDS_2024_2025_UniversityPark_v2.pdf",
+    "status": "success",
+    "year": 2025
+  },
+  "emory_university": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "clemson_university": {
+    "filename": "clemson_university.html",
+    "url": "https://open.clemson.edu/cds/17",
+    "status": "success",
+    "year": 2024
+  },
+  "carnegie_mellon_university": {
+    "filename": "carnegie_mellon_university.html",
+    "url": "https://www.cmu.edu/ira/CDS/cds_2526.html",
+    "status": "success",
+    "year": 2025
+  },
+  "william_and_mary_college": {
+    "filename": "william_and_mary_college_cds_2025-2026-definition.pdf",
+    "url": "https://www.wm.edu/offices/it/services/ir/university_data/cds/cds_2025-2026-definition.pdf",
+    "status": "success",
+    "year": 2025
+  },
+  "north_carolina_state_university": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "university_of_washington": {
+    "filename": "university_of_washington_CDS_2024-2025_Seattle.pdf",
+    "url": "https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/162/2025/04/01121035/CDS_2024-2025_Seattle.pdf",
+    "status": "success",
+    "year": 2024
+  },
+  "california_institute_of_technology": {
+    "filename": "california_institute_of_technology_cds_2025.pdf",
+    "url": "https://finance.caltech.edu/documents/31472/cds_2025.pdf",
+    "status": "success",
+    "year": 2024
+  },
+  "florida_state_university": {
+    "filename": null,
+    "url": null,
+    "status": "failed"
+  },
+  "virginia_tech": {
+    "filename": "virginia_tech_2024-2025-CDS.xlsx",
+    "url": "https://aie.vt.edu/content/dam/aie_vt_edu/common-data-set/24-25/2024-2025-CDS.xlsx",
+    "status": "success",
+    "year": 2024
+  },
+  "tulane_university": {
+    "filename": "tulane_university.html",
+    "url": "https://tulane.box.com/s/1dgaxpa2x2ie24zgglrg0puwm1h7xrt5",
+    "status": "success",
+    "year": 2025
+  },
+  "university_of_california_santa_barbara": {
+    "filename": "common.data.set.2024.25.pdf",
+    "url": "https://drive.google.com/file/d/1HLeGQ6-vYTKhy3-e_zyfLDhW0jRfkIf3/view?usp=sharing",
+    "status": "success",
+    "year": 2024
+  },
+  "boston_university": {
+    "filename": "boston_university_cds-2025.pdf",
+    "url": "https://www.bu.edu/asir/files/2025/03/cds-2025.pdf",
+    "status": "success",
+    "year": 2024
+  }
+}
