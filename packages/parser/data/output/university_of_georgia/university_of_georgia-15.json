@@ -1,0 +1,57 @@
+{
+  "rotc": {
+    "offers_army_rotc_marine_option": false,
+    "offers_army_rotc_on_campus": true,
+    "offers_army_rotc_at_cooperating_institution": false,
+    "army_rotc_cooperating_institution_name": "NOT_FOUND",
+    "offers_naval_rotc_marine_option": false,
+    "offers_naval_rotc_on_campus": false,
+    "offers_naval_rotc_at_cooperating_institution": false,
+    "naval_rotc_cooperating_institution_name": "NOT_FOUND",
+    "offers_air_force_rotc_marine_option": false,
+    "offers_air_force_rotc_on_campus": true,
+    "offers_air_force_rotc_at_cooperating_institution": false,
+    "air_force_rotc_cooperating_institution_name": "NOT_FOUND"
+  },
+  "housing_options": {
+    "has_coed_dorms": true,
+    "has_mens_dorms": false,
+    "has_womens_dorms": true,
+    "has_apartments_for_married_students": true,
+    "has_apartments_for_single_students": true,
+    "has_special_housing_for_disabled_students": true,
+    "has_special_housing_for_international_students": true,
+    "has_fraternity_sorority_housing": true,
+    "has_cooperative_housing": true,
+    "has_theme_housing": true,
+    "has_wellness_housing": true,
+    "has_living_learning_communities": true,
+    "other_housing_options": "NOT_FOUND"
+  },
+  "net_price_calculator_url": "https://osfa.uga.edu/sites/default/files/npcalc.htm",
+  "private_institutions_undergraduate_tuition": {
+    "first_year_tuition": 0,
+    "undergraduates_tuition": 0
+  },
+  "public_institutions_undergraduate_tuition": {
+    "first_year_tuition_in_district": 10034,
+    "undergraduates_tuition_in_district": 10034,
+    "first_year_tuition_in_state_out_of_district": 0,
+    "undergraduates_tuition_in_state_out_of_district": 0,
+    "first_year_tuition_out_of_state": 30272,
+    "undergraduates_tuition_out_of_state": 30272,
+    "first_year_tuition_non_resident": 30848,
+    "undergraduates_tuition_non_resident": 30848
+  },
+  "fees_food_and_housing": {
+    "first_year_required_fees": 1406,
+    "undergraduates_required_fees": 1406,
+    "first_year_food_and_housing_on_campus": 11672,
+    "undergraduates_food_and_housing_on_campus": 11672,
+    "first_year_housing_only_on_campus": 7228,
+    "undergraduates_housing_only_on_campus": 7228,
+    "first_year_food_only_on_campus": 4444,
+    "undergraduates_food_only_on_campus": 4444
+  },
+  "comprehensive_tuition_and_food_and_housing_fee": 0
+}

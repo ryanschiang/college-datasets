@@ -1,0 +1,58 @@
+{
+  "transfer_application_requirements": {
+    "high_school_transcript": "required_of_some",
+    "college_transcripts": "required_of_all",
+    "essay_or_personal_statement": "required_of_all",
+    "interview": "not_required",
+    "standardized_test_scores": "not_required",
+    "statement_of_good_standing": "required_of_all"
+  },
+  "minimum_high_school_gpa_for_transfer_admission": 0,
+  "minimum_college_gpa_for_transfer_admission": 0,
+  "other_transfer_requirements": "Letter of recommendation from Dean's Office, Letter of recommendation from academic instructor, Portfolio for the College of Art, Portfolio for the College of Architecture",
+  "transfer_application_dates": {
+    "fall_priority_date": "null",
+    "fall_closing_date": "March 2",
+    "fall_notification_date": "May 15",
+    "fall_reply_date": "May 29",
+    "fall_rolling_admission_date": "null",
+    "winter_priority_date": "null",
+    "winter_closing_date": "null",
+    "winter_notification_date": "null",
+    "winter_reply_date": "null",
+    "winter_rolling_admission_date": "null",
+    "spring_priority_date": "null",
+    "spring_closing_date": "October 15",
+    "spring_notification_date": "November 14",
+    "spring_reply_date": "November 28",
+    "spring_rolling_admission_date": "null",
+    "summer_priority_date": "null",
+    "summer_closing_date": "null",
+    "summer_notification_date": "null",
+    "summer_reply_date": "null",
+    "summer_rolling_admission_date": "null"
+  },
+  "open_admission_applies_to_transfer_students": false,
+  "additional_transfer_admission_requirements": "Varies by academic interest",
+  "lowest_grade_that_may_be_transferred_for_credit": "C or Pass",
+  "max_credits_or_courses_that_may_be_transferred_from_two_year_institutions": {
+    "number": 60,
+    "unit_type": "Credit Hours"
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_four_year_institutions": {
+    "number": 60,
+    "unit_type": "Credit Hours"
+  },
+  "min_credits_transfers_must_complete_at_your_institution_for_associate_degree": 0,
+  "min_credits_transfers_must_complete_at_your_institution_for_bachelors_degree": 0,
+  "other_transfer_credit_policies": "See https://bulletin.wustl.edu for specific requirements",
+  "military_transfer_credit_policies": {
+    "accepts_american_council_on_education": true,
+    "accepts_college_level_examination_program": true,
+    "accepts_dantes_subject_standardized_tests": true
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_american_council_on_education": {
+    "number": 0,
+    "unit_type": "null"
+  }
+}

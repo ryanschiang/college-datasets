@@ -1,0 +1,51 @@
+{
+  "sat_and_act_policies": {
+    "use_sat_act_in_admission_decisions": false,
+    "sat_or_act_policy": "not_considered",
+    "act_policy": "not_considered",
+    "sat_policy": "not_considered",
+    "uses_test_scores_for_academic_advising": true,
+    "latest_date_for_sat_or_act_scores": "1/15",
+    "clarification_for_test_policy": "University of California, Los Angeles is test-blind for admission purposes.",
+    "tests_used_for_placement": [
+      "sat",
+      "act",
+      "ap"
+    ]
+  },
+  "sat_act_first_time_first_year": {
+    "percent_submitting_sat_scores": 0,
+    "number_submitting_sat_scores": 0,
+    "percent_submitting_act_scores": 0,
+    "number_submitting_act_scores": 0
+  },
+  "sat_act_score_percentiles": {
+    "sat_composite_25th_percentile": 0,
+    "sat_composite_50th_percentile": 0,
+    "sat_composite_75th_percentile": 0,
+    "sat_ebrw_25th_percentile": 0,
+    "sat_ebrw_50th_percentile": 0,
+    "sat_ebrw_75th_percentile": 0,
+    "sat_math_25th_percentile": 0,
+    "sat_math_50th_percentile": 0,
+    "sat_math_75th_percentile": 0,
+    "act_composite_25th_percentile": 0,
+    "act_composite_50th_percentile": 0,
+    "act_composite_75th_percentile": 0,
+    "act_math_25th_percentile": 0,
+    "act_math_50th_percentile": 0,
+    "act_math_75th_percentile": 0,
+    "act_english_25th_percentile": 0,
+    "act_english_50th_percentile": 0,
+    "act_english_75th_percentile": 0,
+    "act_writing_25th_percentile": 0,
+    "act_writing_50th_percentile": 0,
+    "act_writing_75th_percentile": 0,
+    "act_science_25th_percentile": 0,
+    "act_science_50th_percentile": 0,
+    "act_science_75th_percentile": 0,
+    "act_reading_25th_percentile": 0,
+    "act_reading_50th_percentile": 0,
+    "act_reading_75th_percentile": 0
+  }
+}

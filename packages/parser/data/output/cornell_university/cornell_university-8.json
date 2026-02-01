@@ -1,0 +1,29 @@
+{
+  "sat_and_act_policies": {
+    "use_sat_act_in_admission_decisions": true,
+    "sat_or_act_policy": "required_to_be_considered",
+    "uses_test_scores_for_academic_advising": true,
+    "latest_date_for_sat_or_act_scores": "January 2",
+    "tests_used_for_placement": []
+  },
+  "sat_act_first_time_first_year": {
+    "percent_submitting_sat_scores": 44.9,
+    "number_submitting_sat_scores": 1583,
+    "percent_submitting_act_scores": 14.6,
+    "number_submitting_act_scores": 513
+  },
+  "sat_act_score_percentiles": {
+    "sat_composite_25th_percentile": 1510,
+    "sat_composite_50th_percentile": 1540,
+    "sat_composite_75th_percentile": 1560,
+    "sat_ebrw_25th_percentile": 730,
+    "sat_ebrw_50th_percentile": 750,
+    "sat_ebrw_75th_percentile": 770,
+    "sat_math_25th_percentile": 770,
+    "sat_math_50th_percentile": 790,
+    "sat_math_75th_percentile": 800,
+    "act_composite_25th_percentile": 33,
+    "act_composite_50th_percentile": 34,
+    "act_composite_75th_percentile": 35
+  }
+}

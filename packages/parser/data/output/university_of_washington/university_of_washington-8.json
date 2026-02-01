@@ -1,0 +1,43 @@
+{
+  "sat_and_act_policies": {
+    "tests_used_for_placement": [
+      "ap",
+      "institutional_exam"
+    ]
+  },
+  "sat_act_first_time_first_year": {
+    "percent_submitting_sat_scores": 0.15,
+    "number_submitting_sat_scores": 1069,
+    "percent_submitting_act_scores": 0.04,
+    "number_submitting_act_scores": 303
+  },
+  "sat_act_score_percentiles": {
+    "sat_composite_25th_percentile": 1333,
+    "sat_composite_50th_percentile": 1410,
+    "sat_composite_75th_percentile": 1500,
+    "sat_ebrw_25th_percentile": 670,
+    "sat_ebrw_50th_percentile": 700,
+    "sat_ebrw_75th_percentile": 753,
+    "sat_math_25th_percentile": 640,
+    "sat_math_50th_percentile": 720,
+    "sat_math_75th_percentile": 763,
+    "act_composite_25th_percentile": 28,
+    "act_composite_50th_percentile": 30,
+    "act_composite_75th_percentile": 33,
+    "act_math_25th_percentile": 26,
+    "act_math_50th_percentile": 31,
+    "act_math_75th_percentile": 32,
+    "act_english_25th_percentile": 27,
+    "act_english_50th_percentile": 31,
+    "act_english_75th_percentile": 35,
+    "act_writing_25th_percentile": 8,
+    "act_writing_50th_percentile": 8,
+    "act_writing_75th_percentile": 9,
+    "act_science_25th_percentile": 28,
+    "act_science_50th_percentile": 31,
+    "act_science_75th_percentile": 33,
+    "act_reading_25th_percentile": 30,
+    "act_reading_50th_percentile": 33,
+    "act_reading_75th_percentile": 34
+  }
+}

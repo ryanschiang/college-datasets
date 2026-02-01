@@ -16,3 +16,14 @@
     "stack": "Error: net::ERR_SSL_PROTOCOL_ERROR at https://oirap.rutgers.edu/ReportingCommonDataSet.html\n    at navigate (/Users/ryanchiang/Sites/college-datasets/node_modules/.pnpm/puppeteer-core@24.36.1/node_modules/puppeteer-core/src/cdp/Frame.ts:211:13)\n    at async Function.race (/Users/ryanchiang/Sites/college-datasets/node_modules/.pnpm/puppeteer-core@24.36.1/node_modules/puppeteer-core/src/util/Deferred.ts:49:14)\n    at async CdpFrame.goto (/Users/ryanchiang/Sites/college-datasets/node_modules/.pnpm/puppeteer-core@24.36.1/node_modules/puppeteer-core/src/cdp/Frame.ts:164:17)\n    at async CdpPage.goto (/Users/ryanchiang/Sites/college-datasets/node_modules/.pnpm/puppeteer-core@24.36.1/node_modules/puppeteer-core/src/api/Page.ts:1756:12)\n    at async getLatestCDSLink (/Users/ryanchiang/Sites/college-datasets/packages/parser/src/scrape.ts:19:5)\n    at async main (/Users/ryanchiang/Sites/college-datasets/packages/parser/src/tui.ts:179:17)"
   }
 }
+2026-01-31 20:59:33 [31merror[39m: Request failed: Error: exception TypeError: fetch failed sending request 
+2026-01-31 21:29:46 [31merror[39m: Request failed: Error: exception TypeError: fetch failed sending request 
+2026-01-31 21:35:30 [31merror[39m: Request failed: Error: exception TypeError: fetch failed sending request 
+2026-01-31 21:45:51 [31merror[39m: Error parsing california_institute_of_technology: {
+  "error": {
+    "message": "{\"error\":{\"code\":400,\"message\":\"Cached content is too small. total_token_count=644, min_total_token_count=1024\",\"status\":\"INVALID_ARGUMENT\"}}",
+    "stack": "ApiError: {\"error\":{\"code\":400,\"message\":\"Cached content is too small. total_token_count=644, min_total_token_count=1024\",\"status\":\"INVALID_ARGUMENT\"}}\n    at throwErrorIfNotOK (/Users/ryanchiang/Sites/college-datasets/node_modules/.pnpm/@google+genai@1.38.0/node_modules/@google/genai/src/_api_client.ts:889:24)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async <anonymous> (/Users/ryanchiang/Sites/college-datasets/node_modules/.pnpm/@google+genai@1.38.0/node_modules/@google/genai/src/_api_client.ts:522:9)\n    at async parseCDS (/Users/ryanchiang/Sites/college-datasets/packages/parser/src/core/parse-cds.ts:51:17)\n    at async main (/Users/ryanchiang/Sites/college-datasets/packages/parser/src/index.ts:225:7)\n    at async <anonymous> (/Users/ryanchiang/Sites/college-datasets/packages/parser/src/index.ts:266:5)",
+    "name": "ApiError",
+    "status": 400
+  }
+}

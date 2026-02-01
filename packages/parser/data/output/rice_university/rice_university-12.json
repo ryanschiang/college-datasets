@@ -1,0 +1,58 @@
+{
+  "transfer_application_requirements": {
+    "high_school_transcript": "required_of_all",
+    "college_transcripts": "required_of_all",
+    "essay_or_personal_statement": "required_of_all",
+    "interview": "not_required",
+    "standardized_test_scores": "recommended_of_all",
+    "statement_of_good_standing": "required_of_all"
+  },
+  "minimum_high_school_gpa_for_transfer_admission": 0,
+  "minimum_college_gpa_for_transfer_admission": 3.2,
+  "other_transfer_requirements": "NOT_FOUND",
+  "transfer_application_dates": {
+    "fall_priority_date": "NOT_FOUND",
+    "fall_closing_date": "15-Mar",
+    "fall_notification_date": "NOT_FOUND",
+    "fall_reply_date": "2-3 weeks after notification",
+    "fall_rolling_admission_date": "NOT_FOUND",
+    "winter_priority_date": "NOT_FOUND",
+    "winter_closing_date": "NOT_FOUND",
+    "winter_notification_date": "NOT_FOUND",
+    "winter_reply_date": "NOT_FOUND",
+    "winter_rolling_admission_date": "NOT_FOUND",
+    "spring_priority_date": "NOT_FOUND",
+    "spring_closing_date": "15-Oct",
+    "spring_notification_date": "NOT_FOUND",
+    "spring_reply_date": "1-2 weeks after notification",
+    "spring_rolling_admission_date": "NOT_FOUND",
+    "summer_priority_date": "NOT_FOUND",
+    "summer_closing_date": "NOT_FOUND",
+    "summer_notification_date": "NOT_FOUND",
+    "summer_reply_date": "NOT_FOUND",
+    "summer_rolling_admission_date": "NOT_FOUND"
+  },
+  "open_admission_applies_to_transfer_students": false,
+  "additional_transfer_admission_requirements": "NOT_FOUND",
+  "lowest_grade_that_may_be_transferred_for_credit": "C-",
+  "max_credits_or_courses_that_may_be_transferred_from_two_year_institutions": {
+    "number": 0,
+    "unit_type": "No Limit"
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_four_year_institutions": {
+    "number": 0,
+    "unit_type": "No Limit"
+  },
+  "min_credits_transfers_must_complete_at_your_institution_for_associate_degree": 0,
+  "min_credits_transfers_must_complete_at_your_institution_for_bachelors_degree": 60,
+  "other_transfer_credit_policies": "https://ga.rice.edu/undergraduate-students/academic-policies-procedures/transfer-credit/",
+  "military_transfer_credit_policies": {
+    "accepts_american_council_on_education": false,
+    "accepts_college_level_examination_program": false,
+    "accepts_dantes_subject_standardized_tests": false
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_american_council_on_education": {
+    "number": 0,
+    "unit_type": "N/A"
+  }
+}

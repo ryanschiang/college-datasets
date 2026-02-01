@@ -1,0 +1,49 @@
+{
+  "graduation_rates": {
+    "initial_cohort_recipients_federal_pell_grant": 1399,
+    "initial_cohort_recipients_stafford_loan": 696,
+    "initial_cohort_recipients_not_receiving_any_federal_loans": 5001,
+    "initial_cohort_recipients_total": 7096,
+    "allowable_exclusions_federal_pell_grant": 2,
+    "allowable_exclusions_stafford_loan": 1,
+    "allowable_exclusions_not_receiving_any_federal_loans": 4,
+    "allowable_exclusions_total": 7,
+    "final_cohort_after_exclusions_federal_pell_grant": 1397,
+    "final_cohort_after_exclusions_stafford_loan": 695,
+    "final_cohort_after_exclusions_not_receiving_any_federal_loans": 4997,
+    "final_cohort_after_exclusions_total": 7089,
+    "completed_in_four_years_or_less_federal_pell_grant": 907,
+    "completed_in_four_years_or_less_stafford_loan": 494,
+    "completed_in_four_years_or_less_not_receiving_any_federal_loans": 3829,
+    "completed_in_four_years_or_less_total": 5230,
+    "completed_in_five_years_federal_pell_grant": 184,
+    "completed_in_five_years_stafford_loan": 64,
+    "completed_in_five_years_not_receiving_any_federal_loans": 470,
+    "completed_in_five_years_total": 718,
+    "completed_in_six_years_federal_pell_grant": 31,
+    "completed_in_six_years_stafford_loan": 13,
+    "completed_in_six_years_not_receiving_any_federal_loans": 48,
+    "completed_in_six_years_total": 92,
+    "total_graduating_within_six_years_federal_pell_grant": 1122,
+    "total_graduating_within_six_years_stafford_loan": 571,
+    "total_graduating_within_six_years_not_receiving_any_federal_loans": 4347,
+    "total_graduating_within_six_years_total": 6040,
+    "six_year_graduation_rate_federal_pell_grant": 80,
+    "six_year_graduation_rate_stafford_loan": 82,
+    "six_year_graduation_rate_not_receiving_any_federal_loans": 87,
+    "six_year_graduation_rate_total": 85
+  },
+  "retainment_rate": 0.95,
+  "first_time_first_year_student_applicants": {
+    "total_first_time_first_year_men_who_applied": 31589,
+    "total_first_time_first_year_women_who_applied": 37514,
+    "total_first_time_first_year_another_gender_who_applied": 0,
+    "total_first_time_first_year_unknown_gender_who_applied": 63
+  },
+  "first_time_first_year_student_admits": {
+    "total_first_time_first_year_men_who_were_admitted": 11090,
+    "total_first_time_first_year_women_who_were_admitted": 15966,
+    "total_first_time_first_year_another_gender_who_were_admitted": 0,
+    "total_first_time_first_year_unknown_gender_who_were_admitted": 20
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "student_to_faculty_ratio": {
+    "ratio": 20,
+    "number_students": 45893,
+    "number_faculty": 2302
+  },
+  "undergraduate_class_size": {
+    "class_sections_2_to_9": 647,
+    "class_sections_10_to_19": 538,
+    "class_sections_20_to_29": 429,
+    "class_sections_30_to_39": 196,
+    "class_sections_40_to_49": 126,
+    "class_sections_50_to_99": 295,
+    "class_sections_100_plus": 334,
+    "class_sections_total": 2565,
+    "class_sub_sections_2_to_9": 305,
+    "class_sub_sections_10_to_19": 807,
+    "class_sub_sections_20_to_29": 1422,
+    "class_sub_sections_30_to_39": 455,
+    "class_sub_sections_40_to_49": 138,
+    "class_sub_sections_50_to_99": 108,
+    "class_sub_sections_100_plus": 5,
+    "class_sub_sections_total": 3240
+  },
+  "agriculture_degrees_conferred": {
+    "agriculture_diplomas_certificates": 0,
+    "agriculture_associate": 0,
+    "agriculture_bachelors": 0,
+    "agriculture_cip_2020_categories": [
+      "01"
+    ]
+  },
+  "natural_resources_and_conservation_degrees_conferred": {
+    "natural_resources_and_conservation_diplomas_certificates": 0,
+    "natural_resources_and_conservation_associate": 0,
+    "natural_resources_and_conservation_bachelors": 1.2,
+    "natural_resources_and_conservation_cip_2020_categories": [
+      "03"
+    ]
+  },
+  "architecture_degrees_conferred": {
+    "architecture_diplomas_certificates": 0,
+    "architecture_associate": 0,
+    "architecture_bachelors": 0.2,
+    "architecture_cip_2020_categories": [
+      "04"
+    ]
+  },
+  "area_ethnic_and_gender_studies_degrees_conferred": {
+    "area_ethnic_and_gender_studies_diplomas_certificates": 0,
+    "area_ethnic_and_gender_studies_associate": 0,
+    "area_ethnic_and_gender_studies_bachelors": 2.1,
+    "area_ethnic_and_gender_studies_cip_2020_categories": [
+      "05"
+    ]
+  },
+  "communication_journalism_degrees_conferred": {
+    "communication_journalism_diplomas_certificates": 0,
+    "communication_journalism_associate": 0,
+    "communication_journalism_bachelors": 2.4,
+    "communication_journalism_cip_2020_categories": [
+      "09"
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "cds_corresponding_web_page": "https://irp.dpb.cornell.edu/common-data-set",
+  "address_information": {
+    "name_of_college_university": "Cornell University",
+    "mailing_address": "410 Thurston Avenue",
+    "mailing_address_city_state_zip_country": "Ithaca, New York 14850, United States",
+    "street_address": "410 Thurston Avenue",
+    "street_address_city_state_zip_country": "Ithaca, New York 14850, United States",
+    "main_phone_number": "607-255-5241",
+    "admissions_phone_number": "607-255-5241",
+    "admissions_office_mailing_address": "410 Thurston Avenue",
+    "admissions_office_mailing_address_city_state_zip_country": "Ithaca, New York 14850, United States",
+    "admissions_email_address": "admissions@cornell.edu",
+    "url_for_online_application": "https://admissions.cornell.edu/how-to-apply"
+  },
+  "source_of_institutional_control": "private",
+  "undergraduate_institution_classification": "coed",
+  "academic_year_calendar": "semester",
+  "degrees_offered": [
+    "certificate",
+    "masters",
+    "doctoral_degree_research_scholarship",
+    "doctoral_degree_professional_practice"
+  ],
+  "undergraduate_students_full_time": {
+    "degree_seeking_first_time_first_year_men": 1649,
+    "degree_seeking_first_time_first_year_women": 1876,
+    "degree_seeking_first_time_first_year_another_gender": 0,
+    "degree_seeking_first_time_first_year_unknown": 0,
+    "other_first_year_degree_seeking_men": 9,
+    "other_first_year_degree_seeking_women": 21,
+    "other_first_year_degree_seeking_another_gender": 0,
+    "other_first_year_degree_seeking_unknown": 0,
+    "all_other_degree_seeking_men": 5540,
+    "all_other_degree_seeking_women": 6744,
+    "all_other_degree_seeking_another_gender": 0,
+    "all_other_degree_seeking_unknown": 0,
+    "total_degree_seeking_men": 7198,
+    "total_degree_seeking_women": 8641,
+    "total_degree_seeking_another_gender": 0,
+    "total_degree_seeking_unknown": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_men": 65,
+    "all_other_undergraduates_enrolled_in_credit_courses_women": 68,
+    "all_other_undergraduates_enrolled_in_credit_courses_another_gender": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_unknown": 0,
+    "total_undergraduate_full_time_students_men": 7263,
+    "total_undergraduate_full_time_students_women": 8709,
+    "total_undergraduate_full_time_students_another_gender": 0,
+    "total_undergraduate_full_time_students_unknown": 0
+  }
+}

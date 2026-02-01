@@ -1,0 +1,35 @@
+{
+  "sat_and_act_policies": {
+    "use_sat_act_in_admission_decisions": true,
+    "sat_or_act_policy": "not_required_but_considered",
+    "uses_test_scores_for_academic_advising": true,
+    "clarification_for_test_policy": "Duke University will be test optional for the 2025-26 admissions cycle.",
+    "tests_used_for_placement": [
+      "sat",
+      "ap"
+    ]
+  },
+  "sat_act_first_time_first_year": {
+    "percent_submitting_sat_scores": 48,
+    "number_submitting_sat_scores": 824,
+    "percent_submitting_act_scores": 30,
+    "number_submitting_act_scores": 526
+  },
+  "sat_act_score_percentiles": {
+    "sat_ebrw_25th_percentile": 740,
+    "sat_ebrw_50th_percentile": 760,
+    "sat_ebrw_75th_percentile": 770,
+    "sat_math_25th_percentile": 760,
+    "sat_math_50th_percentile": 780,
+    "sat_math_75th_percentile": 800,
+    "act_composite_25th_percentile": 34,
+    "act_composite_50th_percentile": 35,
+    "act_composite_75th_percentile": 35,
+    "act_math_25th_percentile": 35,
+    "act_math_50th_percentile": 35,
+    "act_math_75th_percentile": 36,
+    "act_english_25th_percentile": 32,
+    "act_english_50th_percentile": 35,
+    "act_english_75th_percentile": 35
+  }
+}

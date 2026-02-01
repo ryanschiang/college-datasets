@@ -1,0 +1,52 @@
+{
+  "sat_and_act_policies": {
+    "use_sat_act_in_admission_decisions": true,
+    "sat_or_act_policy": "required_to_be_considered",
+    "act_policy": "not_considered",
+    "sat_policy": "not_considered",
+    "uses_test_scores_for_academic_advising": true,
+    "latest_date_for_sat_or_act_scores": "23-Jan",
+    "clarification_for_test_policy": "Georgia Tech does not have an open admission policy.",
+    "tests_used_for_placement": [
+      "sat",
+      "act",
+      "ap",
+      "institutional_exam"
+    ]
+  },
+  "sat_act_first_time_first_year": {
+    "percent_submitting_sat_scores": 78,
+    "number_submitting_sat_scores": 3181,
+    "percent_submitting_act_scores": 33,
+    "number_submitting_act_scores": 1348
+  },
+  "sat_act_score_percentiles": {
+    "sat_composite_25th_percentile": 1370,
+    "sat_composite_50th_percentile": 1460,
+    "sat_composite_75th_percentile": 1530,
+    "sat_ebrw_25th_percentile": 680,
+    "sat_ebrw_50th_percentile": 730,
+    "sat_ebrw_75th_percentile": 760,
+    "sat_math_25th_percentile": 700,
+    "sat_math_50th_percentile": 750,
+    "sat_math_75th_percentile": 790,
+    "act_composite_25th_percentile": 31,
+    "act_composite_50th_percentile": 33,
+    "act_composite_75th_percentile": 35,
+    "act_math_25th_percentile": 29,
+    "act_math_50th_percentile": 33,
+    "act_math_75th_percentile": 35,
+    "act_english_25th_percentile": 31,
+    "act_english_50th_percentile": 34,
+    "act_english_75th_percentile": 35,
+    "act_writing_25th_percentile": 8,
+    "act_writing_50th_percentile": 8,
+    "act_writing_75th_percentile": 9,
+    "act_science_25th_percentile": 30,
+    "act_science_50th_percentile": 34,
+    "act_science_75th_percentile": 35,
+    "act_reading_25th_percentile": 32,
+    "act_reading_50th_percentile": 34,
+    "act_reading_75th_percentile": 36
+  }
+}

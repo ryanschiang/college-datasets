@@ -1,0 +1,82 @@
+{
+  "communication_technologies_degrees_conferred": {
+    "communication_technologies_diplomas_certificates": 0,
+    "communication_technologies_associate": 0,
+    "communication_technologies_bachelors": 0,
+    "communication_technologies_cip_2020_categories": [
+      "10"
+    ]
+  },
+  "computer_information_sciences_degrees_conferred": {
+    "computer_information_sciences_diplomas_certificates": 0,
+    "computer_information_sciences_associate": 0,
+    "computer_information_sciences_bachelors": 12.74,
+    "computer_information_sciences_cip_2020_categories": [
+      "11"
+    ]
+  },
+  "personal_culinary_services_degrees_conferred": {
+    "personal_culinary_services_diplomas_certificates": 0,
+    "personal_culinary_services_associate": 0,
+    "personal_culinary_services_bachelors": 0,
+    "personal_culinary_services_cip_2020_categories": [
+      "12"
+    ]
+  },
+  "education_degrees_conferred": {
+    "education_diplomas_certificates": 0,
+    "education_associate": 0,
+    "education_bachelors": 2.4,
+    "education_cip_2020_categories": [
+      "13"
+    ]
+  },
+  "engineering_degrees_conferred": {
+    "engineering_diplomas_certificates": 0,
+    "engineering_associate": 0,
+    "engineering_bachelors": 9.36,
+    "engineering_cip_2020_categories": [
+      "14"
+    ]
+  },
+  "engineering_technology_degrees_conferred": {
+    "engineering_technology_diplomas_certificates": 0,
+    "engineering_technology_associate": 0,
+    "engineering_technology_bachelors": 0,
+    "engineering_technology_cip_2020_categories": [
+      "15"
+    ]
+  },
+  "foreign_languages_literatures_and_linguistics_degrees_conferred": {
+    "foreign_languages_literatures_and_linguistics_diplomas_certificates": 0,
+    "foreign_languages_literatures_and_linguistics_associate": 0,
+    "foreign_languages_literatures_and_linguistics_bachelors": 2.09,
+    "foreign_languages_literatures_and_linguistics_cip_2020_categories": [
+      "16"
+    ]
+  },
+  "family_and_consumer_sciences_degrees_conferred": {
+    "family_and_consumer_sciences_diplomas_certificates": 0,
+    "family_and_consumer_sciences_associate": 0,
+    "family_and_consumer_sciences_bachelors": 0,
+    "family_and_consumer_sciences_cip_2020_categories": [
+      "19"
+    ]
+  },
+  "law_legal_studies_degrees_conferred": {
+    "law_legal_studies_diplomas_certificates": 0,
+    "law_legal_studies_associate": 0,
+    "law_legal_studies_bachelors": 1.31,
+    "law_legal_studies_cip_2020_categories": [
+      "22"
+    ]
+  },
+  "english_degrees_conferred": {
+    "english_diplomas_certificates": 0,
+    "english_associate": 0,
+    "english_bachelors": 1.52,
+    "english_cip_2020_categories": [
+      "23"
+    ]
+  }
+}

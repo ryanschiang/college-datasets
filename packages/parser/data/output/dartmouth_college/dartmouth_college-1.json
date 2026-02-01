@@ -1,0 +1,48 @@
+{
+  "address_information": {
+    "name_of_college_university": "Dartmouth College",
+    "mailing_address": "6016 McNutt Hall",
+    "mailing_address_city_state_zip_country": "Hanover, New Hampshire 03755 United States",
+    "main_phone_number": "603-646-1110",
+    "www_home_page_address": "http://dartmouth.edu/",
+    "admissions_phone_number": "603-646-2875",
+    "admissions_office_mailing_address": "6016 McNutt Hall",
+    "admissions_office_mailing_address_city_state_zip_country": "Hanover, New Hampshire 03755 United States",
+    "admissions_email_address": "apply@dartmouth.edu"
+  },
+  "source_of_institutional_control": "private",
+  "undergraduate_institution_classification": "coed",
+  "academic_year_calendar": "quarter",
+  "degrees_offered": [
+    "bachelors",
+    "masters",
+    "doctoral_degree_research_scholarship",
+    "doctoral_degree_professional_practice"
+  ],
+  "undergraduate_students_full_time": {
+    "degree_seeking_first_time_first_year_men": 612,
+    "degree_seeking_first_time_first_year_women": 554,
+    "degree_seeking_first_time_first_year_another_gender": 16,
+    "degree_seeking_first_time_first_year_unknown": 0,
+    "other_first_year_degree_seeking_men": 0,
+    "other_first_year_degree_seeking_women": 0,
+    "other_first_year_degree_seeking_another_gender": 0,
+    "other_first_year_degree_seeking_unknown": 0,
+    "all_other_degree_seeking_men": 1671,
+    "all_other_degree_seeking_women": 1576,
+    "all_other_degree_seeking_another_gender": 45,
+    "all_other_degree_seeking_unknown": 0,
+    "total_degree_seeking_men": 2283,
+    "total_degree_seeking_women": 2130,
+    "total_degree_seeking_another_gender": 61,
+    "total_degree_seeking_unknown": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_men": 39,
+    "all_other_undergraduates_enrolled_in_credit_courses_women": 28,
+    "all_other_undergraduates_enrolled_in_credit_courses_another_gender": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_unknown": 0,
+    "total_undergraduate_full_time_students_men": 2322,
+    "total_undergraduate_full_time_students_women": 2158,
+    "total_undergraduate_full_time_students_another_gender": 61,
+    "total_undergraduate_full_time_students_unknown": 0
+  }
+}

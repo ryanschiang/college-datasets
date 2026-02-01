@@ -21,6 +21,10 @@
         "declarationMap": true,
         "lib": [
             "es2022"
-        ]
+        ],
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "baseUrl": "."
     }
 }

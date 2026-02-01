@@ -1,0 +1,52 @@
+{
+  "student_to_faculty_ratio": {
+    "ratio": 5,
+    "number_students": 5755,
+    "number_faculty": 1128
+  },
+  "undergraduate_class_size": {
+    "class_sections_2_to_9": 387,
+    "class_sections_10_to_19": 409,
+    "class_sections_20_to_29": 84,
+    "class_sections_30_to_39": 40,
+    "class_sections_40_to_49": 29,
+    "class_sections_50_to_99": 59,
+    "class_sections_100_plus": 46,
+    "class_sections_total": 1054,
+    "class_sub_sections_2_to_9": 303,
+    "class_sub_sections_10_to_19": 695,
+    "class_sub_sections_20_to_29": 163,
+    "class_sub_sections_30_to_39": 23,
+    "class_sub_sections_40_to_49": 4,
+    "class_sub_sections_50_to_99": 2,
+    "class_sub_sections_100_plus": 0,
+    "class_sub_sections_total": 1190
+  },
+  "agriculture_degrees_conferred": {
+    "agriculture_cip_2020_categories": [
+      "01"
+    ]
+  },
+  "natural_resources_and_conservation_degrees_conferred": {
+    "natural_resources_and_conservation_cip_2020_categories": [
+      "03"
+    ]
+  },
+  "architecture_degrees_conferred": {
+    "architecture_bachelors": 1.1,
+    "architecture_cip_2020_categories": [
+      "04"
+    ]
+  },
+  "area_ethnic_and_gender_studies_degrees_conferred": {
+    "area_ethnic_and_gender_studies_bachelors": 2.2,
+    "area_ethnic_and_gender_studies_cip_2020_categories": [
+      "05"
+    ]
+  },
+  "communication_journalism_degrees_conferred": {
+    "communication_journalism_cip_2020_categories": [
+      "09"
+    ]
+  }
+}

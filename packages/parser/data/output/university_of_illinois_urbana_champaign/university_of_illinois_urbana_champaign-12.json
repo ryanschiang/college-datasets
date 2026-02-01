@@ -1,0 +1,49 @@
+{
+  "transfer_application_requirements": {
+    "high_school_transcript": "not_required",
+    "college_transcripts": "not_required",
+    "essay_or_personal_statement": "not_required",
+    "interview": "not_required",
+    "standardized_test_scores": "not_required",
+    "statement_of_good_standing": "not_required"
+  },
+  "transfer_application_dates": {
+    "fall_priority_date": "NOT_FOUND",
+    "fall_closing_date": "NOT_FOUND",
+    "fall_notification_date": "NOT_FOUND",
+    "fall_reply_date": "NOT_FOUND",
+    "fall_rolling_admission_date": "NOT_FOUND",
+    "winter_priority_date": "NOT_FOUND",
+    "winter_closing_date": "NOT_FOUND",
+    "winter_notification_date": "NOT_FOUND",
+    "winter_reply_date": "NOT_FOUND",
+    "winter_rolling_admission_date": "NOT_FOUND",
+    "spring_priority_date": "NOT_FOUND",
+    "spring_closing_date": "NOT_FOUND",
+    "spring_notification_date": "NOT_FOUND",
+    "spring_reply_date": "NOT_FOUND",
+    "spring_rolling_admission_date": "NOT_FOUND",
+    "summer_priority_date": "NOT_FOUND",
+    "summer_closing_date": "NOT_FOUND",
+    "summer_notification_date": "NOT_FOUND",
+    "summer_reply_date": "NOT_FOUND",
+    "summer_rolling_admission_date": "NOT_FOUND"
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_two_year_institutions": {
+    "number": 0,
+    "unit_type": "NOT_FOUND"
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_four_year_institutions": {
+    "number": 0,
+    "unit_type": "NOT_FOUND"
+  },
+  "military_transfer_credit_policies": {
+    "accepts_american_council_on_education": false,
+    "accepts_college_level_examination_program": false,
+    "accepts_dantes_subject_standardized_tests": false
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_american_council_on_education": {
+    "number": 0,
+    "unit_type": "NOT_FOUND"
+  }
+}

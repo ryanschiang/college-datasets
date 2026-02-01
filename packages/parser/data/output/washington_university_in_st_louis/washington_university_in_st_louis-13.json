@@ -1,0 +1,44 @@
+{
+  "max_credits_or_courses_that_may_be_transferred_from_clep_or_dsst": {
+    "number": 0,
+    "unit_type": "Credit Hours"
+  },
+  "military_veteran_transfer_policies_are_published_online": false,
+  "military_veteran_transfer_policies_url": "NOT_FOUND",
+  "other_military_veteran_transfer_policies": "NOT_FOUND",
+  "special_study_options": {
+    "has_accelerated_program": true,
+    "has_comprehensive_transition_and_postsecondary_program_for_students_with_intellectual_disabilities": false,
+    "has_cross_registration": true,
+    "has_distance_learning": true,
+    "has_double_major": true,
+    "has_english_as_second_language": false,
+    "has_exchange_student_program_domestic": false,
+    "has_external_degree_program": false,
+    "has_honors_program": false,
+    "has_independent_study": true,
+    "has_internships": true,
+    "has_liberal_arts_career_combination": true,
+    "has_student_designed_major": true,
+    "has_study_abroad": true,
+    "has_teacher_certification_program": true,
+    "has_undergraduate_research": true,
+    "has_weekend_college": false,
+    "other": "NOT_FOUND"
+  },
+  "graduation_requirements": {
+    "requires_arts_fine_arts": false,
+    "requires_computer_literacy": false,
+    "requires_english": true,
+    "requires_foreign_language": false,
+    "requires_history": false,
+    "requires_physical_education": false,
+    "requires_humanities": false,
+    "requires_intensive_writing": false,
+    "requires_mathematics": false,
+    "requires_philosophy": false,
+    "requires_sciences": false,
+    "requires_social_science": false,
+    "other": "Varies by school"
+  }
+}

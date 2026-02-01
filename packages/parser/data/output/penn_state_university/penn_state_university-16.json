@@ -1,0 +1,33 @@
+{
+  "min_credits_per_term_for_full_time_tuition": 12,
+  "max_credits_per_term_for_full_time_tuition": 19,
+  "tuition_and_fees_vary_by_year_of_study": true,
+  "tuition_and_fees_vary_by_program": true,
+  "estimated_expenses_full_time_undergraduates": {
+    "residents_books_and_supplies": 1200,
+    "commuters_at_home_books_and_supplies": 1200,
+    "commuters_not_at_home_books_and_supplies": 1200,
+    "residents_housing_only": 9006,
+    "commuters_at_home_housing_only": 0,
+    "commuters_not_at_home_housing_only": 9120,
+    "residents_food_only": 6038,
+    "commuters_at_home_food_only": 6154,
+    "commuters_not_at_home_food_only": 6154,
+    "residents_food_and_housing_total": 15044,
+    "commuters_at_home_food_and_housing_total": 6154,
+    "commuters_not_at_home_food_and_housing_total": 15274,
+    "residents_transportation": 2092,
+    "commuters_at_home_transportation": 2092,
+    "commuters_not_at_home_transportation": 2092,
+    "residents_other_expenses": 2928,
+    "commuters_at_home_other_expenses": 2928,
+    "commuters_not_at_home_other_expenses": 2928
+  },
+  "per_credit_hour_tuition": {
+    "private_institutions": 0,
+    "public_institutions_in_district": 836,
+    "public_institutions_in_state_out_of_district": 836,
+    "public_institutions_out_of_state": 1717,
+    "non_resident": 1717
+  }
+}

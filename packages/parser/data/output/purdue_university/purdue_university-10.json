@@ -1,0 +1,52 @@
+{
+  "high_school_class_rank": {
+    "percent_in_top_tenth": 52,
+    "percent_in_top_quarter": 80,
+    "percent_in_top_half": 95,
+    "percent_in_bottom_half": 5,
+    "percent_in_bottom_quarter": 1,
+    "percent_who_submitted_class_rank": 31
+  },
+  "high_school_gpa_percentages": {
+    "percent_who_submitted_with_gpa_of_4_0": 43,
+    "percent_who_submitted_with_gpa_between_3_75_and_3_99": 28,
+    "percent_who_submitted_with_gpa_between_3_50_and_3_74": 16,
+    "percent_who_submitted_with_gpa_between_3_25_and_3_49": 8,
+    "percent_who_submitted_with_gpa_between_3_00_and_3_24": 3,
+    "percent_who_submitted_with_gpa_between_2_50_and_2_99": 1,
+    "percent_who_submitted_with_gpa_between_2_0_and_2_49": 0.11,
+    "percent_who_submitted_with_gpa_between_1_0_and_1_99": 0.01,
+    "percent_who_submitted_with_gpa_between_below_1_0": 0,
+    "percent_who_did_not_submit_with_gpa_of_4_0": 22,
+    "percent_who_did_not_submit_with_gpa_between_3_75_and_3_99": 19,
+    "percent_who_did_not_submit_with_gpa_between_3_50_and_3_74": 17,
+    "percent_who_did_not_submit_with_gpa_between_3_25_and_3_49": 14,
+    "percent_who_did_not_submit_with_gpa_between_3_00_and_3_24": 11,
+    "percent_who_did_not_submit_with_gpa_between_2_50_and_2_99": 13,
+    "percent_who_did_not_submit_with_gpa_between_2_0_and_2_49": 3,
+    "percent_who_did_not_submit_with_gpa_between_1_0_and_1_99": 1,
+    "percent_who_did_not_submit_with_gpa_between_below_1_0": 0,
+    "percent_all_with_gpa_of_4_0": 43,
+    "percent_all_with_gpa_between_3_75_and_3_99": 28,
+    "percent_all_with_gpa_between_3_50_and_3_74": 16,
+    "percent_all_with_gpa_between_3_25_and_3_49": 8,
+    "percent_all_with_gpa_between_3_00_and_3_24": 3,
+    "percent_all_with_gpa_between_2_50_and_2_99": 2,
+    "percent_all_with_gpa_between_2_0_and_2_49": 0.19,
+    "percent_all_with_gpa_between_1_0_and_1_99": 0.03,
+    "percent_all_with_gpa_between_below_1_0": 0
+  },
+  "average_high_school_gpa": 3.81,
+  "percent_who_submitted_gpa": 92.8,
+  "application_fee": {
+    "has_application_fee": true,
+    "amount_of_application_fee": 60,
+    "can_be_waived": true
+  },
+  "application_closing_date": {
+    "has_application_closing_date": false,
+    "application_closing_date_fall": "NOT_FOUND",
+    "priority_date": "NOT_FOUND"
+  },
+  "has_non_fall_application_term": true
+}

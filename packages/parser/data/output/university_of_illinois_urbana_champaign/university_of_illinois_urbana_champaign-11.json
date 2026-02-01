@@ -1,0 +1,52 @@
+{
+  "notification_of_admission_decision": {
+    "is_on_a_rolling_basis": false,
+    "rolling_basis_start_date": "NOT_FOUND",
+    "by_date": "NOT_FOUND",
+    "other": "NOT_FOUND"
+  },
+  "reply_policy_for_admitted_applicants": {
+    "must_reply_by_date": "NOT_FOUND",
+    "no_set_date": false,
+    "reply_by_may_1_or_within_weeks": 0,
+    "other": "NOT_FOUND",
+    "deadline_for_housing_deposit": "NOT_FOUND",
+    "amount_of_housing_deposit": 0,
+    "housing_deposit_refundable": "no"
+  },
+  "deferred_admission_policy": {
+    "allows_deferred_admission": false,
+    "max_period_of_postponement": "NOT_FOUND"
+  },
+  "early_decision_policy": {
+    "has_early_decision_plan": false,
+    "first_or_only_early_decision_plan_closing_date": "NOT_FOUND",
+    "first_or_only_early_decision_plan_notification_date": "NOT_FOUND",
+    "other_early_decision_plan_closing_date": "NOT_FOUND",
+    "other_early_decision_plan_notification_date": "NOT_FOUND",
+    "number_of_early_decision_applicants": 0,
+    "number_of_applicants_admitted_under_early_decision_plan": 0,
+    "significant_details_about_early_decision_plan": "NOT_FOUND"
+  },
+  "early_action_policy": {
+    "has_early_action_plan": false,
+    "early_action_closing_date": "NOT_FOUND",
+    "early_action_notification_date": "NOT_FOUND",
+    "is_restrictive_early_action": false
+  },
+  "transfer_admission_stats": {
+    "male_applicants": 0,
+    "female_applicants": 0,
+    "another_gender_applicants": 0,
+    "unknown_gender_applicants": 0,
+    "male_admitted": 0,
+    "female_admitted": 0,
+    "another_gender_admitted": 0,
+    "unknown_gender_admitted": 0,
+    "male_enrolled": 0,
+    "female_enrolled": 0,
+    "another_gender_enrolled": 0,
+    "unknown_gender_enrolled": 0
+  },
+  "transfer_terms": []
+}

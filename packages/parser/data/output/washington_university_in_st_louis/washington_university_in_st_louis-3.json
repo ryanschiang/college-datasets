@@ -1,0 +1,35 @@
+{
+  "graduate_students_part_time": {
+    "degree_seeking_first_time_men": 126,
+    "degree_seeking_first_time_women": 97,
+    "degree_seeking_first_time_another_gender": 0,
+    "degree_seeking_first_time_unknown": 0,
+    "all_other_degree_seeking_men": 568,
+    "all_other_degree_seeking_women": 544,
+    "all_other_degree_seeking_another_gender": 0,
+    "all_other_degree_seeking_unknown": 0,
+    "all_other_graduates_enrolled_in_credit_courses_men": 25,
+    "all_other_graduates_enrolled_in_credit_courses_women": 29,
+    "all_other_graduates_enrolled_in_credit_courses_another_gender": 0,
+    "all_other_graduates_enrolled_in_credit_courses_unknown": 0,
+    "total_graduate_part_time_students_men": 719,
+    "total_graduate_part_time_students_women": 670,
+    "total_graduate_part_time_students_another_gender": 0,
+    "total_graduate_part_time_students_unknown": 0
+  },
+  "graduate_students_all": {
+    "total_graduate_students_men": 4087,
+    "total_graduate_students_women": 4050,
+    "total_graduate_students_another_gender": 0,
+    "total_graduate_students_unknown": 0
+  },
+  "all_students_total": {
+    "total_all_students_men": 7761,
+    "total_all_students_women": 8595,
+    "total_all_students_another_gender": 1,
+    "total_all_students_unknown": 0
+  },
+  "total_all_undergraduates": 8220,
+  "total_all_graduate": 8137,
+  "grand_total_all_students": 16357
+}

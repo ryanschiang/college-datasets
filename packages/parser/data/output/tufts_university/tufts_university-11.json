@@ -1,0 +1,59 @@
+{
+  "notification_of_admission_decision": {
+    "is_on_a_rolling_basis": false,
+    "rolling_basis_start_date": "NOT_FOUND",
+    "by_date": "April 1st",
+    "other": "NOT_FOUND"
+  },
+  "reply_policy_for_admitted_applicants": {
+    "must_reply_by_date": "May 1st",
+    "no_set_date": false,
+    "reply_by_may_1_or_within_weeks": 0,
+    "other": "NOT_FOUND",
+    "deadline_for_housing_deposit": "NOT_FOUND",
+    "amount_of_housing_deposit": 0,
+    "housing_deposit_refundable": "no"
+  },
+  "deferred_admission_policy": {
+    "allows_deferred_admission": true,
+    "max_period_of_postponement": "1 year"
+  },
+  "allows_early_admission_of_high_school_students": false,
+  "early_decision_policy": {
+    "has_early_decision_plan": true,
+    "first_or_only_early_decision_plan_closing_date": "November 4th",
+    "first_or_only_early_decision_plan_notification_date": "Mid-December",
+    "other_early_decision_plan_closing_date": "January 6th",
+    "other_early_decision_plan_notification_date": "Mid-February",
+    "number_of_early_decision_applicants": 0,
+    "number_of_applicants_admitted_under_early_decision_plan": 0,
+    "significant_details_about_early_decision_plan": "NOT_FOUND"
+  },
+  "early_action_policy": {
+    "has_early_action_plan": false,
+    "early_action_closing_date": "NOT_FOUND",
+    "early_action_notification_date": "NOT_FOUND",
+    "is_restrictive_early_action": false
+  },
+  "enrolls_transfer_students": true,
+  "allows_transfer_credit": true,
+  "transfer_admission_stats": {
+    "male_applicants": 708,
+    "female_applicants": 820,
+    "another_gender_applicants": 67,
+    "unknown_gender_applicants": 15,
+    "male_admitted": 135,
+    "female_admitted": 192,
+    "another_gender_admitted": 11,
+    "unknown_gender_admitted": 4,
+    "male_enrolled": 53,
+    "female_enrolled": 59,
+    "another_gender_enrolled": 6,
+    "unknown_gender_enrolled": 0
+  },
+  "transfer_terms": [
+    "fall"
+  ],
+  "has_minimum_transfer_credit_requirements": true,
+  "minimum_credits_and_unit_of_measure": "12 credit(s)"
+}

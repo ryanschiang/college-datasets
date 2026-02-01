@@ -1,0 +1,1174 @@
+{
+  "metadata": {
+    "tokens": {
+      "promptTokenCount": 536337,
+      "candidatesTokenCount": 16576,
+      "thoughtsTokenCount": 197608,
+      "cachedTokenCount": 555772,
+      "totalTokenCount": 1306293
+    },
+    "cost": {
+      "promptCost": 0.2681684999999999,
+      "candidatesCost": 0.049727999999999994,
+      "thoughtsCost": 0.5928239999999999,
+      "cachedCost": 0.027788599999999997,
+      "totalCost": 0.9385091
+    }
+  },
+  "data": {
+    "cds_corresponding_web_page": "https://oir.yale.edu/common-data-set",
+    "address_information": {
+      "name_of_college_university": "Yale University",
+      "mailing_address": "",
+      "mailing_address_city_state_zip_country": "New Haven, CT 06520, USA",
+      "street_address": "",
+      "street_address_city_state_zip_country": "",
+      "main_phone_number": "(203) 432-4771",
+      "www_home_page_address": "http://www.yale.edu",
+      "admissions_phone_number": "(203) 432-9316",
+      "admissions_toll_free_phone_number": ",",
+      "admissions_office_mailing_address": "P.O. Box 208234",
+      "admissions_office_mailing_address_city_state_zip_country": "New Haven, CT 06520, USA",
+      "admissions_email_address": "student.questions@yale.edu",
+      "url_for_online_application": "https://admissions.yale.edu"
+    },
+    "source_of_institutional_control": "private",
+    "undergraduate_institution_classification": "coed",
+    "academic_year_calendar": "semester",
+    "degrees_offered": [
+      "certificate",
+      "diploma",
+      "bachelors",
+      "postbachelors_certificate",
+      "masters",
+      "postmasters_certificate",
+      "doctoral_degree_research_scholarship",
+      "doctoral_degree_professional_practice",
+      "doctoral_degree_other"
+    ],
+    "diversity_equity_inclusion_url": "https://your.yale.edu/community/diversity-inclusion/office-diversity-and-inclusion",
+    "undergraduate_students_full_time": {
+      "degree_seeking_first_time_first_year_men": 782,
+      "degree_seeking_first_time_first_year_women": 769,
+      "degree_seeking_first_time_first_year_another_gender": 3,
+      "degree_seeking_first_time_first_year_unknown": 0,
+      "other_first_year_degree_seeking_men": 18,
+      "other_first_year_degree_seeking_women": 7,
+      "other_first_year_degree_seeking_another_gender": 0,
+      "other_first_year_degree_seeking_unknown": 0,
+      "all_other_degree_seeking_men": 2433,
+      "all_other_degree_seeking_women": 2646,
+      "all_other_degree_seeking_another_gender": 94,
+      "all_other_degree_seeking_unknown": 0,
+      "total_degree_seeking_men": 3233,
+      "total_degree_seeking_women": 3422,
+      "total_degree_seeking_another_gender": 97,
+      "total_degree_seeking_unknown": 0,
+      "all_other_undergraduates_enrolled_in_credit_courses_men": 1,
+      "all_other_undergraduates_enrolled_in_credit_courses_women": 0,
+      "all_other_undergraduates_enrolled_in_credit_courses_another_gender": 0,
+      "all_other_undergraduates_enrolled_in_credit_courses_unknown": 0,
+      "total_undergraduate_full_time_students_men": 3234,
+      "total_undergraduate_full_time_students_women": 3422,
+      "total_undergraduate_full_time_students_another_gender": 97,
+      "total_undergraduate_full_time_students_unknown": 0
+    },
+    "undergraduate_students_part_time": {
+      "degree_seeking_first_time_first_year_men": 0,
+      "degree_seeking_first_time_first_year_women": 0,
+      "degree_seeking_first_time_first_year_another_gender": 0,
+      "degree_seeking_first_time_first_year_unknown": 0,
+      "other_first_year_degree_seeking_men": 0,
+      "other_first_year_degree_seeking_women": 1,
+      "other_first_year_degree_seeking_another_gender": 0,
+      "other_first_year_degree_seeking_unknown": 0,
+      "all_other_degree_seeking_men": 3,
+      "all_other_degree_seeking_women": 2,
+      "all_other_degree_seeking_another_gender": 0,
+      "all_other_degree_seeking_unknown": 0,
+      "total_degree_seeking_men": 3,
+      "total_degree_seeking_women": 3,
+      "total_degree_seeking_another_gender": 0,
+      "total_degree_seeking_unknown": 0,
+      "all_other_undergraduates_enrolled_in_credit_courses_men": 30,
+      "all_other_undergraduates_enrolled_in_credit_courses_women": 25,
+      "all_other_undergraduates_enrolled_in_credit_courses_another_gender": 0,
+      "all_other_undergraduates_enrolled_in_credit_courses_unknown": 0,
+      "total_undergraduate_part_time_students_men": 33,
+      "total_undergraduate_part_time_students_women": 28,
+      "total_undergraduate_part_time_students_another_gender": 0,
+      "total_undergraduate_part_time_students_unknown": 0
+    },
+    "undergraduate_students_all": {
+      "total_undergraduate_students_men": 3267,
+      "total_undergraduate_students_women": 3450,
+      "total_undergraduate_students_another_gender": 97,
+      "total_undergraduate_students_unknown": 0
+    },
+    "graduate_students_full_time": {
+      "degree_seeking_first_time_men": 1255,
+      "degree_seeking_first_time_women": 1517,
+      "degree_seeking_first_time_another_gender": 52,
+      "degree_seeking_first_time_unknown": 2,
+      "all_other_degree_seeking_men": 2452,
+      "all_other_degree_seeking_women": 2926,
+      "all_other_degree_seeking_another_gender": 119,
+      "all_other_degree_seeking_unknown": 0,
+      "all_other_graduates_enrolled_in_credit_courses_men": 25,
+      "all_other_graduates_enrolled_in_credit_courses_women": 17,
+      "all_other_graduates_enrolled_in_credit_courses_another_gender": 2,
+      "all_other_graduates_enrolled_in_credit_courses_unknown": 1,
+      "total_graduate_full_time_students_men": 3732,
+      "total_graduate_full_time_students_women": 4460,
+      "total_graduate_full_time_students_another_gender": 173,
+      "total_graduate_full_time_students_unknown": 3
+    },
+    "graduate_students_part_time": {
+      "degree_seeking_first_time_men": 35,
+      "degree_seeking_first_time_women": 63,
+      "degree_seeking_first_time_another_gender": 1,
+      "degree_seeking_first_time_unknown": 0,
+      "all_other_degree_seeking_men": 82,
+      "all_other_degree_seeking_women": 140,
+      "all_other_degree_seeking_another_gender": 2,
+      "all_other_degree_seeking_unknown": 0,
+      "all_other_graduates_enrolled_in_credit_courses_men": 9,
+      "all_other_graduates_enrolled_in_credit_courses_women": 12,
+      "all_other_graduates_enrolled_in_credit_courses_another_gender": 3,
+      "all_other_graduates_enrolled_in_credit_courses_unknown": 35,
+      "total_graduate_part_time_students_men": 126,
+      "total_graduate_part_time_students_women": 215,
+      "total_graduate_part_time_students_another_gender": 6,
+      "total_graduate_part_time_students_unknown": 35
+    },
+    "graduate_students_all": {
+      "total_graduate_students_men": 3858,
+      "total_graduate_students_women": 4675,
+      "total_graduate_students_another_gender": 179,
+      "total_graduate_students_unknown": 38
+    },
+    "all_students_total": {
+      "total_all_students_men": 7125,
+      "total_all_students_women": 8125,
+      "total_all_students_another_gender": 276,
+      "total_all_students_unknown": 38
+    },
+    "total_all_undergraduates": 6814,
+    "total_all_graduate": 8750,
+    "grand_total_all_students": 15564,
+    "enrollment_by_racial_ethnic_category": {
+      "nonresidents_degree_seeking_first_time_first_year": 169,
+      "nonresidents_degree_seeking_undergraduates_includes_first_time_first_year": 754,
+      "nonresidents_total_undergraduates_both_degree_and_non_degree_seeking": 756,
+      "hispanic_latino_degree_seeking_first_time_first_year": 289,
+      "hispanic_latino_degree_seeking_undergraduates_includes_first_time_first_year": 1121,
+      "hispanic_latino_total_undergraduates_both_degree_and_non_degree_seeking": 1121,
+      "black_african_american_degree_seeking_first_time_first_year": 149,
+      "black_african_american_degree_seeking_undergraduates_includes_first_time_first_year": 628,
+      "black_african_american_total_undergraduates_both_degree_and_non_degree_seeking": 628,
+      "white_degree_seeking_first_time_first_year": 463,
+      "white_degree_seeking_undergraduates_includes_first_time_first_year": 2110,
+      "white_total_undergraduates_both_degree_and_non_degree_seeking": 2111,
+      "american_indian_alaska_native_degree_seeking_first_time_first_year": 7,
+      "american_indian_alaska_native_degree_seeking_undergraduates_includes_first_time_first_year": 27,
+      "american_indian_alaska_native_total_undergraduates_both_degree_and_non_degree_seeking": 27,
+      "asian_degree_seeking_first_time_first_year": 320,
+      "asian_degree_seeking_undergraduates_includes_first_time_first_year": 1483,
+      "asian_total_undergraduates_both_degree_and_non_degree_seeking": 1483,
+      "native_hawaiian_pacific_islander_degree_seeking_first_time_first_year": 2,
+      "native_hawaiian_pacific_islander_degree_seeking_undergraduates_includes_first_time_first_year": 11,
+      "native_hawaiian_pacific_islander_total_undergraduates_both_degree_and_non_degree_seeking": 11,
+      "two_or_more_races_degree_seeking_first_time_first_year": 100,
+      "two_or_more_races_degree_seeking_undergraduates_includes_first_time_first_year": 479,
+      "two_or_more_races_total_undergraduates_both_degree_and_non_degree_seeking": 479,
+      "race_ethnicity_unknown_degree_seeking_first_time_first_year": 55,
+      "race_ethnicity_unknown_degree_seeking_undergraduates_includes_first_time_first_year": 145,
+      "race_ethnicity_unknown_total_undergraduates_both_degree_and_non_degree_seeking": 198,
+      "total_degree_seeking_first_time_first_year": 1554,
+      "total_degree_seeking_undergraduates_includes_first_time_first_year": 6758,
+      "total_total_undergraduates_both_degree_and_non_degree_seeking": 6814
+    },
+    "number_of_degrees_awarded": {
+      "certificate_diploma": 2,
+      "associate_degrees": 0,
+      "bachelors_degrees": 1665,
+      "postbachelors_certificates": 74,
+      "masters_degrees": 2757,
+      "postmasters_certificates": 8,
+      "doctoral_degrees_research_scholarship": 438,
+      "doctoral_degrees_professional_practice": 318,
+      "doctoral_degrees_other": 1,
+      "start_date": "July 1, 2023",
+      "end_date": "June 30, 2024"
+    },
+    "graduation_rates": {
+      "initial_cohort_recipients_federal_pell_grant": 313,
+      "initial_cohort_recipients_stafford_loan": 27,
+      "initial_cohort_recipients_not_receiving_any_federal_loans": 1233,
+      "initial_cohort_recipients_total": 1573,
+      "allowable_exclusions_federal_pell_grant": 0,
+      "allowable_exclusions_stafford_loan": 0,
+      "allowable_exclusions_not_receiving_any_federal_loans": 1,
+      "allowable_exclusions_total": 1,
+      "final_cohort_after_exclusions_federal_pell_grant": 313,
+      "final_cohort_after_exclusions_stafford_loan": 27,
+      "final_cohort_after_exclusions_not_receiving_any_federal_loans": 1232,
+      "final_cohort_after_exclusions_total": 1572,
+      "completed_in_four_years_or_less_federal_pell_grant": 197,
+      "completed_in_four_years_or_less_stafford_loan": 18,
+      "completed_in_four_years_or_less_not_receiving_any_federal_loans": 689,
+      "completed_in_four_years_or_less_total": 904,
+      "completed_in_five_years_federal_pell_grant": 86,
+      "completed_in_five_years_stafford_loan": 9,
+      "completed_in_five_years_not_receiving_any_federal_loans": 458,
+      "completed_in_five_years_total": 553,
+      "completed_in_six_years_federal_pell_grant": 15,
+      "completed_in_six_years_stafford_loan": 0,
+      "completed_in_six_years_not_receiving_any_federal_loans": 33,
+      "completed_in_six_years_total": 48,
+      "total_graduating_within_six_years_federal_pell_grant": 298,
+      "total_graduating_within_six_years_stafford_loan": 27,
+      "total_graduating_within_six_years_not_receiving_any_federal_loans": 1180,
+      "total_graduating_within_six_years_total": 1505,
+      "six_year_graduation_rate_federal_pell_grant": 95.2,
+      "six_year_graduation_rate_stafford_loan": 100,
+      "six_year_graduation_rate_not_receiving_any_federal_loans": 95.8,
+      "six_year_graduation_rate_total": 95.7
+    },
+    "retainment_rate": 98.8,
+    "first_time_first_year_student_applicants": {
+      "total_first_time_first_year_men_who_applied": 24951,
+      "total_first_time_first_year_women_who_applied": 32540,
+      "total_first_time_first_year_another_gender_who_applied": 20,
+      "total_first_time_first_year_unknown_gender_who_applied": 6
+    },
+    "first_time_first_year_student_admits": {
+      "total_first_time_first_year_men_who_were_admitted": 1136,
+      "total_first_time_first_year_women_who_were_admitted": 1091,
+      "total_first_time_first_year_another_gender_who_were_admitted": 0,
+      "total_first_time_first_year_unknown_gender_who_were_admitted": 0
+    },
+    "first_time_first_year_student_enrollees_by_status": {
+      "total_full_time_first_time_first_year_men_who_enrolled": 782,
+      "total_part_time_first_time_first_year_men_who_enrolled": 0,
+      "total_full_time_first_time_first_year_women_who_enrolled": 772,
+      "total_part_time_first_time_first_year_women_who_enrolled": 0,
+      "total_full_time_first_time_first_year_another_gender_who_enrolled": 0,
+      "total_part_time_first_time_first_year_another_gender_who_enrolled": 0,
+      "total_full_time_first_time_first_year_unknown_gender_who_enrolled": 0,
+      "total_part_time_first_time_first_year_unknown_gender_who_enrolled": 0
+    },
+    "residency_breakdowns_for_total_applicants_admits_and_enrollees": {
+      "total_total_first_time_first_year_who_applied": 57517,
+      "in_state_total_first_time_first_year_who_applied": 1560,
+      "out_of_state_total_first_time_first_year_who_applied": 45657,
+      "international_total_first_time_first_year_who_applied": 10300,
+      "unknown_total_first_time_first_year_who_applied": 0,
+      "total_total_first_time_first_year_who_were_admitted": 2227,
+      "in_state_total_first_time_first_year_who_were_admitted": 128,
+      "out_of_state_total_first_time_first_year_who_were_admitted": 1729,
+      "international_total_first_time_first_year_who_were_admitted": 370,
+      "unknown_total_first_time_first_year_who_were_admitted": 0,
+      "total_total_first_time_first_year_who_enrolled": 1554,
+      "in_state_total_first_time_first_year_who_enrolled": 107,
+      "out_of_state_total_first_time_first_year_who_enrolled": 1278,
+      "international_total_first_time_first_year_who_enrolled": 169,
+      "unknown_total_first_time_first_year_who_enrolled": 0
+    },
+    "first_time_first_year_waitlisted_students": {
+      "has_waitlist_policy": true,
+      "number_of_qualified_applicants_offered_a_place_on_waiting_list": 773,
+      "number_accepting_a_place_on_the_waiting_list": 565,
+      "number_of_waitlisted_students_admitted": 23,
+      "waitlist_is_ranked": false,
+      "waitlist_rank_released_to_students": false,
+      "waitlist_rank_released_to_school_counselors": false
+    },
+    "high_school_completion_requirement": {
+      "high_school_diploma_required_and_ged_is_accepted": true,
+      "high_school_diploma_required_and_ged_is_not_accepted": false,
+      "high_school_diploma_or_equivalent_is_not_required": false
+    },
+    "require_or_recommend_general_college_preparatory_program": {
+      "require": false,
+      "recommend": true,
+      "neither_require_nor_recommend": false
+    },
+    "distribution_of_high_school_units_required_and_or_recommended": {
+      "total_academic_units_required": 0,
+      "total_academic_units_recommended": 0,
+      "english_required": 0,
+      "english_recommended": 0,
+      "mathematics_required": 0,
+      "mathematics_recommended": 0,
+      "science_required": 0,
+      "science_recommended": 0,
+      "science_lab_required": 0,
+      "science_lab_recommended": 0,
+      "foreign_language_required": 0,
+      "foreign_language_recommended": 0,
+      "social_studies_required": 0,
+      "social_studies_recommended": 0,
+      "history_required": 0,
+      "history_recommended": 0,
+      "academic_electives_required": 0,
+      "academic_electives_recommended": 0,
+      "computer_science_required": 0,
+      "computer_science_recommended": 0,
+      "visual_performing_arts_required": 0,
+      "visual_performing_arts_recommended": 0,
+      "other_required": 0,
+      "other_recommended": 0
+    },
+    "open_admission_policy": {
+      "open_admission_policy_as_described_above_for_all_students": false,
+      "selective_admission_for_out_of_state_students": false,
+      "selective_admission_to_some_programs": false,
+      "other": false
+    },
+    "relative_importance_of_academic_non_academic_factors": {
+      "rigor_of_secondary_school_record": "very_important",
+      "class_rank": "very_important",
+      "academic_gpa": "very_important",
+      "standardized_test_scores": "considered",
+      "application_essay": "very_important",
+      "recommendations": "very_important",
+      "interview": "considered",
+      "extracurricular_activities": "very_important",
+      "talent_ability": "very_important",
+      "character_personal_qualities": "very_important",
+      "first_generation": "considered",
+      "alumni_relation": "considered",
+      "geographical_residence": "considered",
+      "state_residency": "considered",
+      "religious_affiliation_commitment": "not_considered",
+      "volunteer_work": "considered",
+      "work_experience": "considered",
+      "level_of_applicants_interest": "not_considered"
+    },
+    "sat_and_act_policies": {
+      "use_sat_act_in_admission_decisions": true,
+      "sat_or_act_policy": "not_required_but_considered",
+      "act_policy": "not_required_but_considered",
+      "sat_policy": "not_required_but_considered",
+      "uses_test_scores_for_academic_advising": true,
+      "latest_date_for_sat_or_act_scores": "Single-choice Early Action - November 20 for SAT and ACT; Regular Decision - March 15 for SAT and ACT",
+      "clarification_for_test_policy": "In response to the ongoing disruptions associated with the COVID-19 pandemic, Yale will extend its test-optional admissions policy for an additional year. All applicants for undergraduate admission for Fall 2023 enrollment could have applied with or without ACT or SAT scores.",
+      "tests_used_for_placement": [
+        "ap",
+        "institutional_exam"
+      ]
+    },
+    "sat_act_first_time_first_year": {
+      "percent_submitting_sat_scores": 61,
+      "number_submitting_sat_scores": 950,
+      "percent_submitting_act_scores": 25,
+      "number_submitting_act_scores": 384
+    },
+    "sat_act_score_percentiles": {
+      "sat_composite_25th_percentile": 1480,
+      "sat_composite_50th_percentile": 1530,
+      "sat_composite_75th_percentile": 1560,
+      "sat_ebrw_25th_percentile": 730,
+      "sat_ebrw_50th_percentile": 760,
+      "sat_ebrw_75th_percentile": 780,
+      "sat_math_25th_percentile": 740,
+      "sat_math_50th_percentile": 780,
+      "sat_math_75th_percentile": 790,
+      "act_composite_25th_percentile": 33,
+      "act_composite_50th_percentile": 34,
+      "act_composite_75th_percentile": 35,
+      "act_math_25th_percentile": 31,
+      "act_math_50th_percentile": 34,
+      "act_math_75th_percentile": 35,
+      "act_english_25th_percentile": 34,
+      "act_english_50th_percentile": 35,
+      "act_english_75th_percentile": 36
+    },
+    "sat_score_percentages": {
+      "sat_ebrw_percent_score_700_to_800": 87.89,
+      "sat_ebrw_percent_score_600_to_699": 10.53,
+      "sat_ebrw_percent_score_500_to_599": 1.47,
+      "sat_ebrw_percent_score_400_to_499": 0.11,
+      "sat_ebrw_percent_score_300_to_399": 0,
+      "sat_ebrw_percent_score_200_to_299": 0,
+      "sat_math_percent_score_700_to_800": 88.1,
+      "sat_math_percent_score_600_to_699": 10.2,
+      "sat_math_percent_score_500_to_599": 1.7,
+      "sat_math_percent_score_400_to_499": 0,
+      "sat_math_percent_score_300_to_399": 0,
+      "sat_math_percent_score_200_to_299": 0,
+      "sat_composite_percent_score_1400_to_1600": 88.7,
+      "sat_composite_percent_score_1200_to_1399": 9.9,
+      "sat_composite_percent_score_1000_to_1199": 1.4,
+      "sat_composite_percent_score_800_to_999": 0,
+      "sat_composite_percent_score_600_to_799": 0,
+      "sat_composite_percent_score_400_to_599": 0
+    },
+    "act_score_percentages": {
+      "act_composite_percent_score_30_to_36": 0,
+      "act_composite_percent_score_24_to_39": 0,
+      "act_composite_percent_score_18_to_23": 0,
+      "act_composite_percent_score_12_to_17": 0,
+      "act_composite_percent_score_6_to_11": 0,
+      "act_composite_percent_score_below_6": 0,
+      "act_english_percent_score_30_to_36": 0,
+      "act_english_percent_score_24_to_39": 0,
+      "act_english_percent_score_18_to_23": 0,
+      "act_english_percent_score_12_to_17": 0,
+      "act_english_percent_score_6_to_11": 0,
+      "act_english_percent_score_below_6": 0,
+      "act_math_percent_score_30_to_36": 0,
+      "act_math_percent_score_24_to_39": 0,
+      "act_math_percent_score_18_to_23": 0,
+      "act_math_percent_score_12_to_17": 0,
+      "act_math_percent_score_6_to_11": 0,
+      "act_math_percent_score_below_6": 0,
+      "act_reading_percent_score_30_to_36": 0,
+      "act_reading_percent_score_24_to_39": 0,
+      "act_reading_percent_score_18_to_23": 0,
+      "act_reading_percent_score_12_to_17": 0,
+      "act_reading_percent_score_6_to_11": 0,
+      "act_reading_percent_score_below_6": 0,
+      "act_science_percent_score_30_to_36": 0,
+      "act_science_percent_score_24_to_39": 0,
+      "act_science_percent_score_18_to_23": 0,
+      "act_science_percent_score_12_to_17": 0,
+      "act_science_percent_score_6_to_11": 0,
+      "act_science_percent_score_below_6": 0
+    },
+    "high_school_class_rank": {
+      "percent_in_top_tenth": 96,
+      "percent_in_top_quarter": 99,
+      "percent_in_top_half": 100,
+      "percent_in_bottom_half": 0,
+      "percent_in_bottom_quarter": 0,
+      "percent_who_submitted_class_rank": 33
+    },
+    "high_school_gpa_percentages": {
+      "percent_all_with_gpa_of_4_0": 0,
+      "percent_all_with_gpa_between_3_75_and_3_99": 0,
+      "percent_all_with_gpa_between_3_50_and_3_74": 0,
+      "percent_all_with_gpa_between_3_25_and_3_49": 0,
+      "percent_all_with_gpa_between_3_00_and_3_24": 0,
+      "percent_all_with_gpa_between_2_50_and_2_99": 0,
+      "percent_all_with_gpa_between_2_0_and_2_49": 0,
+      "percent_all_with_gpa_between_1_0_and_1_99": 0,
+      "percent_all_with_gpa_between_below_1_0": 0
+    },
+    "average_high_school_gpa": 0,
+    "percent_who_submitted_gpa": 0,
+    "application_fee": {
+      "has_application_fee": true,
+      "amount_of_application_fee": 80,
+      "can_be_waived": true
+    },
+    "application_closing_date": {
+      "has_application_closing_date": true,
+      "application_closing_date_fall": "1/2",
+      "priority_date": "null"
+    },
+    "has_non_fall_application_term": false,
+    "notification_of_admission_decision": {
+      "is_on_a_rolling_basis": false,
+      "rolling_basis_start_date": "NOT_FOUND",
+      "by_date": "Apr 1",
+      "other": "NOT_FOUND"
+    },
+    "reply_policy_for_admitted_applicants": {
+      "must_reply_by_date": "May 1",
+      "no_set_date": false,
+      "reply_by_may_1_or_within_weeks": 0,
+      "other": "NOT_FOUND",
+      "deadline_for_housing_deposit": "NOT_FOUND",
+      "amount_of_housing_deposit": 0,
+      "housing_deposit_refundable": "no"
+    },
+    "deferred_admission_policy": {
+      "allows_deferred_admission": true,
+      "max_period_of_postponement": "1 YEAR"
+    },
+    "allows_early_admission_of_high_school_students": false,
+    "early_decision_policy": {
+      "has_early_decision_plan": false,
+      "first_or_only_early_decision_plan_closing_date": "NOT_FOUND",
+      "first_or_only_early_decision_plan_notification_date": "NOT_FOUND",
+      "other_early_decision_plan_closing_date": "NOT_FOUND",
+      "other_early_decision_plan_notification_date": "NOT_FOUND",
+      "number_of_early_decision_applicants": 0,
+      "number_of_applicants_admitted_under_early_decision_plan": 0,
+      "significant_details_about_early_decision_plan": "NOT_FOUND"
+    },
+    "early_action_policy": {
+      "has_early_action_plan": true,
+      "early_action_closing_date": "11/1",
+      "early_action_notification_date": "12/15",
+      "is_restrictive_early_action": true
+    },
+    "enrolls_transfer_students": true,
+    "allows_transfer_credit": true,
+    "transfer_admission_stats": {
+      "male_applicants": 1061,
+      "female_applicants": 988,
+      "another_gender_applicants": 0,
+      "unknown_gender_applicants": 6,
+      "male_admitted": 15,
+      "female_admitted": 13,
+      "another_gender_admitted": 0,
+      "unknown_gender_admitted": 2,
+      "male_enrolled": 11,
+      "female_enrolled": 10,
+      "another_gender_enrolled": 0,
+      "unknown_gender_enrolled": 2
+    },
+    "transfer_terms": [
+      "fall"
+    ],
+    "has_minimum_transfer_credit_requirements": true,
+    "minimum_credits_and_unit_of_measure": "NOT_FOUND",
+    "transfer_application_requirements": {
+      "high_school_transcript": "required_of_all",
+      "college_transcripts": "required_of_all",
+      "essay_or_personal_statement": "required_of_all",
+      "interview": "not_required",
+      "standardized_test_scores": "not_required",
+      "statement_of_good_standing": "required_of_all"
+    },
+    "minimum_high_school_gpa_for_transfer_admission": 0,
+    "minimum_college_gpa_for_transfer_admission": 0,
+    "other_transfer_requirements": "NOT_FOUND",
+    "transfer_application_dates": {
+      "fall_priority_date": "NOT_FOUND",
+      "fall_closing_date": "3/1",
+      "fall_notification_date": "Mid May",
+      "fall_reply_date": "Late May",
+      "fall_rolling_admission_date": "No",
+      "winter_priority_date": "NOT_FOUND",
+      "winter_closing_date": "NOT_FOUND",
+      "winter_notification_date": "NOT_FOUND",
+      "winter_reply_date": "NOT_FOUND",
+      "winter_rolling_admission_date": "NOT_FOUND",
+      "spring_priority_date": "NOT_FOUND",
+      "spring_closing_date": "NOT_FOUND",
+      "spring_notification_date": "NOT_FOUND",
+      "spring_reply_date": "NOT_FOUND",
+      "spring_rolling_admission_date": "NOT_FOUND",
+      "summer_priority_date": "NOT_FOUND",
+      "summer_closing_date": "NOT_FOUND",
+      "summer_notification_date": "NOT_FOUND",
+      "summer_reply_date": "NOT_FOUND",
+      "summer_rolling_admission_date": "NOT_FOUND"
+    },
+    "open_admission_applies_to_transfer_students": false,
+    "additional_transfer_admission_requirements": "NOT_FOUND",
+    "lowest_grade_that_may_be_transferred_for_credit": "NOT_FOUND",
+    "max_credits_or_courses_that_may_be_transferred_from_two_year_institutions": {
+      "number": 18,
+      "unit_type": "Course Credits (where 1 course credit = 4 credit hours)"
+    },
+    "max_credits_or_courses_that_may_be_transferred_from_four_year_institutions": {
+      "number": 18,
+      "unit_type": "Course Credits (where 1 course credit = 4 credit hours)"
+    },
+    "min_credits_transfers_must_complete_at_your_institution_for_associate_degree": 0,
+    "min_credits_transfers_must_complete_at_your_institution_for_bachelors_degree": 0,
+    "other_transfer_credit_policies": "NOT_FOUND",
+    "military_transfer_credit_policies": {
+      "accepts_american_council_on_education": false,
+      "accepts_college_level_examination_program": false,
+      "accepts_dantes_subject_standardized_tests": false
+    },
+    "max_credits_or_courses_that_may_be_transferred_from_american_council_on_education": {
+      "number": 0,
+      "unit_type": "NOT_FOUND"
+    },
+    "max_credits_or_courses_that_may_be_transferred_from_clep_or_dsst": {
+      "number": 0,
+      "unit_type": ""
+    },
+    "military_veteran_transfer_policies_are_published_online": true,
+    "military_veteran_transfer_policies_url": "https://admissions.yale.edu/eli-whitney-students-program-details",
+    "other_military_veteran_transfer_policies": "Yale does not have different credit transfer policies for veterans",
+    "special_study_options": {
+      "has_accelerated_program": true,
+      "has_comprehensive_transition_and_postsecondary_program_for_students_with_intellectual_disabilities": false,
+      "has_cross_registration": false,
+      "has_distance_learning": true,
+      "has_double_major": true,
+      "has_english_as_second_language": true,
+      "has_exchange_student_program_domestic": false,
+      "has_external_degree_program": false,
+      "has_honors_program": true,
+      "has_independent_study": true,
+      "has_internships": true,
+      "has_liberal_arts_career_combination": true,
+      "has_student_designed_major": true,
+      "has_study_abroad": true,
+      "has_teacher_certification_program": false,
+      "has_undergraduate_research": true,
+      "has_weekend_college": false,
+      "other": ""
+    },
+    "graduation_requirements": {
+      "requires_arts_fine_arts": true,
+      "requires_computer_literacy": false,
+      "requires_english": true,
+      "requires_foreign_language": true,
+      "requires_history": false,
+      "requires_physical_education": false,
+      "requires_humanities": true,
+      "requires_intensive_writing": true,
+      "requires_mathematics": false,
+      "requires_philosophy": false,
+      "requires_sciences": true,
+      "requires_social_science": true,
+      "other": ""
+    },
+    "student_life": {
+      "percent_ftfy_out_of_state_students": 93,
+      "percent_undergraduates_out_of_state_students": 93,
+      "percent_ftfy_men_fraternities": 0,
+      "percent_undergraduates_men_fraternities": 0,
+      "percent_ftfy_women_sororities": 0,
+      "percent_undergraduates_women_sororities": 0,
+      "percent_ftfy_college_owned_housing": 100,
+      "percent_undergraduates_college_owned_housing": 75,
+      "percent_ftfy_live_off_campus": 0,
+      "percent_undergraduates_live_off_campus": 25,
+      "percent_ftfy_age_25_or_older": 0,
+      "percent_undergraduates_age_25_or_older": 1,
+      "average_age_of_full_time_ftfy_students": 18,
+      "average_age_of_full_time_undergraduates_students": 20,
+      "average_age_of_all_ftfy_students": 18,
+      "average_age_of_all_undergraduates_students": 20
+    },
+    "activities_offered": {
+      "has_campus_ministries": true,
+      "has_choral_groups": true,
+      "has_concert_band": true,
+      "has_dance": true,
+      "has_drama_theater": true,
+      "has_international_student_organization": true,
+      "has_jazz_band": true,
+      "has_literary_magazine": true,
+      "has_marching_band": true,
+      "has_model_un": true,
+      "has_music_ensembles": true,
+      "has_musical_theater": true,
+      "has_opera": true,
+      "has_pep_band": true,
+      "has_radio_station": true,
+      "has_student_government": true,
+      "has_student_newspaper": true,
+      "has_student_run_film_society": true,
+      "has_symphony_orchestra": true,
+      "has_television_station": true,
+      "has_yearbook": true
+    },
+    "rotc": {
+      "offers_army_rotc_marine_option": false,
+      "offers_army_rotc_on_campus": false,
+      "offers_army_rotc_at_cooperating_institution": true,
+      "army_rotc_cooperating_institution_name": "University of New Haven and University of Connecticut",
+      "offers_naval_rotc_marine_option": true,
+      "offers_naval_rotc_on_campus": true,
+      "offers_naval_rotc_at_cooperating_institution": false,
+      "naval_rotc_cooperating_institution_name": "null",
+      "offers_air_force_rotc_marine_option": false,
+      "offers_air_force_rotc_on_campus": true,
+      "offers_air_force_rotc_at_cooperating_institution": false,
+      "air_force_rotc_cooperating_institution_name": "null"
+    },
+    "housing_options": {
+      "has_coed_dorms": true,
+      "has_mens_dorms": false,
+      "has_womens_dorms": false,
+      "has_apartments_for_married_students": false,
+      "has_apartments_for_single_students": false,
+      "has_special_housing_for_disabled_students": true,
+      "has_special_housing_for_international_students": false,
+      "has_fraternity_sorority_housing": false,
+      "has_cooperative_housing": false,
+      "has_theme_housing": false,
+      "has_wellness_housing": false,
+      "has_living_learning_communities": false,
+      "other_housing_options": "null"
+    },
+    "net_price_calculator_url": "https://admissions.yale.edu/estimate-your-cost",
+    "private_institutions_undergraduate_tuition": {
+      "first_year_tuition": 69900,
+      "undergraduates_tuition": 69900
+    },
+    "public_institutions_undergraduate_tuition": {
+      "first_year_tuition_in_district": 0,
+      "undergraduates_tuition_in_district": 0,
+      "first_year_tuition_in_state_out_of_district": 0,
+      "undergraduates_tuition_in_state_out_of_district": 0,
+      "first_year_tuition_out_of_state": 0,
+      "undergraduates_tuition_out_of_state": 0,
+      "first_year_tuition_non_resident": 0,
+      "undergraduates_tuition_non_resident": 0
+    },
+    "fees_food_and_housing": {
+      "first_year_required_fees": 0,
+      "undergraduates_required_fees": 0,
+      "first_year_food_and_housing_on_campus": 20650,
+      "undergraduates_food_and_housing_on_campus": 20650,
+      "first_year_housing_only_on_campus": 11550,
+      "undergraduates_housing_only_on_campus": 11550,
+      "first_year_food_only_on_campus": 9100,
+      "undergraduates_food_only_on_campus": 9100
+    },
+    "comprehensive_tuition_and_food_and_housing_fee": 0,
+    "min_credits_per_term_for_full_time_tuition": 3,
+    "max_credits_per_term_for_full_time_tuition": 5.5,
+    "tuition_and_fees_vary_by_year_of_study": false,
+    "tuition_and_fees_vary_by_program": false,
+    "estimated_expenses_full_time_undergraduates": {
+      "residents_books_and_supplies": 1000,
+      "commuters_at_home_books_and_supplies": 1000,
+      "commuters_not_at_home_books_and_supplies": 1000,
+      "residents_housing_only": 11550,
+      "commuters_at_home_housing_only": 0,
+      "commuters_not_at_home_housing_only": 11550,
+      "residents_food_only": 9100,
+      "commuters_at_home_food_only": 0,
+      "commuters_not_at_home_food_only": 9100,
+      "residents_food_and_housing_total": 20650,
+      "commuters_at_home_food_and_housing_total": 0,
+      "commuters_not_at_home_food_and_housing_total": 20650,
+      "residents_transportation": 1100,
+      "commuters_at_home_transportation": 1100,
+      "commuters_not_at_home_transportation": 1100,
+      "residents_other_expenses": 2700,
+      "commuters_at_home_other_expenses": 2700,
+      "commuters_not_at_home_other_expenses": 2700
+    },
+    "per_credit_hour_tuition": {
+      "private_institutions": 0,
+      "public_institutions_in_district": 0,
+      "public_institutions_in_state_out_of_district": 0,
+      "public_institutions_out_of_state": 0,
+      "non_resident": 0
+    },
+    "number_of_enrolled_students_awarded_aid": {
+      "number_of_ftfy_students": 1554,
+      "number_of_full_time_undergraduate_students": 6752,
+      "number_of_part_time_undergraduate_students": 6,
+      "number_of_ftfy_students_applied_for_aid": 1165,
+      "number_of_full_time_undergraduate_students_applied_for_aid": 3937,
+      "number_of_part_time_undergraduate_students_applied_for_aid": 6,
+      "number_of_ftfy_students_with_financial_need": 908,
+      "number_of_full_time_undergraduate_students_with_financial_need": 3293,
+      "number_of_part_time_undergraduate_students_with_financial_need": 5,
+      "number_of_ftfy_students_awarded_any_financial_aid": 908,
+      "number_of_full_time_undergraduate_students_awarded_any_financial_aid": 3293,
+      "number_of_part_time_undergraduate_students_awarded_any_financial_aid": 5,
+      "number_of_ftfy_students_awarded_any_need_based_scholarship_or_grant_aid": 905,
+      "number_of_full_time_undergraduate_students_awarded_any_need_based_scholarship_or_grant_aid": 3278,
+      "number_of_part_time_undergraduate_students_awarded_any_need_based_scholarship_or_grant_aid": 5,
+      "number_of_ftfy_students_awarded_any_need_based_self_help_aid": 622,
+      "number_of_full_time_undergraduate_students_awarded_any_need_based_self_help_aid": 2621,
+      "number_of_part_time_undergraduate_students_awarded_any_need_based_self_help_aid": 4,
+      "number_of_ftfy_students_awarded_any_non_need_based_scholarship_or_grant_aid": 5,
+      "number_of_full_time_undergraduate_students_awarded_any_non_need_based_scholarship_or_grant_aid": 22,
+      "number_of_part_time_undergraduate_students_awarded_any_non_need_based_scholarship_or_grant_aid": 0,
+      "number_of_ftfy_students_need_fully_met": 908,
+      "number_of_full_time_undergraduate_students_need_fully_met": 3293,
+      "number_of_part_time_undergraduate_students_need_fully_met": 5,
+      "avg_pct_need_met_for_ftfy_students": 100,
+      "avg_pct_need_met_for_full_time_undergraduate_students": 100,
+      "avg_pct_need_met_for_part_time_undergraduate_students": 100,
+      "avg_financial_aid_package_for_ftfy_students": 75093,
+      "avg_financial_aid_package_for_full_time_undergraduate_students": 74449,
+      "avg_financial_aid_package_for_part_time_undergraduate_students": 38683,
+      "avg_need_based_scholarship_and_grant_award_for_ftfy_students": 74040,
+      "avg_need_based_scholarship_and_grant_award_for_full_time_undergraduate_students": 72941,
+      "avg_need_based_scholarship_and_grant_award_for_part_time_undergraduate_students": 37483,
+      "avg_need_based_self_help_award_for_ftfy_students": 1899,
+      "avg_need_based_self_help_award_for_full_time_undergraduate_students": 2108,
+      "avg_need_based_self_help_award_for_part_time_undergraduate_students": 1680,
+      "avg_need_based_loan_for_ftfy_students": 1908,
+      "avg_need_based_loan_for_full_time_undergraduate_students": 2380,
+      "avg_need_based_loan_for_part_time_undergraduate_students": 2100
+    },
+    "number_of_enrolled_students_awarded_non_need_based_aid": {
+      "number_of_ftfy_students_awarded_merit_aid": 6,
+      "number_of_full_time_undergraduate_students_awarded_merit_aid": 24,
+      "number_of_part_time_undergraduate_students_awarded_merit_aid": 0,
+      "avg_merit_aid_for_ftfy_students": 27333,
+      "avg_merit_aid_for_full_time_undergraduate_students": 29162,
+      "avg_merit_aid_for_part_time_undergraduate_students": 0,
+      "number_of_ftfy_students_awarded_athletic_scholarship": 0,
+      "number_of_full_time_undergraduate_students_awarded_athletic_scholarship": 0,
+      "number_of_part_time_undergraduate_students_awarded_athletic_scholarship": 0,
+      "avg_athletic_scholarship_for_ftfy_students": 0,
+      "avg_athletic_scholarship_for_full_time_undergraduate_students": 0,
+      "avg_athletic_scholarship_for_part_time_undergraduate_students": 0
+    },
+    "number_of_bachelors_graduates": 1665,
+    "has_institutional_need_based_scholarship_or_grant_aid_for_nonresidents": true,
+    "has_institutional_non_need_based_scholarship_or_grant_aid_for_nonresidents": false,
+    "has_no_institutional_scholarship_or_grant_aid_for_nonresidents": false,
+    "instructional_faculty": {
+      "total_number_of_instructional_faculty_full_time": 1443,
+      "total_number_of_instructional_faculty_part_time": 665,
+      "total_number_of_instructional_faculty_total": 2108,
+      "members_of_minority_groups_full_time": 505,
+      "members_of_minority_groups_part_time": 159,
+      "members_of_minority_groups_total": 664,
+      "females_full_time": 600,
+      "females_part_time": 300,
+      "females_total": 900,
+      "males_full_time": 843,
+      "males_part_time": 365,
+      "males_total": 1208,
+      "nonresidents_international_full_time": 163,
+      "nonresidents_international_part_time": 44,
+      "nonresidents_international_total": 207,
+      "doctorate_or_terminal_degree_full_time": 1348,
+      "doctorate_or_terminal_degree_part_time": 518,
+      "doctorate_or_terminal_degree_total": 1866,
+      "masters_not_terminal_full_time": 55,
+      "masters_not_terminal_part_time": 58,
+      "masters_not_terminal_total": 113,
+      "bachelors_full_time": 31,
+      "bachelors_part_time": 58,
+      "bachelors_total": 89,
+      "unknown_or_other_full_time": 9,
+      "unknown_or_other_part_time": 31,
+      "unknown_or_other_total": 40,
+      "standalone_graduate_professional_programs_full_time": 299,
+      "standalone_graduate_professional_programs_part_time": 311,
+      "standalone_graduate_professional_programs_total": 610
+    },
+    "student_to_faculty_ratio": {
+      "ratio": 5,
+      "number_students": 6773,
+      "number_faculty": 1277
+    },
+    "undergraduate_class_size": {
+      "class_sections_2_to_9": 342,
+      "class_sections_10_to_19": 622,
+      "class_sections_20_to_29": 120,
+      "class_sections_30_to_39": 69,
+      "class_sections_40_to_49": 43,
+      "class_sections_50_to_99": 76,
+      "class_sections_100_plus": 45,
+      "class_sections_total": 1317,
+      "class_sub_sections_2_to_9": 0,
+      "class_sub_sections_10_to_19": 0,
+      "class_sub_sections_20_to_29": 0,
+      "class_sub_sections_30_to_39": 0,
+      "class_sub_sections_40_to_49": 0,
+      "class_sub_sections_50_to_99": 0,
+      "class_sub_sections_100_plus": 0,
+      "class_sub_sections_total": 0
+    },
+    "agriculture_degrees_conferred": {
+      "agriculture_diplomas_certificates": 0,
+      "agriculture_associate": 0,
+      "agriculture_bachelors": 0,
+      "agriculture_cip_2020_categories": [
+        "01"
+      ]
+    },
+    "natural_resources_and_conservation_degrees_conferred": {
+      "natural_resources_and_conservation_diplomas_certificates": 0,
+      "natural_resources_and_conservation_associate": 0,
+      "natural_resources_and_conservation_bachelors": 2.2,
+      "natural_resources_and_conservation_cip_2020_categories": [
+        "03"
+      ]
+    },
+    "architecture_degrees_conferred": {
+      "architecture_diplomas_certificates": 0,
+      "architecture_associate": 0,
+      "architecture_bachelors": 1.4,
+      "architecture_cip_2020_categories": [
+        "04"
+      ]
+    },
+    "area_ethnic_and_gender_studies_degrees_conferred": {
+      "area_ethnic_and_gender_studies_diplomas_certificates": 0,
+      "area_ethnic_and_gender_studies_associate": 0,
+      "area_ethnic_and_gender_studies_bachelors": 4.6,
+      "area_ethnic_and_gender_studies_cip_2020_categories": [
+        "05"
+      ]
+    },
+    "communication_journalism_degrees_conferred": {
+      "communication_journalism_diplomas_certificates": 0,
+      "communication_journalism_associate": 0,
+      "communication_journalism_bachelors": 0,
+      "communication_journalism_cip_2020_categories": [
+        "09"
+      ]
+    },
+    "communication_technologies_degrees_conferred": {
+      "communication_technologies_diplomas_certificates": 0,
+      "communication_technologies_associate": 0,
+      "communication_technologies_bachelors": 0,
+      "communication_technologies_cip_2020_categories": [
+        "10"
+      ]
+    },
+    "computer_information_sciences_degrees_conferred": {
+      "computer_information_sciences_diplomas_certificates": 0,
+      "computer_information_sciences_associate": 0,
+      "computer_information_sciences_bachelors": 9.4,
+      "computer_information_sciences_cip_2020_categories": [
+        "11"
+      ]
+    },
+    "personal_culinary_services_degrees_conferred": {
+      "personal_culinary_services_diplomas_certificates": 0,
+      "personal_culinary_services_associate": 0,
+      "personal_culinary_services_bachelors": 0,
+      "personal_culinary_services_cip_2020_categories": [
+        "12"
+      ]
+    },
+    "education_degrees_conferred": {
+      "education_diplomas_certificates": 0,
+      "education_associate": 0,
+      "education_bachelors": 0,
+      "education_cip_2020_categories": [
+        "13"
+      ]
+    },
+    "engineering_degrees_conferred": {
+      "engineering_diplomas_certificates": 0,
+      "engineering_associate": 0,
+      "engineering_bachelors": 5.8,
+      "engineering_cip_2020_categories": [
+        "14"
+      ]
+    },
+    "engineering_technology_degrees_conferred": {
+      "engineering_technology_diplomas_certificates": 0,
+      "engineering_technology_associate": 0,
+      "engineering_technology_bachelors": 0,
+      "engineering_technology_cip_2020_categories": [
+        "15"
+      ]
+    },
+    "foreign_languages_literatures_and_linguistics_degrees_conferred": {
+      "foreign_languages_literatures_and_linguistics_diplomas_certificates": 0,
+      "foreign_languages_literatures_and_linguistics_associate": 0,
+      "foreign_languages_literatures_and_linguistics_bachelors": 2.2,
+      "foreign_languages_literatures_and_linguistics_cip_2020_categories": [
+        "16"
+      ]
+    },
+    "family_and_consumer_sciences_degrees_conferred": {
+      "family_and_consumer_sciences_diplomas_certificates": 0,
+      "family_and_consumer_sciences_associate": 0,
+      "family_and_consumer_sciences_bachelors": 0,
+      "family_and_consumer_sciences_cip_2020_categories": [
+        "19"
+      ]
+    },
+    "law_legal_studies_degrees_conferred": {
+      "law_legal_studies_diplomas_certificates": 0,
+      "law_legal_studies_associate": 0,
+      "law_legal_studies_bachelors": 0,
+      "law_legal_studies_cip_2020_categories": [
+        "22"
+      ]
+    },
+    "english_degrees_conferred": {
+      "english_diplomas_certificates": 0,
+      "english_associate": 0,
+      "english_bachelors": 3.4,
+      "english_cip_2020_categories": [
+        "23"
+      ]
+    },
+    "liberal_arts_general_studies_degrees_conferred": {
+      "liberal_arts_general_studies_diplomas_certificates": 0,
+      "liberal_arts_general_studies_associate": 0,
+      "liberal_arts_general_studies_bachelors": 1.4,
+      "liberal_arts_general_studies_cip_2020_categories": [
+        "24"
+      ]
+    },
+    "library_science_degrees_conferred": {
+      "library_science_diplomas_certificates": 0,
+      "library_science_associate": 0,
+      "library_science_bachelors": 0,
+      "library_science_cip_2020_categories": [
+        "25"
+      ]
+    },
+    "biological_life_sciences_degrees_conferred": {
+      "biological_life_sciences_diplomas_certificates": 0,
+      "biological_life_sciences_associate": 0,
+      "biological_life_sciences_bachelors": 10.6,
+      "biological_life_sciences_cip_2020_categories": [
+        "26"
+      ]
+    },
+    "mathematics_and_statistics_degrees_conferred": {
+      "mathematics_and_statistics_diplomas_certificates": 0,
+      "mathematics_and_statistics_associate": 0,
+      "mathematics_and_statistics_bachelors": 7.5,
+      "mathematics_and_statistics_cip_2020_categories": [
+        "27"
+      ]
+    },
+    "military_science_and_military_technologies_degrees_conferred": {
+      "military_science_and_military_technologies_diplomas_certificates": 0,
+      "military_science_and_military_technologies_associate": 0,
+      "military_science_and_military_technologies_bachelors": 0,
+      "military_science_and_military_technologies_cip_2020_categories": [
+        "28",
+        "29"
+      ]
+    },
+    "interdisciplinary_studies_degrees_conferred": {
+      "interdisciplinary_studies_diplomas_certificates": 0,
+      "interdisciplinary_studies_associate": 0,
+      "interdisciplinary_studies_bachelors": 8.7,
+      "interdisciplinary_studies_cip_2020_categories": [
+        "30"
+      ]
+    },
+    "parks_and_recreation_degrees_conferred": {
+      "parks_and_recreation_diplomas_certificates": 0,
+      "parks_and_recreation_associate": 0,
+      "parks_and_recreation_bachelors": 0,
+      "parks_and_recreation_cip_2020_categories": [
+        "31"
+      ]
+    },
+    "philosophy_and_religious_studies_degrees_conferred": {
+      "philosophy_and_religious_studies_diplomas_certificates": 0,
+      "philosophy_and_religious_studies_associate": 0,
+      "philosophy_and_religious_studies_bachelors": 1.6,
+      "philosophy_and_religious_studies_cip_2020_categories": [
+        "38"
+      ]
+    },
+    "theology_and_religious_vocations_degrees_conferred": {
+      "theology_and_religious_vocations_diplomas_certificates": 0,
+      "theology_and_religious_vocations_associate": 0,
+      "theology_and_religious_vocations_bachelors": 0,
+      "theology_and_religious_vocations_cip_2020_categories": [
+        "39"
+      ]
+    },
+    "physical_sciences_degrees_conferred": {
+      "physical_sciences_diplomas_certificates": 0,
+      "physical_sciences_associate": 0,
+      "physical_sciences_bachelors": 3.8,
+      "physical_sciences_cip_2020_categories": [
+        "40"
+      ]
+    },
+    "science_technologies_degrees_conferred": {
+      "science_technologies_diplomas_certificates": 0,
+      "science_technologies_associate": 0,
+      "science_technologies_bachelors": 0,
+      "science_technologies_cip_2020_categories": [
+        "41"
+      ]
+    },
+    "psychology_degrees_conferred": {
+      "psychology_diplomas_certificates": 0,
+      "psychology_associate": 0,
+      "psychology_bachelors": 3.4,
+      "psychology_cip_2020_categories": [
+        "42"
+      ]
+    },
+    "homeland_security_law_enforcement_firefighting_and_protective_services_degrees_conferred": {
+      "homeland_security_law_enforcement_firefighting_and_protective_services_diplomas_certificates": 0,
+      "homeland_security_law_enforcement_firefighting_and_protective_services_associate": 0,
+      "homeland_security_law_enforcement_firefighting_and_protective_services_bachelors": 0,
+      "homeland_security_law_enforcement_firefighting_and_protective_services_cip_2020_categories": [
+        "43"
+      ]
+    },
+    "public_administration_and_social_services_degrees_conferred": {
+      "public_administration_and_social_services_diplomas_certificates": 0,
+      "public_administration_and_social_services_associate": 0,
+      "public_administration_and_social_services_bachelors": 0,
+      "public_administration_and_social_services_cip_2020_categories": [
+        "44"
+      ]
+    },
+    "social_sciences_degrees_conferred": {
+      "social_sciences_diplomas_certificates": 0,
+      "social_sciences_associate": 0,
+      "social_sciences_bachelors": 22.9,
+      "social_sciences_cip_2020_categories": [
+        "45"
+      ]
+    },
+    "construction_trades_degrees_conferred": {
+      "construction_trades_diplomas_certificates": 0,
+      "construction_trades_associate": 0,
+      "construction_trades_bachelors": 0,
+      "construction_trades_cip_2020_categories": [
+        "46"
+      ]
+    },
+    "mechanic_and_repair_technologies_degrees_conferred": {
+      "mechanic_and_repair_technologies_diplomas_certificates": 0,
+      "mechanic_and_repair_technologies_associate": 0,
+      "mechanic_and_repair_technologies_bachelors": 0,
+      "mechanic_and_repair_technologies_cip_2020_categories": [
+        "47"
+      ]
+    },
+    "precision_production_degrees_conferred": {
+      "precision_production_diplomas_certificates": 0,
+      "precision_production_associate": 0,
+      "precision_production_bachelors": 0,
+      "precision_production_cip_2020_categories": [
+        "48"
+      ]
+    },
+    "transportation_and_materials_moving_degrees_conferred": {
+      "transportation_and_materials_moving_diplomas_certificates": 0,
+      "transportation_and_materials_moving_associate": 0,
+      "transportation_and_materials_moving_bachelors": 0,
+      "transportation_and_materials_moving_cip_2020_categories": [
+        "49"
+      ]
+    },
+    "visual_and_performing_arts_degrees_conferred": {
+      "visual_and_performing_arts_diplomas_certificates": 0,
+      "visual_and_performing_arts_associate": 0,
+      "visual_and_performing_arts_bachelors": 4.8,
+      "visual_and_performing_arts_cip_2020_categories": [
+        "50"
+      ]
+    },
+    "health_professions_and_related_programs_degrees_conferred": {
+      "health_professions_and_related_programs_diplomas_certificates": 0,
+      "health_professions_and_related_programs_associate": 0,
+      "health_professions_and_related_programs_bachelors": 0,
+      "health_professions_and_related_programs_cip_2020_categories": [
+        "51"
+      ]
+    },
+    "business_marketing_degrees_conferred": {
+      "business_marketing_diplomas_certificates": 0,
+      "business_marketing_associate": 0,
+      "business_marketing_bachelors": 0,
+      "business_marketing_cip_2020_categories": [
+        "52"
+      ]
+    },
+    "history_degrees_conferred": {
+      "history_diplomas_certificates": 0,
+      "history_associate": 0,
+      "history_bachelors": 6.5,
+      "history_cip_2020_categories": [
+        "54"
+      ]
+    }
+  }
+}

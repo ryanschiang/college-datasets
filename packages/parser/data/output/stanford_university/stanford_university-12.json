@@ -1,0 +1,58 @@
+{
+  "transfer_application_requirements": {
+    "high_school_transcript": "required_of_all",
+    "college_transcripts": "required_of_all",
+    "essay_or_personal_statement": "required_of_all",
+    "interview": "not_required",
+    "standardized_test_scores": "required_of_all",
+    "statement_of_good_standing": "required_of_all"
+  },
+  "minimum_high_school_gpa_for_transfer_admission": 0,
+  "minimum_college_gpa_for_transfer_admission": 0,
+  "other_transfer_requirements": "https://admission.stanford.edu/apply/transfer/index.html",
+  "transfer_application_dates": {
+    "fall_priority_date": "null",
+    "fall_closing_date": "3/15",
+    "fall_notification_date": "5/15",
+    "fall_reply_date": "6/1",
+    "fall_rolling_admission_date": "null",
+    "winter_priority_date": "null",
+    "winter_closing_date": "null",
+    "winter_notification_date": "null",
+    "winter_reply_date": "null",
+    "winter_rolling_admission_date": "null",
+    "spring_priority_date": "null",
+    "spring_closing_date": "null",
+    "spring_notification_date": "null",
+    "spring_reply_date": "null",
+    "spring_rolling_admission_date": "null",
+    "summer_priority_date": "null",
+    "summer_closing_date": "null",
+    "summer_notification_date": "null",
+    "summer_reply_date": "null",
+    "summer_rolling_admission_date": "null"
+  },
+  "open_admission_applies_to_transfer_students": false,
+  "additional_transfer_admission_requirements": "null",
+  "lowest_grade_that_may_be_transferred_for_credit": "C-",
+  "max_credits_or_courses_that_may_be_transferred_from_two_year_institutions": {
+    "number": 90,
+    "unit_type": "Credit(s)"
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_four_year_institutions": {
+    "number": 90,
+    "unit_type": "Credit(s)"
+  },
+  "min_credits_transfers_must_complete_at_your_institution_for_associate_degree": 0,
+  "min_credits_transfers_must_complete_at_your_institution_for_bachelors_degree": 90,
+  "other_transfer_credit_policies": "https://studentservices.stanford.edu/my-academics/earn-my-degree/undergraduate-degree-progress/test-transfer-credit/undergraduate/how-do",
+  "military_transfer_credit_policies": {
+    "accepts_american_council_on_education": true,
+    "accepts_college_level_examination_program": false,
+    "accepts_dantes_subject_standardized_tests": false
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_american_council_on_education": {
+    "number": 90,
+    "unit_type": "Credit(s)"
+  }
+}

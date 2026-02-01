@@ -1,0 +1,61 @@
+{
+  "notification_of_admission_decision": {
+    "is_on_a_rolling_basis": true,
+    "rolling_basis_start_date": "10/01",
+    "by_date": "10/01",
+    "other": ""
+  },
+  "reply_policy_for_admitted_applicants": {
+    "must_reply_by_date": "NOT_FOUND",
+    "no_set_date": false,
+    "reply_by_may_1_or_within_weeks": 2,
+    "other": "",
+    "deadline_for_housing_deposit": "05/01",
+    "amount_of_housing_deposit": 100,
+    "housing_deposit_refundable": "no"
+  },
+  "deferred_admission_policy": {
+    "allows_deferred_admission": true,
+    "max_period_of_postponement": "One year"
+  },
+  "allows_early_admission_of_high_school_students": true,
+  "early_decision_policy": {
+    "has_early_decision_plan": false,
+    "first_or_only_early_decision_plan_closing_date": "NOT_FOUND",
+    "first_or_only_early_decision_plan_notification_date": "NOT_FOUND",
+    "other_early_decision_plan_closing_date": "NOT_FOUND",
+    "other_early_decision_plan_notification_date": "NOT_FOUND",
+    "number_of_early_decision_applicants": 0,
+    "number_of_applicants_admitted_under_early_decision_plan": 0,
+    "significant_details_about_early_decision_plan": "NOT_FOUND"
+  },
+  "early_action_policy": {
+    "has_early_action_plan": true,
+    "early_action_closing_date": "11/01",
+    "early_action_notification_date": "12/24",
+    "is_restrictive_early_action": false
+  },
+  "enrolls_transfer_students": true,
+  "allows_transfer_credit": true,
+  "transfer_admission_stats": {
+    "male_applicants": 461,
+    "female_applicants": 452,
+    "another_gender_applicants": 14,
+    "unknown_gender_applicants": 13,
+    "male_admitted": 310,
+    "female_admitted": 322,
+    "another_gender_admitted": 11,
+    "unknown_gender_admitted": 13,
+    "male_enrolled": 184,
+    "female_enrolled": 158,
+    "another_gender_enrolled": 7,
+    "unknown_gender_enrolled": 2
+  },
+  "transfer_terms": [
+    "fall",
+    "spring",
+    "summer"
+  ],
+  "has_minimum_transfer_credit_requirements": true,
+  "minimum_credits_and_unit_of_measure": "18"
+}

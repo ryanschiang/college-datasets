@@ -1,0 +1,52 @@
+{
+  "cds_corresponding_web_page": "https://data.uchicago.edu/common-data-set/",
+  "address_information": {
+    "name_of_college_university": "The University of Chicago",
+    "mailing_address": "5801 S. Ellis Ave.",
+    "mailing_address_city_state_zip_country": "Chicago, IL 60637",
+    "main_phone_number": "773.702.1234",
+    "www_home_page_address": "uchicago.edu",
+    "admissions_phone_number": "773.702.8650",
+    "admissions_office_mailing_address": "1101 E. 58th St.",
+    "admissions_office_mailing_address_city_state_zip_country": "Chicago, IL 60637",
+    "admissions_email_address": "collegeadmissions@uchicago.edu",
+    "url_for_online_application": "https://collegeadmissions.uchicago.edu/apply"
+  },
+  "source_of_institutional_control": "private",
+  "undergraduate_institution_classification": "coed",
+  "academic_year_calendar": "quarter",
+  "degrees_offered": [
+    "bachelors",
+    "postbachelors_certificate",
+    "masters",
+    "doctoral_degree_research_scholarship",
+    "doctoral_degree_professional_practice"
+  ],
+  "diversity_equity_inclusion_url": "https://diversityandinclusion.uchicago.edu/",
+  "undergraduate_students_full_time": {
+    "degree_seeking_first_time_first_year_men": 956,
+    "degree_seeking_first_time_first_year_women": 770,
+    "degree_seeking_first_time_first_year_another_gender": 0,
+    "degree_seeking_first_time_first_year_unknown": 0,
+    "other_first_year_degree_seeking_men": 142,
+    "other_first_year_degree_seeking_women": 87,
+    "other_first_year_degree_seeking_another_gender": 0,
+    "other_first_year_degree_seeking_unknown": 0,
+    "all_other_degree_seeking_men": 2976,
+    "all_other_degree_seeking_women": 2566,
+    "all_other_degree_seeking_another_gender": 0,
+    "all_other_degree_seeking_unknown": 0,
+    "total_degree_seeking_men": 4074,
+    "total_degree_seeking_women": 3423,
+    "total_degree_seeking_another_gender": 0,
+    "total_degree_seeking_unknown": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_men": 7,
+    "all_other_undergraduates_enrolled_in_credit_courses_women": 9,
+    "all_other_undergraduates_enrolled_in_credit_courses_another_gender": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_unknown": 0,
+    "total_undergraduate_full_time_students_men": 4081,
+    "total_undergraduate_full_time_students_women": 3432,
+    "total_undergraduate_full_time_students_another_gender": 0,
+    "total_undergraduate_full_time_students_unknown": 0
+  }
+}

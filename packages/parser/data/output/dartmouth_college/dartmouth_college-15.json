@@ -1,0 +1,49 @@
+{
+  "rotc": {
+    "offers_army_rotc_marine_option": false,
+    "offers_army_rotc_on_campus": true,
+    "offers_army_rotc_at_cooperating_institution": true,
+    "army_rotc_cooperating_institution_name": ""
+  },
+  "housing_options": {
+    "has_coed_dorms": true,
+    "has_mens_dorms": false,
+    "has_womens_dorms": false,
+    "has_apartments_for_married_students": true,
+    "has_apartments_for_single_students": false,
+    "has_special_housing_for_disabled_students": false,
+    "has_special_housing_for_international_students": true,
+    "has_fraternity_sorority_housing": true,
+    "has_cooperative_housing": true,
+    "has_theme_housing": true,
+    "has_wellness_housing": true,
+    "has_living_learning_communities": false,
+    "other_housing_options": "Academic affinity housing, faculty-in-residence programs, special interest, gender-neutral housing available."
+  },
+  "net_price_calculator_url": "https://financialaid.dartmouth.edu/cost-attendance/net-price-calculator",
+  "private_institutions_undergraduate_tuition": {
+    "first_year_tuition": 69207,
+    "undergraduates_tuition": 69207
+  },
+  "public_institutions_undergraduate_tuition": {
+    "first_year_tuition_in_district": 0,
+    "undergraduates_tuition_in_district": 0,
+    "first_year_tuition_in_state_out_of_district": 0,
+    "undergraduates_tuition_in_state_out_of_district": 0,
+    "first_year_tuition_out_of_state": 0,
+    "undergraduates_tuition_out_of_state": 0,
+    "first_year_tuition_non_resident": 0,
+    "undergraduates_tuition_non_resident": 0
+  },
+  "fees_food_and_housing": {
+    "first_year_required_fees": 2318,
+    "undergraduates_required_fees": 2058,
+    "first_year_food_and_housing_on_campus": 20920,
+    "undergraduates_food_and_housing_on_campus": 20670,
+    "first_year_housing_only_on_campus": 12579,
+    "undergraduates_housing_only_on_campus": 12579,
+    "first_year_food_only_on_campus": 8341,
+    "undergraduates_food_only_on_campus": 8091
+  },
+  "comprehensive_tuition_and_food_and_housing_fee": 0
+}

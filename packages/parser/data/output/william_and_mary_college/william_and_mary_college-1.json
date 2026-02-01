@@ -1,0 +1,49 @@
+{
+  "address_information": {
+    "name_of_college_university": "College of William and Mary",
+    "mailing_address": "P. O. Box 8795",
+    "mailing_address_city_state_zip_country": "Williamsburg, VA 23187-8795",
+    "main_phone_number": "(757) 221-4000",
+    "www_home_page_address": "http://www.wm.edu/",
+    "admissions_phone_number": "(757) 221-4223",
+    "admissions_toll_free_phone_number": "N. A.",
+    "admissions_office_mailing_address": "P. O. Box 8795",
+    "admissions_office_mailing_address_city_state_zip_country": "Williamsburg, VA 23187-8795",
+    "admissions_email_address": "admiss@facstaff.wm.edu",
+    "url_for_online_application": "http://www.wm.edu/admission/details/admiss.pdf"
+  },
+  "source_of_institutional_control": "public",
+  "undergraduate_institution_classification": "coed",
+  "academic_year_calendar": "semester",
+  "degrees_offered": [
+    "bachelors",
+    "masters",
+    "doctoral_degree_research_scholarship"
+  ],
+  "undergraduate_students_full_time": {
+    "degree_seeking_first_time_first_year_men": 589,
+    "degree_seeking_first_time_first_year_women": 702,
+    "degree_seeking_first_time_first_year_another_gender": 0,
+    "degree_seeking_first_time_first_year_unknown": 0,
+    "other_first_year_degree_seeking_men": 26,
+    "other_first_year_degree_seeking_women": 18,
+    "other_first_year_degree_seeking_another_gender": 0,
+    "other_first_year_degree_seeking_unknown": 0,
+    "all_other_degree_seeking_men": 1637,
+    "all_other_degree_seeking_women": 2512,
+    "all_other_degree_seeking_another_gender": 0,
+    "all_other_degree_seeking_unknown": 0,
+    "total_degree_seeking_men": 2252,
+    "total_degree_seeking_women": 3232,
+    "total_degree_seeking_another_gender": 0,
+    "total_degree_seeking_unknown": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_men": 6,
+    "all_other_undergraduates_enrolled_in_credit_courses_women": 7,
+    "all_other_undergraduates_enrolled_in_credit_courses_another_gender": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_unknown": 0,
+    "total_undergraduate_full_time_students_men": 2258,
+    "total_undergraduate_full_time_students_women": 3239,
+    "total_undergraduate_full_time_students_another_gender": 0,
+    "total_undergraduate_full_time_students_unknown": 0
+  }
+}

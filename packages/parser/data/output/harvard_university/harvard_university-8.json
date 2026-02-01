@@ -1,0 +1,50 @@
+{
+  "sat_and_act_policies": {
+    "use_sat_act_in_admission_decisions": true,
+    "sat_or_act_policy": "required_to_be_considered",
+    "act_policy": "required_to_be_considered",
+    "sat_policy": "required_to_be_considered",
+    "uses_test_scores_for_academic_advising": true,
+    "latest_date_for_sat_or_act_scores": "3/1/25",
+    "clarification_for_test_policy": "In exceptional cases, when the SAT or ACT are not accessible for a student, one of the following can meet the standardized testing requirement: •AP exam results •IB Actual or Predicted Scores •GCSE/A-Level Actual or Predicted Results •National Leaving Exams Results or Predictions",
+    "tests_used_for_placement": [
+      "ap",
+      "institutional_exam"
+    ]
+  },
+  "sat_act_first_time_first_year": {
+    "percent_submitting_sat_scores": 54,
+    "number_submitting_sat_scores": 892,
+    "percent_submitting_act_scores": 19,
+    "number_submitting_act_scores": 321
+  },
+  "sat_act_score_percentiles": {
+    "sat_composite_25th_percentile": 1490,
+    "sat_composite_50th_percentile": 1550,
+    "sat_composite_75th_percentile": 1580,
+    "sat_ebrw_25th_percentile": 740,
+    "sat_ebrw_50th_percentile": 760,
+    "sat_ebrw_75th_percentile": 780,
+    "sat_math_25th_percentile": 770,
+    "sat_math_50th_percentile": 790,
+    "sat_math_75th_percentile": 800,
+    "act_composite_25th_percentile": 34,
+    "act_composite_50th_percentile": 35,
+    "act_composite_75th_percentile": 36,
+    "act_math_25th_percentile": 32,
+    "act_math_50th_percentile": 35,
+    "act_math_75th_percentile": 36,
+    "act_english_25th_percentile": 35,
+    "act_english_50th_percentile": 35,
+    "act_english_75th_percentile": 36,
+    "act_writing_25th_percentile": 8,
+    "act_writing_50th_percentile": 9,
+    "act_writing_75th_percentile": 10,
+    "act_science_25th_percentile": 33,
+    "act_science_50th_percentile": 35,
+    "act_science_75th_percentile": 36,
+    "act_reading_25th_percentile": 34,
+    "act_reading_50th_percentile": 36,
+    "act_reading_75th_percentile": 36
+  }
+}

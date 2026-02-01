@@ -1,0 +1,82 @@
+{
+  "science_technologies_degrees_conferred": {
+    "science_technologies_diplomas_certificates": 0,
+    "science_technologies_associate": 0,
+    "science_technologies_bachelors": 0.25,
+    "science_technologies_cip_2020_categories": [
+      "41"
+    ]
+  },
+  "psychology_degrees_conferred": {
+    "psychology_diplomas_certificates": 0,
+    "psychology_associate": 0,
+    "psychology_bachelors": 4.69,
+    "psychology_cip_2020_categories": [
+      "42"
+    ]
+  },
+  "homeland_security_law_enforcement_firefighting_and_protective_services_degrees_conferred": {
+    "homeland_security_law_enforcement_firefighting_and_protective_services_diplomas_certificates": 0,
+    "homeland_security_law_enforcement_firefighting_and_protective_services_associate": 0,
+    "homeland_security_law_enforcement_firefighting_and_protective_services_bachelors": 2.71,
+    "homeland_security_law_enforcement_firefighting_and_protective_services_cip_2020_categories": [
+      "43"
+    ]
+  },
+  "public_administration_and_social_services_degrees_conferred": {
+    "public_administration_and_social_services_diplomas_certificates": 0,
+    "public_administration_and_social_services_associate": 0,
+    "public_administration_and_social_services_bachelors": 0,
+    "public_administration_and_social_services_cip_2020_categories": [
+      "44"
+    ]
+  },
+  "social_sciences_degrees_conferred": {
+    "social_sciences_diplomas_certificates": 0,
+    "social_sciences_associate": 0,
+    "social_sciences_bachelors": 6.77,
+    "social_sciences_cip_2020_categories": [
+      "45"
+    ]
+  },
+  "construction_trades_degrees_conferred": {
+    "construction_trades_diplomas_certificates": 0,
+    "construction_trades_associate": 0,
+    "construction_trades_bachelors": 0,
+    "construction_trades_cip_2020_categories": [
+      "46"
+    ]
+  },
+  "mechanic_and_repair_technologies_degrees_conferred": {
+    "mechanic_and_repair_technologies_diplomas_certificates": 0,
+    "mechanic_and_repair_technologies_associate": 0,
+    "mechanic_and_repair_technologies_bachelors": 0,
+    "mechanic_and_repair_technologies_cip_2020_categories": [
+      "47"
+    ]
+  },
+  "precision_production_degrees_conferred": {
+    "precision_production_diplomas_certificates": 0,
+    "precision_production_associate": 0,
+    "precision_production_bachelors": 0,
+    "precision_production_cip_2020_categories": [
+      "48"
+    ]
+  },
+  "transportation_and_materials_moving_degrees_conferred": {
+    "transportation_and_materials_moving_diplomas_certificates": 0,
+    "transportation_and_materials_moving_associate": 0,
+    "transportation_and_materials_moving_bachelors": 0,
+    "transportation_and_materials_moving_cip_2020_categories": [
+      "49"
+    ]
+  },
+  "visual_and_performing_arts_degrees_conferred": {
+    "visual_and_performing_arts_diplomas_certificates": 0,
+    "visual_and_performing_arts_associate": 0,
+    "visual_and_performing_arts_bachelors": 2.13,
+    "visual_and_performing_arts_cip_2020_categories": [
+      "50"
+    ]
+  }
+}

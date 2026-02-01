@@ -1,0 +1,60 @@
+{
+  "notification_of_admission_decision": {
+    "is_on_a_rolling_basis": false,
+    "rolling_basis_start_date": "null",
+    "by_date": "July 7",
+    "other": "6–8 weeks after"
+  },
+  "reply_policy_for_admitted_applicants": {
+    "must_reply_by_date": "null",
+    "no_set_date": true,
+    "reply_by_may_1_or_within_weeks": 2,
+    "other": "null",
+    "deadline_for_housing_deposit": "0620",
+    "amount_of_housing_deposit": 750,
+    "housing_deposit_refundable": "no"
+  },
+  "deferred_admission_policy": {
+    "allows_deferred_admission": true,
+    "max_period_of_postponement": "Two semesters before reapply"
+  },
+  "allows_early_admission_of_high_school_students": false,
+  "early_decision_policy": {
+    "has_early_decision_plan": false,
+    "first_or_only_early_decision_plan_closing_date": "null",
+    "first_or_only_early_decision_plan_notification_date": "null",
+    "other_early_decision_plan_closing_date": "null",
+    "other_early_decision_plan_notification_date": "null",
+    "number_of_early_decision_applicants": 0,
+    "number_of_applicants_admitted_under_early_decision_plan": 0,
+    "significant_details_about_early_decision_plan": "null"
+  },
+  "early_action_policy": {
+    "has_early_action_plan": true,
+    "early_action_closing_date": "January 15 (priority) or March 1",
+    "early_action_notification_date": "March 1 (priority) or May 1, respectively",
+    "is_restrictive_early_action": false
+  },
+  "enrolls_transfer_students": true,
+  "allows_transfer_credit": true,
+  "transfer_admission_stats": {
+    "male_applicants": 703,
+    "female_applicants": 587,
+    "another_gender_applicants": 40,
+    "unknown_gender_applicants": 0,
+    "male_admitted": 369,
+    "female_admitted": 306,
+    "another_gender_admitted": 22,
+    "unknown_gender_admitted": 0,
+    "male_enrolled": 219,
+    "female_enrolled": 180,
+    "another_gender_enrolled": 11,
+    "unknown_gender_enrolled": 0
+  },
+  "transfer_terms": [
+    "fall",
+    "spring"
+  ],
+  "has_minimum_transfer_credit_requirements": false,
+  "minimum_credits_and_unit_of_measure": "null"
+}

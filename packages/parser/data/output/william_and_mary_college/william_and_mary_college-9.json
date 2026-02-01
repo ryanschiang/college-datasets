@@ -1,0 +1,24 @@
+{
+  "sat_score_percentages": {
+    "sat_ebrw_percent_score_700_to_800": 33,
+    "sat_ebrw_percent_score_600_to_699": 48,
+    "sat_ebrw_percent_score_500_to_599": 17,
+    "sat_ebrw_percent_score_400_to_499": 2,
+    "sat_ebrw_percent_score_300_to_399": 0,
+    "sat_ebrw_percent_score_200_to_299": 0,
+    "sat_math_percent_score_700_to_800": 24,
+    "sat_math_percent_score_600_to_699": 54,
+    "sat_math_percent_score_500_to_599": 19,
+    "sat_math_percent_score_400_to_499": 3,
+    "sat_math_percent_score_300_to_399": 0,
+    "sat_math_percent_score_200_to_299": 0
+  },
+  "act_score_percentages": {
+    "act_composite_percent_score_30_to_36": 75,
+    "act_composite_percent_score_24_to_39": 20,
+    "act_composite_percent_score_18_to_23": 5,
+    "act_composite_percent_score_12_to_17": 0,
+    "act_composite_percent_score_6_to_11": 0,
+    "act_composite_percent_score_below_6": 0
+  }
+}

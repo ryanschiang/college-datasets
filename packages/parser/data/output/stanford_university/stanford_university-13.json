@@ -1,0 +1,44 @@
+{
+  "max_credits_or_courses_that_may_be_transferred_from_clep_or_dsst": {
+    "number": 0,
+    "unit_type": "null"
+  },
+  "military_veteran_transfer_policies_are_published_online": true,
+  "military_veteran_transfer_policies_url": "https://bulletin.stanford.edu/academic-polices/veterans-military-benefits/certification",
+  "other_military_veteran_transfer_policies": "null",
+  "special_study_options": {
+    "has_accelerated_program": false,
+    "has_comprehensive_transition_and_postsecondary_program_for_students_with_intellectual_disabilities": false,
+    "has_cross_registration": false,
+    "has_distance_learning": true,
+    "has_double_major": true,
+    "has_english_as_second_language": false,
+    "has_exchange_student_program_domestic": true,
+    "has_external_degree_program": false,
+    "has_honors_program": true,
+    "has_independent_study": true,
+    "has_internships": true,
+    "has_liberal_arts_career_combination": false,
+    "has_student_designed_major": true,
+    "has_study_abroad": true,
+    "has_teacher_certification_program": true,
+    "has_undergraduate_research": true,
+    "has_weekend_college": false,
+    "other": "Community-engaged learning"
+  },
+  "graduation_requirements": {
+    "requires_arts_fine_arts": false,
+    "requires_computer_literacy": false,
+    "requires_english": false,
+    "requires_foreign_language": true,
+    "requires_history": false,
+    "requires_physical_education": false,
+    "requires_humanities": false,
+    "requires_intensive_writing": true,
+    "requires_mathematics": false,
+    "requires_philosophy": false,
+    "requires_sciences": false,
+    "requires_social_science": false,
+    "other": "COLLEGE requirement (first-year COLLEGE courses or enrollment in SLE, ITALIC or ESF); Ways of Thinking, Ways of Doing (11 courses across 8 Ways categories); a senior year capstone and other requirements tied to one's major."
+  }
+}

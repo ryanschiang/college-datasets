@@ -1,0 +1,53 @@
+{
+  "cds_corresponding_web_page": "https://ir.princeton.edu/other-university-data/common-data-set",
+  "address_information": {
+    "name_of_college_university": "Princeton University",
+    "mailing_address": "",
+    "mailing_address_city_state_zip_country": "Princeton, NJ 08544",
+    "street_address": "",
+    "street_address_city_state_zip_country": "",
+    "main_phone_number": "609-258-3000",
+    "www_home_page_address": "www.princeton.edu",
+    "admissions_phone_number": "609-258-3060",
+    "admissions_toll_free_phone_number": "",
+    "admissions_office_mailing_address": "PO Box 430",
+    "admissions_office_mailing_address_city_state_zip_country": "Princeton, NJ 08542-0430",
+    "admissions_email_address": "uaoffice@princeton.edu",
+    "url_for_online_application": ""
+  },
+  "source_of_institutional_control": "private",
+  "undergraduate_institution_classification": "coed",
+  "academic_year_calendar": "semester",
+  "degrees_offered": [
+    "bachelors",
+    "masters",
+    "doctoral_degree_research_scholarship"
+  ],
+  "diversity_equity_inclusion_url": "https://provost.princeton.edu/what-we-do/institutional-equity-diversity",
+  "undergraduate_students_full_time": {
+    "degree_seeking_first_time_first_year_men": 693,
+    "degree_seeking_first_time_first_year_women": 714,
+    "degree_seeking_first_time_first_year_another_gender": 0,
+    "degree_seeking_first_time_first_year_unknown": 0,
+    "other_first_year_degree_seeking_men": 24,
+    "other_first_year_degree_seeking_women": 10,
+    "other_first_year_degree_seeking_another_gender": 0,
+    "other_first_year_degree_seeking_unknown": 0,
+    "all_other_degree_seeking_men": 2116,
+    "all_other_degree_seeking_women": 2152,
+    "all_other_degree_seeking_another_gender": 0,
+    "all_other_degree_seeking_unknown": 0,
+    "total_degree_seeking_men": 2833,
+    "total_degree_seeking_women": 2876,
+    "total_degree_seeking_another_gender": 0,
+    "total_degree_seeking_unknown": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_men": 12,
+    "all_other_undergraduates_enrolled_in_credit_courses_women": 5,
+    "all_other_undergraduates_enrolled_in_credit_courses_another_gender": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_unknown": 0,
+    "total_undergraduate_full_time_students_men": 2845,
+    "total_undergraduate_full_time_students_women": 2881,
+    "total_undergraduate_full_time_students_another_gender": 0,
+    "total_undergraduate_full_time_students_unknown": 0
+  }
+}

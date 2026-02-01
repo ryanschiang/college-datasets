@@ -1,0 +1,47 @@
+{
+  "sat_and_act_policies": {
+    "use_sat_act_in_admission_decisions": true,
+    "sat_or_act_policy": "not_required_but_considered",
+    "uses_test_scores_for_academic_advising": true,
+    "latest_date_for_sat_or_act_scores": "Rolling Admissions",
+    "clarification_for_test_policy": "First-year applicants to Penn State",
+    "tests_used_for_placement": [
+      "sat",
+      "act",
+      "ap",
+      "institutional_exam"
+    ]
+  },
+  "sat_act_first_time_first_year": {
+    "percent_submitting_sat_scores": 31.06,
+    "number_submitting_sat_scores": 2848,
+    "percent_submitting_act_scores": 5.39,
+    "number_submitting_act_scores": 494
+  },
+  "sat_act_score_percentiles": {
+    "sat_composite_25th_percentile": 1250,
+    "sat_composite_50th_percentile": 1330,
+    "sat_composite_75th_percentile": 1410,
+    "sat_ebrw_25th_percentile": 620,
+    "sat_ebrw_50th_percentile": 660,
+    "sat_ebrw_75th_percentile": 700,
+    "sat_math_25th_percentile": 620,
+    "sat_math_50th_percentile": 670,
+    "sat_math_75th_percentile": 720,
+    "act_composite_25th_percentile": 27,
+    "act_composite_50th_percentile": 30,
+    "act_composite_75th_percentile": 32,
+    "act_math_25th_percentile": 26,
+    "act_math_50th_percentile": 28,
+    "act_math_75th_percentile": 31,
+    "act_english_25th_percentile": 26,
+    "act_english_50th_percentile": 30,
+    "act_english_75th_percentile": 33,
+    "act_science_25th_percentile": 25,
+    "act_science_50th_percentile": 29,
+    "act_science_75th_percentile": 32,
+    "act_reading_25th_percentile": 28,
+    "act_reading_50th_percentile": 32,
+    "act_reading_75th_percentile": 34
+  }
+}

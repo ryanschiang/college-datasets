@@ -1,0 +1,50 @@
+{
+  "sat_and_act_policies": {
+    "use_sat_act_in_admission_decisions": true,
+    "sat_or_act_policy": "not_required_but_considered",
+    "act_policy": "not_required_but_considered",
+    "sat_policy": "not_required_but_considered",
+    "uses_test_scores_for_academic_advising": false,
+    "latest_date_for_sat_or_act_scores": "28-Feb",
+    "clarification_for_test_policy": "Notre Dame is test-optional for the 2024-25 and 2025-26 application cycles.",
+    "tests_used_for_placement": [
+      "ap",
+      "institutional_exam"
+    ]
+  },
+  "sat_act_first_time_first_year": {
+    "percent_submitting_sat_scores": 32.85,
+    "number_submitting_sat_scores": 684,
+    "percent_submitting_act_scores": 25.98,
+    "number_submitting_act_scores": 541
+  },
+  "sat_act_score_percentiles": {
+    "sat_composite_25th_percentile": 1470,
+    "sat_composite_50th_percentile": 1510,
+    "sat_composite_75th_percentile": 1540,
+    "sat_ebrw_25th_percentile": 720,
+    "sat_ebrw_50th_percentile": 750,
+    "sat_ebrw_75th_percentile": 770,
+    "sat_math_25th_percentile": 735,
+    "sat_math_50th_percentile": 770,
+    "sat_math_75th_percentile": 790,
+    "act_composite_25th_percentile": 33,
+    "act_composite_50th_percentile": 34,
+    "act_composite_75th_percentile": 35,
+    "act_math_25th_percentile": 0,
+    "act_math_50th_percentile": 0,
+    "act_math_75th_percentile": 0,
+    "act_english_25th_percentile": 0,
+    "act_english_50th_percentile": 0,
+    "act_english_75th_percentile": 0,
+    "act_writing_25th_percentile": 0,
+    "act_writing_50th_percentile": 0,
+    "act_writing_75th_percentile": 0,
+    "act_science_25th_percentile": 0,
+    "act_science_50th_percentile": 0,
+    "act_science_75th_percentile": 0,
+    "act_reading_25th_percentile": 0,
+    "act_reading_50th_percentile": 0,
+    "act_reading_75th_percentile": 0
+  }
+}

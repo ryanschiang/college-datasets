@@ -1,0 +1,65 @@
+{
+  "student_to_faculty_ratio": {
+    "ratio": 15.43,
+    "number_students": 47858,
+    "number_faculty": 3101.33
+  },
+  "undergraduate_class_size": {
+    "class_sections_2_to_9": 529,
+    "class_sections_10_to_19": 1079,
+    "class_sections_20_to_29": 1495,
+    "class_sections_30_to_39": 534,
+    "class_sections_40_to_49": 596,
+    "class_sections_50_to_99": 475,
+    "class_sections_100_plus": 415,
+    "class_sections_total": 5123,
+    "class_sub_sections_2_to_9": 215,
+    "class_sub_sections_10_to_19": 353,
+    "class_sub_sections_20_to_29": 515,
+    "class_sub_sections_30_to_39": 139,
+    "class_sub_sections_40_to_49": 126,
+    "class_sub_sections_50_to_99": 110,
+    "class_sub_sections_100_plus": 16,
+    "class_sub_sections_total": 1474
+  },
+  "agriculture_degrees_conferred": {
+    "agriculture_diplomas_certificates": 0,
+    "agriculture_associate": 0,
+    "agriculture_bachelors": 3.69,
+    "agriculture_cip_2020_categories": [
+      "1"
+    ]
+  },
+  "natural_resources_and_conservation_degrees_conferred": {
+    "natural_resources_and_conservation_diplomas_certificates": 0,
+    "natural_resources_and_conservation_associate": 0,
+    "natural_resources_and_conservation_bachelors": 0.71,
+    "natural_resources_and_conservation_cip_2020_categories": [
+      "3"
+    ]
+  },
+  "architecture_degrees_conferred": {
+    "architecture_diplomas_certificates": 0,
+    "architecture_associate": 0,
+    "architecture_bachelors": 0.85,
+    "architecture_cip_2020_categories": [
+      "4"
+    ]
+  },
+  "area_ethnic_and_gender_studies_degrees_conferred": {
+    "area_ethnic_and_gender_studies_diplomas_certificates": 0,
+    "area_ethnic_and_gender_studies_associate": 0,
+    "area_ethnic_and_gender_studies_bachelors": 0.24,
+    "area_ethnic_and_gender_studies_cip_2020_categories": [
+      "5"
+    ]
+  },
+  "communication_journalism_degrees_conferred": {
+    "communication_journalism_diplomas_certificates": 0,
+    "communication_journalism_associate": 0,
+    "communication_journalism_bachelors": 7.39,
+    "communication_journalism_cip_2020_categories": [
+      "9"
+    ]
+  }
+}

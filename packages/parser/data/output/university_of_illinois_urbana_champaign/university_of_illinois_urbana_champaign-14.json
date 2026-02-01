@@ -1,0 +1,43 @@
+{
+  "student_life": {
+    "percent_ftfy_out_of_state_students": 0,
+    "percent_undergraduates_out_of_state_students": 0,
+    "percent_ftfy_men_fraternities": 0,
+    "percent_undergraduates_men_fraternities": 0,
+    "percent_ftfy_women_sororities": 0,
+    "percent_undergraduates_women_sororities": 0,
+    "percent_ftfy_college_owned_housing": 0,
+    "percent_undergraduates_college_owned_housing": 0,
+    "percent_ftfy_live_off_campus": 0,
+    "percent_undergraduates_live_off_campus": 0,
+    "percent_ftfy_age_25_or_older": 0,
+    "percent_undergraduates_age_25_or_older": 0,
+    "average_age_of_full_time_ftfy_students": 0,
+    "average_age_of_full_time_undergraduates_students": 0,
+    "average_age_of_all_ftfy_students": 0,
+    "average_age_of_all_undergraduates_students": 0
+  },
+  "activities_offered": {
+    "has_campus_ministries": false,
+    "has_choral_groups": false,
+    "has_concert_band": false,
+    "has_dance": false,
+    "has_drama_theater": false,
+    "has_international_student_organization": false,
+    "has_jazz_band": false,
+    "has_literary_magazine": false,
+    "has_marching_band": false,
+    "has_model_un": false,
+    "has_music_ensembles": false,
+    "has_musical_theater": false,
+    "has_opera": false,
+    "has_pep_band": false,
+    "has_radio_station": false,
+    "has_student_government": false,
+    "has_student_newspaper": false,
+    "has_student_run_film_society": false,
+    "has_symphony_orchestra": false,
+    "has_television_station": false,
+    "has_yearbook": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "transfer_application_requirements": {
+    "high_school_transcript": "required_of_some",
+    "college_transcripts": "required_of_all",
+    "essay_or_personal_statement": "required_of_all",
+    "interview": "not_required",
+    "standardized_test_scores": "not_required",
+    "statement_of_good_standing": "not_required"
+  },
+  "minimum_high_school_gpa_for_transfer_admission": 0,
+  "minimum_college_gpa_for_transfer_admission": 2,
+  "other_transfer_requirements": "",
+  "transfer_application_dates": {
+    "fall_priority_date": "",
+    "fall_closing_date": "2/15",
+    "fall_notification_date": "6/30",
+    "fall_reply_date": "",
+    "fall_rolling_admission_date": "",
+    "winter_priority_date": "",
+    "winter_closing_date": "9/1",
+    "winter_notification_date": "12/15",
+    "winter_reply_date": "",
+    "winter_rolling_admission_date": "",
+    "spring_priority_date": "",
+    "spring_closing_date": "12/15",
+    "spring_notification_date": "",
+    "spring_reply_date": "",
+    "spring_rolling_admission_date": "",
+    "summer_priority_date": "",
+    "summer_closing_date": "2/15",
+    "summer_notification_date": "5/31",
+    "summer_reply_date": "",
+    "summer_rolling_admission_date": ""
+  },
+  "open_admission_applies_to_transfer_students": false,
+  "additional_transfer_admission_requirements": "",
+  "lowest_grade_that_may_be_transferred_for_credit": "",
+  "max_credits_or_courses_that_may_be_transferred_from_two_year_institutions": {
+    "number": 90,
+    "unit_type": "per credit"
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_four_year_institutions": {
+    "number": 135,
+    "unit_type": "per credit"
+  },
+  "min_credits_transfers_must_complete_at_your_institution_for_associate_degree": 0,
+  "min_credits_transfers_must_complete_at_your_institution_for_bachelors_degree": 45,
+  "other_transfer_credit_policies": "",
+  "military_transfer_credit_policies": {
+    "accepts_american_council_on_education": true,
+    "accepts_college_level_examination_program": false,
+    "accepts_dantes_subject_standardized_tests": false
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_american_council_on_education": {
+    "number": 30,
+    "unit_type": "per credit"
+  }
+}

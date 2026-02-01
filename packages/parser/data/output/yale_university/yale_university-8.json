@@ -1,0 +1,41 @@
+{
+  "sat_and_act_policies": {
+    "use_sat_act_in_admission_decisions": true,
+    "sat_or_act_policy": "not_required_but_considered",
+    "act_policy": "not_required_but_considered",
+    "sat_policy": "not_required_but_considered",
+    "uses_test_scores_for_academic_advising": true,
+    "latest_date_for_sat_or_act_scores": "Single-choice Early Action - November 20 for SAT and ACT; Regular Decision - March 15 for SAT and ACT",
+    "clarification_for_test_policy": "In response to the ongoing disruptions associated with the COVID-19 pandemic, Yale will extend its test-optional admissions policy for an additional year. All applicants for undergraduate admission for Fall 2023 enrollment could have applied with or without ACT or SAT scores.",
+    "tests_used_for_placement": [
+      "ap",
+      "institutional_exam"
+    ]
+  },
+  "sat_act_first_time_first_year": {
+    "percent_submitting_sat_scores": 61,
+    "number_submitting_sat_scores": 950,
+    "percent_submitting_act_scores": 25,
+    "number_submitting_act_scores": 384
+  },
+  "sat_act_score_percentiles": {
+    "sat_composite_25th_percentile": 1480,
+    "sat_composite_50th_percentile": 1530,
+    "sat_composite_75th_percentile": 1560,
+    "sat_ebrw_25th_percentile": 730,
+    "sat_ebrw_50th_percentile": 760,
+    "sat_ebrw_75th_percentile": 780,
+    "sat_math_25th_percentile": 740,
+    "sat_math_50th_percentile": 780,
+    "sat_math_75th_percentile": 790,
+    "act_composite_25th_percentile": 33,
+    "act_composite_50th_percentile": 34,
+    "act_composite_75th_percentile": 35,
+    "act_math_25th_percentile": 31,
+    "act_math_50th_percentile": 34,
+    "act_math_75th_percentile": 35,
+    "act_english_25th_percentile": 34,
+    "act_english_50th_percentile": 35,
+    "act_english_75th_percentile": 36
+  }
+}

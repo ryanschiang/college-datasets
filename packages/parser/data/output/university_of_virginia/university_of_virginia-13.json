@@ -1,0 +1,44 @@
+{
+  "max_credits_or_courses_that_may_be_transferred_from_clep_or_dsst": {
+    "number": 0,
+    "unit_type": "Credits"
+  },
+  "military_veteran_transfer_policies_are_published_online": true,
+  "military_veteran_transfer_policies_url": "https://www.scps.virginia.edu/active-duty-military-and-veterans",
+  "other_military_veteran_transfer_policies": "Institutions can award up to 60 semester hours of transfer credit. The Bachelor of Interdisciplinary Studies (BIS) program is a degree completion program for adults and part-time students; it requires a minimum of 60 transferable semester hours of credit from a regionally accredited institution for admission.",
+  "special_study_options": {
+    "has_accelerated_program": true,
+    "has_comprehensive_transition_and_postsecondary_program_for_students_with_intellectual_disabilities": true,
+    "has_cross_registration": false,
+    "has_distance_learning": true,
+    "has_double_major": true,
+    "has_english_as_second_language": true,
+    "has_exchange_student_program_domestic": true,
+    "has_external_degree_program": false,
+    "has_honors_program": true,
+    "has_independent_study": true,
+    "has_internships": true,
+    "has_liberal_arts_career_combination": true,
+    "has_student_designed_major": true,
+    "has_study_abroad": true,
+    "has_teacher_certification_program": true,
+    "has_undergraduate_research": true,
+    "has_weekend_college": false,
+    "other": "null"
+  },
+  "graduation_requirements": {
+    "requires_arts_fine_arts": true,
+    "requires_computer_literacy": false,
+    "requires_english": true,
+    "requires_foreign_language": true,
+    "requires_history": true,
+    "requires_physical_education": false,
+    "requires_humanities": true,
+    "requires_intensive_writing": true,
+    "requires_mathematics": true,
+    "requires_philosophy": true,
+    "requires_sciences": false,
+    "requires_social_science": false,
+    "other": "null"
+  }
+}

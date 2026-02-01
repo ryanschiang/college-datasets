@@ -1,0 +1,51 @@
+{
+  "address_information": {
+    "name_of_college_university": "Columbia University in the City of New York",
+    "mailing_address": "535 W 116th Street",
+    "mailing_address_city_state_zip_country": "New York, NY 10027, USA",
+    "main_phone_number": "212-854-1754",
+    "www_home_page_address": "www.columbia.edu",
+    "admissions_phone_number": "212-854-6316",
+    "admissions_office_mailing_address": "408 Lewisohn Hall, 2970 Broadway, MC 4101",
+    "admissions_office_mailing_address_city_state_zip_country": "New York, NY 10027, USA",
+    "admissions_email_address": "gs-admit@columbia.edu",
+    "url_for_online_application": "https://admissions.gs.columbia.edu/apply/"
+  },
+  "source_of_institutional_control": "private",
+  "undergraduate_institution_classification": "coed",
+  "academic_year_calendar": "semester",
+  "degrees_offered": [
+    "bachelors",
+    "postbachelors_certificate",
+    "masters",
+    "postmasters_certificate",
+    "doctoral_degree_research_scholarship",
+    "doctoral_degree_professional_practice"
+  ],
+  "undergraduate_students_full_time": {
+    "degree_seeking_first_time_first_year_men": 24,
+    "degree_seeking_first_time_first_year_women": 12,
+    "degree_seeking_first_time_first_year_another_gender": 0,
+    "degree_seeking_first_time_first_year_unknown": 0,
+    "other_first_year_degree_seeking_men": 0,
+    "other_first_year_degree_seeking_women": 0,
+    "other_first_year_degree_seeking_another_gender": 0,
+    "other_first_year_degree_seeking_unknown": 0,
+    "all_other_degree_seeking_men": 918,
+    "all_other_degree_seeking_women": 805,
+    "all_other_degree_seeking_another_gender": 28,
+    "all_other_degree_seeking_unknown": 0,
+    "total_degree_seeking_men": 942,
+    "total_degree_seeking_women": 817,
+    "total_degree_seeking_another_gender": 28,
+    "total_degree_seeking_unknown": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_men": 3270,
+    "all_other_undergraduates_enrolled_in_credit_courses_women": 3315,
+    "all_other_undergraduates_enrolled_in_credit_courses_another_gender": 117,
+    "all_other_undergraduates_enrolled_in_credit_courses_unknown": 0,
+    "total_undergraduate_full_time_students_men": 4212,
+    "total_undergraduate_full_time_students_women": 4132,
+    "total_undergraduate_full_time_students_another_gender": 145,
+    "total_undergraduate_full_time_students_unknown": 0
+  }
+}

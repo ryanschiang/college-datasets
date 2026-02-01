@@ -1,0 +1,58 @@
+{
+  "transfer_application_requirements": {
+    "high_school_transcript": "required_of_all",
+    "college_transcripts": "required_of_all",
+    "essay_or_personal_statement": "required_of_all",
+    "interview": "required_of_some",
+    "standardized_test_scores": "not_required",
+    "statement_of_good_standing": "not_required"
+  },
+  "minimum_high_school_gpa_for_transfer_admission": 0,
+  "minimum_college_gpa_for_transfer_admission": 0,
+  "other_transfer_requirements": "NOT_FOUND",
+  "transfer_application_dates": {
+    "fall_priority_date": "January 15",
+    "fall_closing_date": "May 15",
+    "fall_notification_date": "March 1–July 1",
+    "fall_reply_date": "August 1",
+    "fall_rolling_admission_date": "NOT_FOUND",
+    "winter_priority_date": "NOT_FOUND",
+    "winter_closing_date": "NOT_FOUND",
+    "winter_notification_date": "NOT_FOUND",
+    "winter_reply_date": "NOT_FOUND",
+    "winter_rolling_admission_date": "NOT_FOUND",
+    "spring_priority_date": "September 1",
+    "spring_closing_date": "November 1",
+    "spring_notification_date": "October 1–December 1",
+    "spring_reply_date": "December 15",
+    "spring_rolling_admission_date": "NOT_FOUND",
+    "summer_priority_date": "NOT_FOUND",
+    "summer_closing_date": "NOT_FOUND",
+    "summer_notification_date": "NOT_FOUND",
+    "summer_reply_date": "NOT_FOUND",
+    "summer_rolling_admission_date": "NOT_FOUND"
+  },
+  "open_admission_applies_to_transfer_students": false,
+  "additional_transfer_admission_requirements": "NOT_FOUND",
+  "lowest_grade_that_may_be_transferred_for_credit": "2.00",
+  "max_credits_or_courses_that_may_be_transferred_from_two_year_institutions": {
+    "number": 60,
+    "unit_type": "Credits"
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_four_year_institutions": {
+    "number": 60,
+    "unit_type": "Credits"
+  },
+  "min_credits_transfers_must_complete_at_your_institution_for_associate_degree": 0,
+  "min_credits_transfers_must_complete_at_your_institution_for_bachelors_degree": 64,
+  "other_transfer_credit_policies": "NOT_FOUND",
+  "military_transfer_credit_policies": {
+    "accepts_american_council_on_education": false,
+    "accepts_college_level_examination_program": false,
+    "accepts_dantes_subject_standardized_tests": false
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_american_council_on_education": {
+    "number": 0,
+    "unit_type": "NOT_FOUND"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "rotc": {
+    "offers_army_rotc_marine_option": false,
+    "offers_army_rotc_on_campus": true,
+    "offers_army_rotc_at_cooperating_institution": false,
+    "army_rotc_cooperating_institution_name": "NOT_FOUND",
+    "offers_naval_rotc_marine_option": true,
+    "offers_naval_rotc_on_campus": false,
+    "offers_naval_rotc_at_cooperating_institution": true,
+    "naval_rotc_cooperating_institution_name": "Rutgers University",
+    "offers_air_force_rotc_marine_option": false,
+    "offers_air_force_rotc_on_campus": false,
+    "offers_air_force_rotc_at_cooperating_institution": true,
+    "air_force_rotc_cooperating_institution_name": "Rutgers University"
+  },
+  "housing_options": {
+    "has_coed_dorms": true,
+    "has_mens_dorms": false,
+    "has_womens_dorms": false,
+    "has_apartments_for_married_students": true,
+    "has_apartments_for_single_students": true,
+    "has_special_housing_for_disabled_students": true,
+    "has_special_housing_for_international_students": false,
+    "has_fraternity_sorority_housing": false,
+    "has_cooperative_housing": true,
+    "has_theme_housing": false,
+    "has_wellness_housing": false,
+    "has_living_learning_communities": true,
+    "other_housing_options": "NOT_FOUND"
+  },
+  "net_price_calculator_url": "https://puwebp.princeton.edu/financial-aid-public/ui/#/net-price-calculator/residency",
+  "private_institutions_undergraduate_tuition": {
+    "first_year_tuition": 65210,
+    "undergraduates_tuition": 65210
+  },
+  "public_institutions_undergraduate_tuition": {
+    "first_year_tuition_in_district": 0,
+    "undergraduates_tuition_in_district": 0,
+    "first_year_tuition_in_state_out_of_district": 0,
+    "undergraduates_tuition_in_state_out_of_district": 0,
+    "first_year_tuition_out_of_state": 0,
+    "undergraduates_tuition_out_of_state": 0,
+    "first_year_tuition_non_resident": 0,
+    "undergraduates_tuition_non_resident": 0
+  },
+  "fees_food_and_housing": {
+    "first_year_required_fees": 300,
+    "undergraduates_required_fees": 300,
+    "first_year_food_and_housing_on_campus": 21170,
+    "undergraduates_food_and_housing_on_campus": 21170,
+    "first_year_housing_only_on_campus": 12450,
+    "undergraduates_housing_only_on_campus": 12450,
+    "first_year_food_only_on_campus": 8720,
+    "undergraduates_food_only_on_campus": 8720
+  },
+  "comprehensive_tuition_and_food_and_housing_fee": 0
+}

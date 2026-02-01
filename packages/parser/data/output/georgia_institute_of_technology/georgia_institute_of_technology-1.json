@@ -1,0 +1,52 @@
+{
+  "cds_corresponding_web_page": "https://irp.gatech.edu/common-data-set",
+  "address_information": {
+    "name_of_college_university": "Georgia Institute of Technology",
+    "mailing_address": "225 North Avenue NW",
+    "mailing_address_city_state_zip_country": "Atlanta, Georgia 30332, USA",
+    "main_phone_number": "404-894-2000",
+    "www_home_page_address": "https://www.gatech.edu",
+    "admissions_phone_number": "404-894-4154",
+    "admissions_office_mailing_address": "219 Uncle Heinie Way",
+    "admissions_office_mailing_address_city_state_zip_country": "Atlanta, Georgia 30332-0320, USA",
+    "admissions_email_address": "admission@gatech.edu",
+    "url_for_online_application": "https://admission.gatech.edu/apply"
+  },
+  "source_of_institutional_control": "public",
+  "undergraduate_institution_classification": "coed",
+  "academic_year_calendar": "semester",
+  "degrees_offered": [
+    "bachelors",
+    "postbachelors_certificate",
+    "masters",
+    "postmasters_certificate",
+    "doctoral_degree_research_scholarship"
+  ],
+  "diversity_equity_inclusion_url": "https://belonging.gatech.edu",
+  "undergraduate_students_full_time": {
+    "degree_seeking_first_time_first_year_men": 2330,
+    "degree_seeking_first_time_first_year_women": 1729,
+    "degree_seeking_first_time_first_year_another_gender": 0,
+    "degree_seeking_first_time_first_year_unknown": 0,
+    "other_first_year_degree_seeking_men": 691,
+    "other_first_year_degree_seeking_women": 320,
+    "other_first_year_degree_seeking_another_gender": 0,
+    "other_first_year_degree_seeking_unknown": 0,
+    "all_other_degree_seeking_men": 7575,
+    "all_other_degree_seeking_women": 5195,
+    "all_other_degree_seeking_another_gender": 0,
+    "all_other_degree_seeking_unknown": 0,
+    "total_degree_seeking_men": 10596,
+    "total_degree_seeking_women": 7244,
+    "total_degree_seeking_another_gender": 0,
+    "total_degree_seeking_unknown": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_men": 67,
+    "all_other_undergraduates_enrolled_in_credit_courses_women": 22,
+    "all_other_undergraduates_enrolled_in_credit_courses_another_gender": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_unknown": 0,
+    "total_undergraduate_full_time_students_men": 10663,
+    "total_undergraduate_full_time_students_women": 7266,
+    "total_undergraduate_full_time_students_another_gender": 0,
+    "total_undergraduate_full_time_students_unknown": 0
+  }
+}

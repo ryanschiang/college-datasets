@@ -1,0 +1,59 @@
+{
+  "notification_of_admission_decision": {
+    "is_on_a_rolling_basis": false,
+    "rolling_basis_start_date": "NOT_FOUND",
+    "by_date": "03/31",
+    "other": "NOT_FOUND"
+  },
+  "reply_policy_for_admitted_applicants": {
+    "must_reply_by_date": "05/01",
+    "no_set_date": false,
+    "reply_by_may_1_or_within_weeks": 2,
+    "other": "NOT_FOUND",
+    "deadline_for_housing_deposit": "NOT_FOUND",
+    "amount_of_housing_deposit": 0,
+    "housing_deposit_refundable": "no"
+  },
+  "deferred_admission_policy": {
+    "allows_deferred_admission": false,
+    "max_period_of_postponement": "NOT_FOUND"
+  },
+  "allows_early_admission_of_high_school_students": false,
+  "early_decision_policy": {
+    "has_early_decision_plan": false,
+    "first_or_only_early_decision_plan_closing_date": "NOT_FOUND",
+    "first_or_only_early_decision_plan_notification_date": "NOT_FOUND",
+    "other_early_decision_plan_closing_date": "NOT_FOUND",
+    "other_early_decision_plan_notification_date": "NOT_FOUND",
+    "number_of_early_decision_applicants": 0,
+    "number_of_applicants_admitted_under_early_decision_plan": 0,
+    "significant_details_about_early_decision_plan": "NOT_FOUND"
+  },
+  "early_action_policy": {
+    "has_early_action_plan": false,
+    "early_action_closing_date": "NOT_FOUND",
+    "early_action_notification_date": "NOT_FOUND",
+    "is_restrictive_early_action": false
+  },
+  "enrolls_transfer_students": true,
+  "allows_transfer_credit": true,
+  "transfer_admission_stats": {
+    "male_applicants": 14411,
+    "female_applicants": 12769,
+    "another_gender_applicants": 0,
+    "unknown_gender_applicants": 1307,
+    "male_admitted": 3015,
+    "female_admitted": 3333,
+    "another_gender_admitted": 0,
+    "unknown_gender_admitted": 317,
+    "male_enrolled": 1727,
+    "female_enrolled": 2034,
+    "another_gender_enrolled": 0,
+    "unknown_gender_enrolled": 172
+  },
+  "transfer_terms": [
+    "fall"
+  ],
+  "has_minimum_transfer_credit_requirements": true,
+  "minimum_credits_and_unit_of_measure": "60 semester units"
+}

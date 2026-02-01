@@ -1,0 +1,42 @@
+{
+  "notification_of_admission_decision": {
+    "is_on_a_rolling_basis": false,
+    "by_date": "Jan. 31 for early action; Mar. 31 for regular"
+  },
+  "reply_policy_for_admitted_applicants": {
+    "must_reply_by_date": "May 1",
+    "no_set_date": false,
+    "deadline_for_housing_deposit": "05/15",
+    "amount_of_housing_deposit": 250,
+    "housing_deposit_refundable": "no"
+  },
+  "deferred_admission_policy": {
+    "allows_deferred_admission": true,
+    "max_period_of_postponement": "1 year"
+  },
+  "allows_early_admission_of_high_school_students": false,
+  "early_decision_policy": {
+    "has_early_decision_plan": false
+  },
+  "early_action_policy": {
+    "has_early_action_plan": true,
+    "early_action_closing_date": "Oct. 15",
+    "early_action_notification_date": "Jan. 31",
+    "is_restrictive_early_action": false
+  },
+  "enrolls_transfer_students": true,
+  "allows_transfer_credit": true,
+  "transfer_admission_stats": {
+    "male_applicants": 2325,
+    "female_applicants": 2367,
+    "male_admitted": 795,
+    "female_admitted": 918,
+    "male_enrolled": 441,
+    "female_enrolled": 539
+  },
+  "transfer_terms": [
+    "fall",
+    "summer"
+  ],
+  "has_minimum_transfer_credit_requirements": false
+}

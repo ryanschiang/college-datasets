@@ -1,0 +1,48 @@
+{
+  "sat_and_act_policies": {
+    "use_sat_act_in_admission_decisions": true,
+    "sat_or_act_policy": "not_required_but_considered",
+    "uses_test_scores_for_academic_advising": true,
+    "latest_date_for_sat_or_act_scores": "1/1",
+    "clarification_for_test_policy": "Princeton will pause its standardized testing requirement as part of its holistic review process for the application cycle. Students who sit for a standardized test and wish to submit their score will still have the option to do so. However, because of the change to policy this year, applications without test scores will be considered complete. Students who do not submit test scores will not be at a disadvantage. As with previous years, the University does not require subject tests.",
+    "tests_used_for_placement": [
+      "ap",
+      "institutional_exam"
+    ]
+  },
+  "sat_act_first_time_first_year": {
+    "percent_submitting_sat_scores": 56,
+    "number_submitting_sat_scores": 783,
+    "percent_submitting_act_scores": 21,
+    "number_submitting_act_scores": 303
+  },
+  "sat_act_score_percentiles": {
+    "sat_composite_25th_percentile": 1500,
+    "sat_composite_50th_percentile": 1530,
+    "sat_composite_75th_percentile": 1560,
+    "sat_ebrw_25th_percentile": 740,
+    "sat_ebrw_50th_percentile": 760,
+    "sat_ebrw_75th_percentile": 780,
+    "sat_math_25th_percentile": 770,
+    "sat_math_50th_percentile": 790,
+    "sat_math_75th_percentile": 800,
+    "act_composite_25th_percentile": 34,
+    "act_composite_50th_percentile": 35,
+    "act_composite_75th_percentile": 35,
+    "act_math_25th_percentile": 32,
+    "act_math_50th_percentile": 35,
+    "act_math_75th_percentile": 36,
+    "act_english_25th_percentile": 35,
+    "act_english_50th_percentile": 35,
+    "act_english_75th_percentile": 36,
+    "act_writing_25th_percentile": 8,
+    "act_writing_50th_percentile": 8,
+    "act_writing_75th_percentile": 10,
+    "act_science_25th_percentile": 33,
+    "act_science_50th_percentile": 34,
+    "act_science_75th_percentile": 36,
+    "act_reading_25th_percentile": 34,
+    "act_reading_50th_percentile": 36,
+    "act_reading_75th_percentile": 36
+  }
+}

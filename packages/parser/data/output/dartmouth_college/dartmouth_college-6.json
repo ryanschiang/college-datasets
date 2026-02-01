@@ -1,0 +1,48 @@
+{
+  "first_time_first_year_student_enrollees_by_status": {
+    "total_full_time_first_time_first_year_men_who_enrolled": 612,
+    "total_part_time_first_time_first_year_men_who_enrolled": 0,
+    "total_full_time_first_time_first_year_women_who_enrolled": 554,
+    "total_part_time_first_time_first_year_women_who_enrolled": 0,
+    "total_full_time_first_time_first_year_another_gender_who_enrolled": 16,
+    "total_part_time_first_time_first_year_another_gender_who_enrolled": 0,
+    "total_full_time_first_time_first_year_unknown_gender_who_enrolled": 0,
+    "total_part_time_first_time_first_year_unknown_gender_who_enrolled": 0
+  },
+  "residency_breakdowns_for_total_applicants_admits_and_enrollees": {
+    "total_total_first_time_first_year_who_applied": 31656,
+    "in_state_total_first_time_first_year_who_applied": 468,
+    "out_of_state_total_first_time_first_year_who_applied": 21220,
+    "international_total_first_time_first_year_who_applied": 9968,
+    "unknown_total_first_time_first_year_who_applied": 0,
+    "total_total_first_time_first_year_who_were_admitted": 1710,
+    "in_state_total_first_time_first_year_who_were_admitted": 0,
+    "out_of_state_total_first_time_first_year_who_were_admitted": 0,
+    "international_total_first_time_first_year_who_were_admitted": 0,
+    "unknown_total_first_time_first_year_who_were_admitted": 0,
+    "total_total_first_time_first_year_who_enrolled": 1182,
+    "in_state_total_first_time_first_year_who_enrolled": 25,
+    "out_of_state_total_first_time_first_year_who_enrolled": 988,
+    "international_total_first_time_first_year_who_enrolled": 170,
+    "unknown_total_first_time_first_year_who_enrolled": 0
+  },
+  "first_time_first_year_waitlisted_students": {
+    "has_waitlist_policy": true,
+    "number_of_qualified_applicants_offered_a_place_on_waiting_list": 2589,
+    "number_accepting_a_place_on_the_waiting_list": 2189,
+    "number_of_waitlisted_students_admitted": 29,
+    "waitlist_is_ranked": false,
+    "waitlist_rank_released_to_students": false,
+    "waitlist_rank_released_to_school_counselors": false
+  },
+  "high_school_completion_requirement": {
+    "high_school_diploma_required_and_ged_is_accepted": false,
+    "high_school_diploma_required_and_ged_is_not_accepted": false,
+    "high_school_diploma_or_equivalent_is_not_required": true
+  },
+  "require_or_recommend_general_college_preparatory_program": {
+    "require": false,
+    "recommend": true,
+    "neither_require_nor_recommend": false
+  }
+}

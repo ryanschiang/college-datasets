@@ -1,0 +1,60 @@
+{
+  "notification_of_admission_decision": {
+    "is_on_a_rolling_basis": false,
+    "rolling_basis_start_date": "null",
+    "by_date": "1-Apr",
+    "other": "null"
+  },
+  "reply_policy_for_admitted_applicants": {
+    "must_reply_by_date": "1-May",
+    "no_set_date": false,
+    "reply_by_may_1_or_within_weeks": 1,
+    "other": "null",
+    "deadline_for_housing_deposit": "null",
+    "amount_of_housing_deposit": 0,
+    "housing_deposit_refundable": "no"
+  },
+  "deferred_admission_policy": {
+    "allows_deferred_admission": true,
+    "max_period_of_postponement": "2 years"
+  },
+  "allows_early_admission_of_high_school_students": false,
+  "early_decision_policy": {
+    "has_early_decision_plan": true,
+    "first_or_only_early_decision_plan_closing_date": "1-Nov",
+    "first_or_only_early_decision_plan_notification_date": "15-Dec",
+    "other_early_decision_plan_closing_date": "4-Jan",
+    "other_early_decision_plan_notification_date": "Early Feb",
+    "number_of_early_decision_applicants": 3087,
+    "number_of_applicants_admitted_under_early_decision_plan": 519,
+    "significant_details_about_early_decision_plan": "null"
+  },
+  "early_action_policy": {
+    "has_early_action_plan": false,
+    "early_action_closing_date": "null",
+    "early_action_notification_date": "null",
+    "is_restrictive_early_action": false
+  },
+  "enrolls_transfer_students": true,
+  "allows_transfer_credit": true,
+  "transfer_admission_stats": {
+    "male_applicants": 868,
+    "female_applicants": 605,
+    "another_gender_applicants": 0,
+    "unknown_gender_applicants": 0,
+    "male_admitted": 58,
+    "female_admitted": 44,
+    "another_gender_admitted": 0,
+    "unknown_gender_admitted": 0,
+    "male_enrolled": 35,
+    "female_enrolled": 25,
+    "another_gender_enrolled": 0,
+    "unknown_gender_enrolled": 0
+  },
+  "transfer_terms": [
+    "fall",
+    "spring"
+  ],
+  "has_minimum_transfer_credit_requirements": true,
+  "minimum_credits_and_unit_of_measure": "12 Credit Hours"
+}

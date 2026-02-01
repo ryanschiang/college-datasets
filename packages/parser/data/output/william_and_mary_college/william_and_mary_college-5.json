@@ -1,0 +1,25 @@
+{
+  "graduation_rates": {
+    "initial_cohort_recipients_total": 1203,
+    "allowable_exclusions_total": 1,
+    "final_cohort_after_exclusions_total": 1202,
+    "completed_in_four_years_or_less_total": 954,
+    "completed_in_five_years_total": 97,
+    "completed_in_six_years_total": 20,
+    "total_graduating_within_six_years_total": 1071,
+    "six_year_graduation_rate_total": 89.1
+  },
+  "retainment_rate": 95,
+  "first_time_first_year_student_applicants": {
+    "total_first_time_first_year_men_who_applied": 2527,
+    "total_first_time_first_year_women_who_applied": 4304,
+    "total_first_time_first_year_another_gender_who_applied": 0,
+    "total_first_time_first_year_unknown_gender_who_applied": 0
+  },
+  "first_time_first_year_student_admits": {
+    "total_first_time_first_year_men_who_were_admitted": 1332,
+    "total_first_time_first_year_women_who_were_admitted": 1752,
+    "total_first_time_first_year_another_gender_who_were_admitted": 0,
+    "total_first_time_first_year_unknown_gender_who_were_admitted": 0
+  }
+}

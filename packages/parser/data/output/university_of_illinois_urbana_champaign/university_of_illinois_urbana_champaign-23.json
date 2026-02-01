@@ -1,0 +1,20 @@
+{
+  "health_professions_and_related_programs_degrees_conferred": {
+    "health_professions_and_related_programs_bachelors": 3.6393044884755357,
+    "health_professions_and_related_programs_cip_2020_categories": [
+      "51"
+    ]
+  },
+  "business_marketing_degrees_conferred": {
+    "business_marketing_bachelors": 11.89850384148807,
+    "business_marketing_cip_2020_categories": [
+      "52"
+    ]
+  },
+  "history_degrees_conferred": {
+    "history_bachelors": 1.0412454508693896,
+    "history_cip_2020_categories": [
+      "54"
+    ]
+  }
+}

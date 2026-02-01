@@ -1,0 +1,52 @@
+{
+  "address_information": {
+    "name_of_college_university": "University of California, Los Angeles",
+    "mailing_address": "405 Hilgard Avenue",
+    "mailing_address_city_state_zip_country": "Los Angeles, California 90095, USA",
+    "street_address": "405 Hilgard Avenue",
+    "street_address_city_state_zip_country": "Los Angeles, California 90095, USA",
+    "main_phone_number": "NOT_FOUND",
+    "www_home_page_address": "NOT_FOUND",
+    "admissions_phone_number": "310-825-3101",
+    "admissions_toll_free_phone_number": "NOT_FOUND",
+    "admissions_office_mailing_address": "1147 Murphy Hall, Box 951436",
+    "admissions_office_mailing_address_city_state_zip_country": "NOT_FOUND",
+    "admissions_email_address": "NOT_FOUND",
+    "url_for_online_application": "NOT_FOUND"
+  },
+  "source_of_institutional_control": "public",
+  "undergraduate_institution_classification": "coed",
+  "academic_year_calendar": "differs_by_program",
+  "degrees_offered": [
+    "bachelors",
+    "masters",
+    "doctoral_degree_research_scholarship",
+    "doctoral_degree_professional_practice"
+  ],
+  "undergraduate_students_full_time": {
+    "degree_seeking_first_time_first_year_men": 2682,
+    "degree_seeking_first_time_first_year_women": 3805,
+    "degree_seeking_first_time_first_year_another_gender": 51,
+    "degree_seeking_first_time_first_year_unknown": 0,
+    "other_first_year_degree_seeking_men": 70,
+    "other_first_year_degree_seeking_women": 87,
+    "other_first_year_degree_seeking_another_gender": 3,
+    "other_first_year_degree_seeking_unknown": 0,
+    "all_other_degree_seeking_men": 10480,
+    "all_other_degree_seeking_women": 15597,
+    "all_other_degree_seeking_another_gender": 265,
+    "all_other_degree_seeking_unknown": 0,
+    "total_degree_seeking_men": 13232,
+    "total_degree_seeking_women": 19489,
+    "total_degree_seeking_another_gender": 319,
+    "total_degree_seeking_unknown": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_men": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_women": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_another_gender": 0,
+    "all_other_undergraduates_enrolled_in_credit_courses_unknown": 0,
+    "total_undergraduate_full_time_students_men": 13232,
+    "total_undergraduate_full_time_students_women": 19489,
+    "total_undergraduate_full_time_students_another_gender": 319,
+    "total_undergraduate_full_time_students_unknown": 0
+  }
+}

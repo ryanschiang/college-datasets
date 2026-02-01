@@ -1,0 +1,59 @@
+{
+  "liberal_arts_general_studies_degrees_conferred": {
+    "liberal_arts_general_studies_bachelors": 0.49,
+    "liberal_arts_general_studies_cip_2020_categories": [
+      "24"
+    ]
+  },
+  "library_science_degrees_conferred": {
+    "library_science_cip_2020_categories": [
+      "25"
+    ]
+  },
+  "biological_life_sciences_degrees_conferred": {
+    "biological_life_sciences_bachelors": 9.83,
+    "biological_life_sciences_cip_2020_categories": [
+      "26"
+    ]
+  },
+  "mathematics_and_statistics_degrees_conferred": {
+    "mathematics_and_statistics_bachelors": 1.96,
+    "mathematics_and_statistics_cip_2020_categories": [
+      "27"
+    ]
+  },
+  "military_science_and_military_technologies_degrees_conferred": {
+    "military_science_and_military_technologies_cip_2020_categories": [
+      "28",
+      "29"
+    ]
+  },
+  "interdisciplinary_studies_degrees_conferred": {
+    "interdisciplinary_studies_bachelors": 3.11,
+    "interdisciplinary_studies_cip_2020_categories": [
+      "30"
+    ]
+  },
+  "parks_and_recreation_degrees_conferred": {
+    "parks_and_recreation_cip_2020_categories": [
+      "31"
+    ]
+  },
+  "philosophy_and_religious_studies_degrees_conferred": {
+    "philosophy_and_religious_studies_bachelors": 0.51,
+    "philosophy_and_religious_studies_cip_2020_categories": [
+      "38"
+    ]
+  },
+  "theology_and_religious_vocations_degrees_conferred": {
+    "theology_and_religious_vocations_cip_2020_categories": [
+      "39"
+    ]
+  },
+  "physical_sciences_degrees_conferred": {
+    "physical_sciences_bachelors": 2.6,
+    "physical_sciences_cip_2020_categories": [
+      "40"
+    ]
+  }
+}

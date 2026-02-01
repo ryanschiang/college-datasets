@@ -1,0 +1,58 @@
+{
+  "transfer_application_requirements": {
+    "high_school_transcript": "required_of_some",
+    "college_transcripts": "required_of_all",
+    "essay_or_personal_statement": "required_of_all",
+    "interview": "not_required",
+    "standardized_test_scores": "not_required",
+    "statement_of_good_standing": "not_required"
+  },
+  "minimum_high_school_gpa_for_transfer_admission": 0,
+  "minimum_college_gpa_for_transfer_admission": 2.4,
+  "other_transfer_requirements": "NOT_FOUND",
+  "transfer_application_dates": {
+    "fall_priority_date": "NOT_FOUND",
+    "fall_closing_date": "11/30",
+    "fall_notification_date": "4/30",
+    "fall_reply_date": "6/1",
+    "fall_rolling_admission_date": "NOT_FOUND",
+    "winter_priority_date": "NOT_FOUND",
+    "winter_closing_date": "NOT_FOUND",
+    "winter_notification_date": "NOT_FOUND",
+    "winter_reply_date": "NOT_FOUND",
+    "winter_rolling_admission_date": "NOT_FOUND",
+    "spring_priority_date": "NOT_FOUND",
+    "spring_closing_date": "NOT_FOUND",
+    "spring_notification_date": "NOT_FOUND",
+    "spring_reply_date": "NOT_FOUND",
+    "spring_rolling_admission_date": "NOT_FOUND",
+    "summer_priority_date": "NOT_FOUND",
+    "summer_closing_date": "NOT_FOUND",
+    "summer_notification_date": "NOT_FOUND",
+    "summer_reply_date": "NOT_FOUND",
+    "summer_rolling_admission_date": "NOT_FOUND"
+  },
+  "open_admission_applies_to_transfer_students": false,
+  "additional_transfer_admission_requirements": "Transfer minimum college GPA is 2.4 for CA residents, 2.8 for nonresidents. 60 transferable semester units. 2 English composition courses, 1 Math, and 4 courses chosen from two of the following areas: arts & humanities",
+  "lowest_grade_that_may_be_transferred_for_credit": "D-",
+  "max_credits_or_courses_that_may_be_transferred_from_two_year_institutions": {
+    "number": 105,
+    "unit_type": "quarter hours"
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_four_year_institutions": {
+    "number": 129,
+    "unit_type": "quarter hours"
+  },
+  "min_credits_transfers_must_complete_at_your_institution_for_associate_degree": 0,
+  "min_credits_transfers_must_complete_at_your_institution_for_bachelors_degree": 68,
+  "other_transfer_credit_policies": "Requirements vary by program. Progress toward completion of major requirements and completion of UCLA general education requirements considered",
+  "military_transfer_credit_policies": {
+    "accepts_american_council_on_education": true,
+    "accepts_college_level_examination_program": false,
+    "accepts_dantes_subject_standardized_tests": false
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_american_council_on_education": {
+    "number": 0,
+    "unit_type": "NOT_FOUND"
+  }
+}

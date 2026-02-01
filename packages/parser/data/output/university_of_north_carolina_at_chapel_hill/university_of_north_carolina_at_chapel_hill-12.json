@@ -1,0 +1,58 @@
+{
+  "transfer_application_requirements": {
+    "high_school_transcript": "required_of_all",
+    "college_transcripts": "required_of_all",
+    "essay_or_personal_statement": "required_of_all",
+    "interview": "not_required",
+    "standardized_test_scores": "not_required",
+    "statement_of_good_standing": "required_of_all"
+  },
+  "minimum_high_school_gpa_for_transfer_admission": 0,
+  "minimum_college_gpa_for_transfer_admission": 2,
+  "other_transfer_requirements": "Requirements may vary by department.",
+  "transfer_application_dates": {
+    "fall_priority_date": "null",
+    "fall_closing_date": "Feb. 15",
+    "fall_notification_date": "Apr. 15",
+    "fall_reply_date": "May 15",
+    "fall_rolling_admission_date": "null",
+    "winter_priority_date": "null",
+    "winter_closing_date": "null",
+    "winter_notification_date": "null",
+    "winter_reply_date": "null",
+    "winter_rolling_admission_date": "null",
+    "spring_priority_date": "null",
+    "spring_closing_date": "null",
+    "spring_notification_date": "null",
+    "spring_reply_date": "null",
+    "spring_rolling_admission_date": "null",
+    "summer_priority_date": "null",
+    "summer_closing_date": "** See D11 Note",
+    "summer_notification_date": "null",
+    "summer_reply_date": "null",
+    "summer_rolling_admission_date": "null"
+  },
+  "open_admission_applies_to_transfer_students": false,
+  "additional_transfer_admission_requirements": "* If a transfer student applies with fewer than 15 transferable hours, the student is considered a transfer with first-year standing. A student who has attempted any college credit after graduating from high school (with the exception of the summer immediately following high school graduation) must apply as a transfer. If graduating from a Cooperative Innovative High School in North Carolina with an associate degree, students have the choice of applying to UNC-Chapel Hill as either a first-year or a transfer student (https://admissions.unc.edu/apply/faqs-n-c-cooperative-innovative-high-school-applicants/). **Radiologic Science is the only program that accepts students for summer terms.",
+  "lowest_grade_that_may_be_transferred_for_credit": "2.00",
+  "max_credits_or_courses_that_may_be_transferred_from_two_year_institutions": {
+    "number": 75,
+    "unit_type": "semester hours"
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_four_year_institutions": {
+    "number": 75,
+    "unit_type": "semester hours"
+  },
+  "min_credits_transfers_must_complete_at_your_institution_for_associate_degree": 0,
+  "min_credits_transfers_must_complete_at_your_institution_for_bachelors_degree": 45,
+  "other_transfer_credit_policies": "null",
+  "military_transfer_credit_policies": {
+    "accepts_american_council_on_education": true,
+    "accepts_college_level_examination_program": true,
+    "accepts_dantes_subject_standardized_tests": false
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_american_council_on_education": {
+    "number": 75,
+    "unit_type": "semester hours"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "communication_technologies_degrees_conferred": {
+    "communication_technologies_cip_2020_categories": [
+      "10"
+    ]
+  },
+  "computer_information_sciences_degrees_conferred": {
+    "computer_information_sciences_bachelors": 12.98,
+    "computer_information_sciences_cip_2020_categories": [
+      "11"
+    ]
+  },
+  "personal_culinary_services_degrees_conferred": {
+    "personal_culinary_services_cip_2020_categories": [
+      "12"
+    ]
+  },
+  "education_degrees_conferred": {
+    "education_cip_2020_categories": [
+      "13"
+    ]
+  },
+  "engineering_degrees_conferred": {
+    "engineering_cip_2020_categories": [
+      "14"
+    ]
+  },
+  "engineering_technology_degrees_conferred": {
+    "engineering_technology_cip_2020_categories": [
+      "15"
+    ]
+  },
+  "foreign_languages_literatures_and_linguistics_degrees_conferred": {
+    "foreign_languages_literatures_and_linguistics_bachelors": 3.71,
+    "foreign_languages_literatures_and_linguistics_cip_2020_categories": [
+      "16"
+    ]
+  },
+  "family_and_consumer_sciences_degrees_conferred": {
+    "family_and_consumer_sciences_cip_2020_categories": [
+      "19"
+    ]
+  },
+  "law_legal_studies_degrees_conferred": {
+    "law_legal_studies_cip_2020_categories": [
+      "22"
+    ]
+  },
+  "english_degrees_conferred": {
+    "english_bachelors": 6.42,
+    "english_cip_2020_categories": [
+      "23"
+    ]
+  }
+}

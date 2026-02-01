@@ -1,0 +1,58 @@
+{
+  "transfer_application_requirements": {
+    "high_school_transcript": "not_required",
+    "college_transcripts": "required_of_all",
+    "essay_or_personal_statement": "required_of_all",
+    "interview": "not_required",
+    "standardized_test_scores": "not_required",
+    "statement_of_good_standing": "not_required"
+  },
+  "minimum_high_school_gpa_for_transfer_admission": 0,
+  "minimum_college_gpa_for_transfer_admission": 0,
+  "other_transfer_requirements": "transfer.gatech.edu",
+  "transfer_application_dates": {
+    "fall_priority_date": "null",
+    "fall_closing_date": "3/2",
+    "fall_notification_date": "April, May or June",
+    "fall_reply_date": "7/1",
+    "fall_rolling_admission_date": "null",
+    "winter_priority_date": "null",
+    "winter_closing_date": "null",
+    "winter_notification_date": "null",
+    "winter_reply_date": "null",
+    "winter_rolling_admission_date": "null",
+    "spring_priority_date": "null",
+    "spring_closing_date": "9/15",
+    "spring_notification_date": "10/31",
+    "spring_reply_date": "12/15",
+    "spring_rolling_admission_date": "null",
+    "summer_priority_date": "null",
+    "summer_closing_date": "1/15",
+    "summer_notification_date": "2/27",
+    "summer_reply_date": "4/1",
+    "summer_rolling_admission_date": "null"
+  },
+  "open_admission_applies_to_transfer_students": false,
+  "additional_transfer_admission_requirements": "Georgia Tech uses a holistic review process. More information is available at transfer.gatech.edu",
+  "lowest_grade_that_may_be_transferred_for_credit": "C",
+  "max_credits_or_courses_that_may_be_transferred_from_two_year_institutions": {
+    "number": 0,
+    "unit_type": "null"
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_four_year_institutions": {
+    "number": 0,
+    "unit_type": "null"
+  },
+  "min_credits_transfers_must_complete_at_your_institution_for_associate_degree": 0,
+  "min_credits_transfers_must_complete_at_your_institution_for_bachelors_degree": 36,
+  "other_transfer_credit_policies": "Georgia Tech accepts credit for coursework as listed on the transfer equivalency table online at",
+  "military_transfer_credit_policies": {
+    "accepts_american_council_on_education": false,
+    "accepts_college_level_examination_program": false,
+    "accepts_dantes_subject_standardized_tests": false
+  },
+  "max_credits_or_courses_that_may_be_transferred_from_american_council_on_education": {
+    "number": 0,
+    "unit_type": "null"
+  }
+}

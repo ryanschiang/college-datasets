@@ -1,0 +1,59 @@
+{
+  "notification_of_admission_decision": {
+    "is_on_a_rolling_basis": false,
+    "rolling_basis_start_date": "NOT_FOUND",
+    "by_date": "Apr 1",
+    "other": "NOT_FOUND"
+  },
+  "reply_policy_for_admitted_applicants": {
+    "must_reply_by_date": "May 1",
+    "no_set_date": false,
+    "reply_by_may_1_or_within_weeks": 0,
+    "other": "NOT_FOUND",
+    "deadline_for_housing_deposit": "NOT_FOUND",
+    "amount_of_housing_deposit": 0,
+    "housing_deposit_refundable": "no"
+  },
+  "deferred_admission_policy": {
+    "allows_deferred_admission": true,
+    "max_period_of_postponement": "1 YEAR"
+  },
+  "allows_early_admission_of_high_school_students": false,
+  "early_decision_policy": {
+    "has_early_decision_plan": false,
+    "first_or_only_early_decision_plan_closing_date": "NOT_FOUND",
+    "first_or_only_early_decision_plan_notification_date": "NOT_FOUND",
+    "other_early_decision_plan_closing_date": "NOT_FOUND",
+    "other_early_decision_plan_notification_date": "NOT_FOUND",
+    "number_of_early_decision_applicants": 0,
+    "number_of_applicants_admitted_under_early_decision_plan": 0,
+    "significant_details_about_early_decision_plan": "NOT_FOUND"
+  },
+  "early_action_policy": {
+    "has_early_action_plan": true,
+    "early_action_closing_date": "11/1",
+    "early_action_notification_date": "12/15",
+    "is_restrictive_early_action": true
+  },
+  "enrolls_transfer_students": true,
+  "allows_transfer_credit": true,
+  "transfer_admission_stats": {
+    "male_applicants": 1061,
+    "female_applicants": 988,
+    "another_gender_applicants": 0,
+    "unknown_gender_applicants": 6,
+    "male_admitted": 15,
+    "female_admitted": 13,
+    "another_gender_admitted": 0,
+    "unknown_gender_admitted": 2,
+    "male_enrolled": 11,
+    "female_enrolled": 10,
+    "another_gender_enrolled": 0,
+    "unknown_gender_enrolled": 2
+  },
+  "transfer_terms": [
+    "fall"
+  ],
+  "has_minimum_transfer_credit_requirements": true,
+  "minimum_credits_and_unit_of_measure": "NOT_FOUND"
+}

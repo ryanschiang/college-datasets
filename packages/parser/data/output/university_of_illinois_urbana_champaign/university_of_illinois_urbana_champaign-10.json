@@ -1,0 +1,49 @@
+{
+  "high_school_class_rank": {
+    "percent_in_top_tenth": 0,
+    "percent_in_top_quarter": 0,
+    "percent_in_top_half": 0,
+    "percent_in_bottom_half": 0,
+    "percent_in_bottom_quarter": 0,
+    "percent_who_submitted_class_rank": 0
+  },
+  "high_school_gpa_percentages": {
+    "percent_who_submitted_with_gpa_of_4_0": 0,
+    "percent_who_submitted_with_gpa_between_3_75_and_3_99": 0,
+    "percent_who_submitted_with_gpa_between_3_50_and_3_74": 0,
+    "percent_who_submitted_with_gpa_between_3_25_and_3_49": 0,
+    "percent_who_submitted_with_gpa_between_3_00_and_3_24": 0,
+    "percent_who_submitted_with_gpa_between_2_50_and_2_99": 0,
+    "percent_who_submitted_with_gpa_between_2_0_and_2_49": 0,
+    "percent_who_submitted_with_gpa_between_1_0_and_1_99": 0,
+    "percent_who_submitted_with_gpa_between_below_1_0": 0,
+    "percent_who_did_not_submit_with_gpa_of_4_0": 0,
+    "percent_who_did_not_submit_with_gpa_between_3_75_and_3_99": 0,
+    "percent_who_did_not_submit_with_gpa_between_3_50_and_3_74": 0,
+    "percent_who_did_not_submit_with_gpa_between_3_25_and_3_49": 0,
+    "percent_who_did_not_submit_with_gpa_between_3_00_and_3_24": 0,
+    "percent_who_did_not_submit_with_gpa_between_2_50_and_2_99": 0,
+    "percent_who_did_not_submit_with_gpa_between_2_0_and_2_49": 0,
+    "percent_who_did_not_submit_with_gpa_between_1_0_and_1_99": 0,
+    "percent_who_did_not_submit_with_gpa_between_below_1_0": 0,
+    "percent_all_with_gpa_of_4_0": 0,
+    "percent_all_with_gpa_between_3_75_and_3_99": 0,
+    "percent_all_with_gpa_between_3_50_and_3_74": 0,
+    "percent_all_with_gpa_between_3_25_and_3_49": 0,
+    "percent_all_with_gpa_between_3_00_and_3_24": 0,
+    "percent_all_with_gpa_between_2_50_and_2_99": 0,
+    "percent_all_with_gpa_between_2_0_and_2_49": 0,
+    "percent_all_with_gpa_between_1_0_and_1_99": 0,
+    "percent_all_with_gpa_between_below_1_0": 0
+  },
+  "application_fee": {
+    "has_application_fee": false,
+    "amount_of_application_fee": 0,
+    "can_be_waived": false
+  },
+  "application_closing_date": {
+    "has_application_closing_date": false,
+    "application_closing_date_fall": "NOT_FOUND",
+    "priority_date": "NOT_FOUND"
+  }
+}

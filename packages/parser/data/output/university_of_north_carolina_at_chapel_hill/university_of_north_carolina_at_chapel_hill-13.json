@@ -1,0 +1,44 @@
+{
+  "max_credits_or_courses_that_may_be_transferred_from_clep_or_dsst": {
+    "number": 0,
+    "unit_type": "NOT_FOUND"
+  },
+  "military_veteran_transfer_policies_are_published_online": true,
+  "military_veteran_transfer_policies_url": "https://admissions.unc.edu/credit-table/military-service-credit/",
+  "other_military_veteran_transfer_policies": "CLEP is accepted for French, Spanish, Precalculus, and College Algebra only",
+  "special_study_options": {
+    "has_accelerated_program": false,
+    "has_comprehensive_transition_and_postsecondary_program_for_students_with_intellectual_disabilities": false,
+    "has_cross_registration": true,
+    "has_distance_learning": true,
+    "has_double_major": true,
+    "has_english_as_second_language": true,
+    "has_exchange_student_program_domestic": true,
+    "has_external_degree_program": false,
+    "has_honors_program": true,
+    "has_independent_study": true,
+    "has_internships": true,
+    "has_liberal_arts_career_combination": false,
+    "has_student_designed_major": true,
+    "has_study_abroad": true,
+    "has_teacher_certification_program": true,
+    "has_undergraduate_research": true,
+    "has_weekend_college": false,
+    "other": "NOT_FOUND"
+  },
+  "graduation_requirements": {
+    "requires_arts_fine_arts": true,
+    "requires_computer_literacy": false,
+    "requires_english": true,
+    "requires_foreign_language": true,
+    "requires_history": true,
+    "requires_physical_education": true,
+    "requires_humanities": true,
+    "requires_intensive_writing": false,
+    "requires_mathematics": true,
+    "requires_philosophy": false,
+    "requires_sciences": true,
+    "requires_social_science": true,
+    "other": "All undergraduate students must also complete the following: - one high-impact course - one research course - an intensive oral communication course - an interdisciplinary course (first-year) - a data literacy course (first-year) - a College Thriving course (first-year)"
+  }
+}

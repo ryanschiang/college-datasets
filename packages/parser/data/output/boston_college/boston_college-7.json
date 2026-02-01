@@ -1,0 +1,38 @@
+{
+  "distribution_of_high_school_units_required_and_or_recommended": {
+    "total_academic_units_required": 20,
+    "english_required": 4,
+    "mathematics_required": 4,
+    "science_required": 4,
+    "science_lab_required": 4,
+    "foreign_language_required": 4,
+    "social_studies_required": 4,
+    "history_required": 4
+  },
+  "open_admission_policy": {
+    "open_admission_policy_as_described_above_for_all_students": false,
+    "selective_admission_for_out_of_state_students": false,
+    "selective_admission_to_some_programs": false,
+    "other": false
+  },
+  "relative_importance_of_academic_non_academic_factors": {
+    "rigor_of_secondary_school_record": "very_important",
+    "class_rank": "important",
+    "academic_gpa": "very_important",
+    "standardized_test_scores": "important",
+    "application_essay": "important",
+    "recommendations": "important",
+    "interview": "not_considered",
+    "extracurricular_activities": "important",
+    "talent_ability": "important",
+    "character_personal_qualities": "important",
+    "first_generation": "considered",
+    "alumni_relation": "considered",
+    "geographical_residence": "considered",
+    "state_residency": "not_considered",
+    "religious_affiliation_commitment": "considered",
+    "volunteer_work": "important",
+    "work_experience": "considered",
+    "level_of_applicants_interest": "not_considered"
+  }
+}

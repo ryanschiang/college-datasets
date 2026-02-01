@@ -1,0 +1,52 @@
+{
+  "high_school_class_rank": {
+    "percent_in_top_tenth": 96,
+    "percent_in_top_quarter": 99,
+    "percent_in_top_half": 100,
+    "percent_in_bottom_half": 0,
+    "percent_in_bottom_quarter": 0,
+    "percent_who_submitted_class_rank": 25.49
+  },
+  "high_school_gpa_percentages": {
+    "percent_who_submitted_with_gpa_of_4_0": 61.57,
+    "percent_who_submitted_with_gpa_between_3_75_and_3_99": 29.75,
+    "percent_who_submitted_with_gpa_between_3_50_and_3_74": 6.61,
+    "percent_who_submitted_with_gpa_between_3_25_and_3_49": 1.24,
+    "percent_who_submitted_with_gpa_between_3_00_and_3_24": 0.83,
+    "percent_who_submitted_with_gpa_between_2_50_and_2_99": 0,
+    "percent_who_submitted_with_gpa_between_2_0_and_2_49": 0,
+    "percent_who_submitted_with_gpa_between_1_0_and_1_99": 0,
+    "percent_who_submitted_with_gpa_between_below_1_0": 0,
+    "percent_who_did_not_submit_with_gpa_of_4_0": 52.11,
+    "percent_who_did_not_submit_with_gpa_between_3_75_and_3_99": 30.7,
+    "percent_who_did_not_submit_with_gpa_between_3_50_and_3_74": 7.32,
+    "percent_who_did_not_submit_with_gpa_between_3_25_and_3_49": 2.82,
+    "percent_who_did_not_submit_with_gpa_between_3_00_and_3_24": 6.76,
+    "percent_who_did_not_submit_with_gpa_between_2_50_and_2_99": 0.28,
+    "percent_who_did_not_submit_with_gpa_between_2_0_and_2_49": 0,
+    "percent_who_did_not_submit_with_gpa_between_1_0_and_1_99": 0,
+    "percent_who_did_not_submit_with_gpa_between_below_1_0": 0,
+    "percent_all_with_gpa_of_4_0": 58.46,
+    "percent_all_with_gpa_between_3_75_and_3_99": 30.07,
+    "percent_all_with_gpa_between_3_50_and_3_74": 6.85,
+    "percent_all_with_gpa_between_3_25_and_3_49": 1.76,
+    "percent_all_with_gpa_between_3_00_and_3_24": 2.78,
+    "percent_all_with_gpa_between_2_50_and_2_99": 0.09,
+    "percent_all_with_gpa_between_2_0_and_2_49": 0,
+    "percent_all_with_gpa_between_1_0_and_1_99": 0,
+    "percent_all_with_gpa_between_below_1_0": 0
+  },
+  "average_high_school_gpa": 0.497,
+  "percent_who_submitted_gpa": 62.63,
+  "application_fee": {
+    "has_application_fee": true,
+    "amount_of_application_fee": 75,
+    "can_be_waived": true
+  },
+  "application_closing_date": {
+    "has_application_closing_date": true,
+    "application_closing_date_fall": "NOT_FOUND",
+    "priority_date": "NOT_FOUND"
+  },
+  "has_non_fall_application_term": false
+}

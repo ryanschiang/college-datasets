@@ -1,0 +1,51 @@
+{
+  "sat_and_act_policies": {
+    "use_sat_act_in_admission_decisions": true,
+    "sat_or_act_policy": "not_required_but_considered",
+    "uses_test_scores_for_academic_advising": true,
+    "latest_date_for_sat_or_act_scores": "Jan. 31",
+    "clarification_for_test_policy": "The UNC System extended the waiver of the SAT or ACT requirement for Fall 2022, 2023, and 2024 applicants. For the Fall 2025-26 academic year, students with a weighted GPA below 2.8 (on a 4.0 scale) are required to submit either an ACT or SAT score. If applicants have scores that they choose to share with us, they will be considered as one fact among many in our holistic application review.",
+    "tests_used_for_placement": [
+      "sat",
+      "act",
+      "ap",
+      "clep",
+      "institutional_exam"
+    ]
+  },
+  "sat_act_first_time_first_year": {
+    "percent_submitting_sat_scores": 28,
+    "number_submitting_sat_scores": 1320,
+    "percent_submitting_act_scores": 41,
+    "number_submitting_act_scores": 1896
+  },
+  "sat_act_score_percentiles": {
+    "sat_composite_25th_percentile": 1400,
+    "sat_composite_50th_percentile": 1470,
+    "sat_composite_75th_percentile": 1530,
+    "sat_ebrw_25th_percentile": 690,
+    "sat_ebrw_50th_percentile": 730,
+    "sat_ebrw_75th_percentile": 750,
+    "sat_math_25th_percentile": 700,
+    "sat_math_50th_percentile": 750,
+    "sat_math_75th_percentile": 780,
+    "act_composite_25th_percentile": 28,
+    "act_composite_50th_percentile": 31,
+    "act_composite_75th_percentile": 34,
+    "act_math_25th_percentile": 26,
+    "act_math_50th_percentile": 29,
+    "act_math_75th_percentile": 33,
+    "act_english_25th_percentile": 27,
+    "act_english_50th_percentile": 33,
+    "act_english_75th_percentile": 35,
+    "act_writing_25th_percentile": 7,
+    "act_writing_50th_percentile": 7,
+    "act_writing_75th_percentile": 8,
+    "act_science_25th_percentile": 26,
+    "act_science_50th_percentile": 30,
+    "act_science_75th_percentile": 34,
+    "act_reading_25th_percentile": 30,
+    "act_reading_50th_percentile": 33,
+    "act_reading_75th_percentile": 35
+  }
+}

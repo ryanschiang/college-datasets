@@ -1,0 +1,47 @@
+{
+  "sat_and_act_policies": {
+    "use_sat_act_in_admission_decisions": true,
+    "sat_or_act_policy": "recommended",
+    "act_policy": "recommended",
+    "sat_policy": "recommended",
+    "uses_test_scores_for_academic_advising": true,
+    "latest_date_for_sat_or_act_scores": "31-Dec",
+    "clarification_for_test_policy": "Rice recommends first-year and transfer student applicants to undergraduate degree-seeking programs to submit SAT or ACT test scores, if available. Students who are unable to submit test scores or prefer not to submit test scores will be given full consideration in the admission selection process. Standardized tests have long served to provide an external benchmark of college-readiness that provides meaningful information about a student’s preparedness for the rigors of a Rice education. As is consistent with our holistic review, test scores are one factor of many that are considered in the admission process. Students wishing to provide additional exams for admission consideration are welcome to submit these to our office. These exams are optional and at the discretion of the students to submit. We want students to have every opportunity to showcase their strengths and academic achievements where possible.",
+    "tests_used_for_placement": [
+      "ap",
+      "institutional_exam"
+    ]
+  },
+  "sat_act_first_time_first_year": {
+    "percent_submitting_sat_scores": 48,
+    "number_submitting_sat_scores": 546,
+    "percent_submitting_act_scores": 22,
+    "number_submitting_act_scores": 248
+  },
+  "sat_act_score_percentiles": {
+    "sat_composite_25th_percentile": 1510,
+    "sat_composite_50th_percentile": 1540,
+    "sat_composite_75th_percentile": 1560,
+    "sat_ebrw_25th_percentile": 740,
+    "sat_ebrw_50th_percentile": 760,
+    "sat_ebrw_75th_percentile": 770,
+    "sat_math_25th_percentile": 770,
+    "sat_math_50th_percentile": 790,
+    "sat_math_75th_percentile": 800,
+    "act_composite_25th_percentile": 34,
+    "act_composite_50th_percentile": 35,
+    "act_composite_75th_percentile": 35,
+    "act_math_25th_percentile": 33,
+    "act_math_50th_percentile": 35,
+    "act_math_75th_percentile": 36,
+    "act_english_25th_percentile": 35,
+    "act_english_50th_percentile": 35,
+    "act_english_75th_percentile": 36,
+    "act_science_25th_percentile": 33,
+    "act_science_50th_percentile": 35,
+    "act_science_75th_percentile": 36,
+    "act_reading_25th_percentile": 34,
+    "act_reading_50th_percentile": 35,
+    "act_reading_75th_percentile": 36
+  }
+}

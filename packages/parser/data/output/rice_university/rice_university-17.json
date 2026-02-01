@@ -1,0 +1,30 @@
+{
+  "number_of_enrolled_students_awarded_aid": {
+    "number_of_ftfy_students": 1147,
+    "number_of_full_time_undergraduate_students": 4776,
+    "number_of_ftfy_students_applied_for_aid": 896,
+    "number_of_full_time_undergraduate_students_applied_for_aid": 3307,
+    "number_of_ftfy_students_with_financial_need": 543,
+    "number_of_full_time_undergraduate_students_with_financial_need": 2179,
+    "number_of_ftfy_students_awarded_any_financial_aid": 539,
+    "number_of_full_time_undergraduate_students_awarded_any_financial_aid": 2158,
+    "number_of_ftfy_students_awarded_any_need_based_scholarship_or_grant_aid": 531,
+    "number_of_full_time_undergraduate_students_awarded_any_need_based_scholarship_or_grant_aid": 2126,
+    "number_of_ftfy_students_awarded_any_need_based_self_help_aid": 154,
+    "number_of_full_time_undergraduate_students_awarded_any_need_based_self_help_aid": 784,
+    "number_of_ftfy_students_awarded_any_non_need_based_scholarship_or_grant_aid": 55,
+    "number_of_full_time_undergraduate_students_awarded_any_non_need_based_scholarship_or_grant_aid": 194,
+    "number_of_ftfy_students_need_fully_met": 539,
+    "number_of_full_time_undergraduate_students_need_fully_met": 2153,
+    "avg_pct_need_met_for_ftfy_students": 100,
+    "avg_pct_need_met_for_full_time_undergraduate_students": 100,
+    "avg_financial_aid_package_for_ftfy_students": 71698,
+    "avg_financial_aid_package_for_full_time_undergraduate_students": 69040,
+    "avg_need_based_scholarship_and_grant_award_for_ftfy_students": 69891,
+    "avg_need_based_scholarship_and_grant_award_for_full_time_undergraduate_students": 66070,
+    "avg_need_based_self_help_award_for_ftfy_students": 2627,
+    "avg_need_based_self_help_award_for_full_time_undergraduate_students": 2740,
+    "avg_need_based_loan_for_ftfy_students": 3154,
+    "avg_need_based_loan_for_full_time_undergraduate_students": 3874
+  }
+}

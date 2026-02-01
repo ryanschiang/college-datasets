@@ -1,0 +1,57 @@
+{
+  "rotc": {
+    "offers_army_rotc_marine_option": false,
+    "offers_army_rotc_on_campus": false,
+    "offers_army_rotc_at_cooperating_institution": true,
+    "army_rotc_cooperating_institution_name": "UIC",
+    "offers_naval_rotc_marine_option": false,
+    "offers_naval_rotc_on_campus": false,
+    "offers_naval_rotc_at_cooperating_institution": false,
+    "naval_rotc_cooperating_institution_name": "NOT_FOUND",
+    "offers_air_force_rotc_marine_option": false,
+    "offers_air_force_rotc_on_campus": true,
+    "offers_air_force_rotc_at_cooperating_institution": false,
+    "air_force_rotc_cooperating_institution_name": "NOT_FOUND"
+  },
+  "housing_options": {
+    "has_coed_dorms": true,
+    "has_mens_dorms": false,
+    "has_womens_dorms": false,
+    "has_apartments_for_married_students": false,
+    "has_apartments_for_single_students": true,
+    "has_special_housing_for_disabled_students": true,
+    "has_special_housing_for_international_students": false,
+    "has_fraternity_sorority_housing": false,
+    "has_cooperative_housing": false,
+    "has_theme_housing": false,
+    "has_wellness_housing": false,
+    "has_living_learning_communities": false,
+    "other_housing_options": "NOT_FOUND"
+  },
+  "net_price_calculator_url": "NOT_FOUND",
+  "private_institutions_undergraduate_tuition": {
+    "first_year_tuition": 71325,
+    "undergraduates_tuition": 71325
+  },
+  "public_institutions_undergraduate_tuition": {
+    "first_year_tuition_in_district": 0,
+    "undergraduates_tuition_in_district": 0,
+    "first_year_tuition_in_state_out_of_district": 0,
+    "undergraduates_tuition_in_state_out_of_district": 0,
+    "first_year_tuition_out_of_state": 0,
+    "undergraduates_tuition_out_of_state": 0,
+    "first_year_tuition_non_resident": 0,
+    "undergraduates_tuition_non_resident": 0
+  },
+  "fees_food_and_housing": {
+    "first_year_required_fees": 2637,
+    "undergraduates_required_fees": 1941,
+    "first_year_food_and_housing_on_campus": 20835,
+    "undergraduates_food_and_housing_on_campus": 20835,
+    "first_year_housing_only_on_campus": 0,
+    "undergraduates_housing_only_on_campus": 0,
+    "first_year_food_only_on_campus": 0,
+    "undergraduates_food_only_on_campus": 0
+  },
+  "comprehensive_tuition_and_food_and_housing_fee": 0
+}
